@@ -9,6 +9,8 @@
 #import "MainTableViewController.h"
 #import "ThreadTableViewController.h"
 #import "Objective-C/ObjectiveCTableViewController.h"
+#import "AlgoTableViewController.h"
+
 @interface MainTableViewController ()
 @property (nonatomic, strong) NSArray   *dataSource;
 @end
@@ -43,6 +45,8 @@
         [self _pushToVC:[ObjectiveCTableViewController new]];
     }else if(indexPath.row == 1){
         [self _pushToVC:[ThreadTableViewController new]];
+    }else if(indexPath.row == 3){
+        [self _pushToVC:[AlgoTableViewController new]];
     }
 }
 

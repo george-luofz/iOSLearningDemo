@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3C0BEEC2206232B30022055C /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C0BEEC1206232B30022055C /* Person.m */; };
+		3C968A352061FE53002BAC80 /* AlgoTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C968A342061FE53002BAC80 /* AlgoTableViewController.m */; };
 		3CCB058820590F7700AF6760 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CCB058720590F7700AF6760 /* AppDelegate.m */; };
 		3CCB058E20590F7700AF6760 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3CCB058C20590F7700AF6760 /* Main.storyboard */; };
 		3CCB059020590F7700AF6760 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3CCB058F20590F7700AF6760 /* Assets.xcassets */; };
@@ -20,8 +22,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3C0BEEC0206232B30022055C /* Person.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
+		3C0BEEC1206232B30022055C /* Person.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
 		3C968A1C205A74B6002BAC80 /* blockTest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = blockTest.h; sourceTree = "<group>"; };
 		3C968A1D205A74E2002BAC80 /* blockTest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = blockTest.cpp; sourceTree = "<group>"; };
+		3C968A332061FE53002BAC80 /* AlgoTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AlgoTableViewController.h; sourceTree = "<group>"; };
+		3C968A342061FE53002BAC80 /* AlgoTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AlgoTableViewController.m; sourceTree = "<group>"; };
 		3CCB058320590F7700AF6760 /* iOSLearnigDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSLearnigDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3CCB058620590F7700AF6760 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		3CCB058720590F7700AF6760 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -56,6 +62,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3C0BEEBF2062329F0022055C /* copyMutableCopy */ = {
+			isa = PBXGroup;
+			children = (
+				3C0BEEC0206232B30022055C /* Person.h */,
+				3C0BEEC1206232B30022055C /* Person.m */,
+			);
+			path = copyMutableCopy;
+			sourceTree = "<group>";
+		};
+		3C968A322061FE0D002BAC80 /* algo */ = {
+			isa = PBXGroup;
+			children = (
+				3C968A332061FE53002BAC80 /* AlgoTableViewController.h */,
+				3C968A342061FE53002BAC80 /* AlgoTableViewController.m */,
+			);
+			path = algo;
+			sourceTree = "<group>";
+		};
 		3CCB057A20590F7700AF6760 = {
 			isa = PBXGroup;
 			children = (
@@ -75,6 +99,7 @@
 		3CCB058520590F7700AF6760 /* iOSLearnigDemo */ = {
 			isa = PBXGroup;
 			children = (
+				3C968A322061FE0D002BAC80 /* algo */,
 				3CCB059C2059142200AF6760 /* MainTableViewController.h */,
 				3CCB059D2059142200AF6760 /* MainTableViewController.m */,
 				3CCB05AB205A5B5900AF6760 /* Objective-C */,
@@ -115,6 +140,7 @@
 		3CCB05AB205A5B5900AF6760 /* Objective-C */ = {
 			isa = PBXGroup;
 			children = (
+				3C0BEEBF2062329F0022055C /* copyMutableCopy */,
 				3CCB05B2205A6FFC00AF6760 /* block */,
 				3CCB05AC205A5B8000AF6760 /* ObjectiveCTableViewController.h */,
 				3CCB05AD205A5B8000AF6760 /* ObjectiveCTableViewController.m */,
@@ -210,6 +236,8 @@
 				3CCB05A32059153B00AF6760 /* ThreadTableViewController.m in Sources */,
 				3CCB058820590F7700AF6760 /* AppDelegate.m in Sources */,
 				3CCB059E2059142200AF6760 /* MainTableViewController.m in Sources */,
+				3C0BEEC2206232B30022055C /* Person.m in Sources */,
+				3C968A352061FE53002BAC80 /* AlgoTableViewController.m in Sources */,
 				3CCB05A62059182600AF6760 /* UIViewController+Push.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
