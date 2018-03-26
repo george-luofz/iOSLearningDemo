@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface AlgoTableViewController : UIViewController
+@interface AlgoTableViewController : UITableViewController
 
 @end

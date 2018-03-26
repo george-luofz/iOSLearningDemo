@@ -8,7 +8,7 @@
 
 #ifndef iOSLearningDemo_h
 #define iOSLearningDemo_h
-
+#ifdef __OBJC__
 #import "UIViewController+Push.h"
-
+#endif
 #endif /* iOSLearningDemo_h */

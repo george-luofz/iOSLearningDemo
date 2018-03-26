@@ -10,6 +10,7 @@
 
 @implementation UIViewController (Push)
 - (void)pushToVc:(UIViewController *)vc{
+    vc.view.backgroundColor = [UIColor whiteColor];
     if(![vc isKindOfClass:[UIViewController class]]) return;
     [self.navigationController pushViewController:vc animated:YES];
 }
