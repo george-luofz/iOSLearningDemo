@@ -8,7 +8,7 @@
 
 #import "MainTableViewController.h"
 #import "ThreadTableViewController.h"
-#import "Objective-C/ObjectiveCTableViewController.h"
+#import "ObjectCMainTableController.h"
 #import "AlgoTableViewController.h"
 
 @interface MainTableViewController ()
@@ -41,17 +41,18 @@
     return cell;
 }
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    UIViewController *vc;
     if(indexPath.row == 0){
-        [self _pushToVC:[ObjectiveCTableViewController new]];
+        vc = [ObjectCMainTableController new];
     }else if(indexPath.row == 1){
-        [self _pushToVC:[ThreadTableViewController new]];
+        vc = [ThreadTableViewController new];
     }else if(indexPath.row == 3){
-        [self _pushToVC:[AlgoTableViewController new]];
+        vc = [AlgoTableViewController new];
+    }
+    if(vc){
+        vc.title = self.dataSource[indexPath.row];
+        [self pushToVc:vc];
     }
 }
 
-- (void)_pushToVC:(UIViewController *)vc{
-    if(![vc isKindOfClass:[UIViewController class]]) return;
-    [self.navigationController pushViewController:vc animated:YES];
-}
 @end

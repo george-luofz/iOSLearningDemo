@@ -14,6 +14,11 @@
 		3C0BEED52064E2080022055C /* StringArrayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C0BEED42064E2080022055C /* StringArrayViewController.m */; };
 		3C968A352061FE53002BAC80 /* AlgoTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C968A342061FE53002BAC80 /* AlgoTableViewController.m */; };
 		3C9C37242068D85500F3ECD9 /* FunctionalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C9C37232068D85500F3ECD9 /* FunctionalViewController.m */; };
+		3C9C37272069EEFA00F3ECD9 /* SortViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C9C37262069EEFA00F3ECD9 /* SortViewController.m */; };
+		3C9C372B206B2C9300F3ECD9 /* PropertyLearningController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C9C372A206B2C9300F3ECD9 /* PropertyLearningController.m */; };
+		3C9C372E206B2DA200F3ECD9 /* ObjectCMainTableController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C9C372D206B2DA200F3ECD9 /* ObjectCMainTableController.m */; };
+		3C9C3732206B2ECF00F3ECD9 /* CategoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C9C3731206B2ECF00F3ECD9 /* CategoryViewController.m */; };
+		3C9C3735206B2F4E00F3ECD9 /* AutoreleasePoolController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C9C3734206B2F4E00F3ECD9 /* AutoreleasePoolController.m */; };
 		3CCB058820590F7700AF6760 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CCB058720590F7700AF6760 /* AppDelegate.m */; };
 		3CCB058E20590F7700AF6760 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3CCB058C20590F7700AF6760 /* Main.storyboard */; };
 		3CCB059020590F7700AF6760 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3CCB058F20590F7700AF6760 /* Assets.xcassets */; };
@@ -44,6 +49,16 @@
 		3C968A342061FE53002BAC80 /* AlgoTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AlgoTableViewController.m; sourceTree = "<group>"; };
 		3C9C37222068D85500F3ECD9 /* FunctionalViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FunctionalViewController.h; sourceTree = "<group>"; };
 		3C9C37232068D85500F3ECD9 /* FunctionalViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FunctionalViewController.m; sourceTree = "<group>"; };
+		3C9C37252069EEFA00F3ECD9 /* SortViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SortViewController.h; sourceTree = "<group>"; };
+		3C9C37262069EEFA00F3ECD9 /* SortViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SortViewController.m; sourceTree = "<group>"; };
+		3C9C3729206B2C9300F3ECD9 /* PropertyLearningController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PropertyLearningController.h; sourceTree = "<group>"; };
+		3C9C372A206B2C9300F3ECD9 /* PropertyLearningController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PropertyLearningController.m; sourceTree = "<group>"; };
+		3C9C372C206B2DA200F3ECD9 /* ObjectCMainTableController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ObjectCMainTableController.h; sourceTree = "<group>"; };
+		3C9C372D206B2DA200F3ECD9 /* ObjectCMainTableController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ObjectCMainTableController.m; sourceTree = "<group>"; };
+		3C9C3730206B2ECF00F3ECD9 /* CategoryViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CategoryViewController.h; sourceTree = "<group>"; };
+		3C9C3731206B2ECF00F3ECD9 /* CategoryViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CategoryViewController.m; sourceTree = "<group>"; };
+		3C9C3733206B2F4E00F3ECD9 /* AutoreleasePoolController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AutoreleasePoolController.h; sourceTree = "<group>"; };
+		3C9C3734206B2F4E00F3ECD9 /* AutoreleasePoolController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AutoreleasePoolController.m; sourceTree = "<group>"; };
 		3CCB058320590F7700AF6760 /* iOSLearnigDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSLearnigDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3CCB058620590F7700AF6760 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		3CCB058720590F7700AF6760 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -111,6 +126,8 @@
 				3C0BEED42064E2080022055C /* StringArrayViewController.m */,
 				3CDC807D20676A2C00D3AEEB /* PointerViewController.h */,
 				3CDC807E20676A2C00D3AEEB /* PointerViewController.m */,
+				3C9C37252069EEFA00F3ECD9 /* SortViewController.h */,
+				3C9C37262069EEFA00F3ECD9 /* SortViewController.m */,
 			);
 			path = algo;
 			sourceTree = "<group>";
@@ -122,6 +139,24 @@
 				3C9C37232068D85500F3ECD9 /* FunctionalViewController.m */,
 			);
 			path = functionalProgram;
+			sourceTree = "<group>";
+		};
+		3C9C3728206B2C6D00F3ECD9 /* PropertyLearning */ = {
+			isa = PBXGroup;
+			children = (
+				3C9C3729206B2C9300F3ECD9 /* PropertyLearningController.h */,
+				3C9C372A206B2C9300F3ECD9 /* PropertyLearningController.m */,
+			);
+			path = PropertyLearning;
+			sourceTree = "<group>";
+		};
+		3C9C372F206B2EB800F3ECD9 /* categoryLearning */ = {
+			isa = PBXGroup;
+			children = (
+				3C9C3730206B2ECF00F3ECD9 /* CategoryViewController.h */,
+				3C9C3731206B2ECF00F3ECD9 /* CategoryViewController.m */,
+			);
+			path = categoryLearning;
 			sourceTree = "<group>";
 		};
 		3CCB057A20590F7700AF6760 = {
@@ -143,10 +178,10 @@
 		3CCB058520590F7700AF6760 /* iOSLearnigDemo */ = {
 			isa = PBXGroup;
 			children = (
-				3C0BEEC62064A37A0022055C /* dataStructure */,
-				3C968A322061FE0D002BAC80 /* algo */,
 				3CCB059C2059142200AF6760 /* MainTableViewController.h */,
 				3CCB059D2059142200AF6760 /* MainTableViewController.m */,
+				3C0BEEC62064A37A0022055C /* dataStructure */,
+				3C968A322061FE0D002BAC80 /* algo */,
 				3CCB05AB205A5B5900AF6760 /* Objective-C */,
 				3CCB05A02059152300AF6760 /* image */,
 				3CCB059F2059151600AF6760 /* thread */,
@@ -185,11 +220,17 @@
 		3CCB05AB205A5B5900AF6760 /* Objective-C */ = {
 			isa = PBXGroup;
 			children = (
+				3C9C3733206B2F4E00F3ECD9 /* AutoreleasePoolController.h */,
+				3C9C3734206B2F4E00F3ECD9 /* AutoreleasePoolController.m */,
+				3C9C372F206B2EB800F3ECD9 /* categoryLearning */,
+				3C9C3728206B2C6D00F3ECD9 /* PropertyLearning */,
 				3C9C37212068D83900F3ECD9 /* functionalProgram */,
 				3C0BEEBF2062329F0022055C /* copyMutableCopy */,
 				3CCB05B2205A6FFC00AF6760 /* block */,
 				3CCB05AC205A5B8000AF6760 /* ObjectiveCTableViewController.h */,
 				3CCB05AD205A5B8000AF6760 /* ObjectiveCTableViewController.m */,
+				3C9C372C206B2DA200F3ECD9 /* ObjectCMainTableController.h */,
+				3C9C372D206B2DA200F3ECD9 /* ObjectCMainTableController.m */,
 			);
 			path = "Objective-C";
 			sourceTree = "<group>";
@@ -277,17 +318,22 @@
 			buildActionMask = 2147483647;
 			files = (
 				3CCB059620590F7700AF6760 /* main.m in Sources */,
+				3C9C3732206B2ECF00F3ECD9 /* CategoryViewController.m in Sources */,
 				3CCB05AE205A5B8000AF6760 /* ObjectiveCTableViewController.m in Sources */,
 				3CCB05AA2059198100AF6760 /* GCDViewController.m in Sources */,
 				3CCB05A32059153B00AF6760 /* ThreadTableViewController.m in Sources */,
 				3CCB058820590F7700AF6760 /* AppDelegate.m in Sources */,
+				3C9C3735206B2F4E00F3ECD9 /* AutoreleasePoolController.m in Sources */,
 				3C0BEED12064A4B70022055C /* ListNode.c in Sources */,
+				3C9C37272069EEFA00F3ECD9 /* SortViewController.m in Sources */,
 				3C9C37242068D85500F3ECD9 /* FunctionalViewController.m in Sources */,
 				3C0BEED22064AAD40022055C /* Stack.c in Sources */,
 				3CCB059E2059142200AF6760 /* MainTableViewController.m in Sources */,
 				3CDC807F20676A2C00D3AEEB /* PointerViewController.m in Sources */,
+				3C9C372B206B2C9300F3ECD9 /* PropertyLearningController.m in Sources */,
 				3C0BEEC2206232B30022055C /* Person.m in Sources */,
 				3C968A352061FE53002BAC80 /* AlgoTableViewController.m in Sources */,
+				3C9C372E206B2DA200F3ECD9 /* ObjectCMainTableController.m in Sources */,
 				3C0BEEC520649D950022055C /* LinkListViewController.m in Sources */,
 				3CCB05A62059182600AF6760 /* UIViewController+Push.m in Sources */,
 				3C0BEED52064E2080022055C /* StringArrayViewController.m in Sources */,
