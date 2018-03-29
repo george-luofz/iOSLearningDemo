@@ -11,6 +11,7 @@
 
 int main(int argc, char * argv[]) {
 //    CFRunLoopStop(CFRunLoopGetCurrent()); //停止主runloop是不可能的
+    
     @autoreleasepool {
         return UIApplicationMain(argc, argv, nil, NSStringFromClass([AppDelegate class]));
     }

@@ -10,6 +10,7 @@
 #import "PropertyLearningController.h"
 #import "CategoryViewController.h"
 #import "AutoreleasePoolController.h"
+#import "MemoryManageViewController.h"
 
 @interface ObjectCMainTableController ()
 @property (nonatomic, nullable, strong) NSArray *dataSource;
@@ -19,7 +20,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.dataSource = @[@"property相关",@"category",@"autoreleasepool"];
+    self.dataSource = @[@"property相关",@"category",@"autoreleasepool",@"内存管理"];
 }
 
 #pragma mark - Table view data source
@@ -47,6 +48,10 @@
         vc = [PropertyLearningController new];
     }else if (indexPath.row == 1){
         vc = [CategoryViewController new];
+    }else if (indexPath.row == 2){
+        
+    }else if (indexPath.row == 3){
+        vc = [MemoryManageViewController new];
     }
     if(vc){
         vc.title = self.dataSource[indexPath.row];
