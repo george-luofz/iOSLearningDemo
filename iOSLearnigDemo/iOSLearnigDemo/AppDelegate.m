@@ -7,16 +7,20 @@
 //
 
 #import "AppDelegate.h"
-
+#import "FJReplayKit.h"
 @interface AppDelegate ()
 
 @end
 
 @implementation AppDelegate
 
-
+- (BOOL)application:(UIApplication *)application willFinishLaunchingWithOptions:(NSDictionary *)launchOptions{
+    return YES;
+}
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    // 开启屏幕录制
+//    [[FJReplayKit sharedReplay] catreButton:YES];
     return YES;
 }
 

@@ -21,6 +21,9 @@
     [self _test_functionParamType:str];
     NSInteger count2 = _objc_rootRetainCount(str);
     NSLog(@"%@ after retainCount:%ld",str,count2);
+    
+    // 测试arc下引用计数
+    [self _test_strong];
 }
 #pragma mark -- ARC
 #pragma mark -- 变量标识符 __unsafe_unRetained 和 __weak 、__strong、 __autoreleasing
@@ -80,19 +83,30 @@
     NSMutableArray *marr = [NSMutableArray array]; //会崩溃
     return marr;
 }
+// 总结：
 // __autoreleasing使用时机
-// 1.对象作为函数的返回值，runtime会在返回时自动调用objc_autoreleaseReturnValue()函数，不过有个坑：如果发现紧接着调用了objc_retainAutoreleasedReturnValue方法，则不会加入autoreleasepool中
+// 1.对象作为函数的返回值，runtime会在返回时自动调用objc_autoreleaseReturnValue()函数，不过有个坑：如果†iiii紧接着调用了objc_retainAutoreleasedReturnValue方法，则不会加入autoreleasepool中
 // 2.id类型指针,即id *p这种；或者叫对象指针，类似于NSError **error;
 
+// 3.__strong 不会改变对象的引用计数，只是一个强指针去引用它
 - (void)_test_strong{
     id __strong obj0;
     id __weak obj1;
     id __autoreleasing obj2;
     // __strong,__weak,__autoreleasing可以保证附有这些修饰符的自动变量初始化为nil
+    
+    NSObject * a = [[NSObject alloc] init];
+    NSInteger count4 = _objc_rootRetainCount(a);
+    NSLog(@"%s,count:%ld",__func__,count4);
 }
 // 疑惑：函数参数的默认类型是啥?
 - (void)_test_functionParamType:(NSString *)str{ //str引用计数没变，要么是__autorelease的，要么是__weak的
     NSInteger count = _objc_rootRetainCount(str);
     NSLog(@"%@ retainCount:%ld",str,count);
+}
+
+#pragma mark -- autoreleasepool
+- (void)_test_autoreleasepool{
+    
 }
 @end

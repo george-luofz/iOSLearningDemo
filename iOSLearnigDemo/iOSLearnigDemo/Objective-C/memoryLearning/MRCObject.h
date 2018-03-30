@@ -12,4 +12,5 @@
 
 - (void)test;
 
+- (void)test_autoreleasepool;
 @end

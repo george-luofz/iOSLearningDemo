@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface MemoryManageViewController : UIViewController
+@interface MemoryManageViewController : UITableViewController
 
 @end

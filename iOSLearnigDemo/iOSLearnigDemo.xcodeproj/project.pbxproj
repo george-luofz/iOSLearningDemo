@@ -12,6 +12,7 @@
 		3C0BEED12064A4B70022055C /* ListNode.c in Sources */ = {isa = PBXBuildFile; fileRef = 3C0BEECE2064A3D40022055C /* ListNode.c */; };
 		3C0BEED22064AAD40022055C /* Stack.c in Sources */ = {isa = PBXBuildFile; fileRef = 3C0BEEC82064A3930022055C /* Stack.c */; };
 		3C0BEED52064E2080022055C /* StringArrayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C0BEED42064E2080022055C /* StringArrayViewController.m */; };
+		3C398FCA206DE85C008BDFB3 /* FJReplayKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C398FC9206DE85C008BDFB3 /* FJReplayKit.m */; };
 		3C968A352061FE53002BAC80 /* AlgoTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C968A342061FE53002BAC80 /* AlgoTableViewController.m */; };
 		3C9C37242068D85500F3ECD9 /* FunctionalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C9C37232068D85500F3ECD9 /* FunctionalViewController.m */; };
 		3C9C37272069EEFA00F3ECD9 /* SortViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C9C37262069EEFA00F3ECD9 /* SortViewController.m */; };
@@ -19,6 +20,11 @@
 		3C9C372E206B2DA200F3ECD9 /* ObjectCMainTableController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C9C372D206B2DA200F3ECD9 /* ObjectCMainTableController.m */; };
 		3C9C3732206B2ECF00F3ECD9 /* CategoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C9C3731206B2ECF00F3ECD9 /* CategoryViewController.m */; };
 		3C9C3735206B2F4E00F3ECD9 /* AutoreleasePoolController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C9C3734206B2F4E00F3ECD9 /* AutoreleasePoolController.m */; };
+		3C9C3738206C7AD600F3ECD9 /* MRCObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C9C3737206C7AD600F3ECD9 /* MRCObject.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		3C9C373B206C7AEF00F3ECD9 /* MemoryManageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C9C373A206C7AEF00F3ECD9 /* MemoryManageViewController.m */; };
+		3C9C373F206C7C8100F3ECD9 /* MRCTestObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C9C373E206C7C8100F3ECD9 /* MRCTestObject.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		3C9C3742206C8E3500F3ECD9 /* MRCSubTestObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C9C3741206C8E3500F3ECD9 /* MRCSubTestObject.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		3C9C3745206CC5D000F3ECD9 /* ARCObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C9C3744206CC5D000F3ECD9 /* ARCObject.m */; };
 		3CCB058820590F7700AF6760 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CCB058720590F7700AF6760 /* AppDelegate.m */; };
 		3CCB058E20590F7700AF6760 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3CCB058C20590F7700AF6760 /* Main.storyboard */; };
 		3CCB059020590F7700AF6760 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3CCB058F20590F7700AF6760 /* Assets.xcassets */; };
@@ -43,6 +49,8 @@
 		3C0BEECE2064A3D40022055C /* ListNode.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = ListNode.c; sourceTree = "<group>"; };
 		3C0BEED32064E2080022055C /* StringArrayViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StringArrayViewController.h; sourceTree = "<group>"; };
 		3C0BEED42064E2080022055C /* StringArrayViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StringArrayViewController.m; sourceTree = "<group>"; };
+		3C398FC8206DE85C008BDFB3 /* FJReplayKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FJReplayKit.h; sourceTree = "<group>"; };
+		3C398FC9206DE85C008BDFB3 /* FJReplayKit.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FJReplayKit.m; sourceTree = "<group>"; };
 		3C968A1C205A74B6002BAC80 /* blockTest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = blockTest.h; sourceTree = "<group>"; };
 		3C968A1D205A74E2002BAC80 /* blockTest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = blockTest.cpp; sourceTree = "<group>"; };
 		3C968A332061FE53002BAC80 /* AlgoTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AlgoTableViewController.h; sourceTree = "<group>"; };
@@ -59,6 +67,17 @@
 		3C9C3731206B2ECF00F3ECD9 /* CategoryViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CategoryViewController.m; sourceTree = "<group>"; };
 		3C9C3733206B2F4E00F3ECD9 /* AutoreleasePoolController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AutoreleasePoolController.h; sourceTree = "<group>"; };
 		3C9C3734206B2F4E00F3ECD9 /* AutoreleasePoolController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AutoreleasePoolController.m; sourceTree = "<group>"; };
+		3C9C3736206C7AD600F3ECD9 /* MRCObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MRCObject.h; sourceTree = "<group>"; };
+		3C9C3737206C7AD600F3ECD9 /* MRCObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MRCObject.m; sourceTree = "<group>"; };
+		3C9C3739206C7AEF00F3ECD9 /* MemoryManageViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MemoryManageViewController.h; sourceTree = "<group>"; };
+		3C9C373A206C7AEF00F3ECD9 /* MemoryManageViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MemoryManageViewController.m; sourceTree = "<group>"; };
+		3C9C373D206C7C8100F3ECD9 /* MRCTestObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MRCTestObject.h; sourceTree = "<group>"; };
+		3C9C373E206C7C8100F3ECD9 /* MRCTestObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MRCTestObject.m; sourceTree = "<group>"; };
+		3C9C3740206C8E3500F3ECD9 /* MRCSubTestObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MRCSubTestObject.h; sourceTree = "<group>"; };
+		3C9C3741206C8E3500F3ECD9 /* MRCSubTestObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MRCSubTestObject.m; sourceTree = "<group>"; };
+		3C9C3743206CC5D000F3ECD9 /* ARCObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ARCObject.h; sourceTree = "<group>"; };
+		3C9C3744206CC5D000F3ECD9 /* ARCObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ARCObject.m; sourceTree = "<group>"; };
+		3C9C3746206CF2E500F3ECD9 /* testClang.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = testClang.c; sourceTree = "<group>"; };
 		3CCB058320590F7700AF6760 /* iOSLearnigDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSLearnigDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3CCB058620590F7700AF6760 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		3CCB058720590F7700AF6760 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -159,6 +178,25 @@
 			path = categoryLearning;
 			sourceTree = "<group>";
 		};
+		3C9C373C206C7AF400F3ECD9 /* memoryLearning */ = {
+			isa = PBXGroup;
+			children = (
+				3C9C3733206B2F4E00F3ECD9 /* AutoreleasePoolController.h */,
+				3C9C3734206B2F4E00F3ECD9 /* AutoreleasePoolController.m */,
+				3C9C3739206C7AEF00F3ECD9 /* MemoryManageViewController.h */,
+				3C9C373A206C7AEF00F3ECD9 /* MemoryManageViewController.m */,
+				3C9C3736206C7AD600F3ECD9 /* MRCObject.h */,
+				3C9C3737206C7AD600F3ECD9 /* MRCObject.m */,
+				3C9C373D206C7C8100F3ECD9 /* MRCTestObject.h */,
+				3C9C373E206C7C8100F3ECD9 /* MRCTestObject.m */,
+				3C9C3740206C8E3500F3ECD9 /* MRCSubTestObject.h */,
+				3C9C3741206C8E3500F3ECD9 /* MRCSubTestObject.m */,
+				3C9C3743206CC5D000F3ECD9 /* ARCObject.h */,
+				3C9C3744206CC5D000F3ECD9 /* ARCObject.m */,
+			);
+			path = memoryLearning;
+			sourceTree = "<group>";
+		};
 		3CCB057A20590F7700AF6760 = {
 			isa = PBXGroup;
 			children = (
@@ -195,6 +233,9 @@
 				3CCB05A42059182600AF6760 /* UIViewController+Push.h */,
 				3CCB05A52059182600AF6760 /* UIViewController+Push.m */,
 				3CCB05A72059189A00AF6760 /* iOSLearningDemo.pch */,
+				3C9C3746206CF2E500F3ECD9 /* testClang.c */,
+				3C398FC8206DE85C008BDFB3 /* FJReplayKit.h */,
+				3C398FC9206DE85C008BDFB3 /* FJReplayKit.m */,
 			);
 			path = iOSLearnigDemo;
 			sourceTree = "<group>";
@@ -220,8 +261,7 @@
 		3CCB05AB205A5B5900AF6760 /* Objective-C */ = {
 			isa = PBXGroup;
 			children = (
-				3C9C3733206B2F4E00F3ECD9 /* AutoreleasePoolController.h */,
-				3C9C3734206B2F4E00F3ECD9 /* AutoreleasePoolController.m */,
+				3C9C373C206C7AF400F3ECD9 /* memoryLearning */,
 				3C9C372F206B2EB800F3ECD9 /* categoryLearning */,
 				3C9C3728206B2C6D00F3ECD9 /* PropertyLearning */,
 				3C9C37212068D83900F3ECD9 /* functionalProgram */,
@@ -277,7 +317,7 @@
 				TargetAttributes = {
 					3CCB058220590F7700AF6760 = {
 						CreatedOnToolsVersion = 9.2;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
 					};
 				};
 			};
@@ -323,16 +363,22 @@
 				3CCB05AA2059198100AF6760 /* GCDViewController.m in Sources */,
 				3CCB05A32059153B00AF6760 /* ThreadTableViewController.m in Sources */,
 				3CCB058820590F7700AF6760 /* AppDelegate.m in Sources */,
+				3C9C3738206C7AD600F3ECD9 /* MRCObject.m in Sources */,
 				3C9C3735206B2F4E00F3ECD9 /* AutoreleasePoolController.m in Sources */,
+				3C9C3742206C8E3500F3ECD9 /* MRCSubTestObject.m in Sources */,
 				3C0BEED12064A4B70022055C /* ListNode.c in Sources */,
 				3C9C37272069EEFA00F3ECD9 /* SortViewController.m in Sources */,
+				3C9C373B206C7AEF00F3ECD9 /* MemoryManageViewController.m in Sources */,
 				3C9C37242068D85500F3ECD9 /* FunctionalViewController.m in Sources */,
+				3C398FCA206DE85C008BDFB3 /* FJReplayKit.m in Sources */,
 				3C0BEED22064AAD40022055C /* Stack.c in Sources */,
+				3C9C3745206CC5D000F3ECD9 /* ARCObject.m in Sources */,
 				3CCB059E2059142200AF6760 /* MainTableViewController.m in Sources */,
 				3CDC807F20676A2C00D3AEEB /* PointerViewController.m in Sources */,
 				3C9C372B206B2C9300F3ECD9 /* PropertyLearningController.m in Sources */,
 				3C0BEEC2206232B30022055C /* Person.m in Sources */,
 				3C968A352061FE53002BAC80 /* AlgoTableViewController.m in Sources */,
+				3C9C373F206C7C8100F3ECD9 /* MRCTestObject.m in Sources */,
 				3C9C372E206B2DA200F3ECD9 /* ObjectCMainTableController.m in Sources */,
 				3C0BEEC520649D950022055C /* LinkListViewController.m in Sources */,
 				3CCB05A62059182600AF6760 /* UIViewController+Push.m in Sources */,
@@ -470,12 +516,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = 5R64B7C942;
 				GCC_PREFIX_HEADER = iOSLearnigDemo/iOSLearningDemo.pch;
 				INFOPLIST_FILE = iOSLearnigDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "me.george-luofz.iOSLearnigDemo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "0bca4784-b8f4-4f83-90c5-ba6a3b8e9c60";
+				PROVISIONING_PROFILE_SPECIFIER = YeMao_Profile;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -484,12 +533,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				GCC_PREFIX_HEADER = iOSLearnigDemo/iOSLearningDemo.pch;
 				INFOPLIST_FILE = iOSLearnigDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "me.george-luofz.iOSLearnigDemo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
