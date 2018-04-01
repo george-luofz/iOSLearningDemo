@@ -67,8 +67,13 @@ typedef void(^Block) (void);
     NSString *string2 = @"2222";
     self.string1 = string1;
     self.string2 = string2;
+    NSLog(@"\nstring1:%p\ncopy string1:%p\nstring2:%p\nstrong string2:%p\n",string1,self.string1,string2,self.string2);
+    string1 = @"22345";
+    string2 = @"234456";
+    NSLog(@"self.string1:%@,self.string2:%@",self.string1,self.string2);
+    
     NSString *string3 = @"3333";
-    NSString *copyString = [string3 copy]; // 浅拷贝，只是引用计数加1
+    NSString *copyString = [string3 copy];
     NSMutableString *mutableCopyString = [string3 mutableCopy];
     [mutableCopyString appendString:@"1235"];
     NSLog(@"\nstring1:%p\ncopy string1:%p\nstring2:%p\nstrong string2:%p\nstring3:%p\ncopy string3%p\nmutableCopyString3:%p",string1,self.string1,string2,self.string2,string3,copyString,mutableCopyString);

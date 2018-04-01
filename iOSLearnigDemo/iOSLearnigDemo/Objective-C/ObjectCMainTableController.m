@@ -11,6 +11,7 @@
 #import "CategoryViewController.h"
 #import "AutoreleasePoolController.h"
 #import "MemoryManageViewController.h"
+#import "RuntimeViewController.h"
 
 @interface ObjectCMainTableController ()
 @property (nonatomic, nullable, strong) NSArray *dataSource;
@@ -20,7 +21,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.dataSource = @[@"property相关",@"category",@"autoreleasepool",@"内存管理"];
+    self.dataSource = @[@"property相关",@"category",@"autoreleasepool",@"内存管理",@"runtime"];
 }
 
 #pragma mark - Table view data source
@@ -52,6 +53,8 @@
         
     }else if (indexPath.row == 3){
         vc = [MemoryManageViewController new];
+    }else if (indexPath.row == 4){
+        vc = [RuntimeViewController new];
     }
     if(vc){
         vc.title = self.dataSource[indexPath.row];
