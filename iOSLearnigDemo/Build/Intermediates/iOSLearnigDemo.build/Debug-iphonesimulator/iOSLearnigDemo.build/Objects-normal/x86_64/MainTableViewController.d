@@ -5,4 +5,5 @@ dependencies: \
   /Users/luofuzhong/Desktop/iOSLearningDemo/iOSLearnigDemo/iOSLearnigDemo/MainTableViewController.h \
   /Users/luofuzhong/Desktop/iOSLearningDemo/iOSLearnigDemo/iOSLearnigDemo/thread/ThreadTableViewController.h \
   /Users/luofuzhong/Desktop/iOSLearningDemo/iOSLearnigDemo/iOSLearnigDemo/Objective-C/ObjectCMainTableController.h \
-  /Users/luofuzhong/Desktop/iOSLearningDemo/iOSLearnigDemo/iOSLearnigDemo/algo/AlgoTableViewController.h
+  /Users/luofuzhong/Desktop/iOSLearningDemo/iOSLearnigDemo/iOSLearnigDemo/algo/AlgoTableViewController.h \
+  /Users/luofuzhong/Desktop/iOSLearningDemo/iOSLearnigDemo/iOSLearnigDemo/UI/UITestTableViewController.h

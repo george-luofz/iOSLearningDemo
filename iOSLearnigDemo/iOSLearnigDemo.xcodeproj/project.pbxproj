@@ -13,6 +13,10 @@
 		3C0BEED22064AAD40022055C /* Stack.c in Sources */ = {isa = PBXBuildFile; fileRef = 3C0BEEC82064A3930022055C /* Stack.c */; };
 		3C0BEED52064E2080022055C /* StringArrayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C0BEED42064E2080022055C /* StringArrayViewController.m */; };
 		3C398FCA206DE85C008BDFB3 /* FJReplayKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C398FC9206DE85C008BDFB3 /* FJReplayKit.m */; };
+		3C8206C72073633B009BE5A6 /* UITestTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C8206C62073633B009BE5A6 /* UITestTableViewController.m */; };
+		3C8206CA207363CE009BE5A6 /* ViewTestController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C8206C9207363CE009BE5A6 /* ViewTestController.m */; };
+		3C8206CE207475A8009BE5A6 /* RuntimeTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C8206CD207475A8009BE5A6 /* RuntimeTestViewController.m */; };
+		3C8206D12074ACAA009BE5A6 /* Person2.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C8206D02074ACAA009BE5A6 /* Person2.m */; };
 		3C968A352061FE53002BAC80 /* AlgoTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C968A342061FE53002BAC80 /* AlgoTableViewController.m */; };
 		3C9C37242068D85500F3ECD9 /* FunctionalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C9C37232068D85500F3ECD9 /* FunctionalViewController.m */; };
 		3C9C37272069EEFA00F3ECD9 /* SortViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C9C37262069EEFA00F3ECD9 /* SortViewController.m */; };
@@ -51,6 +55,14 @@
 		3C0BEED42064E2080022055C /* StringArrayViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StringArrayViewController.m; sourceTree = "<group>"; };
 		3C398FC8206DE85C008BDFB3 /* FJReplayKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FJReplayKit.h; sourceTree = "<group>"; };
 		3C398FC9206DE85C008BDFB3 /* FJReplayKit.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FJReplayKit.m; sourceTree = "<group>"; };
+		3C8206C52073633B009BE5A6 /* UITestTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UITestTableViewController.h; sourceTree = "<group>"; };
+		3C8206C62073633B009BE5A6 /* UITestTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UITestTableViewController.m; sourceTree = "<group>"; };
+		3C8206C8207363CE009BE5A6 /* ViewTestController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewTestController.h; sourceTree = "<group>"; };
+		3C8206C9207363CE009BE5A6 /* ViewTestController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewTestController.m; sourceTree = "<group>"; };
+		3C8206CC207475A8009BE5A6 /* RuntimeTestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RuntimeTestViewController.h; sourceTree = "<group>"; };
+		3C8206CD207475A8009BE5A6 /* RuntimeTestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RuntimeTestViewController.m; sourceTree = "<group>"; };
+		3C8206CF2074ACAA009BE5A6 /* Person2.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Person2.h; sourceTree = "<group>"; };
+		3C8206D02074ACAA009BE5A6 /* Person2.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Person2.m; sourceTree = "<group>"; };
 		3C968A1C205A74B6002BAC80 /* blockTest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = blockTest.h; sourceTree = "<group>"; };
 		3C968A1D205A74E2002BAC80 /* blockTest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = blockTest.cpp; sourceTree = "<group>"; };
 		3C968A332061FE53002BAC80 /* AlgoTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AlgoTableViewController.h; sourceTree = "<group>"; };
@@ -132,6 +144,28 @@
 				3C0BEECE2064A3D40022055C /* ListNode.c */,
 			);
 			path = dataStructure;
+			sourceTree = "<group>";
+		};
+		3C8206C420736320009BE5A6 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				3C8206C52073633B009BE5A6 /* UITestTableViewController.h */,
+				3C8206C62073633B009BE5A6 /* UITestTableViewController.m */,
+				3C8206C8207363CE009BE5A6 /* ViewTestController.h */,
+				3C8206C9207363CE009BE5A6 /* ViewTestController.m */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		3C8206CB20747596009BE5A6 /* runtime */ = {
+			isa = PBXGroup;
+			children = (
+				3C8206CC207475A8009BE5A6 /* RuntimeTestViewController.h */,
+				3C8206CD207475A8009BE5A6 /* RuntimeTestViewController.m */,
+				3C8206CF2074ACAA009BE5A6 /* Person2.h */,
+				3C8206D02074ACAA009BE5A6 /* Person2.m */,
+			);
+			path = runtime;
 			sourceTree = "<group>";
 		};
 		3C968A322061FE0D002BAC80 /* algo */ = {
@@ -218,6 +252,7 @@
 			children = (
 				3CCB059C2059142200AF6760 /* MainTableViewController.h */,
 				3CCB059D2059142200AF6760 /* MainTableViewController.m */,
+				3C8206C420736320009BE5A6 /* UI */,
 				3C0BEEC62064A37A0022055C /* dataStructure */,
 				3C968A322061FE0D002BAC80 /* algo */,
 				3CCB05AB205A5B5900AF6760 /* Objective-C */,
@@ -261,6 +296,7 @@
 		3CCB05AB205A5B5900AF6760 /* Objective-C */ = {
 			isa = PBXGroup;
 			children = (
+				3C8206CB20747596009BE5A6 /* runtime */,
 				3C9C373C206C7AF400F3ECD9 /* memoryLearning */,
 				3C9C372F206B2EB800F3ECD9 /* categoryLearning */,
 				3C9C3728206B2C6D00F3ECD9 /* PropertyLearning */,
@@ -364,10 +400,12 @@
 				3CCB05A32059153B00AF6760 /* ThreadTableViewController.m in Sources */,
 				3CCB058820590F7700AF6760 /* AppDelegate.m in Sources */,
 				3C9C3738206C7AD600F3ECD9 /* MRCObject.m in Sources */,
+				3C8206CE207475A8009BE5A6 /* RuntimeTestViewController.m in Sources */,
 				3C9C3735206B2F4E00F3ECD9 /* AutoreleasePoolController.m in Sources */,
 				3C9C3742206C8E3500F3ECD9 /* MRCSubTestObject.m in Sources */,
 				3C0BEED12064A4B70022055C /* ListNode.c in Sources */,
 				3C9C37272069EEFA00F3ECD9 /* SortViewController.m in Sources */,
+				3C8206D12074ACAA009BE5A6 /* Person2.m in Sources */,
 				3C9C373B206C7AEF00F3ECD9 /* MemoryManageViewController.m in Sources */,
 				3C9C37242068D85500F3ECD9 /* FunctionalViewController.m in Sources */,
 				3C398FCA206DE85C008BDFB3 /* FJReplayKit.m in Sources */,
@@ -376,12 +414,14 @@
 				3CCB059E2059142200AF6760 /* MainTableViewController.m in Sources */,
 				3CDC807F20676A2C00D3AEEB /* PointerViewController.m in Sources */,
 				3C9C372B206B2C9300F3ECD9 /* PropertyLearningController.m in Sources */,
+				3C8206C72073633B009BE5A6 /* UITestTableViewController.m in Sources */,
 				3C0BEEC2206232B30022055C /* Person.m in Sources */,
 				3C968A352061FE53002BAC80 /* AlgoTableViewController.m in Sources */,
 				3C9C373F206C7C8100F3ECD9 /* MRCTestObject.m in Sources */,
 				3C9C372E206B2DA200F3ECD9 /* ObjectCMainTableController.m in Sources */,
 				3C0BEEC520649D950022055C /* LinkListViewController.m in Sources */,
 				3CCB05A62059182600AF6760 /* UIViewController+Push.m in Sources */,
+				3C8206CA207363CE009BE5A6 /* ViewTestController.m in Sources */,
 				3C0BEED52064E2080022055C /* StringArrayViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
