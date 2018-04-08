@@ -90,6 +90,8 @@
 		3C9C3743206CC5D000F3ECD9 /* ARCObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ARCObject.h; sourceTree = "<group>"; };
 		3C9C3744206CC5D000F3ECD9 /* ARCObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ARCObject.m; sourceTree = "<group>"; };
 		3C9C3746206CF2E500F3ECD9 /* testClang.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = testClang.c; sourceTree = "<group>"; };
+		3CC579CE2070EAE400295FF0 /* RuntimeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RuntimeViewController.h; sourceTree = "<group>"; };
+		3CC579CF2070EAE400295FF0 /* RuntimeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RuntimeViewController.m; sourceTree = "<group>"; };
 		3CCB058320590F7700AF6760 /* iOSLearnigDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSLearnigDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3CCB058620590F7700AF6760 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		3CCB058720590F7700AF6760 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -231,6 +233,15 @@
 			path = memoryLearning;
 			sourceTree = "<group>";
 		};
+		3CC579CD2070EACB00295FF0 /* runtime */ = {
+			isa = PBXGroup;
+			children = (
+				3CC579CE2070EAE400295FF0 /* RuntimeViewController.h */,
+				3CC579CF2070EAE400295FF0 /* RuntimeViewController.m */,
+			);
+			path = runtime;
+			sourceTree = "<group>";
+		};
 		3CCB057A20590F7700AF6760 = {
 			isa = PBXGroup;
 			children = (
@@ -297,6 +308,7 @@
 			isa = PBXGroup;
 			children = (
 				3C8206CB20747596009BE5A6 /* runtime */,
+				3CC579CD2070EACB00295FF0 /* runtime */,
 				3C9C373C206C7AF400F3ECD9 /* memoryLearning */,
 				3C9C372F206B2EB800F3ECD9 /* categoryLearning */,
 				3C9C3728206B2C6D00F3ECD9 /* PropertyLearning */,
@@ -558,6 +570,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = 5R64B7C942;
+				ENABLE_STRICT_OBJC_MSGSEND = NO;
 				GCC_PREFIX_HEADER = iOSLearnigDemo/iOSLearningDemo.pch;
 				INFOPLIST_FILE = iOSLearnigDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -575,6 +588,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = "";
+				ENABLE_STRICT_OBJC_MSGSEND = NO;
 				GCC_PREFIX_HEADER = iOSLearnigDemo/iOSLearningDemo.pch;
 				INFOPLIST_FILE = iOSLearnigDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

@@ -109,4 +109,15 @@
 - (void)_test_autoreleasepool{
     
 }
+
+
+
+id foo(void) __attribute((ns_returns_retained)){
+    return nil;
+}
+
+-(void)dealloc{
+    
+//    [super dealloc];
+}
 @end
