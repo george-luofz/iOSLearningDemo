@@ -23,7 +23,7 @@
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor whiteColor];
     self.title = @"算法与数据结构";
-    self.dataSource = @[@"链表",@"字符串与数组",@"指针",@"排序"];
+    self.dataSource = @[@"链表",@"字符串与数组",@"指针",@"排序",@"二叉树"];
    
 }
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{

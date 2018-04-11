@@ -148,4 +148,69 @@ void mergeTwoSortArray(int a1[], int length1, int a2[], int length2){
     }
     
 }
+
+#pragma mark -- 二叉树前序、中序转重置
+struct BinaryNode{
+    int root;
+    struct BinaryNode *leftNode;
+    struct BinaryNode *rightNode;
+};
+- (void)_test_constuctBinaryNode{
+    int pre[8] = {1,2,4,7,3,5,6,8};
+    int mid[8] = {4,7,2,1,5,3,8,6};
+    struct BinaryNode *node = construct(pre, mid, 8);
+    
+}
+
+struct BinaryNode *construct(int *pre, int *mid ,int length){
+    if(pre == NULL || mid == NULL || length == 0) return NULL;
+    // 1.判断
+    // 2.调用core方法
+    return construnctCore(pre,mid,length);
+}
+struct BinaryNode *construnctCore(int *pre, int *mid, int length){
+    // 1.判断
+    if(length == 0){
+        return NULL;
+    }
+    // 2.构建前序左子树、右子树；中序左子树、右子树
+    int *pre_left,*pre_right;
+    int *mid_left,*mid_right;
+    // 3.找到根节点
+    int rootIndex = 0;
+    for(int i = 0 ;i < length;i++){
+        if(mid[i] == pre[0]){
+            rootIndex = i;
+            break;
+        }
+        
+    }
+    struct BinaryNode *node = malloc(sizeof(struct BinaryNode));
+    node->root = pre[0];
+    // 4. 构建左子树，前序左子树要从第二个开始，中序左子树就直接拿过来就行
+    for(int i = 0;i < rootIndex;i++){
+        pre_left[i] = pre[i+1]; //从第二个开始
+        mid_left[i] = mid[i];
+    }
+    // 5. 构建右子树
+    for(int i = rootIndex+1, j=0 ; i < length;i++){
+        pre_right[j] = pre[i];
+        mid_right[j] = mid[i];
+    }
+    // 6. 递归构建左子树，右子树
+    node->leftNode = construnctCore(pre_left, mid_left, rootIndex);
+    node->rightNode = construnctCore(pre_right, mid_right, length-rootIndex-1);
+    return node;
+}
+@end
+
+
+@interface TreeNode:NSObject
+@property TreeNode *leftNode;
+@property TreeNode *rightNode;
+@end
+
+@implementation TreeNode
+
+
 @end
