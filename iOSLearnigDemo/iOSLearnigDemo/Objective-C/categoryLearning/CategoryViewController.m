@@ -7,6 +7,9 @@
 //
 
 #import "CategoryViewController.h"
+#import "CategoryObj.h"
+#import "CategoryObj+Test.h"
+#import <objc/runtime.h>
 
 @interface CategoryViewController ()
 
@@ -17,21 +20,53 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+//    [self _test_exetensions];
+    
+    [self _test_load_initilize];
+    
+//    [self _test_usePrivateMethod];
+    [self _test_call_same_method];
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+#pragma mark -- extension
+- (void)_test_exetensions{
+    unsigned int count = 0;
+    objc_property_t *propList = class_copyPropertyList([CategoryObj class], &count);
+    for (int i = 0; i < count; i++) {
+        objc_property_t prop = propList[i];
+        NSLog(@"%d:%s",i,property_getName(prop));
+    }
+    free(propList);
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+- (void) _test_usePrivateMethod{
+    [[CategoryObj new] privateMethod];
 }
-*/
+
+- (void)_test_load_initilize{
+    [[CategoryObj new] test2];
+}
+
+- (void)_test_call_same_method{
+    [[CategoryObj new] print];
+    
+    // 调用主类的print方法
+    unsigned int count = 0;
+    IMP mainIMP = NULL;
+    Method *methodList = class_copyMethodList([CategoryObj class], &count);
+    for(int i = 0 ;i < count;i++){
+        Method method = methodList[i];
+        SEL sel = method_getName(method);
+        // 如果是print方法
+        if([NSStringFromSelector(sel) isEqualToString:NSStringFromSelector(@selector(print))]){
+            mainIMP = method_getImplementation(method);
+        }
+    }
+    if(mainIMP){
+        mainIMP();
+    }
+}
+
 
 @end

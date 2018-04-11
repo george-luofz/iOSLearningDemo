@@ -8,6 +8,9 @@
 
 #import "RuntimeViewController.h"
 #import <objc/runtime.h>
+#import "TestRuntimeForward.h"
+#import "TestRuntimeForward+category.h"
+
 @interface RuntimeViewController ()
 
 @end
@@ -20,6 +23,18 @@
     // 1.元类是个啥玩意
 //    [self _test_meta_class];
     [self _test_metaClass2]; //http://ios.jobbole.com/81657/
+    
+    // 3. runtime_forward
+    [self _test_message_forward];
+    
+    // 4. self super
+    [self _test_self_super];
+    // 5. invocation
+    [self _test_invocation];
+    // 6. category
+    [self _test_category_addProp];
+    // 7. json to model
+    [self _test_jsonToModel];
 }
 #pragma mark -- 元类
 
@@ -44,6 +59,8 @@
  */
 
 - (void)_test_metaClass2{
+    Class cls = objc_getClass("RuntimeErrorSubclass");
+    if(cls) return;
     Class newClass =
     objc_allocateClassPair([NSError class], "RuntimeErrorSubclass", 0);
     class_addMethod(newClass, @selector(report), (IMP)ReportFunction, "v@:");
@@ -73,5 +90,64 @@ void ReportFunction(id self, SEL _cmd)
     NSLog(@"NSObject's meta class is %p", object_getClass([NSObject class]));
 }
 
+#pragma mark -- 消息转发
+- (void)_test_message_forward{
+    [[TestRuntimeForward new] test];
+}
 
+#pragma mark -- self super
+- (void)_test_self_super{
+//    NSLog(@"self:%@ super:%@ %s",self,super,__func__);
+    
+//    NSLog(@"self class:%@\nsuper class:%@",[self class],[super class]);
+    [[TestRuntimeForward new] test_self_super];
+}
+
++ (void)_test_self_super{
+//    NSLog(@"self:%@ super:%@ %s",self,super,__func__);
+}
+
+#pragma mark -- NSInvocation
+- (void)_test_invocation{
+    
+    NSMethodSignature *signature = [NSMethodSignature signatureWithObjCTypes:"v@::"];
+    NSInvocation *invocation = [NSInvocation invocationWithMethodSignature:signature];
+    [invocation setTarget:self];
+    [invocation setSelector:@selector(_test_invocation_print:)];
+    int a = 2;
+    [invocation setArgument:&a atIndex:2];
+//    [invocation retainArguments];
+    [invocation invoke];
+}
+- (void)_test_invocation_print:(int)a{
+    NSLog(@"%s a=%d",__func__,a);
+}
+
+#pragma mark -- category
+- (void)_test_category_addProp{
+    TestRuntimeForward *obj = [TestRuntimeForward new];
+    obj.prop = @"hhh";
+    NSLog(@"prop%@",obj.prop);
+}
+
+#pragma mark -- json to model
+- (void)_test_jsonToModel{
+    NSDictionary *dict = @{@"prop":@"value",@"prop2":@"value2",@"prop3":@"value3"};
+    
+    TestRuntimeForward *model = [TestRuntimeForward new];
+
+    unsigned int count = 0;
+    objc_property_t *propList =  class_copyPropertyList(objc_getClass("TestRuntimeForward"), &count);
+    for(int i = 0 ; i < count;i++){
+        objc_property_t prop = propList[i];
+        const char *name = property_getName(prop);
+        NSString *nameStr = [NSString stringWithCString:name encoding:NSUTF8StringEncoding];
+        id value = [dict valueForKey:nameStr];
+        if(value){
+            [model setValue:value forKey:nameStr];
+        }
+    }
+    free(propList);
+    NSLog(@"model:%@",model);
+}
 @end

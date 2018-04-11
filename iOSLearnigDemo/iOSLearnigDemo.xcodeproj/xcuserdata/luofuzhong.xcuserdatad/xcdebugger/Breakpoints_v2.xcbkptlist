@@ -41,13 +41,13 @@
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "iOSLearnigDemo/Objective-C/runtime/RuntimeViewController.m"
-            timestampString = "544275601.842857"
+            filePath = "iOSLearnigDemo/Objective-C/runtime/TestRuntimeForward.m"
+            timestampString = "544783212.852228"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "52"
-            endingLineNumber = "52"
-            landmarkName = "-_test_metaClass2"
+            startingLineNumber = "72"
+            endingLineNumber = "72"
+            landmarkName = "-methodSignatureForSelector:"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -57,30 +57,14 @@
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "iOSLearnigDemo/Objective-C/runtime/RuntimeViewController.m"
-            timestampString = "544275601.8434809"
+            filePath = "iOSLearnigDemo/Objective-C/runtime/TestRuntimeForward.m"
+            timestampString = "544783212.85234"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "54"
-            endingLineNumber = "54"
-            landmarkName = "-_test_metaClass2"
+            startingLineNumber = "34"
+            endingLineNumber = "34"
+            landmarkName = "+load"
             landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "iOSLearnigDemo/Objective-C/runtime/RuntimeViewController.m"
-            timestampString = "544275601.843878"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "69"
-            endingLineNumber = "69"
-            landmarkName = "ReportFunction"
-            landmarkType = "9">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

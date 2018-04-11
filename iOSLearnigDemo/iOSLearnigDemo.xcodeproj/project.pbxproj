@@ -12,6 +12,11 @@
 		3C0BEED12064A4B70022055C /* ListNode.c in Sources */ = {isa = PBXBuildFile; fileRef = 3C0BEECE2064A3D40022055C /* ListNode.c */; };
 		3C0BEED22064AAD40022055C /* Stack.c in Sources */ = {isa = PBXBuildFile; fileRef = 3C0BEEC82064A3930022055C /* Stack.c */; };
 		3C0BEED52064E2080022055C /* StringArrayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C0BEED42064E2080022055C /* StringArrayViewController.m */; };
+		3C35BF9A20761E1900066B05 /* TestRuntimeForward.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C35BF9920761E1900066B05 /* TestRuntimeForward.m */; };
+		3C35BF9D2078738700066B05 /* TestRuntimeForward+category.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C35BF9C2078738700066B05 /* TestRuntimeForward+category.m */; };
+		3C35BFA020789D7100066B05 /* CategoryObj.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C35BF9F20789D7100066B05 /* CategoryObj.m */; };
+		3C35BFA62078B3CC00066B05 /* CategoryObj+Test2.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C35BFA52078B3CC00066B05 /* CategoryObj+Test2.m */; };
+		3C35BFA72078B42900066B05 /* CategoryObj+Test.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C35BFA22078A02000066B05 /* CategoryObj+Test.m */; };
 		3C398FCA206DE85C008BDFB3 /* FJReplayKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C398FC9206DE85C008BDFB3 /* FJReplayKit.m */; };
 		3C968A352061FE53002BAC80 /* AlgoTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C968A342061FE53002BAC80 /* AlgoTableViewController.m */; };
 		3C9C37242068D85500F3ECD9 /* FunctionalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C9C37232068D85500F3ECD9 /* FunctionalViewController.m */; };
@@ -50,6 +55,16 @@
 		3C0BEECE2064A3D40022055C /* ListNode.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = ListNode.c; sourceTree = "<group>"; };
 		3C0BEED32064E2080022055C /* StringArrayViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StringArrayViewController.h; sourceTree = "<group>"; };
 		3C0BEED42064E2080022055C /* StringArrayViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StringArrayViewController.m; sourceTree = "<group>"; };
+		3C35BF9820761E1900066B05 /* TestRuntimeForward.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestRuntimeForward.h; sourceTree = "<group>"; };
+		3C35BF9920761E1900066B05 /* TestRuntimeForward.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestRuntimeForward.m; sourceTree = "<group>"; };
+		3C35BF9B2078738700066B05 /* TestRuntimeForward+category.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TestRuntimeForward+category.h"; sourceTree = "<group>"; };
+		3C35BF9C2078738700066B05 /* TestRuntimeForward+category.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "TestRuntimeForward+category.m"; sourceTree = "<group>"; };
+		3C35BF9E20789D7100066B05 /* CategoryObj.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CategoryObj.h; sourceTree = "<group>"; };
+		3C35BF9F20789D7100066B05 /* CategoryObj.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CategoryObj.m; sourceTree = "<group>"; };
+		3C35BFA12078A02000066B05 /* CategoryObj+Test.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CategoryObj+Test.h"; sourceTree = "<group>"; };
+		3C35BFA22078A02000066B05 /* CategoryObj+Test.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "CategoryObj+Test.m"; sourceTree = "<group>"; };
+		3C35BFA42078B3CC00066B05 /* CategoryObj+Test2.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CategoryObj+Test2.h"; sourceTree = "<group>"; };
+		3C35BFA52078B3CC00066B05 /* CategoryObj+Test2.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "CategoryObj+Test2.m"; sourceTree = "<group>"; };
 		3C398FC8206DE85C008BDFB3 /* FJReplayKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FJReplayKit.h; sourceTree = "<group>"; };
 		3C398FC9206DE85C008BDFB3 /* FJReplayKit.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FJReplayKit.m; sourceTree = "<group>"; };
 		3C968A1C205A74B6002BAC80 /* blockTest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = blockTest.h; sourceTree = "<group>"; };
@@ -177,6 +192,12 @@
 			children = (
 				3C9C3730206B2ECF00F3ECD9 /* CategoryViewController.h */,
 				3C9C3731206B2ECF00F3ECD9 /* CategoryViewController.m */,
+				3C35BF9E20789D7100066B05 /* CategoryObj.h */,
+				3C35BF9F20789D7100066B05 /* CategoryObj.m */,
+				3C35BFA12078A02000066B05 /* CategoryObj+Test.h */,
+				3C35BFA22078A02000066B05 /* CategoryObj+Test.m */,
+				3C35BFA42078B3CC00066B05 /* CategoryObj+Test2.h */,
+				3C35BFA52078B3CC00066B05 /* CategoryObj+Test2.m */,
 			);
 			path = categoryLearning;
 			sourceTree = "<group>";
@@ -205,6 +226,10 @@
 			children = (
 				3CC579CE2070EAE400295FF0 /* RuntimeViewController.h */,
 				3CC579CF2070EAE400295FF0 /* RuntimeViewController.m */,
+				3C35BF9820761E1900066B05 /* TestRuntimeForward.h */,
+				3C35BF9920761E1900066B05 /* TestRuntimeForward.m */,
+				3C35BF9B2078738700066B05 /* TestRuntimeForward+category.h */,
+				3C35BF9C2078738700066B05 /* TestRuntimeForward+category.m */,
 			);
 			path = runtime;
 			sourceTree = "<group>";
@@ -370,6 +395,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3C35BFA72078B42900066B05 /* CategoryObj+Test.m in Sources */,
+				3C35BFA62078B3CC00066B05 /* CategoryObj+Test2.m in Sources */,
+				3C35BF9D2078738700066B05 /* TestRuntimeForward+category.m in Sources */,
+				3C35BFA020789D7100066B05 /* CategoryObj.m in Sources */,
 				3CCB059620590F7700AF6760 /* main.m in Sources */,
 				3C9C3732206B2ECF00F3ECD9 /* CategoryViewController.m in Sources */,
 				3CCB05AE205A5B8000AF6760 /* ObjectiveCTableViewController.m in Sources */,
@@ -378,6 +407,7 @@
 				3CCB058820590F7700AF6760 /* AppDelegate.m in Sources */,
 				3C9C3738206C7AD600F3ECD9 /* MRCObject.m in Sources */,
 				3C9C3735206B2F4E00F3ECD9 /* AutoreleasePoolController.m in Sources */,
+				3C35BF9A20761E1900066B05 /* TestRuntimeForward.m in Sources */,
 				3C9C3742206C8E3500F3ECD9 /* MRCSubTestObject.m in Sources */,
 				3C0BEED12064A4B70022055C /* ListNode.c in Sources */,
 				3C9C37272069EEFA00F3ECD9 /* SortViewController.m in Sources */,
