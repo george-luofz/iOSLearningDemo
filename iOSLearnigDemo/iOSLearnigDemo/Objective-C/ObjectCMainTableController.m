@@ -11,7 +11,7 @@
 #import "CategoryViewController.h"
 #import "AutoreleasePoolController.h"
 #import "MemoryManageViewController.h"
-#import "RuntimeViewController.h"
+#import "RuntimeTestViewController.h"
 
 @interface ObjectCMainTableController ()
 @property (nonatomic, nullable, strong) NSArray *dataSource;
@@ -54,7 +54,7 @@
     }else if (indexPath.row == 3){
         vc = [MemoryManageViewController new];
     }else if (indexPath.row == 4){
-        vc = [RuntimeViewController new];
+        vc = [RuntimeTestViewController new];
     }
     if(vc){
         vc.title = self.dataSource[indexPath.row];

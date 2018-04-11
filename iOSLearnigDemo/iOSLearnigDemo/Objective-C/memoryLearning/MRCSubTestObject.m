@@ -18,5 +18,6 @@
 - (void)dealloc{
 //    self.data = nil;
     [super dealloc];
+    
 }
 @end
