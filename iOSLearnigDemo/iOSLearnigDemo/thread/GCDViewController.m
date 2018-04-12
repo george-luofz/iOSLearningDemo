@@ -71,4 +71,8 @@
     });
 }
 
+#pragma mark -- 锁
+- (void)_test_pthread_mutex{
+//    PTHREAD_MUTEX_INITIALIZER;
+}
 @end

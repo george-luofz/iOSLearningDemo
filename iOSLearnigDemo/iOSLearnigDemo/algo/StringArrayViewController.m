@@ -193,7 +193,7 @@ struct BinaryNode *construnctCore(int *pre, int *mid, int length){
         mid_left[i] = mid[i];
     }
     // 5. 构建右子树
-    for(int i = rootIndex+1, j=0 ; i < length;i++){
+    for(int i = rootIndex + 1, j=0 ; i < length;i++){
         pre_right[j] = pre[i];
         mid_right[j] = mid[i];
     }
