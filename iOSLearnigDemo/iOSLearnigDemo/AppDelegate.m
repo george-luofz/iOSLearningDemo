@@ -8,6 +8,9 @@
 
 #import "AppDelegate.h"
 #import "FJReplayKit.h"
+#import "MyWindow.h"
+#import "MainTableViewController.h"
+
 @interface AppDelegate ()
 
 @end
@@ -21,6 +24,11 @@
     // Override point for customization after application launch.
     // 开启屏幕录制
 //    [[FJReplayKit sharedReplay] catreButton:YES];
+    self.window = [[MyWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
+    UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:[MainTableViewController new]];
+    self.window.rootViewController = nav;
+    [self.window makeKeyAndVisible];
+    
     return YES;
 }
 
@@ -51,5 +59,22 @@
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
 }
 
+//- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
+//    NSLog(@"%s",__func__);
+////    [super touchesBegan:touches withEvent:event];
+//}
+
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
+    NSLog(@"%s",__func__);
+}
+- (void)touchesMoved:(NSSet<UITouch *> *)touches withEvent:(nullable UIEvent *)event{
+    NSLog(@"%s",__func__);
+}
+- (void)touchesEnded:(NSSet<UITouch *> *)touches withEvent:(nullable UIEvent *)event{
+    NSLog(@"%s",__func__);
+}
+- (void)touchesCancelled:(NSSet<UITouch *> *)touches withEvent:(nullable UIEvent *)event{
+    NSLog(@"%s",__func__);
+}
 
 @end
