@@ -32,21 +32,29 @@ struct Stack{
     // Do any additional setup after loading the view.
     [self _test_pointer];
 //    [self _testPrintfLinkList];
-    // 1.结点个数
+    // 1. 结点个数
     Node *header = [self initALinkList];
 //    NSLog(@"header1:%p",header);
     NSLog(@"list num = %d",_getNodeNum(header)); //考虑是否有环？、、
 //    NSLog(@"header2:%p",header);
     // 2. 反转链表
-//    invertListNode(header);
+    invertListNode(header);
     // 3. k个结点
-    Node *kNode = NodeOfIndex(2, header);
+//    Node *kNode = NodeOfIndex(2, header);
+    Node *kNode = lastKNode(header, 2);
     NSLog(@"倒数第 %d 个结点值为:%d",2,kNode? kNode->value : -1);
-    // 4.中间结点
-    Node *middleNode = nodeOfMiddleIndex(header);
-    NSLog(@"中间结点值为:%d",middleNode?middleNode->value:-1);
-    // 5.是否有环
+    // 4. 中间结点
+    Node *midNode = middleNode(header);
+    NSLog(@"中间结点值为:%d",midNode?midNode->value:-1);
+    // 5. 合并两个有序链表
+    [self _test_merge_sortList];
+    // 6. 是否有环
     NSLog(@"是否有环:%d",nodeHasCircle(header));
+    
+    // 7. 是否相交
+    [self _test_twoListHasCross];
+    // 8. 环入口
+    [self _test_cirleStartNode];
 }
 #pragma mark -- 指针学习
 - (void)_test_pointer{
@@ -55,7 +63,106 @@ struct Stack{
     p = &a;
     NSLog(@"%p,%p",p,&p);
 }
+- (void)_test_merge_sortList{
+    Node *node1 = malloc(sizeof(Node));
+    node1->value = 1;
+    Node *node2 = malloc(sizeof(Node));
+    node2->value = 2;
+    Node *node3= malloc(sizeof(Node));
+    node3->value = 3;
+    Node *node4 = malloc(sizeof(Node));
+    node4->value = 6;
+    Node *node5 = malloc(sizeof(Node));
+    node5->value = 8;
+    node1->next = node2;
+    node2->next = node3;
+    node3->next = node4;
+    node4->next = node5;
+    
+    Node *node11 = malloc(sizeof(Node));
+    node11->value = 3;
+    Node *node22 = malloc(sizeof(Node));
+    node22->value = 5;
+    Node *node33= malloc(sizeof(Node));
+    node33->value = 7;
+    Node *node44 = malloc(sizeof(Node));
+    node44->value = 9;
+    Node *node55 = malloc(sizeof(Node));
+    node55->value = 10;
+    
+    node11->next = node22;
+    node22->next = node33;
+    node33->next = node44;
+    node44->next = node55;
+    
+    // 打印一下
+    Node *newNode = mergeTwoSortList(node1, node11);
+    if(newNode == NULL) return;
+    while (newNode->next) {
+        NSLog(@"node:%d",newNode->value);
+        newNode = newNode->next;
+    }
+}
 
+- (void)_test_twoListHasCross{
+    Node *node1 = malloc(sizeof(Node));
+    node1->value = 1;
+    Node *node2 = malloc(sizeof(Node));
+    node2->value = 2;
+    Node *node3= malloc(sizeof(Node));
+    node3->value = 3;
+    node1->next = node2;
+    node2->next = node3;
+    
+    Node *node11 = malloc(sizeof(Node));
+    node11->value = 3;
+    Node *node22 = malloc(sizeof(Node));
+    node22->value = 5;
+    Node *node33= malloc(sizeof(Node));
+    node33->value = 7;
+    
+    node11->next = node22;
+    node22->next = node33;
+    node33->next = node2;
+    
+    // 判断相交
+    if(nodeCross(node1, node11)){
+        NSLog(@"has cross");
+    }else{
+        NSLog(@"has not crossed");
+    }
+    // 2.找交点
+    Node *node = crossNode(node1, node11);
+    if(node){
+        NSLog(@"cross %d",node->value);
+    }else{
+        NSLog(@"cross null");
+    }
+}
+// 测试入口点
+- (void)_test_cirleStartNode{
+    Node *node1 = malloc(sizeof(Node));
+    node1->value = 1;
+    Node *node2 = malloc(sizeof(Node));
+    node2->value = 2;
+    Node *node3= malloc(sizeof(Node));
+    node3->value = 3;
+    Node *node4 = malloc(sizeof(Node));
+    node4->value = 4;
+    Node *node5 = malloc(sizeof(Node));
+    node5->value = 5;
+    node1->next = node2;
+    node2->next = node3;
+    node3->next = node4;
+    node4->next = node5;
+    node5->next = node2; //入口点
+    Node *node = circleStartNode(node1);
+    if(node){
+        NSLog(@"环入口:%d",node->value);
+    }else{
+        NSLog(@"无环");
+    }
+}
 #pragma mark -- link
 - (Node *)initALinkList{
     Node *node1 = malloc(sizeof(Node));
@@ -137,7 +244,7 @@ int _getNodeNum(Node * header){
     }
     return num;
 }
-
+#pragma mark -- 反转链表
 void invertListNode(Node *header){
     // 1.如果是空或者如果只有一个，直接return
     if(header == NULL || header->next == NULL){
@@ -157,12 +264,18 @@ void invertListNode(Node *header){
 //        NewHeaderNode = tempNode;
         
 //         1.取当前头结点  ？？？为啥2和3要调换顺序
+//        Node *tempNode = currentHeadNode;
+//        // 3.当前头结点指针后移
+//        currentHeadNode = currentHeadNode->next;
+//        // 2.当前头结点指向新头结点
+//        tempNode->next = NewHeaderNode; //这个时候currentHeadNode->next变成NULL，所以要赶紧把currentHeadNode指走
+//        // 4.新头结点指针后移
+//        NewHeaderNode = tempNode;
+        
+        
         Node *tempNode = currentHeadNode;
-        // 3.当前头结点指针后移
+        tempNode->next = NewHeaderNode;
         currentHeadNode = currentHeadNode->next;
-        // 2.当前头结点指向新头结点
-        tempNode->next = NewHeaderNode; //这个时候currentHeadNode->next变成NULL，所以要赶紧把currentHeadNode指走
-        // 4.新头结点指针后移
         NewHeaderNode = tempNode;
         
     }
@@ -173,41 +286,98 @@ void invertListNode(Node *header){
         headerNode = headerNode ->next;
     }
 }
-// 双指针法，判断有环、倒数第n个结点、第一个相交的结点
-#pragma mark --
-// 倒数第k个结点
-// 思路：用双指针解法，头指针先向前移动k个结点，然后头尾指针一起移动，头指针移动到尾部时，尾指针指向的就是
-Node *NodeOfIndex(int k, Node *header){
-    if(header == NULL || k < 0) return NULL;
-    Node *before = header;
-    while (before && k > 0) { // 移动k个结点
-        before = before -> next;
-        k--;
-    }
-    if(k > 0) return NULL; //说明没这么多结点
-    Node *behind = header;
-    while (before) {
-        before = before->next;
-        behind = behind->next;
-    }
-    return behind;
-}
 
-// 中间结点
-Node *nodeOfMiddleIndex(Node *header){
+#pragma mark -- 倒数第k个结点
+Node *lastKNode(Node *header, int k){
+    if(k < 0 || header == NULL) return NULL;
+    // 1.先遍历到第k个结点
+    Node *tempHeader = header;
+    while (tempHeader && k > 0) {
+        k--;
+        tempHeader = tempHeader->next;
+    }
+    if(k > 0) return NULL;
+    // 2.再来一个指针从头遍历，第一个遍历完毕，第二个就是
+    Node *tempHeader2 = header;
+    while (tempHeader) {
+        tempHeader = tempHeader->next;
+        tempHeader2 = tempHeader2->next;
+    }
+    return tempHeader2;
+}
+#pragma mark -- 中间结点
+Node *middleNode(Node *header){
+    // 1.合法性判断
     if(header == NULL) return NULL;
-    if(header->next == NULL) return header;  //只有一个结点
-    if(header->next->next == NULL) return header; //只有两个结点
+    if(header->next == NULL) return header;
+    if(header->next->next == NULL) return header;
+    // 2.使用快慢指针
     Node *before = header;
     Node *behind = header;
-    while (before->next) { //一个走两步，一个走一步
+    while (before->next) {
         before = before->next;
         behind = behind->next;
-        if(before) before = before->next;
+        if(before){
+            before = before->next;
+        }
     }
     return behind;
 }
-// 链表有环
+#pragma mark -- 合并两个有序链表
+// 思路：从头到尾遍历两个链表，谁的值小新链表的当前结点就是谁
+Node * mergeTwoSortList(Node *header1, Node *header2){
+    // 1.判断
+    if(header1 == NULL) return header2;
+    if(header2 == NULL) return header1;
+    
+    // 2.准备合并，先找第一个节点，要不然还得在while循环中判断；所以单拿出来操作
+    Node *newHeader = NULL;
+    if(header1->value < header2->value){
+        newHeader = header1;
+        header1 = header1->next;
+    }else if(header1->value > header2->value){
+        newHeader = header2;
+        header2 = header2->next;
+    }else{
+        newHeader = header1;
+        newHeader->next = header2;
+        header1 = header1->next;
+        header2 = header2->next;
+    }
+    Node *tempNode = newHeader;
+    // 3.开始合并
+    while (header1->next && header2->next) {
+        if(header1->value < header2->value){
+            tempNode->next = header1;
+            tempNode = tempNode->next;
+            header1 = header1->next;
+        }else if(header1->value > header2->value){
+            tempNode->next = header2;
+            tempNode = tempNode->next;
+            header2 = header2 -> next;
+        }else{
+            // 新链表指向header1结点
+            tempNode->next = header1;
+            // header1下移
+            header1 = header1->next;
+            // 新链表头指针下移
+            tempNode = tempNode->next;
+            // 同上，操作header2头结点
+            tempNode->next = header2;
+            header2 = header2->next;
+            tempNode = tempNode->next;
+        }
+    }
+    // 4. 合并剩余的部分
+    if(header1){
+        tempNode->next = header1;
+    }
+    if(header2){
+        tempNode->next = header2;
+    }
+    return newHeader;
+}
+#pragma mark -- 链表有环
 bool nodeHasCircle(Node *header){
     if(header == NULL) return false;
     Node *before = header;
@@ -222,16 +392,118 @@ bool nodeHasCircle(Node *header){
     }
     return false;
 }
+#pragma mark -- 链表相交
 // 链表相交：
 // 1.两个链表都无环
 // 2.有一个链表有环
 // 3.两个链表都有环
-
-// 有序链表合并
-Node* mergeTwoSortNode(Node *header1, Node *header2){
+bool nodeCross(Node *node1,Node *node2){
+    // 1.合法判断
+    if(node1 == NULL || node2 == NULL) return false;
+    // 2.分别遍历到尾部，比较尾部是否相等
+    Node *header1 = node1;
+    Node *header2 = node2;
+    while (header1->next) { //判断尾部
+        header1 = header1->next;
+    }
+    while (header2->next) {
+        header2 = header2->next;
+    }
+    if(header1 == header2){
+        return true;
+    }
     
+    return false;
+//    // 3. 将第二个链表指向第一个连标点尾部
+//    Node *header1 = node1;
+//    while (header1->next) {
+//        header1 = header1->next;
+//    }
+//    header1->next = node2;
+//    return nodeHasCircle(node2);
+}
+
+#pragma mark -- 链表第一个交点
+// 思路：
+// 由于两个链表相交，则从交点到尾部都相等；链表的长度之差为：len1-len2 = k，则长链表先走k部之后，再同时走，必然相遇
+Node *crossNode(Node *node1,Node *node2){
+    if(node1 == NULL || node2 == NULL) return NULL;
+    // 1.计算长度
+    int len1 = 0;
+    int len2 = 0;
+    Node *header1 = node1;
+    Node *header2 = node2;
+    while (header1) {
+        header1 = header1->next;
+        len1++;
+    }
+    while (header2) {
+        header2 = header2->next;
+        len2++;
+    }
+    // 长度为k
+    int k = len2>len1? len2-len1:len1-len2;
+    // 2.分情况遍历
+    if(len2 > len1){
+        // 2.1 长链表先走k部
+        while (k > 0) {
+            node2 = node2->next;
+            k--;
+        }
+        // 2.2 两个链表同时走，啥时候相等啥时候就是交点
+        while (node1 && node2) {
+            if(node1 == node2){
+                return node1;
+            }
+            node2 = node2->next;
+            node1 = node1->next;
+        }
+    }else{
+        while (k > 0) {
+            node1 = node1->next;
+            k--;
+        }
+        while (node1 && node2) {
+            if(node1 == node2){
+                return node2;
+            }
+            node2 = node2->next;
+            node1 = node1->next;
+        }
+    }
+    return NULL;
+}
+#pragma mark -- 链表环入口
+Node *circleStartNode(Node *header){
+    if(header == NULL) return NULL;
+    // 1.找到相遇点
+    Node *before = header;
+    Node *behind = header;
+    BOOL flag = false;//标记是否有环
+    while (before) {
+        before = before->next;
+        if(before){
+            before = before->next;
+        }
+        behind = behind->next;
+        if(before == behind){
+            flag = true;
+            break;
+        }
+    }
+    // 无环，直接返回
+    if(flag == false) return NULL;
+    // 2.定义两个指针，再次遍历
+    Node *startNode = header;
+    Node *meetNode = before;
+    while (startNode) {
+        if(startNode == meetNode){
+            return startNode;
+        }
+        startNode = startNode->next;
+        meetNode = meetNode->next;
+    }
     return NULL;
 }
 
-//
 @end

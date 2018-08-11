@@ -21,6 +21,7 @@
     
     [self test_barrier_async];
     
+    [self _test_sync];
 }
 
 #pragma mark -- 多线程
@@ -74,5 +75,45 @@
 #pragma mark -- 锁
 - (void)_test_pthread_mutex{
 //    PTHREAD_MUTEX_INITIALIZER;
+    
+    NSCondition *condition = [[NSCondition alloc] init];
+    
+    NSConditionLock *conditionlock = [[NSConditionLock alloc] initWithCondition:0];
+    [conditionlock tryLockWhenCondition:0];
+    
+    [conditionlock unlockWithCondition:1];
+}
+
+- (void)_test_sync{
+    NSNumber *number = @(1);
+    NSNumber *thisPtrWillGoToNil = number;
+    
+    @synchronized (thisPtrWillGoToNil) {
+        /**
+         * Here we set the thing that we're synchronizing on to `nil`. If
+         * implemented naively, the object would be passed to `objc_sync_enter`
+         * and `nil` would be passed to `objc_sync_exit`, causing a lock to
+         * never be released.
+         */
+        thisPtrWillGoToNil = nil;
+    }
+    
+    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_BACKGROUND, 0), ^ {
+        
+        NSCAssert(![NSThread isMainThread], @"Must be run on background thread");
+        
+        /**
+         * If, as mentioned in the comment above, the synchronized lock is never
+         * released, then we expect to wait forever below as we try to acquire
+         * the lock associated with `number`.
+         *
+         * This doesn't happen, so we conclude that `@synchronized` must deal
+         * with this correctly.
+         */
+        @synchronized (number) {
+            NSLog(@"This line does indeed get printed to stdout");
+        }
+        
+    });
 }
 @end
