@@ -277,15 +277,13 @@ void invertListNode(Node *header){
         NewHeaderNode = tempNode;
         
         //
-        `1NFDÅQ=[]\
-       ?˘ b. 输出一遍
     Node *headerNode = NewHeaderNode;
     while (headerNode != NULL ) {
         printf("value:%d",headerNode->value);
         headerNode = headerNode ->next;
     }
 }
-
+}
 #pragma mark -- 倒数第k个结点
 Node *lastKNode(Node *header, int k){
     if(k < 0 || header == NULL) return NULL;

@@ -11,6 +11,7 @@
 #import "ObjectCMainTableController.h"
 #import "AlgoTableViewController.h"
 #import "UITestTableViewController.h"
+#import "ViewTestController.h"
 
 @interface MainTableViewController ()
 @property (nonatomic, strong) NSArray   *dataSource;
@@ -51,6 +52,8 @@
         vc = [ThreadTableViewController new];
     }else if(indexPath.row == 4){
         vc = [AlgoTableViewController new];
+    }else if (indexPath.row == 6){
+        
     }
     if(vc){
         vc.title = self.dataSource[indexPath.row];

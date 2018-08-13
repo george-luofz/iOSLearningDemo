@@ -7,8 +7,7 @@
 //
 
 #import "ViewTestController.h"
-#import "ParentView.h"
-#import "childView.h"
+
 
 @interface ViewTestController ()<UIGestureRecognizerDelegate>
 
@@ -19,26 +18,12 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    
-    ParentView *pView = [[ParentView alloc] initWithFrame:CGRectMake(0, 64, 100, 50)];
-    [self.view addSubview:pView];
-    pView.backgroundColor = [UIColor blueColor];
-    
-    childView *cView = [[childView alloc] initWithFrame:CGRectMake(0, 0, 50, 20)];
-    cView.backgroundColor = [UIColor grayColor];
-    [pView addSubview:cView];
-    
-    
-    UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
-    btn.frame = CGRectMake(0, 140, 30, 30);
-    [self.view addSubview:btn];
-    [btn setBackgroundColor:[UIColor greenColor]];
-    [btn addTarget:self action:@selector(btnClick) forControlEvents:UIControlEventTouchUpInside];
-    
-    UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tap)];
-    tap.delegate = self;
-    [btn addGestureRecognizer:tap];
-    
+
+    // openURL 不支持传空格，要转换成特殊字符
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"https://vans.com.cn/wap/article-2775.html?utm_source=Miaopai&utm_medium=Homepage_4-1&utm_campaign=Vans2018 Brand"]];
+    });
+
 }
 
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{

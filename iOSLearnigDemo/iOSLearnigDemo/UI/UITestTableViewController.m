@@ -9,6 +9,7 @@
 #import "UITestTableViewController.h"
 #import "ViewTestController.h"
 #import "CoreTextController.h"
+#import "HtmlToPdfViewController.h"
 
 @interface UITestTableViewController ()
 @property (nonatomic, strong) NSArray   *dataSource;
@@ -19,7 +20,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.dataSource = @[@"view",@"CoreText"];
+    self.dataSource = @[@"view",@"CoreText",@"html->pdf"];
     
     UIView *view = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 10, 10)];
     [self.view addSubview:view];
@@ -54,6 +55,8 @@
         vc = [ViewTestController new];
     }else if (indexPath.row == 1){
         vc = [CoreTextController new];
+    }else if (indexPath.row == 2){
+        vc = [HtmlToPdfViewController new];
     }
     vc.title = self.dataSource[indexPath.row];
     [self pushToVc:vc];

@@ -12,15 +12,19 @@
 		3C0BEED12064A4B70022055C /* ListNode.c in Sources */ = {isa = PBXBuildFile; fileRef = 3C0BEECE2064A3D40022055C /* ListNode.c */; };
 		3C0BEED22064AAD40022055C /* Stack.c in Sources */ = {isa = PBXBuildFile; fileRef = 3C0BEEC82064A3930022055C /* Stack.c */; };
 		3C0BEED52064E2080022055C /* StringArrayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C0BEED42064E2080022055C /* StringArrayViewController.m */; };
-		3C29803E2088C06800AFA2A4 /* MyWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C29803D2088C06800AFA2A4 /* MyWindow.m */; };
-		3C2980412088C0B000AFA2A4 /* ParentView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C2980402088C0B000AFA2A4 /* ParentView.m */; };
-		3C2980442088C0BF00AFA2A4 /* childView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C2980432088C0BF00AFA2A4 /* childView.m */; };
 		3C35BF9A20761E1900066B05 /* TestRuntimeForward.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C35BF9920761E1900066B05 /* TestRuntimeForward.m */; };
 		3C35BF9D2078738700066B05 /* TestRuntimeForward+category.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C35BF9C2078738700066B05 /* TestRuntimeForward+category.m */; };
 		3C35BFA020789D7100066B05 /* CategoryObj.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C35BF9F20789D7100066B05 /* CategoryObj.m */; };
 		3C35BFA62078B3CC00066B05 /* CategoryObj+Test2.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C35BFA52078B3CC00066B05 /* CategoryObj+Test2.m */; };
 		3C35BFA72078B42900066B05 /* CategoryObj+Test.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C35BFA22078A02000066B05 /* CategoryObj+Test.m */; };
 		3C398FCA206DE85C008BDFB3 /* FJReplayKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C398FC9206DE85C008BDFB3 /* FJReplayKit.m */; };
+		3C71C1C9211D6BEE00132B60 /* BaseTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C71C1C8211D6BEE00132B60 /* BaseTableViewController.m */; };
+		3C71C1CC211D6C7000132B60 /* HtmlToPdfViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C71C1CB211D6C7000132B60 /* HtmlToPdfViewController.m */; };
+		3C71C1D5211D6DA400132B60 /* BNHtmlPdfKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C71C1D4211D6DA300132B60 /* BNHtmlPdfKit.m */; };
+		3C71C1D8211D6FA600132B60 /* 1.html in Resources */ = {isa = PBXBuildFile; fileRef = 3C71C1D7211D6FA600132B60 /* 1.html */; };
+		3C71C1E0212164F400132B60 /* NetworkRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C71C1DF212164F400132B60 /* NetworkRequest.m */; };
+		3C71C1E321217E2D00132B60 /* NetworkRequsetTestController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C71C1E221217E2D00132B60 /* NetworkRequsetTestController.m */; };
+		3C71C1E62121802E00132B60 /* APIRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C71C1E52121802E00132B60 /* APIRequest.m */; };
 		3C8206C72073633B009BE5A6 /* UITestTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C8206C62073633B009BE5A6 /* UITestTableViewController.m */; };
 		3C8206CA207363CE009BE5A6 /* ViewTestController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C8206C9207363CE009BE5A6 /* ViewTestController.m */; };
 		3C8206CE207475A8009BE5A6 /* RuntimeTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C8206CD207475A8009BE5A6 /* RuntimeTestViewController.m */; };
@@ -63,11 +67,8 @@
 		3C0BEECE2064A3D40022055C /* ListNode.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = ListNode.c; sourceTree = "<group>"; };
 		3C0BEED32064E2080022055C /* StringArrayViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StringArrayViewController.h; sourceTree = "<group>"; };
 		3C0BEED42064E2080022055C /* StringArrayViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StringArrayViewController.m; sourceTree = "<group>"; };
-		3C29803C2088C06800AFA2A4 /* MyWindow.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyWindow.h; sourceTree = "<group>"; };
 		3C29803D2088C06800AFA2A4 /* MyWindow.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyWindow.m; sourceTree = "<group>"; };
-		3C29803F2088C0B000AFA2A4 /* ParentView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ParentView.h; sourceTree = "<group>"; };
 		3C2980402088C0B000AFA2A4 /* ParentView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ParentView.m; sourceTree = "<group>"; };
-		3C2980422088C0BF00AFA2A4 /* childView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = childView.h; sourceTree = "<group>"; };
 		3C2980432088C0BF00AFA2A4 /* childView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = childView.m; sourceTree = "<group>"; };
 		3C35BF9820761E1900066B05 /* TestRuntimeForward.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestRuntimeForward.h; sourceTree = "<group>"; };
 		3C35BF9920761E1900066B05 /* TestRuntimeForward.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestRuntimeForward.m; sourceTree = "<group>"; };
@@ -81,6 +82,19 @@
 		3C35BFA52078B3CC00066B05 /* CategoryObj+Test2.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "CategoryObj+Test2.m"; sourceTree = "<group>"; };
 		3C398FC8206DE85C008BDFB3 /* FJReplayKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FJReplayKit.h; sourceTree = "<group>"; };
 		3C398FC9206DE85C008BDFB3 /* FJReplayKit.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FJReplayKit.m; sourceTree = "<group>"; };
+		3C71C1C7211D6BEE00132B60 /* BaseTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseTableViewController.h; sourceTree = "<group>"; };
+		3C71C1C8211D6BEE00132B60 /* BaseTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseTableViewController.m; sourceTree = "<group>"; };
+		3C71C1CA211D6C7000132B60 /* HtmlToPdfViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HtmlToPdfViewController.h; sourceTree = "<group>"; };
+		3C71C1CB211D6C7000132B60 /* HtmlToPdfViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HtmlToPdfViewController.m; sourceTree = "<group>"; };
+		3C71C1D3211D6DA300132B60 /* BNHtmlPdfKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BNHtmlPdfKit.h; sourceTree = "<group>"; };
+		3C71C1D4211D6DA300132B60 /* BNHtmlPdfKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BNHtmlPdfKit.m; sourceTree = "<group>"; };
+		3C71C1D7211D6FA600132B60 /* 1.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = 1.html; sourceTree = "<group>"; };
+		3C71C1DE212164F400132B60 /* NetworkRequest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NetworkRequest.h; sourceTree = "<group>"; };
+		3C71C1DF212164F400132B60 /* NetworkRequest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NetworkRequest.m; sourceTree = "<group>"; };
+		3C71C1E121217E2D00132B60 /* NetworkRequsetTestController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NetworkRequsetTestController.h; sourceTree = "<group>"; };
+		3C71C1E221217E2D00132B60 /* NetworkRequsetTestController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NetworkRequsetTestController.m; sourceTree = "<group>"; };
+		3C71C1E42121802E00132B60 /* APIRequest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = APIRequest.h; sourceTree = "<group>"; };
+		3C71C1E52121802E00132B60 /* APIRequest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = APIRequest.m; sourceTree = "<group>"; };
 		3C8206C52073633B009BE5A6 /* UITestTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UITestTableViewController.h; sourceTree = "<group>"; };
 		3C8206C62073633B009BE5A6 /* UITestTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UITestTableViewController.m; sourceTree = "<group>"; };
 		3C8206C8207363CE009BE5A6 /* ViewTestController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewTestController.h; sourceTree = "<group>"; };
@@ -176,6 +190,97 @@
 			path = dataStructure;
 			sourceTree = "<group>";
 		};
+		3C71C1C6211D6BCD00132B60 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				3C71C1C7211D6BEE00132B60 /* BaseTableViewController.h */,
+				3C71C1C8211D6BEE00132B60 /* BaseTableViewController.m */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		3C71C1CE211D6CA100132B60 /* General */ = {
+			isa = PBXGroup;
+			children = (
+				3C71C1D0211D6CB600132B60 /* Lib */,
+				3C71C1CF211D6CA900132B60 /* Categories */,
+			);
+			path = General;
+			sourceTree = "<group>";
+		};
+		3C71C1CF211D6CA900132B60 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				3CCB05A42059182600AF6760 /* UIViewController+Push.h */,
+				3CCB05A52059182600AF6760 /* UIViewController+Push.m */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+		3C71C1D0211D6CB600132B60 /* Lib */ = {
+			isa = PBXGroup;
+			children = (
+				3C71C1D2211D6D9700132B60 /* htmlToPdf */,
+				3C71C1D6211D6DAC00132B60 /* ReplayKit */,
+			);
+			path = Lib;
+			sourceTree = "<group>";
+		};
+		3C71C1D1211D6CF500132B60 /* supporting files */ = {
+			isa = PBXGroup;
+			children = (
+				3CCB058C20590F7700AF6760 /* Main.storyboard */,
+				3CCB059120590F7700AF6760 /* LaunchScreen.storyboard */,
+				3CCB059420590F7700AF6760 /* Info.plist */,
+				3CCB059520590F7700AF6760 /* main.m */,
+				3CCB05A72059189A00AF6760 /* iOSLearningDemo.pch */,
+				3CCB058620590F7700AF6760 /* AppDelegate.h */,
+				3CCB058720590F7700AF6760 /* AppDelegate.m */,
+			);
+			path = "supporting files";
+			sourceTree = "<group>";
+		};
+		3C71C1D2211D6D9700132B60 /* htmlToPdf */ = {
+			isa = PBXGroup;
+			children = (
+				3C71C1D3211D6DA300132B60 /* BNHtmlPdfKit.h */,
+				3C71C1D4211D6DA300132B60 /* BNHtmlPdfKit.m */,
+			);
+			path = htmlToPdf;
+			sourceTree = "<group>";
+		};
+		3C71C1D6211D6DAC00132B60 /* ReplayKit */ = {
+			isa = PBXGroup;
+			children = (
+				3C398FC8206DE85C008BDFB3 /* FJReplayKit.h */,
+				3C398FC9206DE85C008BDFB3 /* FJReplayKit.m */,
+			);
+			path = ReplayKit;
+			sourceTree = "<group>";
+		};
+		3C71C1DC211E84A600132B60 /* Recovered References */ = {
+			isa = PBXGroup;
+			children = (
+				3C2980432088C0BF00AFA2A4 /* childView.m */,
+				3C2980402088C0B000AFA2A4 /* ParentView.m */,
+				3C29803D2088C06800AFA2A4 /* MyWindow.m */,
+			);
+			name = "Recovered References";
+			sourceTree = "<group>";
+		};
+		3C71C1DD212164AC00132B60 /* network */ = {
+			isa = PBXGroup;
+			children = (
+				3C71C1DE212164F400132B60 /* NetworkRequest.h */,
+				3C71C1DF212164F400132B60 /* NetworkRequest.m */,
+				3C71C1E42121802E00132B60 /* APIRequest.h */,
+				3C71C1E52121802E00132B60 /* APIRequest.m */,
+				3C71C1E121217E2D00132B60 /* NetworkRequsetTestController.h */,
+				3C71C1E221217E2D00132B60 /* NetworkRequsetTestController.m */,
+			);
+			path = network;
+			sourceTree = "<group>";
+		};
 		3C8206C420736320009BE5A6 /* UI */ = {
 			isa = PBXGroup;
 			children = (
@@ -184,12 +289,9 @@
 				3C8206C62073633B009BE5A6 /* UITestTableViewController.m */,
 				3C8206C8207363CE009BE5A6 /* ViewTestController.h */,
 				3C8206C9207363CE009BE5A6 /* ViewTestController.m */,
-				3C29803C2088C06800AFA2A4 /* MyWindow.h */,
-				3C29803D2088C06800AFA2A4 /* MyWindow.m */,
-				3C29803F2088C0B000AFA2A4 /* ParentView.h */,
-				3C2980402088C0B000AFA2A4 /* ParentView.m */,
-				3C2980422088C0BF00AFA2A4 /* childView.h */,
-				3C2980432088C0BF00AFA2A4 /* childView.m */,
+				3C71C1CA211D6C7000132B60 /* HtmlToPdfViewController.h */,
+				3C71C1CB211D6C7000132B60 /* HtmlToPdfViewController.m */,
+				3C71C1D7211D6FA600132B60 /* 1.html */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -229,6 +331,7 @@
 		3C9C37212068D83900F3ECD9 /* functionalProgram */ = {
 			isa = PBXGroup;
 			children = (
+				3C71C1DD212164AC00132B60 /* network */,
 				3C9C37222068D85500F3ECD9 /* FunctionalViewController.h */,
 				3C9C37232068D85500F3ECD9 /* FunctionalViewController.m */,
 			);
@@ -294,6 +397,7 @@
 			children = (
 				3CCB058520590F7700AF6760 /* iOSLearnigDemo */,
 				3CCB058420590F7700AF6760 /* Products */,
+				3C71C1DC211E84A600132B60 /* Recovered References */,
 			);
 			sourceTree = "<group>";
 		};
@@ -310,25 +414,15 @@
 			children = (
 				3CCB059C2059142200AF6760 /* MainTableViewController.h */,
 				3CCB059D2059142200AF6760 /* MainTableViewController.m */,
+				3C71C1D1211D6CF500132B60 /* supporting files */,
+				3C71C1CE211D6CA100132B60 /* General */,
+				3C71C1C6211D6BCD00132B60 /* Base */,
 				3C8206C420736320009BE5A6 /* UI */,
 				3C0BEEC62064A37A0022055C /* dataStructure */,
 				3C968A322061FE0D002BAC80 /* algo */,
 				3CCB05AB205A5B5900AF6760 /* Objective-C */,
-				3CCB05A02059152300AF6760 /* image */,
 				3CCB059F2059151600AF6760 /* thread */,
-				3CCB058620590F7700AF6760 /* AppDelegate.h */,
-				3CCB058720590F7700AF6760 /* AppDelegate.m */,
-				3CCB058C20590F7700AF6760 /* Main.storyboard */,
 				3CCB058F20590F7700AF6760 /* Assets.xcassets */,
-				3CCB059120590F7700AF6760 /* LaunchScreen.storyboard */,
-				3CCB059420590F7700AF6760 /* Info.plist */,
-				3CCB059520590F7700AF6760 /* main.m */,
-				3CCB05A42059182600AF6760 /* UIViewController+Push.h */,
-				3CCB05A52059182600AF6760 /* UIViewController+Push.m */,
-				3CCB05A72059189A00AF6760 /* iOSLearningDemo.pch */,
-				3C9C3746206CF2E500F3ECD9 /* testClang.c */,
-				3C398FC8206DE85C008BDFB3 /* FJReplayKit.h */,
-				3C398FC9206DE85C008BDFB3 /* FJReplayKit.m */,
 			);
 			path = iOSLearnigDemo;
 			sourceTree = "<group>";
@@ -342,13 +436,6 @@
 				3CCB05A92059198100AF6760 /* GCDViewController.m */,
 			);
 			path = thread;
-			sourceTree = "<group>";
-		};
-		3CCB05A02059152300AF6760 /* image */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = image;
 			sourceTree = "<group>";
 		};
 		3CCB05AB205A5B5900AF6760 /* Objective-C */ = {
@@ -411,7 +498,7 @@
 				TargetAttributes = {
 					3CCB058220590F7700AF6760 = {
 						CreatedOnToolsVersion = 9.2;
-						ProvisioningStyle = Manual;
+						ProvisioningStyle = Automatic;
 					};
 				};
 			};
@@ -440,6 +527,7 @@
 			files = (
 				3CCB059320590F7700AF6760 /* LaunchScreen.storyboard in Resources */,
 				3CCB059020590F7700AF6760 /* Assets.xcassets in Resources */,
+				3C71C1D8211D6FA600132B60 /* 1.html in Resources */,
 				3CCB058E20590F7700AF6760 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -452,7 +540,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				3C35BFA72078B42900066B05 /* CategoryObj+Test.m in Sources */,
-				3C2980442088C0BF00AFA2A4 /* childView.m in Sources */,
 				3C35BFA62078B3CC00066B05 /* CategoryObj+Test2.m in Sources */,
 				3C35BF9D2078738700066B05 /* TestRuntimeForward+category.m in Sources */,
 				3C35BFA020789D7100066B05 /* CategoryObj.m in Sources */,
@@ -466,12 +553,12 @@
 				3C9C3738206C7AD600F3ECD9 /* MRCObject.m in Sources */,
 				3C8206CE207475A8009BE5A6 /* RuntimeTestViewController.m in Sources */,
 				3C9C3735206B2F4E00F3ECD9 /* AutoreleasePoolController.m in Sources */,
+				3C71C1D5211D6DA400132B60 /* BNHtmlPdfKit.m in Sources */,
 				3C35BF9A20761E1900066B05 /* TestRuntimeForward.m in Sources */,
 				3C9C3742206C8E3500F3ECD9 /* MRCSubTestObject.m in Sources */,
-				3C2980412088C0B000AFA2A4 /* ParentView.m in Sources */,
-				3C29803E2088C06800AFA2A4 /* MyWindow.m in Sources */,
 				3C0BEED12064A4B70022055C /* ListNode.c in Sources */,
 				3C9C37272069EEFA00F3ECD9 /* SortViewController.m in Sources */,
+				3C71C1E0212164F400132B60 /* NetworkRequest.m in Sources */,
 				3C8206D12074ACAA009BE5A6 /* Person2.m in Sources */,
 				3C9C373B206C7AEF00F3ECD9 /* MemoryManageViewController.m in Sources */,
 				3C9C37242068D85500F3ECD9 /* FunctionalViewController.m in Sources */,
@@ -479,16 +566,20 @@
 				3C0BEED22064AAD40022055C /* Stack.c in Sources */,
 				3CB7216C2095D054001901C3 /* CTDisplayView.m in Sources */,
 				3C9C3745206CC5D000F3ECD9 /* ARCObject.m in Sources */,
+				3C71C1C9211D6BEE00132B60 /* BaseTableViewController.m in Sources */,
 				3CCB059E2059142200AF6760 /* MainTableViewController.m in Sources */,
 				3CDC807F20676A2C00D3AEEB /* PointerViewController.m in Sources */,
 				3C9C372B206B2C9300F3ECD9 /* PropertyLearningController.m in Sources */,
 				3C8206C72073633B009BE5A6 /* UITestTableViewController.m in Sources */,
 				3C0BEEC2206232B30022055C /* Person.m in Sources */,
 				3C968A352061FE53002BAC80 /* AlgoTableViewController.m in Sources */,
+				3C71C1E62121802E00132B60 /* APIRequest.m in Sources */,
+				3C71C1E321217E2D00132B60 /* NetworkRequsetTestController.m in Sources */,
 				3C9C373F206C7C8100F3ECD9 /* MRCTestObject.m in Sources */,
 				3C9C372E206B2DA200F3ECD9 /* ObjectCMainTableController.m in Sources */,
 				3C0BEEC520649D950022055C /* LinkListViewController.m in Sources */,
 				3CCB05A62059182600AF6760 /* UIViewController+Push.m in Sources */,
+				3C71C1CC211D6C7000132B60 /* HtmlToPdfViewController.m in Sources */,
 				3C8206CA207363CE009BE5A6 /* ViewTestController.m in Sources */,
 				3C0BEED52064E2080022055C /* StringArrayViewController.m in Sources */,
 			);
@@ -624,16 +715,18 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = 5R64B7C942;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = D7X74D2YD8;
 				ENABLE_STRICT_OBJC_MSGSEND = NO;
-				GCC_PREFIX_HEADER = iOSLearnigDemo/iOSLearningDemo.pch;
-				INFOPLIST_FILE = iOSLearnigDemo/Info.plist;
+				GCC_PREFIX_HEADER = "iOSLearnigDemo/supporting files/iOSLearningDemo.pch";
+				INFOPLIST_FILE = "$(SRCROOT)/iOSLearnigDemo/supporting files/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "me.george-luofz.iOSLearnigDemo";
+				PRODUCT_BUNDLE_IDENTIFIER = com.yixia.iOSLearnigDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "0bca4784-b8f4-4f83-90c5-ba6a3b8e9c60";
-				PROVISIONING_PROFILE_SPECIFIER = YeMao_Profile;
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -642,13 +735,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = "";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = D7X74D2YD8;
 				ENABLE_STRICT_OBJC_MSGSEND = NO;
-				GCC_PREFIX_HEADER = iOSLearnigDemo/iOSLearningDemo.pch;
-				INFOPLIST_FILE = iOSLearnigDemo/Info.plist;
+				GCC_PREFIX_HEADER = "iOSLearnigDemo/supporting files/iOSLearningDemo.pch";
+				INFOPLIST_FILE = "$(SRCROOT)/iOSLearnigDemo/supporting files/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "me.george-luofz.iOSLearnigDemo";
+				PRODUCT_BUNDLE_IDENTIFIER = com.yixia.iOSLearnigDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
