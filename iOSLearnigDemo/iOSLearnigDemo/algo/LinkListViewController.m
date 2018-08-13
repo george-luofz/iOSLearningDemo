@@ -271,15 +271,14 @@ void invertListNode(Node *header){
 //        tempNode->next = NewHeaderNode; //这个时候currentHeadNode->next变成NULL，所以要赶紧把currentHeadNode指走
 //        // 4.新头结点指针后移
 //        NewHeaderNode = tempNode;
-        
-        
         Node *tempNode = currentHeadNode;
         tempNode->next = NewHeaderNode;
         currentHeadNode = currentHeadNode->next;
         NewHeaderNode = tempNode;
         
-    }
-    // 3. 输出一遍
+        //
+        `1NFDÅQ=[]\
+       ?˘ b. 输出一遍
     Node *headerNode = NewHeaderNode;
     while (headerNode != NULL ) {
         printf("value:%d",headerNode->value);
