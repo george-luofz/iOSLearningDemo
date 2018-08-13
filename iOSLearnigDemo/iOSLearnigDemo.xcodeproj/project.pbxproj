@@ -22,6 +22,9 @@
 		3C71C1CC211D6C7000132B60 /* HtmlToPdfViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C71C1CB211D6C7000132B60 /* HtmlToPdfViewController.m */; };
 		3C71C1D5211D6DA400132B60 /* BNHtmlPdfKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C71C1D4211D6DA300132B60 /* BNHtmlPdfKit.m */; };
 		3C71C1D8211D6FA600132B60 /* 1.html in Resources */ = {isa = PBXBuildFile; fileRef = 3C71C1D7211D6FA600132B60 /* 1.html */; };
+		3C71C1E0212164F400132B60 /* NetworkRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C71C1DF212164F400132B60 /* NetworkRequest.m */; };
+		3C71C1E321217E2D00132B60 /* NetworkRequsetTestController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C71C1E221217E2D00132B60 /* NetworkRequsetTestController.m */; };
+		3C71C1E62121802E00132B60 /* APIRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C71C1E52121802E00132B60 /* APIRequest.m */; };
 		3C8206C72073633B009BE5A6 /* UITestTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C8206C62073633B009BE5A6 /* UITestTableViewController.m */; };
 		3C8206CA207363CE009BE5A6 /* ViewTestController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C8206C9207363CE009BE5A6 /* ViewTestController.m */; };
 		3C8206CE207475A8009BE5A6 /* RuntimeTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C8206CD207475A8009BE5A6 /* RuntimeTestViewController.m */; };
@@ -84,6 +87,12 @@
 		3C71C1D3211D6DA300132B60 /* BNHtmlPdfKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BNHtmlPdfKit.h; sourceTree = "<group>"; };
 		3C71C1D4211D6DA300132B60 /* BNHtmlPdfKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BNHtmlPdfKit.m; sourceTree = "<group>"; };
 		3C71C1D7211D6FA600132B60 /* 1.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = 1.html; sourceTree = "<group>"; };
+		3C71C1DE212164F400132B60 /* NetworkRequest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NetworkRequest.h; sourceTree = "<group>"; };
+		3C71C1DF212164F400132B60 /* NetworkRequest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NetworkRequest.m; sourceTree = "<group>"; };
+		3C71C1E121217E2D00132B60 /* NetworkRequsetTestController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NetworkRequsetTestController.h; sourceTree = "<group>"; };
+		3C71C1E221217E2D00132B60 /* NetworkRequsetTestController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NetworkRequsetTestController.m; sourceTree = "<group>"; };
+		3C71C1E42121802E00132B60 /* APIRequest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = APIRequest.h; sourceTree = "<group>"; };
+		3C71C1E52121802E00132B60 /* APIRequest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = APIRequest.m; sourceTree = "<group>"; };
 		3C8206C52073633B009BE5A6 /* UITestTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UITestTableViewController.h; sourceTree = "<group>"; };
 		3C8206C62073633B009BE5A6 /* UITestTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UITestTableViewController.m; sourceTree = "<group>"; };
 		3C8206C8207363CE009BE5A6 /* ViewTestController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewTestController.h; sourceTree = "<group>"; };
@@ -252,6 +261,19 @@
 			name = "Recovered References";
 			sourceTree = "<group>";
 		};
+		3C71C1DD212164AC00132B60 /* network */ = {
+			isa = PBXGroup;
+			children = (
+				3C71C1DE212164F400132B60 /* NetworkRequest.h */,
+				3C71C1DF212164F400132B60 /* NetworkRequest.m */,
+				3C71C1E42121802E00132B60 /* APIRequest.h */,
+				3C71C1E52121802E00132B60 /* APIRequest.m */,
+				3C71C1E121217E2D00132B60 /* NetworkRequsetTestController.h */,
+				3C71C1E221217E2D00132B60 /* NetworkRequsetTestController.m */,
+			);
+			path = network;
+			sourceTree = "<group>";
+		};
 		3C8206C420736320009BE5A6 /* UI */ = {
 			isa = PBXGroup;
 			children = (
@@ -301,6 +323,7 @@
 		3C9C37212068D83900F3ECD9 /* functionalProgram */ = {
 			isa = PBXGroup;
 			children = (
+				3C71C1DD212164AC00132B60 /* network */,
 				3C9C37222068D85500F3ECD9 /* FunctionalViewController.h */,
 				3C9C37232068D85500F3ECD9 /* FunctionalViewController.m */,
 			);
@@ -515,6 +538,7 @@
 				3C9C3742206C8E3500F3ECD9 /* MRCSubTestObject.m in Sources */,
 				3C0BEED12064A4B70022055C /* ListNode.c in Sources */,
 				3C9C37272069EEFA00F3ECD9 /* SortViewController.m in Sources */,
+				3C71C1E0212164F400132B60 /* NetworkRequest.m in Sources */,
 				3C8206D12074ACAA009BE5A6 /* Person2.m in Sources */,
 				3C9C373B206C7AEF00F3ECD9 /* MemoryManageViewController.m in Sources */,
 				3C9C37242068D85500F3ECD9 /* FunctionalViewController.m in Sources */,
@@ -528,6 +552,8 @@
 				3C8206C72073633B009BE5A6 /* UITestTableViewController.m in Sources */,
 				3C0BEEC2206232B30022055C /* Person.m in Sources */,
 				3C968A352061FE53002BAC80 /* AlgoTableViewController.m in Sources */,
+				3C71C1E62121802E00132B60 /* APIRequest.m in Sources */,
+				3C71C1E321217E2D00132B60 /* NetworkRequsetTestController.m in Sources */,
 				3C9C373F206C7C8100F3ECD9 /* MRCTestObject.m in Sources */,
 				3C9C372E206B2DA200F3ECD9 /* ObjectCMainTableController.m in Sources */,
 				3C0BEEC520649D950022055C /* LinkListViewController.m in Sources */,

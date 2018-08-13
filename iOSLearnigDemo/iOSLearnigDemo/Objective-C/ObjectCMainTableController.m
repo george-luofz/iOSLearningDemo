@@ -12,6 +12,7 @@
 #import "AutoreleasePoolController.h"
 #import "MemoryManageViewController.h"
 #import "RuntimeTestViewController.h"
+#import "NetworkRequsetTestController.h"
 
 @interface ObjectCMainTableController ()
 @property (nonatomic, nullable, strong) NSArray *dataSource;
@@ -21,7 +22,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.dataSource = @[@"property相关",@"category",@"autoreleasepool",@"内存管理",@"runtime"];
+    self.dataSource = @[@"property相关",@"category",@"autoreleasepool",@"内存管理",@"runtime",@"网络模块"];
 }
 
 #pragma mark - Table view data source
@@ -55,6 +56,8 @@
         vc = [MemoryManageViewController new];
     }else if (indexPath.row == 4){
         vc = [RuntimeTestViewController new];
+    }else if (indexPath.row == 5){
+        vc = [NetworkRequsetTestController new];
     }
     if(vc){
         vc.title = self.dataSource[indexPath.row];
