@@ -23,8 +23,8 @@
 
 + (instancetype)sharedManager;
 
-- (NSArray<NSString *> *)domainsForRequsetType:(MKRequestType)requestType;
-//- (void)sortDomainsWithSuccessDomain:(NSString *)domain requestType:(MKRequestType)requestType;
+- (NSArray<NSString *> *)domainsForRequsetType:(NNRequestType)requestType;
+//- (void)sortDomainsWithSuccessDomain:(NSString *)domain NNRequestType:(NNRequestType)NNRequestType;
 @end
 
 @implementation DomainManager
@@ -41,27 +41,27 @@
 - (instancetype)init {
     self = [super init];
     if (self) {
-        _apiDomains = [NSMutableArray arrayWithArray:@[@"http://39.105.20.33:8000"]];
-        //        _apiDomains = [NSMutableArray arrayWithArray:@[@"http://39.105.20.33:8000"]];
-        _logDomains = [NSMutableArray arrayWithArray:@[@"http://kdlog.bbobo.com", @"http://log.kuaikanapps.com", @"http://47.94.119.50"]];
-        
-        //        _testApiDomains = [NSMutableArray arrayWithArray:@[@"http://47.94.120.74:8000"]];
-        _testApiDomains = [NSMutableArray arrayWithArray:@[@"http://39.105.20.33:8000"]];
-        //        _testLogDomains = [NSMutableArray arrayWithArray:@[@"http://47.93.28.166:9103"]];
-        _testLogDomains = [NSMutableArray arrayWithArray:@[@"http://47.93.23.201:8889"]];
+        _apiDomains = [NSMutableArray arrayWithArray:@[@"http://39.105.20.33:8000/api/v1"]];
+//        //        _apiDomains = [NSMutableArray arrayWithArray:@[@"http://39.105.20.33:8000"]];
+//        _logDomains = [NSMutableArray arrayWithArray:@[@"http://kdlog.bbobo.com", @"http://log.kuaikanapps.com", @"http://47.94.119.50"]];
+//        
+//        //        _testApiDomains = [NSMutableArray arrayWithArray:@[@"http://47.94.120.74:8000"]];
+//        _testApiDomains = [NSMutableArray arrayWithArray:@[@"http://39.105.20.33:8000"]];
+//        //        _testLogDomains = [NSMutableArray arrayWithArray:@[@"http://47.93.28.166:9103"]];
+//        _testLogDomains = [NSMutableArray arrayWithArray:@[@"http://47.93.23.201:8889"]];
     }
     return self;
 }
 
 // 给出当前热度排序的域名
-- (NSArray<NSString *> *)domainsForRequsetType:(MKRequestType)requestType {
-    if (requestType == MKRequestTypeJSON) {
+- (NSArray<NSString *> *)domainsForRequsetType:(NNRequestType)requestType {
+    if (requestType == NNRequestTypeJSON) {
 //        if (UserDefaultsHelper.isTestApi) {
 //            return [_testApiDomains copy];
 //        }
         return [_apiDomains copy];
     }
-//    if (requestType == MKRequestTypeAnalysis) {
+//    if (NNRequestType == NNRequestTypeAnalysis) {
 //        if (UserDefaultsHelper.isTestApi) {
 //            return [_testLogDomains copy];
 //        }
@@ -107,24 +107,24 @@ NetworkRequest *NetWorkRequest(void) {
 }
 
 - (NetworkRequest *)GET{
-    _requestType = MKRequestTypeJSON;
+    _requestType = NNRequestTypeJSON;
     _httpMethod = @"GET";
     return self;
 }
 
 - (NetworkRequest *)POST{
-    _requestType = MKRequestTypeJSON;
+    _requestType = NNRequestTypeJSON;
     _httpMethod = @"POST";
     return self;
 }
 
 - (NetworkRequest *)upload{
-    _requestType = MKRequestTypeUpload;
+    _requestType = NNRequestTypeUpload;
     return self;
 }
 
 - (NetworkRequest *)download{
-    _requestType = MKRequestTypeDownload;
+    _requestType = NNRequestTypeDownload;
     return self;
 }
 
@@ -254,15 +254,15 @@ static dispatch_queue_t network_queue() {
 // 请求前配置
 - (void)_configBeforeRequest{
     switch (_requestType) {
-        case MKRequestTypeJSON: {
+        case NNRequestTypeJSON: {
             [self jsonRequestConfig];
         }
             break;
-        case MKRequestTypeUpload: {
+        case NNRequestTypeUpload: {
             [self uploadRequestConfig];
         }
             break;
-        case MKRequestTypeDownload: {
+        case NNRequestTypeDownload: {
             [self downloadRequestConfig];
         }
             break;

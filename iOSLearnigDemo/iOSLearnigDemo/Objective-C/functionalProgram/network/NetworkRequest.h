@@ -12,17 +12,17 @@ typedef void(^ResponseBlock)(NSError *error, id responseObject);
 typedef void(^ProgressBlock)(NSProgress *progress);
 typedef NSData*(^UploadBlock)(void);
 
-typedef NS_ENUM(NSInteger, MKRequestType) {
-    MKRequestTypeJSON,
-    MKRequestTypeUpload,
-    MKRequestTypeDownload
+typedef NS_ENUM(NSInteger, NNRequestType) {
+    NNRequestTypeJSON,
+    NNRequestTypeUpload,
+    NNRequestTypeDownload
 };
 @class NetworkRequest;
 NetworkRequest *NetWorkRequest(void);
 
 @interface NetworkRequest : NSObject
 
-@property (nonatomic) MKRequestType requestType;
+@property (nonatomic) NNRequestType requestType;
 @property (nonatomic, copy) NSString *httpMethod;
 @property (nonatomic, copy, readonly) NSString *urlString;
 @property (nonatomic, copy, readonly) NSDictionary *parameters;
@@ -31,8 +31,6 @@ NetworkRequest *NetWorkRequest(void);
 
 // 取消请求时，是否调用回调block，默认为false
 @property (nonatomic) BOOL callbackWhenCancelled;
-
-//- (NetworkRequest *(^)(void))NetworkRequest;
 
 - (NetworkRequest*)GET;
 - (NetworkRequest*)POST;
