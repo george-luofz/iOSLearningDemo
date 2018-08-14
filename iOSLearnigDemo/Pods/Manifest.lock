@@ -1,0 +1,124 @@
+PODS:
+  - AFNetworking (3.2.1):
+    - AFNetworking/NSURLSession (= 3.2.1)
+    - AFNetworking/Reachability (= 3.2.1)
+    - AFNetworking/Security (= 3.2.1)
+    - AFNetworking/Serialization (= 3.2.1)
+    - AFNetworking/UIKit (= 3.2.1)
+  - AFNetworking/NSURLSession (3.2.1):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (3.2.1)
+  - AFNetworking/Security (3.2.1)
+  - AFNetworking/Serialization (3.2.1)
+  - AFNetworking/UIKit (3.2.1):
+    - AFNetworking/NSURLSession
+  - CYLTabBarController (1.17.14)
+  - FDFullscreenPopGesture (1.1)
+  - FLAnimatedImage (1.0.12)
+  - FSCalendar (2.7.9)
+  - JTCalendar (2.2.3)
+  - libwebp (0.6.1):
+    - libwebp/core (= 0.6.1)
+    - libwebp/dec (= 0.6.1)
+    - libwebp/demux (= 0.6.1)
+    - libwebp/dsp (= 0.6.1)
+    - libwebp/enc (= 0.6.1)
+    - libwebp/mux (= 0.6.1)
+    - libwebp/utils (= 0.6.1)
+    - libwebp/webp (= 0.6.1)
+  - libwebp/core (0.6.1):
+    - libwebp/webp
+  - libwebp/dec (0.6.1):
+    - libwebp/core
+  - libwebp/demux (0.6.1):
+    - libwebp/core
+  - libwebp/dsp (0.6.1):
+    - libwebp/core
+  - libwebp/enc (0.6.1):
+    - libwebp/core
+  - libwebp/mux (0.6.1):
+    - libwebp/core
+  - libwebp/utils (0.6.1):
+    - libwebp/core
+  - libwebp/webp (0.6.1)
+  - Masonry (1.1.0)
+  - SDWebImage (4.4.2):
+    - SDWebImage/Core (= 4.4.2)
+  - SDWebImage/Core (4.4.2)
+  - SDWebImage/GIF (4.4.2):
+    - FLAnimatedImage (~> 1.0)
+    - SDWebImage/Core
+  - SDWebImage/WebP (4.4.2):
+    - libwebp (~> 0.5)
+    - SDWebImage/Core
+  - UMengAnalytics-NO-IDFA (4.2.5)
+  - UMengUShare/Core (6.4.8.1):
+    - UMengUShare/Network
+  - UMengUShare/Network (6.4.8.1)
+  - UMengUShare/Social/QQ (6.4.8.1):
+    - UMengUShare/Core
+    - UMengUShare/Social/ReducedQQ
+  - UMengUShare/Social/ReducedQQ (6.4.8.1):
+    - UMengUShare/Core
+  - UMengUShare/Social/ReducedSina (6.4.8.1):
+    - UMengUShare/Core
+  - UMengUShare/Social/ReducedWeChat (6.4.8.1):
+    - UMengUShare/Core
+  - UMengUShare/Social/Sina (6.4.8.1):
+    - UMengUShare/Core
+    - UMengUShare/Social/ReducedSina
+  - UMengUShare/Social/WeChat (6.4.8.1):
+    - UMengUShare/Core
+    - UMengUShare/Social/ReducedWeChat
+  - YYModel (1.0.4)
+
+DEPENDENCIES:
+  - AFNetworking (= 3.2.1)
+  - CYLTabBarController (= 1.17.14)
+  - FDFullscreenPopGesture (= 1.1)
+  - FSCalendar (= 2.7.9)
+  - JTCalendar (= 2.2.3)
+  - Masonry (= 1.1.0)
+  - SDWebImage (= 4.4.2)
+  - SDWebImage/GIF
+  - SDWebImage/WebP
+  - UMengAnalytics-NO-IDFA
+  - UMengUShare/Social/QQ (= 6.4.8.1)
+  - UMengUShare/Social/Sina (= 6.4.8.1)
+  - UMengUShare/Social/WeChat (= 6.4.8.1)
+  - YYModel (= 1.0.4)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - AFNetworking
+    - CYLTabBarController
+    - FDFullscreenPopGesture
+    - FLAnimatedImage
+    - FSCalendar
+    - JTCalendar
+    - libwebp
+    - Masonry
+    - SDWebImage
+    - UMengAnalytics-NO-IDFA
+    - UMengUShare
+    - YYModel
+
+SPEC CHECKSUMS:
+  AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
+  CYLTabBarController: ba33f518d5cc33dc4b6cd29103eda93317c0e40e
+  FDFullscreenPopGesture: a8a620179e3d9c40e8e00256dcee1c1a27c6d0f0
+  FLAnimatedImage: 4a0b56255d9b05f18b6dd7ee06871be5d3b89e31
+  FSCalendar: a04b09f16f811bc92e82f3cf852a15225233b9d5
+  JTCalendar: f54975f1426facc38d112f372f0d3d955aae8d86
+  libwebp: 38b601da310fe7c329c638d0c0d10aed006a54fe
+  Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
+  SDWebImage: 624d6e296c69b244bcede364c72ae0430ac14681
+  UMengAnalytics-NO-IDFA: 16666e32edce5be44ae5b14aaaa7f3582e09d6ab
+  UMengUShare: 9e2d22f32aeaf09702ca833ec530895aab995c4f
+  YYModel: 2a7fdd96aaa4b86a824e26d0c517de8928c04b30
+
+PODFILE CHECKSUM: 406e114b99609a919cd2f0177831dcbbae30c4a8
+
+COCOAPODS: 1.5.3

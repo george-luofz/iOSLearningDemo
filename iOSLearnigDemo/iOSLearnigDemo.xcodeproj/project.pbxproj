@@ -25,6 +25,16 @@
 		3C71C1E0212164F400132B60 /* NetworkRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C71C1DF212164F400132B60 /* NetworkRequest.m */; };
 		3C71C1E321217E2D00132B60 /* NetworkRequsetTestController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C71C1E221217E2D00132B60 /* NetworkRequsetTestController.m */; };
 		3C71C1E62121802E00132B60 /* APIRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C71C1E52121802E00132B60 /* APIRequest.m */; };
+		3C71C1F32122BAEC00132B60 /* JTCalendarTestController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C71C1F22122BAEC00132B60 /* JTCalendarTestController.m */; };
+		3C71C22F2122BD2B00132B60 /* NSMutableArray+NNAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C71C2202122BD2600132B60 /* NSMutableArray+NNAdd.m */; };
+		3C71C2302122BD2B00132B60 /* UIFont+NNAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C71C2222122BD2600132B60 /* UIFont+NNAdd.m */; };
+		3C71C2312122BD2B00132B60 /* NSArray+NNAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C71C2242122BD2700132B60 /* NSArray+NNAdd.m */; };
+		3C71C2322122BD2B00132B60 /* NSString+NNAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C71C2252122BD2700132B60 /* NSString+NNAdd.m */; };
+		3C71C2332122BD2B00132B60 /* NSData+NNAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C71C2282122BD2800132B60 /* NSData+NNAdd.m */; };
+		3C71C2342122BD2B00132B60 /* UIView+NNAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C71C2292122BD2900132B60 /* UIView+NNAdd.m */; };
+		3C71C2352122BD2B00132B60 /* NSDictionary+NNAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C71C22A2122BD2900132B60 /* NSDictionary+NNAdd.m */; };
+		3C71C2362122BD2B00132B60 /* NSMutableDictionary+NNAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C71C22C2122BD2A00132B60 /* NSMutableDictionary+NNAdd.m */; };
+		3C71C23C2122E57B00132B60 /* FSCalenderController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C71C23B2122E57B00132B60 /* FSCalenderController.m */; };
 		3C8206C72073633B009BE5A6 /* UITestTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C8206C62073633B009BE5A6 /* UITestTableViewController.m */; };
 		3C8206CA207363CE009BE5A6 /* ViewTestController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C8206C9207363CE009BE5A6 /* ViewTestController.m */; };
 		3C8206CE207475A8009BE5A6 /* RuntimeTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C8206CD207475A8009BE5A6 /* RuntimeTestViewController.m */; };
@@ -54,6 +64,7 @@
 		3CCB05AA2059198100AF6760 /* GCDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CCB05A92059198100AF6760 /* GCDViewController.m */; };
 		3CCB05AE205A5B8000AF6760 /* ObjectiveCTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CCB05AD205A5B8000AF6760 /* ObjectiveCTableViewController.m */; };
 		3CDC807F20676A2C00D3AEEB /* PointerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CDC807E20676A2C00D3AEEB /* PointerViewController.m */; };
+		517680A87E52F3B371329E40 /* libPods-iOSLearnigDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8230C408191D4CE3E976186D /* libPods-iOSLearnigDemo.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -95,6 +106,26 @@
 		3C71C1E221217E2D00132B60 /* NetworkRequsetTestController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NetworkRequsetTestController.m; sourceTree = "<group>"; };
 		3C71C1E42121802E00132B60 /* APIRequest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = APIRequest.h; sourceTree = "<group>"; };
 		3C71C1E52121802E00132B60 /* APIRequest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = APIRequest.m; sourceTree = "<group>"; };
+		3C71C1F12122BAEC00132B60 /* JTCalendarTestController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JTCalendarTestController.h; sourceTree = "<group>"; };
+		3C71C1F22122BAEC00132B60 /* JTCalendarTestController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JTCalendarTestController.m; sourceTree = "<group>"; };
+		3C71C21F2122BD2500132B60 /* NSMutableArray+NNAdd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableArray+NNAdd.h"; sourceTree = "<group>"; };
+		3C71C2202122BD2600132B60 /* NSMutableArray+NNAdd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableArray+NNAdd.m"; sourceTree = "<group>"; };
+		3C71C2212122BD2600132B60 /* NSDictionary+NNAdd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+NNAdd.h"; sourceTree = "<group>"; };
+		3C71C2222122BD2600132B60 /* UIFont+NNAdd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIFont+NNAdd.m"; sourceTree = "<group>"; };
+		3C71C2232122BD2700132B60 /* NSString+NNAdd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+NNAdd.h"; sourceTree = "<group>"; };
+		3C71C2242122BD2700132B60 /* NSArray+NNAdd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+NNAdd.m"; sourceTree = "<group>"; };
+		3C71C2252122BD2700132B60 /* NSString+NNAdd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+NNAdd.m"; sourceTree = "<group>"; };
+		3C71C2262122BD2800132B60 /* NSArray+NNAdd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+NNAdd.h"; sourceTree = "<group>"; };
+		3C71C2272122BD2800132B60 /* NSMutableDictionary+NNAdd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableDictionary+NNAdd.h"; sourceTree = "<group>"; };
+		3C71C2282122BD2800132B60 /* NSData+NNAdd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+NNAdd.m"; sourceTree = "<group>"; };
+		3C71C2292122BD2900132B60 /* UIView+NNAdd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+NNAdd.m"; sourceTree = "<group>"; };
+		3C71C22A2122BD2900132B60 /* NSDictionary+NNAdd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+NNAdd.m"; sourceTree = "<group>"; };
+		3C71C22B2122BD2900132B60 /* UIFont+NNAdd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIFont+NNAdd.h"; sourceTree = "<group>"; };
+		3C71C22C2122BD2A00132B60 /* NSMutableDictionary+NNAdd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableDictionary+NNAdd.m"; sourceTree = "<group>"; };
+		3C71C22D2122BD2A00132B60 /* UIView+NNAdd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+NNAdd.h"; sourceTree = "<group>"; };
+		3C71C22E2122BD2A00132B60 /* NSData+NNAdd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+NNAdd.h"; sourceTree = "<group>"; };
+		3C71C23A2122E57B00132B60 /* FSCalenderController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FSCalenderController.h; sourceTree = "<group>"; };
+		3C71C23B2122E57B00132B60 /* FSCalenderController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FSCalenderController.m; sourceTree = "<group>"; };
 		3C8206C52073633B009BE5A6 /* UITestTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UITestTableViewController.h; sourceTree = "<group>"; };
 		3C8206C62073633B009BE5A6 /* UITestTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UITestTableViewController.m; sourceTree = "<group>"; };
 		3C8206C8207363CE009BE5A6 /* ViewTestController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewTestController.h; sourceTree = "<group>"; };
@@ -129,7 +160,6 @@
 		3C9C3741206C8E3500F3ECD9 /* MRCSubTestObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MRCSubTestObject.m; sourceTree = "<group>"; };
 		3C9C3743206CC5D000F3ECD9 /* ARCObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ARCObject.h; sourceTree = "<group>"; };
 		3C9C3744206CC5D000F3ECD9 /* ARCObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ARCObject.m; sourceTree = "<group>"; };
-		3C9C3746206CF2E500F3ECD9 /* testClang.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = testClang.c; sourceTree = "<group>"; };
 		3CB721672095D010001901C3 /* CoreTextController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CoreTextController.h; sourceTree = "<group>"; };
 		3CB721682095D010001901C3 /* CoreTextController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CoreTextController.m; sourceTree = "<group>"; };
 		3CB7216A2095D054001901C3 /* CTDisplayView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CTDisplayView.h; sourceTree = "<group>"; };
@@ -157,6 +187,9 @@
 		3CCB05B5205A703B00AF6760 /* blockTest_block.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = blockTest_block.cpp; path = iOSLearnigDemo/blockTest_block.cpp; sourceTree = SOURCE_ROOT; };
 		3CDC807D20676A2C00D3AEEB /* PointerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PointerViewController.h; sourceTree = "<group>"; };
 		3CDC807E20676A2C00D3AEEB /* PointerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PointerViewController.m; sourceTree = "<group>"; };
+		8230C408191D4CE3E976186D /* libPods-iOSLearnigDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-iOSLearnigDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9EEAC000E3D6A472A25CE362 /* Pods-iOSLearnigDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSLearnigDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-iOSLearnigDemo/Pods-iOSLearnigDemo.release.xcconfig"; sourceTree = "<group>"; };
+		D58921FDD7E4250EC4D61A75 /* Pods-iOSLearnigDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSLearnigDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iOSLearnigDemo/Pods-iOSLearnigDemo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -164,12 +197,21 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				517680A87E52F3B371329E40 /* libPods-iOSLearnigDemo.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		226AFB23E662FA89C576F591 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8230C408191D4CE3E976186D /* libPods-iOSLearnigDemo.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		3C0BEEBF2062329F0022055C /* copyMutableCopy */ = {
 			isa = PBXGroup;
 			children = (
@@ -211,6 +253,22 @@
 		3C71C1CF211D6CA900132B60 /* Categories */ = {
 			isa = PBXGroup;
 			children = (
+				3C71C2262122BD2800132B60 /* NSArray+NNAdd.h */,
+				3C71C2242122BD2700132B60 /* NSArray+NNAdd.m */,
+				3C71C22E2122BD2A00132B60 /* NSData+NNAdd.h */,
+				3C71C2282122BD2800132B60 /* NSData+NNAdd.m */,
+				3C71C2212122BD2600132B60 /* NSDictionary+NNAdd.h */,
+				3C71C22A2122BD2900132B60 /* NSDictionary+NNAdd.m */,
+				3C71C21F2122BD2500132B60 /* NSMutableArray+NNAdd.h */,
+				3C71C2202122BD2600132B60 /* NSMutableArray+NNAdd.m */,
+				3C71C2272122BD2800132B60 /* NSMutableDictionary+NNAdd.h */,
+				3C71C22C2122BD2A00132B60 /* NSMutableDictionary+NNAdd.m */,
+				3C71C2232122BD2700132B60 /* NSString+NNAdd.h */,
+				3C71C2252122BD2700132B60 /* NSString+NNAdd.m */,
+				3C71C22B2122BD2900132B60 /* UIFont+NNAdd.h */,
+				3C71C2222122BD2600132B60 /* UIFont+NNAdd.m */,
+				3C71C22D2122BD2A00132B60 /* UIView+NNAdd.h */,
+				3C71C2292122BD2900132B60 /* UIView+NNAdd.m */,
 				3CCB05A42059182600AF6760 /* UIViewController+Push.h */,
 				3CCB05A52059182600AF6760 /* UIViewController+Push.m */,
 			);
@@ -281,17 +339,53 @@
 			path = network;
 			sourceTree = "<group>";
 		};
-		3C8206C420736320009BE5A6 /* UI */ = {
+		3C71C2372122BEA100132B60 /* JTCalendar */ = {
 			isa = PBXGroup;
 			children = (
-				3CB721662095CFF5001901C3 /* coreText */,
-				3C8206C52073633B009BE5A6 /* UITestTableViewController.h */,
-				3C8206C62073633B009BE5A6 /* UITestTableViewController.m */,
-				3C8206C8207363CE009BE5A6 /* ViewTestController.h */,
-				3C8206C9207363CE009BE5A6 /* ViewTestController.m */,
+				3C71C1F12122BAEC00132B60 /* JTCalendarTestController.h */,
+				3C71C1F22122BAEC00132B60 /* JTCalendarTestController.m */,
+			);
+			path = JTCalendar;
+			sourceTree = "<group>";
+		};
+		3C71C2382122BEB500132B60 /* htmlToPdf */ = {
+			isa = PBXGroup;
+			children = (
 				3C71C1CA211D6C7000132B60 /* HtmlToPdfViewController.h */,
 				3C71C1CB211D6C7000132B60 /* HtmlToPdfViewController.m */,
 				3C71C1D7211D6FA600132B60 /* 1.html */,
+			);
+			path = htmlToPdf;
+			sourceTree = "<group>";
+		};
+		3C71C2392122E56200132B60 /* FSCalendar */ = {
+			isa = PBXGroup;
+			children = (
+				3C71C23A2122E57B00132B60 /* FSCalenderController.h */,
+				3C71C23B2122E57B00132B60 /* FSCalenderController.m */,
+			);
+			path = FSCalendar;
+			sourceTree = "<group>";
+		};
+		3C71C23D2122E5B200132B60 /* touch */ = {
+			isa = PBXGroup;
+			children = (
+				3C8206C8207363CE009BE5A6 /* ViewTestController.h */,
+				3C8206C9207363CE009BE5A6 /* ViewTestController.m */,
+			);
+			path = touch;
+			sourceTree = "<group>";
+		};
+		3C8206C420736320009BE5A6 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				3C71C2392122E56200132B60 /* FSCalendar */,
+				3C71C2372122BEA100132B60 /* JTCalendar */,
+				3C71C23D2122E5B200132B60 /* touch */,
+				3C71C2382122BEB500132B60 /* htmlToPdf */,
+				3CB721662095CFF5001901C3 /* coreText */,
+				3C8206C52073633B009BE5A6 /* UITestTableViewController.h */,
+				3C8206C62073633B009BE5A6 /* UITestTableViewController.m */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -398,6 +492,8 @@
 				3CCB058520590F7700AF6760 /* iOSLearnigDemo */,
 				3CCB058420590F7700AF6760 /* Products */,
 				3C71C1DC211E84A600132B60 /* Recovered References */,
+				D745BAB49044DF411F009ADA /* Pods */,
+				226AFB23E662FA89C576F591 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -467,6 +563,15 @@
 			path = block;
 			sourceTree = "<group>";
 		};
+		D745BAB49044DF411F009ADA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D58921FDD7E4250EC4D61A75 /* Pods-iOSLearnigDemo.debug.xcconfig */,
+				9EEAC000E3D6A472A25CE362 /* Pods-iOSLearnigDemo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -474,9 +579,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3CCB059920590F7700AF6760 /* Build configuration list for PBXNativeTarget "iOSLearnigDemo" */;
 			buildPhases = (
+				33F33FEB1FE421ED9739EBF7 /* [CP] Check Pods Manifest.lock */,
 				3CCB057F20590F7700AF6760 /* Sources */,
 				3CCB058020590F7700AF6760 /* Frameworks */,
 				3CCB058120590F7700AF6760 /* Resources */,
+				7DD38BCC01207B1B434A63DA /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -534,20 +641,66 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		33F33FEB1FE421ED9739EBF7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-iOSLearnigDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7DD38BCC01207B1B434A63DA /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-iOSLearnigDemo/Pods-iOSLearnigDemo-resources.sh",
+				"${PODS_ROOT}/UMengUShare/UShareSDK/UMSocialSDK/UMSocialSDKPromptResources.bundle",
+				"${PODS_ROOT}/UMengUShare/UShareSDK/SocialLibraries/QQ/QQSDK/TencentOpenApi_IOS_Bundle.bundle",
+				"${PODS_ROOT}/UMengUShare/UShareSDK/SocialLibraries/Sina/SinaSDK/WeiboSDK.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/UMSocialSDKPromptResources.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/TencentOpenApi_IOS_Bundle.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/WeiboSDK.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-iOSLearnigDemo/Pods-iOSLearnigDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		3CCB057F20590F7700AF6760 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				3C35BFA72078B42900066B05 /* CategoryObj+Test.m in Sources */,
+				3C71C1F32122BAEC00132B60 /* JTCalendarTestController.m in Sources */,
 				3C35BFA62078B3CC00066B05 /* CategoryObj+Test2.m in Sources */,
 				3C35BF9D2078738700066B05 /* TestRuntimeForward+category.m in Sources */,
 				3C35BFA020789D7100066B05 /* CategoryObj.m in Sources */,
 				3CCB059620590F7700AF6760 /* main.m in Sources */,
 				3C9C3732206B2ECF00F3ECD9 /* CategoryViewController.m in Sources */,
 				3CCB05AE205A5B8000AF6760 /* ObjectiveCTableViewController.m in Sources */,
+				3C71C2342122BD2B00132B60 /* UIView+NNAdd.m in Sources */,
 				3CCB05AA2059198100AF6760 /* GCDViewController.m in Sources */,
 				3CCB05A32059153B00AF6760 /* ThreadTableViewController.m in Sources */,
+				3C71C2312122BD2B00132B60 /* NSArray+NNAdd.m in Sources */,
 				3CB721692095D010001901C3 /* CoreTextController.m in Sources */,
 				3CCB058820590F7700AF6760 /* AppDelegate.m in Sources */,
 				3C9C3738206C7AD600F3ECD9 /* MRCObject.m in Sources */,
@@ -556,20 +709,26 @@
 				3C71C1D5211D6DA400132B60 /* BNHtmlPdfKit.m in Sources */,
 				3C35BF9A20761E1900066B05 /* TestRuntimeForward.m in Sources */,
 				3C9C3742206C8E3500F3ECD9 /* MRCSubTestObject.m in Sources */,
+				3C71C2332122BD2B00132B60 /* NSData+NNAdd.m in Sources */,
 				3C0BEED12064A4B70022055C /* ListNode.c in Sources */,
 				3C9C37272069EEFA00F3ECD9 /* SortViewController.m in Sources */,
 				3C71C1E0212164F400132B60 /* NetworkRequest.m in Sources */,
 				3C8206D12074ACAA009BE5A6 /* Person2.m in Sources */,
 				3C9C373B206C7AEF00F3ECD9 /* MemoryManageViewController.m in Sources */,
+				3C71C23C2122E57B00132B60 /* FSCalenderController.m in Sources */,
 				3C9C37242068D85500F3ECD9 /* FunctionalViewController.m in Sources */,
 				3C398FCA206DE85C008BDFB3 /* FJReplayKit.m in Sources */,
 				3C0BEED22064AAD40022055C /* Stack.c in Sources */,
+				3C71C22F2122BD2B00132B60 /* NSMutableArray+NNAdd.m in Sources */,
 				3CB7216C2095D054001901C3 /* CTDisplayView.m in Sources */,
+				3C71C2302122BD2B00132B60 /* UIFont+NNAdd.m in Sources */,
 				3C9C3745206CC5D000F3ECD9 /* ARCObject.m in Sources */,
 				3C71C1C9211D6BEE00132B60 /* BaseTableViewController.m in Sources */,
 				3CCB059E2059142200AF6760 /* MainTableViewController.m in Sources */,
+				3C71C2362122BD2B00132B60 /* NSMutableDictionary+NNAdd.m in Sources */,
 				3CDC807F20676A2C00D3AEEB /* PointerViewController.m in Sources */,
 				3C9C372B206B2C9300F3ECD9 /* PropertyLearningController.m in Sources */,
+				3C71C2322122BD2B00132B60 /* NSString+NNAdd.m in Sources */,
 				3C8206C72073633B009BE5A6 /* UITestTableViewController.m in Sources */,
 				3C0BEEC2206232B30022055C /* Person.m in Sources */,
 				3C968A352061FE53002BAC80 /* AlgoTableViewController.m in Sources */,
@@ -581,6 +740,7 @@
 				3CCB05A62059182600AF6760 /* UIViewController+Push.m in Sources */,
 				3C71C1CC211D6C7000132B60 /* HtmlToPdfViewController.m in Sources */,
 				3C8206CA207363CE009BE5A6 /* ViewTestController.m in Sources */,
+				3C71C2352122BD2B00132B60 /* NSDictionary+NNAdd.m in Sources */,
 				3C0BEED52064E2080022055C /* StringArrayViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -713,6 +873,7 @@
 		};
 		3CCB059A20590F7700AF6760 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D58921FDD7E4250EC4D61A75 /* Pods-iOSLearnigDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -733,6 +894,7 @@
 		};
 		3CCB059B20590F7700AF6760 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9EEAC000E3D6A472A25CE362 /* Pods-iOSLearnigDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
