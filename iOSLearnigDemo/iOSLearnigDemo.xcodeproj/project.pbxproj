@@ -35,6 +35,9 @@
 		3C71C2352122BD2B00132B60 /* NSDictionary+NNAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C71C22A2122BD2900132B60 /* NSDictionary+NNAdd.m */; };
 		3C71C2362122BD2B00132B60 /* NSMutableDictionary+NNAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C71C22C2122BD2A00132B60 /* NSMutableDictionary+NNAdd.m */; };
 		3C71C23C2122E57B00132B60 /* FSCalenderController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C71C23B2122E57B00132B60 /* FSCalenderController.m */; };
+		3C71C2412123C4AF00132B60 /* LunarCore.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C71C2402123C4AF00132B60 /* LunarCore.m */; };
+		3C71C2442123CA0C00132B60 /* NNLunarCalenderManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C71C2432123CA0C00132B60 /* NNLunarCalenderManager.m */; };
+		3C71C24921241F1900132B60 /* DIYCalendarCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C71C24821241F1900132B60 /* DIYCalendarCell.m */; };
 		3C8206C72073633B009BE5A6 /* UITestTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C8206C62073633B009BE5A6 /* UITestTableViewController.m */; };
 		3C8206CA207363CE009BE5A6 /* ViewTestController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C8206C9207363CE009BE5A6 /* ViewTestController.m */; };
 		3C8206CE207475A8009BE5A6 /* RuntimeTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C8206CD207475A8009BE5A6 /* RuntimeTestViewController.m */; };
@@ -126,6 +129,14 @@
 		3C71C22E2122BD2A00132B60 /* NSData+NNAdd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+NNAdd.h"; sourceTree = "<group>"; };
 		3C71C23A2122E57B00132B60 /* FSCalenderController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FSCalenderController.h; sourceTree = "<group>"; };
 		3C71C23B2122E57B00132B60 /* FSCalenderController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FSCalenderController.m; sourceTree = "<group>"; };
+		3C71C23F2123C4AF00132B60 /* LunarCore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LunarCore.h; sourceTree = "<group>"; };
+		3C71C2402123C4AF00132B60 /* LunarCore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LunarCore.m; sourceTree = "<group>"; };
+		3C71C2422123CA0C00132B60 /* NNLunarCalenderManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NNLunarCalenderManager.h; sourceTree = "<group>"; };
+		3C71C2432123CA0C00132B60 /* NNLunarCalenderManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NNLunarCalenderManager.m; sourceTree = "<group>"; };
+		3C71C2452123D2A900132B60 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Main.strings"; sourceTree = "<group>"; };
+		3C71C2462123D2A900132B60 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
+		3C71C24721241F1900132B60 /* DIYCalendarCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DIYCalendarCell.h; sourceTree = "<group>"; };
+		3C71C24821241F1900132B60 /* DIYCalendarCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DIYCalendarCell.m; sourceTree = "<group>"; };
 		3C8206C52073633B009BE5A6 /* UITestTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UITestTableViewController.h; sourceTree = "<group>"; };
 		3C8206C62073633B009BE5A6 /* UITestTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UITestTableViewController.m; sourceTree = "<group>"; };
 		3C8206C8207363CE009BE5A6 /* ViewTestController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewTestController.h; sourceTree = "<group>"; };
@@ -278,6 +289,7 @@
 		3C71C1D0211D6CB600132B60 /* Lib */ = {
 			isa = PBXGroup;
 			children = (
+				3C71C23E2123C4A400132B60 /* LunarCore */,
 				3C71C1D2211D6D9700132B60 /* htmlToPdf */,
 				3C71C1D6211D6DAC00132B60 /* ReplayKit */,
 			);
@@ -363,6 +375,10 @@
 			children = (
 				3C71C23A2122E57B00132B60 /* FSCalenderController.h */,
 				3C71C23B2122E57B00132B60 /* FSCalenderController.m */,
+				3C71C2422123CA0C00132B60 /* NNLunarCalenderManager.h */,
+				3C71C2432123CA0C00132B60 /* NNLunarCalenderManager.m */,
+				3C71C24721241F1900132B60 /* DIYCalendarCell.h */,
+				3C71C24821241F1900132B60 /* DIYCalendarCell.m */,
 			);
 			path = FSCalendar;
 			sourceTree = "<group>";
@@ -374,6 +390,15 @@
 				3C8206C9207363CE009BE5A6 /* ViewTestController.m */,
 			);
 			path = touch;
+			sourceTree = "<group>";
+		};
+		3C71C23E2123C4A400132B60 /* LunarCore */ = {
+			isa = PBXGroup;
+			children = (
+				3C71C23F2123C4AF00132B60 /* LunarCore.h */,
+				3C71C2402123C4AF00132B60 /* LunarCore.m */,
+			);
+			path = LunarCore;
 			sourceTree = "<group>";
 		};
 		3C8206C420736320009BE5A6 /* UI */ = {
@@ -699,7 +724,9 @@
 				3CCB05AE205A5B8000AF6760 /* ObjectiveCTableViewController.m in Sources */,
 				3C71C2342122BD2B00132B60 /* UIView+NNAdd.m in Sources */,
 				3CCB05AA2059198100AF6760 /* GCDViewController.m in Sources */,
+				3C71C2442123CA0C00132B60 /* NNLunarCalenderManager.m in Sources */,
 				3CCB05A32059153B00AF6760 /* ThreadTableViewController.m in Sources */,
+				3C71C24921241F1900132B60 /* DIYCalendarCell.m in Sources */,
 				3C71C2312122BD2B00132B60 /* NSArray+NNAdd.m in Sources */,
 				3CB721692095D010001901C3 /* CoreTextController.m in Sources */,
 				3CCB058820590F7700AF6760 /* AppDelegate.m in Sources */,
@@ -708,6 +735,7 @@
 				3C9C3735206B2F4E00F3ECD9 /* AutoreleasePoolController.m in Sources */,
 				3C71C1D5211D6DA400132B60 /* BNHtmlPdfKit.m in Sources */,
 				3C35BF9A20761E1900066B05 /* TestRuntimeForward.m in Sources */,
+				3C71C2412123C4AF00132B60 /* LunarCore.m in Sources */,
 				3C9C3742206C8E3500F3ECD9 /* MRCSubTestObject.m in Sources */,
 				3C71C2332122BD2B00132B60 /* NSData+NNAdd.m in Sources */,
 				3C0BEED12064A4B70022055C /* ListNode.c in Sources */,
@@ -752,6 +780,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				3CCB058D20590F7700AF6760 /* Base */,
+				3C71C2452123D2A900132B60 /* zh-Hans */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -760,6 +789,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				3CCB059220590F7700AF6760 /* Base */,
+				3C71C2462123D2A900132B60 /* zh-Hans */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -771,6 +801,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -826,6 +857,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -882,7 +914,7 @@
 				ENABLE_STRICT_OBJC_MSGSEND = NO;
 				GCC_PREFIX_HEADER = "iOSLearnigDemo/supporting files/iOSLearningDemo.pch";
 				INFOPLIST_FILE = "$(SRCROOT)/iOSLearnigDemo/supporting files/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.yixia.iOSLearnigDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -903,7 +935,7 @@
 				ENABLE_STRICT_OBJC_MSGSEND = NO;
 				GCC_PREFIX_HEADER = "iOSLearnigDemo/supporting files/iOSLearningDemo.pch";
 				INFOPLIST_FILE = "$(SRCROOT)/iOSLearnigDemo/supporting files/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.yixia.iOSLearnigDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
