@@ -12,6 +12,7 @@
 #import "HtmlToPdfViewController.h"
 #import "JTCalendarTestController.h"
 #import "FSCalenderController.h"
+#import "ColletionInScrollController.h"
 
 @interface UITestTableViewController ()
 @property (nonatomic, strong) NSArray   *dataSource;
@@ -22,7 +23,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.dataSource = @[@"view",@"CoreText",@"html->pdf",@"JTCalendar测试",@"FSCalendar测试"];
+    self.dataSource = @[@"view",@"CoreText",@"html->pdf",@"JTCalendar测试",@"FSCalendar测试",@"collectionViewInScrollView"];
     
     UIView *view = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 10, 10)];
     [self.view addSubview:view];
@@ -63,6 +64,8 @@
         vc = [JTCalendarTestController new];
     }else if (indexPath.row == 4){
         vc = [FSCalenderController new];
+    }else if (indexPath.row == 5){
+        vc = [ColletionInScrollController new];
     }
     vc.title = self.dataSource[indexPath.row];
     [self pushToVc:vc];

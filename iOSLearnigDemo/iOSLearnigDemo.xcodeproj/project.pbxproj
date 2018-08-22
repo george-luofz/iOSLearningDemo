@@ -67,6 +67,7 @@
 		3CCB05AA2059198100AF6760 /* GCDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CCB05A92059198100AF6760 /* GCDViewController.m */; };
 		3CCB05AE205A5B8000AF6760 /* ObjectiveCTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CCB05AD205A5B8000AF6760 /* ObjectiveCTableViewController.m */; };
 		3CDC807F20676A2C00D3AEEB /* PointerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CDC807E20676A2C00D3AEEB /* PointerViewController.m */; };
+		3CDDB29B212BE3B40047BFAB /* ColletionInScrollController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CDDB29A212BE3B40047BFAB /* ColletionInScrollController.m */; };
 		517680A87E52F3B371329E40 /* libPods-iOSLearnigDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8230C408191D4CE3E976186D /* libPods-iOSLearnigDemo.a */; };
 /* End PBXBuildFile section */
 
@@ -198,6 +199,8 @@
 		3CCB05B5205A703B00AF6760 /* blockTest_block.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = blockTest_block.cpp; path = iOSLearnigDemo/blockTest_block.cpp; sourceTree = SOURCE_ROOT; };
 		3CDC807D20676A2C00D3AEEB /* PointerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PointerViewController.h; sourceTree = "<group>"; };
 		3CDC807E20676A2C00D3AEEB /* PointerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PointerViewController.m; sourceTree = "<group>"; };
+		3CDDB299212BE3B40047BFAB /* ColletionInScrollController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ColletionInScrollController.h; sourceTree = "<group>"; };
+		3CDDB29A212BE3B40047BFAB /* ColletionInScrollController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ColletionInScrollController.m; sourceTree = "<group>"; };
 		8230C408191D4CE3E976186D /* libPods-iOSLearnigDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-iOSLearnigDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9EEAC000E3D6A472A25CE362 /* Pods-iOSLearnigDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSLearnigDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-iOSLearnigDemo/Pods-iOSLearnigDemo.release.xcconfig"; sourceTree = "<group>"; };
 		D58921FDD7E4250EC4D61A75 /* Pods-iOSLearnigDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSLearnigDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iOSLearnigDemo/Pods-iOSLearnigDemo.debug.xcconfig"; sourceTree = "<group>"; };
@@ -404,6 +407,7 @@
 		3C8206C420736320009BE5A6 /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				3CDDB298212BE3820047BFAB /* collectionViewInScrollView */,
 				3C71C2392122E56200132B60 /* FSCalendar */,
 				3C71C2372122BEA100132B60 /* JTCalendar */,
 				3C71C23D2122E5B200132B60 /* touch */,
@@ -588,6 +592,15 @@
 			path = block;
 			sourceTree = "<group>";
 		};
+		3CDDB298212BE3820047BFAB /* collectionViewInScrollView */ = {
+			isa = PBXGroup;
+			children = (
+				3CDDB299212BE3B40047BFAB /* ColletionInScrollController.h */,
+				3CDDB29A212BE3B40047BFAB /* ColletionInScrollController.m */,
+			);
+			path = collectionViewInScrollView;
+			sourceTree = "<group>";
+		};
 		D745BAB49044DF411F009ADA /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -730,6 +743,7 @@
 				3C71C2312122BD2B00132B60 /* NSArray+NNAdd.m in Sources */,
 				3CB721692095D010001901C3 /* CoreTextController.m in Sources */,
 				3CCB058820590F7700AF6760 /* AppDelegate.m in Sources */,
+				3CDDB29B212BE3B40047BFAB /* ColletionInScrollController.m in Sources */,
 				3C9C3738206C7AD600F3ECD9 /* MRCObject.m in Sources */,
 				3C8206CE207475A8009BE5A6 /* RuntimeTestViewController.m in Sources */,
 				3C9C3735206B2F4E00F3ECD9 /* AutoreleasePoolController.m in Sources */,
