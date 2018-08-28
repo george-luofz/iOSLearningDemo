@@ -7,7 +7,6 @@
 //
 
 #import "ColletionInScrollController.h"
-
 @interface ColletionInScrollController () <UIScrollViewDelegate ,UICollectionViewDelegate, UICollectionViewDataSource>
 
 @property (nonatomic) UIScrollView *scrollView;
@@ -28,6 +27,7 @@
     [self.scrollView addObserver:self forKeyPath:@"contentOffset" options:NSKeyValueObservingOptionNew context:nil];
     [self.colletionView addObserver:self forKeyPath:@"contentOffset" options:NSKeyValueObservingOptionNew context:nil];
     [self.colletionView2 addObserver:self forKeyPath:@"contentOffset" options:NSKeyValueObservingOptionNew context:nil];
+
 }
 
 - (void)_addScrollView{
