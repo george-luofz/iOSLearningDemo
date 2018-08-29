@@ -14,8 +14,16 @@
 
 @interface CustomFlowLayout()
 @property NSMutableArray *layoutArrs;
+@property NSMutableArray *columnArray;
 @end
 @implementation CustomFlowLayout
+
+- (NSMutableArray *)columnArray{
+    if (!_columnArray) {
+        _columnArray = [NSMutableArray array];
+    }
+    return _columnArray;
+}
 
 - (NSMutableArray *)layoutArrs{
     if (!_layoutArrs) {
@@ -25,6 +33,9 @@
 }
 
 - (void)prepareLayout{
+    for (int i = 0 ; i < layoutColumnCount; i++) {
+        [self.columnArray addObject:@(0)];
+    }
     
     // 清楚之前所有的布局属性
     [self.layoutArrs removeAllObjects];
@@ -58,18 +69,37 @@
     // 主要是计算frame
     CGFloat itemH = [self _heightOfIndexPath:indexPath];
     CGFloat itemW = (self.collectionView.nn_width - layoutColumnMagin * (layoutColumnCount - 1)) / layoutColumnCount;
-//    NSInteger destColumn = 0;
-//    for (int i = 0 ; i < layoutColumnCount; i++) {
-//
-//    }
-    CGFloat itemX = indexPath.row * (itemW + layoutColumnMagin);
-    CGFloat itemY = 10;
+    NSInteger destColumn = 0;
+    CGFloat minColumnHeight = [self.columnArray[0] doubleValue];
+    for (int i = 0 ; i < layoutColumnCount; i++) {
+        CGFloat columnHeight = [self.columnArray[i] doubleValue];
+        
+        if (columnHeight < minColumnHeight){
+            minColumnHeight = columnHeight;
+            destColumn = i;
+            NSLog(@"destColumn:%ld",destColumn);
+            break;
+        }
+    }
+    
+    CGFloat itemX = destColumn * (itemW + layoutColumnMagin); //它应该在第几列
+    CGFloat itemY = minColumnHeight;
+    if (itemY != layoutRowMagin){ //加上行间距
+        itemY += layoutRowMagin;
+    }
     CGRect frame = CGRectMake(itemX, itemY, itemW, itemH);
     att.frame = frame;
+    
+    self.columnArray[destColumn] = @(CGRectGetMaxY(att.frame));
     return att;
 }
 
 - (CGFloat)_heightOfIndexPath:(NSIndexPath *)indexPath{
-    return 50 + indexPath.row * 10;
+//    if (indexPath.item == 0){
+//        return 50;
+//    }else if (indexPath.item == 1){
+//        return 40;
+//    }else if (indexPath.item == )
+    return 50 + indexPath.item * 10;
 }
 @end
