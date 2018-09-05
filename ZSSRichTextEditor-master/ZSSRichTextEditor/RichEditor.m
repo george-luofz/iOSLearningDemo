@@ -157,6 +157,19 @@
     [self.editorView stringByEvaluatingJavaScriptFromString:trigger];
 }
 
+- (void)insertImage:(NSString *)base64ImageString alt:(NSString *)alt{
+    if (!isCorrectString(base64ImageString)) return;
+    [self.editorView stringByEvaluatingJavaScriptFromString:@"zss_editor.prepareInsert();"];
+    NSString *trigger = [NSString stringWithFormat:@"zss_editor.insertImageBase64String(\"%@\", \"%@\");", base64ImageString, alt];
+    [self.editorView stringByEvaluatingJavaScriptFromString:trigger];
+}
+
+- (void)updateImageBase64String:(NSString *)imageBase64String alt:(NSString *)alt {
+    if (!isCorrectString(imageBase64String))  return;
+    [self.editorView stringByEvaluatingJavaScriptFromString:@"zss_editor.prepareInsert();"];
+    NSString *trigger = [NSString stringWithFormat:@"zss_editor.updateImageBase64String(\"%@\", \"%@\");", imageBase64String, alt];
+    [self.editorView stringByEvaluatingJavaScriptFromString:trigger];
+}
 #pragma mark - <UIWebViewDelegate>
 
 - (BOOL)webView:(UIWebView *)webView shouldStartLoadWithRequest:(NSURLRequest *)request navigationType:(UIWebViewNavigationType)navigationType {

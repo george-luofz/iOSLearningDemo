@@ -59,5 +59,7 @@
 - (void)setOrderedList;
 
 /// 插入图片
-- (void)insertImage:(NSString *)base64ImageString;
+- (void)insertImage:(NSString *)base64ImageString alt:(NSString *)alt;
+/// 更新图片
+- (void)updateImageBase64String:(NSString *)imageBase64String alt:(NSString *)alt ;
 @end
