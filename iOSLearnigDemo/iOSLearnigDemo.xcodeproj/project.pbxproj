@@ -16,6 +16,7 @@
 		3C0BEED12064A4B70022055C /* ListNode.c in Sources */ = {isa = PBXBuildFile; fileRef = 3C0BEECE2064A3D40022055C /* ListNode.c */; };
 		3C0BEED22064AAD40022055C /* Stack.c in Sources */ = {isa = PBXBuildFile; fileRef = 3C0BEEC82064A3930022055C /* Stack.c */; };
 		3C0BEED52064E2080022055C /* StringArrayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C0BEED42064E2080022055C /* StringArrayViewController.m */; };
+		3C1E6C5B213D4559002112AF /* AnimationTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C1E6C5A213D4559002112AF /* AnimationTestViewController.m */; };
 		3C35BF9A20761E1900066B05 /* TestRuntimeForward.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C35BF9920761E1900066B05 /* TestRuntimeForward.m */; };
 		3C35BF9D2078738700066B05 /* TestRuntimeForward+category.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C35BF9C2078738700066B05 /* TestRuntimeForward+category.m */; };
 		3C35BFA020789D7100066B05 /* CategoryObj.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C35BF9F20789D7100066B05 /* CategoryObj.m */; };
@@ -101,6 +102,8 @@
 		3C0BEECE2064A3D40022055C /* ListNode.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = ListNode.c; sourceTree = "<group>"; };
 		3C0BEED32064E2080022055C /* StringArrayViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StringArrayViewController.h; sourceTree = "<group>"; };
 		3C0BEED42064E2080022055C /* StringArrayViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StringArrayViewController.m; sourceTree = "<group>"; };
+		3C1E6C59213D4559002112AF /* AnimationTestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AnimationTestViewController.h; sourceTree = "<group>"; };
+		3C1E6C5A213D4559002112AF /* AnimationTestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AnimationTestViewController.m; sourceTree = "<group>"; };
 		3C29803D2088C06800AFA2A4 /* MyWindow.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyWindow.m; sourceTree = "<group>"; };
 		3C2980402088C0B000AFA2A4 /* ParentView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ParentView.m; sourceTree = "<group>"; };
 		3C2980432088C0BF00AFA2A4 /* childView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = childView.m; sourceTree = "<group>"; };
@@ -294,6 +297,15 @@
 			path = dataStructure;
 			sourceTree = "<group>";
 		};
+		3C1E6C5C213D455D002112AF /* animation */ = {
+			isa = PBXGroup;
+			children = (
+				3C1E6C59213D4559002112AF /* AnimationTestViewController.h */,
+				3C1E6C5A213D4559002112AF /* AnimationTestViewController.m */,
+			);
+			path = animation;
+			sourceTree = "<group>";
+		};
 		3C71C1C6211D6BCD00132B60 /* Base */ = {
 			isa = PBXGroup;
 			children = (
@@ -455,6 +467,7 @@
 		3C8206C420736320009BE5A6 /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				3C1E6C5C213D455D002112AF /* animation */,
 				3C03E21621354C1900900A65 /* DiaryNameTest */,
 				3CDDB2B7212D443C0047BFAB /* groupSelectorTest */,
 				3CDDB298212BE3820047BFAB /* collectionViewInScrollView */,
@@ -806,6 +819,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3C1E6C5B213D4559002112AF /* AnimationTestViewController.m in Sources */,
 				3C35BFA72078B42900066B05 /* CategoryObj+Test.m in Sources */,
 				3CDDB2B2212D3CCF0047BFAB /* VSGroupSelector.m in Sources */,
 				3C71C1F32122BAEC00132B60 /* JTCalendarTestController.m in Sources */,
