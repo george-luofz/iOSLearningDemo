@@ -7,11 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3C03E21921354C7500900A65 /* Header.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C03E21821354C7500900A65 /* Header.m */; };
+		3C03E21C21354EF800900A65 /* HeaderCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C03E21B21354EF800900A65 /* HeaderCollectionViewCell.m */; };
+		3C03E21F213558B400900A65 /* CustomFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C03E21E213558B400900A65 /* CustomFlowLayout.m */; };
+		3C03E22221355F9F00900A65 /* FlowLayoutTestController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C03E22121355F9F00900A65 /* FlowLayoutTestController.m */; };
 		3C0BEEC2206232B30022055C /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C0BEEC1206232B30022055C /* Person.m */; };
 		3C0BEEC520649D950022055C /* LinkListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C0BEEC420649D950022055C /* LinkListViewController.m */; };
 		3C0BEED12064A4B70022055C /* ListNode.c in Sources */ = {isa = PBXBuildFile; fileRef = 3C0BEECE2064A3D40022055C /* ListNode.c */; };
 		3C0BEED22064AAD40022055C /* Stack.c in Sources */ = {isa = PBXBuildFile; fileRef = 3C0BEEC82064A3930022055C /* Stack.c */; };
 		3C0BEED52064E2080022055C /* StringArrayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C0BEED42064E2080022055C /* StringArrayViewController.m */; };
+		3C1E6C5B213D4559002112AF /* AnimationTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C1E6C5A213D4559002112AF /* AnimationTestViewController.m */; };
 		3C35BF9A20761E1900066B05 /* TestRuntimeForward.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C35BF9920761E1900066B05 /* TestRuntimeForward.m */; };
 		3C35BF9D2078738700066B05 /* TestRuntimeForward+category.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C35BF9C2078738700066B05 /* TestRuntimeForward+category.m */; };
 		3C35BFA020789D7100066B05 /* CategoryObj.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C35BF9F20789D7100066B05 /* CategoryObj.m */; };
@@ -67,10 +72,26 @@
 		3CCB05AA2059198100AF6760 /* GCDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CCB05A92059198100AF6760 /* GCDViewController.m */; };
 		3CCB05AE205A5B8000AF6760 /* ObjectiveCTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CCB05AD205A5B8000AF6760 /* ObjectiveCTableViewController.m */; };
 		3CDC807F20676A2C00D3AEEB /* PointerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CDC807E20676A2C00D3AEEB /* PointerViewController.m */; };
+		3CDDB29B212BE3B40047BFAB /* ColletionInScrollController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CDDB29A212BE3B40047BFAB /* ColletionInScrollController.m */; };
+		3CDDB2B1212D3CCF0047BFAB /* VSFilterGroupSelector.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CDDB2A5212D3CCF0047BFAB /* VSFilterGroupSelector.m */; };
+		3CDDB2B2212D3CCF0047BFAB /* VSGroupSelector.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CDDB2A7212D3CCF0047BFAB /* VSGroupSelector.m */; };
+		3CDDB2B3212D3CCF0047BFAB /* VSGroupSelectorBaseCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CDDB2A9212D3CCF0047BFAB /* VSGroupSelectorBaseCollectionView.m */; };
+		3CDDB2B4212D3CCF0047BFAB /* VSGroupSelectorContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CDDB2AB212D3CCF0047BFAB /* VSGroupSelectorContainer.m */; };
+		3CDDB2B5212D3CCF0047BFAB /* VSBeautyGroupSelector.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CDDB2AD212D3CCF0047BFAB /* VSBeautyGroupSelector.m */; };
+		3CDDB2B6212D3CCF0047BFAB /* VSGroupSelectorHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CDDB2B0212D3CCF0047BFAB /* VSGroupSelectorHeader.m */; };
+		3CDDB2BA212D445B0047BFAB /* GroupSelectorTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CDDB2B9212D445B0047BFAB /* GroupSelectorTestViewController.m */; };
 		517680A87E52F3B371329E40 /* libPods-iOSLearnigDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8230C408191D4CE3E976186D /* libPods-iOSLearnigDemo.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3C03E21721354C7500900A65 /* Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Header.h; sourceTree = "<group>"; };
+		3C03E21821354C7500900A65 /* Header.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Header.m; sourceTree = "<group>"; };
+		3C03E21A21354EF800900A65 /* HeaderCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HeaderCollectionViewCell.h; sourceTree = "<group>"; };
+		3C03E21B21354EF800900A65 /* HeaderCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HeaderCollectionViewCell.m; sourceTree = "<group>"; };
+		3C03E21D213558B400900A65 /* CustomFlowLayout.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustomFlowLayout.h; sourceTree = "<group>"; };
+		3C03E21E213558B400900A65 /* CustomFlowLayout.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomFlowLayout.m; sourceTree = "<group>"; };
+		3C03E22021355F9F00900A65 /* FlowLayoutTestController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FlowLayoutTestController.h; sourceTree = "<group>"; };
+		3C03E22121355F9F00900A65 /* FlowLayoutTestController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FlowLayoutTestController.m; sourceTree = "<group>"; };
 		3C0BEEC0206232B30022055C /* Person.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
 		3C0BEEC1206232B30022055C /* Person.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
 		3C0BEEC320649D950022055C /* LinkListViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LinkListViewController.h; sourceTree = "<group>"; };
@@ -81,6 +102,8 @@
 		3C0BEECE2064A3D40022055C /* ListNode.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = ListNode.c; sourceTree = "<group>"; };
 		3C0BEED32064E2080022055C /* StringArrayViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StringArrayViewController.h; sourceTree = "<group>"; };
 		3C0BEED42064E2080022055C /* StringArrayViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StringArrayViewController.m; sourceTree = "<group>"; };
+		3C1E6C59213D4559002112AF /* AnimationTestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AnimationTestViewController.h; sourceTree = "<group>"; };
+		3C1E6C5A213D4559002112AF /* AnimationTestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AnimationTestViewController.m; sourceTree = "<group>"; };
 		3C29803D2088C06800AFA2A4 /* MyWindow.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyWindow.m; sourceTree = "<group>"; };
 		3C2980402088C0B000AFA2A4 /* ParentView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ParentView.m; sourceTree = "<group>"; };
 		3C2980432088C0BF00AFA2A4 /* childView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = childView.m; sourceTree = "<group>"; };
@@ -198,6 +221,22 @@
 		3CCB05B5205A703B00AF6760 /* blockTest_block.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = blockTest_block.cpp; path = iOSLearnigDemo/blockTest_block.cpp; sourceTree = SOURCE_ROOT; };
 		3CDC807D20676A2C00D3AEEB /* PointerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PointerViewController.h; sourceTree = "<group>"; };
 		3CDC807E20676A2C00D3AEEB /* PointerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PointerViewController.m; sourceTree = "<group>"; };
+		3CDDB299212BE3B40047BFAB /* ColletionInScrollController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ColletionInScrollController.h; sourceTree = "<group>"; };
+		3CDDB29A212BE3B40047BFAB /* ColletionInScrollController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ColletionInScrollController.m; sourceTree = "<group>"; };
+		3CDDB2A5212D3CCF0047BFAB /* VSFilterGroupSelector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VSFilterGroupSelector.m; sourceTree = "<group>"; };
+		3CDDB2A6212D3CCF0047BFAB /* VSBeautyGroupSelector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VSBeautyGroupSelector.h; sourceTree = "<group>"; };
+		3CDDB2A7212D3CCF0047BFAB /* VSGroupSelector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VSGroupSelector.m; sourceTree = "<group>"; };
+		3CDDB2A8212D3CCF0047BFAB /* VSGroupSelectorContainer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VSGroupSelectorContainer.h; sourceTree = "<group>"; };
+		3CDDB2A9212D3CCF0047BFAB /* VSGroupSelectorBaseCollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VSGroupSelectorBaseCollectionView.m; sourceTree = "<group>"; };
+		3CDDB2AA212D3CCF0047BFAB /* VSGroupSelectorHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VSGroupSelectorHeader.h; sourceTree = "<group>"; };
+		3CDDB2AB212D3CCF0047BFAB /* VSGroupSelectorContainer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VSGroupSelectorContainer.m; sourceTree = "<group>"; };
+		3CDDB2AC212D3CCF0047BFAB /* VSGroupSelector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VSGroupSelector.h; sourceTree = "<group>"; };
+		3CDDB2AD212D3CCF0047BFAB /* VSBeautyGroupSelector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VSBeautyGroupSelector.m; sourceTree = "<group>"; };
+		3CDDB2AE212D3CCF0047BFAB /* VSFilterGroupSelector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VSFilterGroupSelector.h; sourceTree = "<group>"; };
+		3CDDB2AF212D3CCF0047BFAB /* VSGroupSelectorBaseCollectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VSGroupSelectorBaseCollectionView.h; sourceTree = "<group>"; };
+		3CDDB2B0212D3CCF0047BFAB /* VSGroupSelectorHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VSGroupSelectorHeader.m; sourceTree = "<group>"; };
+		3CDDB2B8212D445B0047BFAB /* GroupSelectorTestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GroupSelectorTestViewController.h; sourceTree = "<group>"; };
+		3CDDB2B9212D445B0047BFAB /* GroupSelectorTestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GroupSelectorTestViewController.m; sourceTree = "<group>"; };
 		8230C408191D4CE3E976186D /* libPods-iOSLearnigDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-iOSLearnigDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9EEAC000E3D6A472A25CE362 /* Pods-iOSLearnigDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSLearnigDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-iOSLearnigDemo/Pods-iOSLearnigDemo.release.xcconfig"; sourceTree = "<group>"; };
 		D58921FDD7E4250EC4D61A75 /* Pods-iOSLearnigDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSLearnigDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iOSLearnigDemo/Pods-iOSLearnigDemo.debug.xcconfig"; sourceTree = "<group>"; };
@@ -223,6 +262,21 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		3C03E21621354C1900900A65 /* DiaryNameTest */ = {
+			isa = PBXGroup;
+			children = (
+				3C03E21721354C7500900A65 /* Header.h */,
+				3C03E21821354C7500900A65 /* Header.m */,
+				3C03E21A21354EF800900A65 /* HeaderCollectionViewCell.h */,
+				3C03E21B21354EF800900A65 /* HeaderCollectionViewCell.m */,
+				3C03E21D213558B400900A65 /* CustomFlowLayout.h */,
+				3C03E21E213558B400900A65 /* CustomFlowLayout.m */,
+				3C03E22021355F9F00900A65 /* FlowLayoutTestController.h */,
+				3C03E22121355F9F00900A65 /* FlowLayoutTestController.m */,
+			);
+			path = DiaryNameTest;
+			sourceTree = "<group>";
+		};
 		3C0BEEBF2062329F0022055C /* copyMutableCopy */ = {
 			isa = PBXGroup;
 			children = (
@@ -241,6 +295,15 @@
 				3C0BEECE2064A3D40022055C /* ListNode.c */,
 			);
 			path = dataStructure;
+			sourceTree = "<group>";
+		};
+		3C1E6C5C213D455D002112AF /* animation */ = {
+			isa = PBXGroup;
+			children = (
+				3C1E6C59213D4559002112AF /* AnimationTestViewController.h */,
+				3C1E6C5A213D4559002112AF /* AnimationTestViewController.m */,
+			);
+			path = animation;
 			sourceTree = "<group>";
 		};
 		3C71C1C6211D6BCD00132B60 /* Base */ = {
@@ -404,6 +467,10 @@
 		3C8206C420736320009BE5A6 /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				3C1E6C5C213D455D002112AF /* animation */,
+				3C03E21621354C1900900A65 /* DiaryNameTest */,
+				3CDDB2B7212D443C0047BFAB /* groupSelectorTest */,
+				3CDDB298212BE3820047BFAB /* collectionViewInScrollView */,
 				3C71C2392122E56200132B60 /* FSCalendar */,
 				3C71C2372122BEA100132B60 /* JTCalendar */,
 				3C71C23D2122E5B200132B60 /* touch */,
@@ -588,6 +655,44 @@
 			path = block;
 			sourceTree = "<group>";
 		};
+		3CDDB298212BE3820047BFAB /* collectionViewInScrollView */ = {
+			isa = PBXGroup;
+			children = (
+				3CDDB299212BE3B40047BFAB /* ColletionInScrollController.h */,
+				3CDDB29A212BE3B40047BFAB /* ColletionInScrollController.m */,
+			);
+			path = collectionViewInScrollView;
+			sourceTree = "<group>";
+		};
+		3CDDB2A4212D3CCF0047BFAB /* groupSelector */ = {
+			isa = PBXGroup;
+			children = (
+				3CDDB2AC212D3CCF0047BFAB /* VSGroupSelector.h */,
+				3CDDB2A7212D3CCF0047BFAB /* VSGroupSelector.m */,
+				3CDDB2AA212D3CCF0047BFAB /* VSGroupSelectorHeader.h */,
+				3CDDB2B0212D3CCF0047BFAB /* VSGroupSelectorHeader.m */,
+				3CDDB2AE212D3CCF0047BFAB /* VSFilterGroupSelector.h */,
+				3CDDB2A5212D3CCF0047BFAB /* VSFilterGroupSelector.m */,
+				3CDDB2A8212D3CCF0047BFAB /* VSGroupSelectorContainer.h */,
+				3CDDB2AB212D3CCF0047BFAB /* VSGroupSelectorContainer.m */,
+				3CDDB2A6212D3CCF0047BFAB /* VSBeautyGroupSelector.h */,
+				3CDDB2AD212D3CCF0047BFAB /* VSBeautyGroupSelector.m */,
+				3CDDB2AF212D3CCF0047BFAB /* VSGroupSelectorBaseCollectionView.h */,
+				3CDDB2A9212D3CCF0047BFAB /* VSGroupSelectorBaseCollectionView.m */,
+			);
+			path = groupSelector;
+			sourceTree = "<group>";
+		};
+		3CDDB2B7212D443C0047BFAB /* groupSelectorTest */ = {
+			isa = PBXGroup;
+			children = (
+				3CDDB2A4212D3CCF0047BFAB /* groupSelector */,
+				3CDDB2B8212D445B0047BFAB /* GroupSelectorTestViewController.h */,
+				3CDDB2B9212D445B0047BFAB /* GroupSelectorTestViewController.m */,
+			);
+			path = groupSelectorTest;
+			sourceTree = "<group>";
+		};
 		D745BAB49044DF411F009ADA /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -714,7 +819,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3C1E6C5B213D4559002112AF /* AnimationTestViewController.m in Sources */,
 				3C35BFA72078B42900066B05 /* CategoryObj+Test.m in Sources */,
+				3CDDB2B2212D3CCF0047BFAB /* VSGroupSelector.m in Sources */,
 				3C71C1F32122BAEC00132B60 /* JTCalendarTestController.m in Sources */,
 				3C35BFA62078B3CC00066B05 /* CategoryObj+Test2.m in Sources */,
 				3C35BF9D2078738700066B05 /* TestRuntimeForward+category.m in Sources */,
@@ -730,6 +837,8 @@
 				3C71C2312122BD2B00132B60 /* NSArray+NNAdd.m in Sources */,
 				3CB721692095D010001901C3 /* CoreTextController.m in Sources */,
 				3CCB058820590F7700AF6760 /* AppDelegate.m in Sources */,
+				3CDDB2B4212D3CCF0047BFAB /* VSGroupSelectorContainer.m in Sources */,
+				3CDDB29B212BE3B40047BFAB /* ColletionInScrollController.m in Sources */,
 				3C9C3738206C7AD600F3ECD9 /* MRCObject.m in Sources */,
 				3C8206CE207475A8009BE5A6 /* RuntimeTestViewController.m in Sources */,
 				3C9C3735206B2F4E00F3ECD9 /* AutoreleasePoolController.m in Sources */,
@@ -744,20 +853,27 @@
 				3C8206D12074ACAA009BE5A6 /* Person2.m in Sources */,
 				3C9C373B206C7AEF00F3ECD9 /* MemoryManageViewController.m in Sources */,
 				3C71C23C2122E57B00132B60 /* FSCalenderController.m in Sources */,
+				3CDDB2B1212D3CCF0047BFAB /* VSFilterGroupSelector.m in Sources */,
 				3C9C37242068D85500F3ECD9 /* FunctionalViewController.m in Sources */,
 				3C398FCA206DE85C008BDFB3 /* FJReplayKit.m in Sources */,
 				3C0BEED22064AAD40022055C /* Stack.c in Sources */,
 				3C71C22F2122BD2B00132B60 /* NSMutableArray+NNAdd.m in Sources */,
 				3CB7216C2095D054001901C3 /* CTDisplayView.m in Sources */,
+				3C03E21921354C7500900A65 /* Header.m in Sources */,
 				3C71C2302122BD2B00132B60 /* UIFont+NNAdd.m in Sources */,
 				3C9C3745206CC5D000F3ECD9 /* ARCObject.m in Sources */,
 				3C71C1C9211D6BEE00132B60 /* BaseTableViewController.m in Sources */,
 				3CCB059E2059142200AF6760 /* MainTableViewController.m in Sources */,
 				3C71C2362122BD2B00132B60 /* NSMutableDictionary+NNAdd.m in Sources */,
+				3CDDB2B6212D3CCF0047BFAB /* VSGroupSelectorHeader.m in Sources */,
 				3CDC807F20676A2C00D3AEEB /* PointerViewController.m in Sources */,
+				3C03E22221355F9F00900A65 /* FlowLayoutTestController.m in Sources */,
+				3C03E21C21354EF800900A65 /* HeaderCollectionViewCell.m in Sources */,
 				3C9C372B206B2C9300F3ECD9 /* PropertyLearningController.m in Sources */,
+				3C03E21F213558B400900A65 /* CustomFlowLayout.m in Sources */,
 				3C71C2322122BD2B00132B60 /* NSString+NNAdd.m in Sources */,
 				3C8206C72073633B009BE5A6 /* UITestTableViewController.m in Sources */,
+				3CDDB2B3212D3CCF0047BFAB /* VSGroupSelectorBaseCollectionView.m in Sources */,
 				3C0BEEC2206232B30022055C /* Person.m in Sources */,
 				3C968A352061FE53002BAC80 /* AlgoTableViewController.m in Sources */,
 				3C71C1E62121802E00132B60 /* APIRequest.m in Sources */,
@@ -767,9 +883,11 @@
 				3C0BEEC520649D950022055C /* LinkListViewController.m in Sources */,
 				3CCB05A62059182600AF6760 /* UIViewController+Push.m in Sources */,
 				3C71C1CC211D6C7000132B60 /* HtmlToPdfViewController.m in Sources */,
+				3CDDB2BA212D445B0047BFAB /* GroupSelectorTestViewController.m in Sources */,
 				3C8206CA207363CE009BE5A6 /* ViewTestController.m in Sources */,
 				3C71C2352122BD2B00132B60 /* NSDictionary+NNAdd.m in Sources */,
 				3C0BEED52064E2080022055C /* StringArrayViewController.m in Sources */,
+				3CDDB2B5212D3CCF0047BFAB /* VSBeautyGroupSelector.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

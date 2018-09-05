@@ -12,6 +12,10 @@
 #import "HtmlToPdfViewController.h"
 #import "JTCalendarTestController.h"
 #import "FSCalenderController.h"
+#import "ColletionInScrollController.h"
+#import "GroupSelectorTestViewController.h"
+#import "FlowLayoutTestController.h"
+#import "AnimationTestViewController.h"
 
 @interface UITestTableViewController ()
 @property (nonatomic, strong) NSArray   *dataSource;
@@ -22,14 +26,31 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.dataSource = @[@"view",@"CoreText",@"html->pdf",@"JTCalendar测试",@"FSCalendar测试"];
+    self.dataSource = @[@"view",@"CoreText",@"html->pdf",@"JTCalendar测试",@"FSCalendar测试",@"collectionViewInScrollView",@"groupSelector",@"flowLayout",@"动画"];
     
     UIView *view = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 10, 10)];
     [self.view addSubview:view];
     NSLog(@"view window:%@",view.window);
-    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(5 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-        NSLog(@"dispatch after view window:%@",view.window);
-    });
+    UIImage *image = nil;
+    
+    view.layer.contents = (id )image.CGImage;
+    view.layer.contentsCenter = CGRectMake(0, 0, 1, 1);
+    view.layer.contentsScale = image.scale;
+    
+}
+- (void)viewDidAppear:(BOOL)animated{
+    [super viewDidAppear:animated];
+//    UINavigationController *navVc = self.navigationController;
+//    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(2 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+//        [navVc popViewControllerAnimated:NO];
+//        //        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(.2 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+//        UIViewController *vc = [UIViewController new];
+//        vc.view.backgroundColor = [UIColor whiteColor];
+//        NSLog(@"navVC:%@",navVc);
+//        [navVc pushViewController:vc animated:YES];
+//        //        });
+//        
+//    });
 }
 
 #pragma mark - Table view data source
@@ -63,10 +84,21 @@
         vc = [JTCalendarTestController new];
     }else if (indexPath.row == 4){
         vc = [FSCalenderController new];
+    }else if (indexPath.row == 5){
+        vc = [ColletionInScrollController new];
+    }else if (indexPath.row == 6){
+        vc = [GroupSelectorTestViewController new];
+    }else if (indexPath.row == 7){
+        vc = [FlowLayoutTestController new];
+    }else if (indexPath.row == 8){
+        vc = [AnimationTestViewController new];
     }
     vc.title = self.dataSource[indexPath.row];
     [self pushToVc:vc];
 }
 
+// 笔记本，数据从哪来；网络来
+// UI控件，布局、交互、事件
+// 1.
 
 @end
