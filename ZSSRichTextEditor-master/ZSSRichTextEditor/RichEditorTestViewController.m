@@ -33,6 +33,29 @@
     self.navigationItem.rightBarButtonItems = @[item2, item1];
 }
 
+#pragma mark - View Will Appear Section
+- (void)viewWillAppear:(BOOL)animated {
+    
+    [super viewWillAppear:animated];
+    //    [self.view resignFirstResponder];
+    //Add observers for keyboard showing or hiding notifications
+//    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(keyboardWillShowOrHide:) name:UIKeyboardWillShowNotification object:nil];
+//    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(keyboardWillShowOrHide:) name:UIKeyboardWillHideNotification object:nil];
+    
+}
+
+#pragma mark - View Will Disappear Section
+- (void)viewWillDisappear:(BOOL)animated {
+    
+    [super viewWillDisappear:animated];
+    //    [self.view endEditing:YES];
+    //Remove observers for keyboard showing or hiding notifications
+//    [[NSNotificationCenter defaultCenter] removeObserver:self name:UIKeyboardWillShowNotification object:nil];
+//    [[NSNotificationCenter defaultCenter] removeObserver:self name:UIKeyboardWillHideNotification object:nil];
+    
+}
+
+
 
 - (void)exportHTML{
     NSLog(@"%@",[self.richEditor getContent]);

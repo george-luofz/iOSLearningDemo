@@ -88,6 +88,8 @@
 
 - (void)animationDidStop:(CAAnimation *)anim finished:(BOOL)flag{
     NSLog(@"%s,finisded:%d",__func__,flag);
+
+    
 }
 
 @end
