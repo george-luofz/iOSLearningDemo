@@ -17,7 +17,7 @@
 @end
 
 @implementation ColletionInScrollController
-//#pragma mark - <#mark#>
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
@@ -211,7 +211,7 @@
 //[UIScreen mainScreen].bounds.size.width
 //[UIScreen mainScreen].bounds.size.height
 
-     
+    
 }
 
 @end

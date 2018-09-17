@@ -12,6 +12,7 @@
 #import "AlgoTableViewController.h"
 #import "UITestTableViewController.h"
 #import "ViewTestController.h"
+#import "AVFoundationTestController.h"
 
 @interface MainTableViewController ()
 @property (nonatomic, strong) NSArray   *dataSource;
@@ -23,7 +24,7 @@
     [super viewDidLoad];
     self.title = @"iOS learning demo";
     
-    self.dataSource = @[@"Objective-C",@"UI",@"多线程",@"网络",@"算法",@"架构",@"图形处理",@"视频处理"];
+    self.dataSource = @[@"Objective-C",@"UI",@"多线程",@"网络",@"算法",@"AVFoundation"];
 }
 
 
@@ -52,8 +53,8 @@
         vc = [ThreadTableViewController new];
     }else if(indexPath.row == 4){
         vc = [AlgoTableViewController new];
-    }else if (indexPath.row == 6){
-        
+    }else if (indexPath.row == 5){
+        vc = [AVFoundationTestController new];
     }
     if(vc){
         vc.title = self.dataSource[indexPath.row];
