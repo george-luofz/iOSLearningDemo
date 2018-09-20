@@ -17,6 +17,8 @@
 		3C0BEED22064AAD40022055C /* Stack.c in Sources */ = {isa = PBXBuildFile; fileRef = 3C0BEEC82064A3930022055C /* Stack.c */; };
 		3C0BEED52064E2080022055C /* StringArrayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C0BEED42064E2080022055C /* StringArrayViewController.m */; };
 		3C1E6C5B213D4559002112AF /* AnimationTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C1E6C5A213D4559002112AF /* AnimationTestViewController.m */; };
+		3C1F09DB2153D339005D4692 /* AppearanceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C1F09DA2153D339005D4692 /* AppearanceViewController.m */; };
+		3C1F09DF2153D3AC005D4692 /* CustomView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C1F09DE2153D3AC005D4692 /* CustomView.m */; };
 		3C2A3CBF214F999D0071B9CE /* FZVideoSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C2A3CBE214F999D0071B9CE /* FZVideoSource.m */; };
 		3C2A3CC2214FA1A80071B9CE /* AVFoundationTestController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C2A3CC1214FA1A80071B9CE /* AVFoundationTestController.m */; };
 		3C35BF9A20761E1900066B05 /* TestRuntimeForward.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C35BF9920761E1900066B05 /* TestRuntimeForward.m */; };
@@ -106,6 +108,10 @@
 		3C0BEED42064E2080022055C /* StringArrayViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StringArrayViewController.m; sourceTree = "<group>"; };
 		3C1E6C59213D4559002112AF /* AnimationTestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AnimationTestViewController.h; sourceTree = "<group>"; };
 		3C1E6C5A213D4559002112AF /* AnimationTestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AnimationTestViewController.m; sourceTree = "<group>"; };
+		3C1F09D92153D339005D4692 /* AppearanceViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppearanceViewController.h; sourceTree = "<group>"; };
+		3C1F09DA2153D339005D4692 /* AppearanceViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppearanceViewController.m; sourceTree = "<group>"; };
+		3C1F09DD2153D3AC005D4692 /* CustomView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustomView.h; sourceTree = "<group>"; };
+		3C1F09DE2153D3AC005D4692 /* CustomView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomView.m; sourceTree = "<group>"; };
 		3C29803D2088C06800AFA2A4 /* MyWindow.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyWindow.m; sourceTree = "<group>"; };
 		3C2980402088C0B000AFA2A4 /* ParentView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ParentView.m; sourceTree = "<group>"; };
 		3C2980432088C0BF00AFA2A4 /* childView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = childView.m; sourceTree = "<group>"; };
@@ -312,6 +318,24 @@
 			path = animation;
 			sourceTree = "<group>";
 		};
+		3C1F09D82153D30F005D4692 /* Appearance */ = {
+			isa = PBXGroup;
+			children = (
+				3C1F09D92153D339005D4692 /* AppearanceViewController.h */,
+				3C1F09DA2153D339005D4692 /* AppearanceViewController.m */,
+			);
+			path = Appearance;
+			sourceTree = "<group>";
+		};
+		3C1F09DC2153D393005D4692 /* Appearance */ = {
+			isa = PBXGroup;
+			children = (
+				3C1F09DD2153D3AC005D4692 /* CustomView.h */,
+				3C1F09DE2153D3AC005D4692 /* CustomView.m */,
+			);
+			path = Appearance;
+			sourceTree = "<group>";
+		};
 		3C2A3CBC214F988C0071B9CE /* AVFoundation */ = {
 			isa = PBXGroup;
 			children = (
@@ -466,6 +490,7 @@
 		3C71C23D2122E5B200132B60 /* touch */ = {
 			isa = PBXGroup;
 			children = (
+				3C1F09DC2153D393005D4692 /* Appearance */,
 				3C8206C8207363CE009BE5A6 /* ViewTestController.h */,
 				3C8206C9207363CE009BE5A6 /* ViewTestController.m */,
 			);
@@ -484,6 +509,7 @@
 		3C8206C420736320009BE5A6 /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				3C1F09D82153D30F005D4692 /* Appearance */,
 				3C1E6C5C213D455D002112AF /* animation */,
 				3C03E21621354C1900900A65 /* DiaryNameTest */,
 				3CDDB2B7212D443C0047BFAB /* groupSelectorTest */,
@@ -881,12 +907,14 @@
 				3C71C2302122BD2B00132B60 /* UIFont+NNAdd.m in Sources */,
 				3C9C3745206CC5D000F3ECD9 /* ARCObject.m in Sources */,
 				3C71C1C9211D6BEE00132B60 /* BaseTableViewController.m in Sources */,
+				3C1F09DB2153D339005D4692 /* AppearanceViewController.m in Sources */,
 				3CCB059E2059142200AF6760 /* MainTableViewController.m in Sources */,
 				3C71C2362122BD2B00132B60 /* NSMutableDictionary+NNAdd.m in Sources */,
 				3CDDB2B6212D3CCF0047BFAB /* VSGroupSelectorHeader.m in Sources */,
 				3CDC807F20676A2C00D3AEEB /* PointerViewController.m in Sources */,
 				3C03E22221355F9F00900A65 /* FlowLayoutTestController.m in Sources */,
 				3C03E21C21354EF800900A65 /* HeaderCollectionViewCell.m in Sources */,
+				3C1F09DF2153D3AC005D4692 /* CustomView.m in Sources */,
 				3C9C372B206B2C9300F3ECD9 /* PropertyLearningController.m in Sources */,
 				3C03E21F213558B400900A65 /* CustomFlowLayout.m in Sources */,
 				3C2A3CC2214FA1A80071B9CE /* AVFoundationTestController.m in Sources */,
