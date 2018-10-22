@@ -7,7 +7,7 @@
 //
 
 #import "ViewTestController.h"
-
+#import "CustomView.h"
 
 @interface ViewTestController ()<UIGestureRecognizerDelegate>
 
@@ -24,6 +24,7 @@
         [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"https://vans.com.cn/wap/article-2775.html?utm_source=Miaopai&utm_medium=Homepage_4-1&utm_campaign=Vans2018 Brand"]];
     });
 
+    [self _testAppearance];
 }
 
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
@@ -50,4 +51,12 @@
     NSLog(@"%s",__func__);
 }
 
+#pragma mark - appearance
+- (void)_testAppearance{
+    /// test appearance
+    [CustomView appearance].bgColor  = [UIColor redColor];
+    
+    CustomView *view = [[CustomView alloc] initWithFrame:CGRectMake(0, 100, 50, 50)];
+    [self.view addSubview:view];
+}
 @end
