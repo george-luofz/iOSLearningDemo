@@ -288,4 +288,14 @@ void ReportFunction(id self, SEL _cmd)
     free(propList);
     NSLog(@"model:%@",model);
 }
+
+#pragma mark - NSInvocation
+- (void)_testInvocation{
+    SEL selector = @selector(_test_jsonToModel);
+    NSMethodSignature *msg = [NSMethodSignature instanceMethodSignatureForSelector:selector];
+    NSInvocation *invoke = [NSInvocation invocationWithMethodSignature:msg];
+    if (invoke){
+        
+    }
+}
 @end

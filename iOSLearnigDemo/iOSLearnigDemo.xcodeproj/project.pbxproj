@@ -63,6 +63,8 @@
 		3C9C373F206C7C8100F3ECD9 /* MRCTestObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C9C373E206C7C8100F3ECD9 /* MRCTestObject.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		3C9C3742206C8E3500F3ECD9 /* MRCSubTestObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C9C3741206C8E3500F3ECD9 /* MRCSubTestObject.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		3C9C3745206CC5D000F3ECD9 /* ARCObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C9C3744206CC5D000F3ECD9 /* ARCObject.m */; };
+		3CB0517D217821AE00FE90BB /* ScrollTestCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CB0517B217821AE00FE90BB /* ScrollTestCollectionViewCell.m */; };
+		3CB0517E217821AE00FE90BB /* ScrollTestCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3CB0517C217821AE00FE90BB /* ScrollTestCollectionViewCell.xib */; };
 		3CB721692095D010001901C3 /* CoreTextController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CB721682095D010001901C3 /* CoreTextController.m */; };
 		3CB7216C2095D054001901C3 /* CTDisplayView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CB7216B2095D054001901C3 /* CTDisplayView.m */; };
 		3CCB058820590F7700AF6760 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CCB058720590F7700AF6760 /* AppDelegate.m */; };
@@ -206,6 +208,9 @@
 		3C9C3741206C8E3500F3ECD9 /* MRCSubTestObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MRCSubTestObject.m; sourceTree = "<group>"; };
 		3C9C3743206CC5D000F3ECD9 /* ARCObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ARCObject.h; sourceTree = "<group>"; };
 		3C9C3744206CC5D000F3ECD9 /* ARCObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ARCObject.m; sourceTree = "<group>"; };
+		3CB0517A217821AE00FE90BB /* ScrollTestCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ScrollTestCollectionViewCell.h; sourceTree = "<group>"; };
+		3CB0517B217821AE00FE90BB /* ScrollTestCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ScrollTestCollectionViewCell.m; sourceTree = "<group>"; };
+		3CB0517C217821AE00FE90BB /* ScrollTestCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ScrollTestCollectionViewCell.xib; sourceTree = "<group>"; };
 		3CB721672095D010001901C3 /* CoreTextController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CoreTextController.h; sourceTree = "<group>"; };
 		3CB721682095D010001901C3 /* CoreTextController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CoreTextController.m; sourceTree = "<group>"; };
 		3CB7216A2095D054001901C3 /* CTDisplayView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CTDisplayView.h; sourceTree = "<group>"; };
@@ -704,6 +709,9 @@
 			children = (
 				3CDDB299212BE3B40047BFAB /* ColletionInScrollController.h */,
 				3CDDB29A212BE3B40047BFAB /* ColletionInScrollController.m */,
+				3CB0517A217821AE00FE90BB /* ScrollTestCollectionViewCell.h */,
+				3CB0517B217821AE00FE90BB /* ScrollTestCollectionViewCell.m */,
+				3CB0517C217821AE00FE90BB /* ScrollTestCollectionViewCell.xib */,
 			);
 			path = collectionViewInScrollView;
 			sourceTree = "<group>";
@@ -806,6 +814,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3CB0517E217821AE00FE90BB /* ScrollTestCollectionViewCell.xib in Resources */,
 				3CCB059320590F7700AF6760 /* LaunchScreen.storyboard in Resources */,
 				3CCB059020590F7700AF6760 /* Assets.xcassets in Resources */,
 				3C71C1D8211D6FA600132B60 /* 1.html in Resources */,
@@ -882,6 +891,7 @@
 				3CB721692095D010001901C3 /* CoreTextController.m in Sources */,
 				3CCB058820590F7700AF6760 /* AppDelegate.m in Sources */,
 				3CDDB2B4212D3CCF0047BFAB /* VSGroupSelectorContainer.m in Sources */,
+				3CB0517D217821AE00FE90BB /* ScrollTestCollectionViewCell.m in Sources */,
 				3CDDB29B212BE3B40047BFAB /* ColletionInScrollController.m in Sources */,
 				3C9C3738206C7AD600F3ECD9 /* MRCObject.m in Sources */,
 				3C8206CE207475A8009BE5A6 /* RuntimeTestViewController.m in Sources */,

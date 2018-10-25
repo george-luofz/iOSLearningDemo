@@ -103,4 +103,53 @@
     return textSize;
 }
 
+// 裁剪合适字符
+- (NSString *)clipFitStringForLabel:(CGSize)labelSize font:(UIFont *)font {
+    CGFloat maxWidth = labelSize.width;
+    CGFloat originalWidth = [[self class] widthWithFont:font withLineHeight:labelSize.height string:self];
+    if (originalWidth <= maxWidth) return [self copy];
+    CGFloat pointStrLength = [[self class] widthWithFont:font withLineHeight:labelSize.height string:@"..."];
+    if (pointStrLength >= maxWidth) return @"...";
+    
+    // 先删除到合理的字符串
+    NSString *originalString = [self copy];
+    NSString *resultString = originalString;
+    for (NSInteger i = originalString.length - 1;i >= 0;i--){
+        NSString *tempString = [originalString stringByReplacingCharactersInRange:NSMakeRange(i, originalString.length - i) withString:@"..."];
+        CGFloat tempStringWidth = [[self class] widthWithFont:font withLineHeight:labelSize.height string:tempString];
+        NSLog(@"tempStr:%@,width:%lf",tempString,tempStringWidth);
+        if (tempStringWidth <= maxWidth){
+            resultString = [tempString copy];
+            break;
+        }
+    }
+    if (resultString.length < 4) return @"...";
+    // 再处理最后一个表情[😆...]
+    NSRange lastHandlingRange = NSMakeRange(resultString.length - 1 - 3, 4);
+    NSRange emojRange = [resultString rangeOfComposedCharacterSequenceAtIndex:lastHandlingRange.location];
+    if (emojRange.location != NSNotFound && emojRange.length > 1){
+        resultString = [resultString stringByReplacingCharactersInRange:emojRange withString:@""];
+    }
+    return resultString;
+}
+
++ (NSInteger)widthWithFont:(UIFont*)font withLineHeight:(CGFloat)lineHeight string:(NSString *)str
+{
+    NSInteger width = 0;
+    @try {
+        NSMutableParagraphStyle *paragraphStyle = [[NSMutableParagraphStyle alloc]init];
+        paragraphStyle.lineBreakMode = NSLineBreakByCharWrapping;
+        NSDictionary *attributes = @{NSFontAttributeName:font, NSParagraphStyleAttributeName:paragraphStyle.copy};
+        CGRect rect = [str boundingRectWithSize:CGSizeMake(CGFLOAT_MAX, lineHeight) options:NSStringDrawingUsesLineFragmentOrigin attributes:attributes context:nil];
+        width = ceil(rect.size.width);
+    }
+    @catch (NSException *exception) {
+        return width;
+    }
+    @finally {
+        return width;
+    }
+}
+
+
 @end

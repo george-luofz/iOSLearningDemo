@@ -7,6 +7,8 @@
 //
 
 #import "PropertyLearningController.h"
+#import "NSString+NNAdd.h"
+
 typedef void(^Block) (void);
 
 @interface PropertyLearningController ()
@@ -30,6 +32,10 @@ typedef void(^Block) (void);
     // Do any additional setup after loading the view.
     [self _test1];
     [self _test_copy_mutableCopy];
+    
+    NSString *oriStr = @"我是中国人🇨🇳🆔吆☣️📴☢️";
+    NSString *resultStr = [oriStr clipFitStringForLabel:CGSizeMake(158, 20) font:[UIFont systemFontOfSize:14]];
+    NSLog(@"ori:%@,resultStr:%@",oriStr, resultStr);
 }
 
 #pragma mark --
