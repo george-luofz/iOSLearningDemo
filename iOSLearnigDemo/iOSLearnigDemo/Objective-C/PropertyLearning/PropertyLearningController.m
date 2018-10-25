@@ -33,9 +33,16 @@ typedef void(^Block) (void);
     [self _test1];
     [self _test_copy_mutableCopy];
     
+
     NSString *oriStr = @"我是中国人🇨🇳🆔吆☣️📴☢️";
     NSString *resultStr = [oriStr clipFitStringForLabel:CGSizeMake(158, 20) font:[UIFont systemFontOfSize:14]];
     NSLog(@"ori:%@,resultStr:%@",oriStr, resultStr);
+
+    NSLog(@"12.0 = %@ \n",[self stringFromDouble:12.0]);
+    NSLog(@"12.10 = %@ \n",[self stringFromDouble:12.10]);
+    NSLog(@"12.12340 = %@ \n",[self stringFromDouble:12.12340]);
+    NSLog(@"12.1234567890 = %@ \n",[self stringFromDouble:12.1234567890]);
+    NSLog(@"12.1234567891234567890 = %@ \n",[self stringFromDouble:12.1234567891234567890]);
 }
 
 #pragma mark --
@@ -117,4 +124,12 @@ typedef void(^Block) (void);
 }
 // assgin 与 weak
 
+#pragma mark - 浮点数
+// 去除小数点后边的0
+- (NSString *)stringFromDouble:(CGFloat)value{
+    NSString *string = [NSString stringWithFormat:@"%lf",value];
+    NSString *string2 = [[NSNumber numberWithDouble:value] stringValue];
+    NSString *string3 = [@(value) stringValue]; //可以保留14位
+    return [NSString stringWithFormat:@"%@,%@,%@",@([string doubleValue]),@([string2 doubleValue]),string3];
+}
 @end
