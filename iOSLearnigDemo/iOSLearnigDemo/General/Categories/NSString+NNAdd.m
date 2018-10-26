@@ -103,26 +103,49 @@
     return textSize;
 }
 
-// 裁剪合适字符
-- (NSString *)clipFitStringForLabel:(CGSize)labelSize font:(UIFont *)font {
-    CGFloat maxWidth = labelSize.width;
-    CGFloat originalWidth = [[self class] widthWithFont:font withLineHeight:labelSize.height string:self];
-    if (originalWidth <= maxWidth) return [self copy];
-    CGFloat pointStrLength = [[self class] widthWithFont:font withLineHeight:labelSize.height string:@"..."];
-    if (pointStrLength >= maxWidth) return @"...";
+//// 裁剪合适字符
+//- (NSString *)clipFitStringForLabel:(CGSize)labelSize font:(UIFont *)font {
+//    CGFloat maxWidth = labelSize.width;
+//    CGFloat originalWidth = [[self class] widthWithFont:font withLineHeight:labelSize.height string:self];
+//    if (originalWidth <= maxWidth) return [self copy];
+//    CGFloat pointStrLength = [[self class] widthWithFont:font withLineHeight:labelSize.height string:@"..."];
+//    if (pointStrLength >= maxWidth) return @"...";
+//
+//    // 先删除到合理的字符串
+//    NSString *originalString = [self copy];
+//    NSString *resultString = originalString;
+//    for (NSInteger i = originalString.length - 1;i >= 0;i--){
+//        NSString *tempString = [originalString stringByReplacingCharactersInRange:NSMakeRange(i, originalString.length - i) withString:@"..."];
+//        CGFloat tempStringWidth = [[self class] widthWithFont:font withLineHeight:labelSize.height string:tempString];
+//        NSLog(@"tempStr:%@,width:%lf",tempString,tempStringWidth);
+//        if (tempStringWidth <= maxWidth){
+//            resultString = [tempString copy];
+//            break;
+//        }
+//    }
+//    if (resultString.length < 4) return @"...";
+//    // 再处理最后一个表情[😆...]
+//    NSRange lastHandlingRange = NSMakeRange(resultString.length - 1 - 3, 4);
+//    NSRange emojRange = [resultString rangeOfComposedCharacterSequenceAtIndex:lastHandlingRange.location];
+//    if (emojRange.location != NSNotFound && emojRange.length > 1){
+//        resultString = [resultString stringByReplacingCharactersInRange:emojRange withString:@""];
+//    }
+//    return resultString;
+//}
+
+
+- (NSString *)clipFitStringForLabel:(CGSize)labelSize font:(UIFont *)font{
     
-    // 先删除到合理的字符串
-    NSString *originalString = [self copy];
-    NSString *resultString = originalString;
-    for (NSInteger i = originalString.length - 1;i >= 0;i--){
-        NSString *tempString = [originalString stringByReplacingCharactersInRange:NSMakeRange(i, originalString.length - i) withString:@"..."];
-        CGFloat tempStringWidth = [[self class] widthWithFont:font withLineHeight:labelSize.height string:tempString];
-        NSLog(@"tempStr:%@,width:%lf",tempString,tempStringWidth);
-        if (tempStringWidth <= maxWidth){
-            resultString = [tempString copy];
-            break;
-        }
-    }
+    NSString *resultString = [self yxt_limitStringWithFont:font length:labelSize.width];
+//    for (NSInteger i = originalString.length - 1;i >= 0;i--){
+//        NSString *tempString = [originalString stringByReplacingCharactersInRange:NSMakeRange(i, originalString.length - i) withString:@"..."];
+//        CGFloat tempStringWidth = [[self class] widthWithFont:font withLineHeight:labelSize.height string:tempString];
+//        NSLog(@"tempStr:%@,width:%lf",tempString,tempStringWidth);
+//        if (tempStringWidth <= maxWidth){
+//            resultString = [tempString copy];
+//            break;
+//        }
+//    }
     if (resultString.length < 4) return @"...";
     // 再处理最后一个表情[😆...]
     NSRange lastHandlingRange = NSMakeRange(resultString.length - 1 - 3, 4);
@@ -151,5 +174,65 @@
     }
 }
 
+- (NSString*)yxt_limitStringWithFont:(UIFont*)font length:(CGFloat)length
+{
+    NSDictionary *attrs = @{NSFontAttributeName:font};
+    CGFloat selfStringWidth = [self boundingRectWithSize:CGSizeMake(MAXFLOAT, MAXFLOAT) options:NSStringDrawingUsesLineFragmentOrigin attributes:attrs context:nil].size.width;
+    if (selfStringWidth < length) {
+        return self;
+    }
+    __block NSString *lastStr = @"";
+    __block NSString *testString = @"";
+    [self enumerateSubstringsInRange:NSMakeRange(0, self.length) options:NSStringEnumerationByComposedCharacterSequences usingBlock:^(NSString * _Nullable substring, NSRange substringRange, NSRange enclosingRange, BOOL * _Nonnull stop) {
+        NSString *limitString = [lastStr stringByAppendingString:substring];
+        testString = [limitString stringByAppendingString:@"..."];
+        CGFloat testStringWidth = [testString boundingRectWithSize:CGSizeMake(MAXFLOAT, MAXFLOAT) options:NSStringDrawingUsesLineFragmentOrigin attributes:attrs context:nil].size.width;
+        if (testStringWidth > length) {
+            *stop = YES;
+            return;
+        }
+        lastStr = limitString;
+    }];
+    
+    return [lastStr stringByAppendingString:@"..."];
+}
 
+
+
+
+// 裁剪合适字符
+- (NSString *)clipFitStringForLabel2:(CGSize)labelSize font:(UIFont *)font {
+    CGFloat maxWidth = labelSize.width;
+    CGFloat originalWidth = [self singleLineWidthWithFont:font];
+    if (originalWidth <= maxWidth) return [self copy];
+    CGFloat pointStrLength = [@"" singleLineWidthWithFont:font];
+    if (pointStrLength >= maxWidth) return @"...";
+    
+    // 先删除到合理的字符串
+    NSString *originalString = [self copy];
+    NSString *resultString = originalString;
+    for (NSInteger i = originalString.length - 1;i >= 0;i--){
+        NSString *tempString = [originalString stringByReplacingCharactersInRange:NSMakeRange(i, originalString.length - i) withString:@"..."];
+        CGFloat tempStringWidth = [tempString singleLineWidthWithFont:font];
+        NSLog(@"tempStr:%@,width:%lf",tempString,tempStringWidth);
+        if (tempStringWidth <= maxWidth){
+            resultString = [tempString copy];
+            break;
+        }
+    }
+    if (resultString.length < 4) return @"...";
+    // 再处理最后一个表情[😆...]
+    NSRange lastHandlingRange = NSMakeRange(resultString.length - 1 - 3, 4);
+    NSRange emojRange = [resultString rangeOfComposedCharacterSequenceAtIndex:lastHandlingRange.location];
+    if (emojRange.location != NSNotFound && emojRange.length > 1){
+        resultString = [resultString stringByReplacingCharactersInRange:emojRange withString:@""];
+    }
+    return resultString;
+}
+
+- (CGFloat)singleLineWidthWithFont:(UIFont*)font{
+    NSDictionary *attrs = @{NSFontAttributeName:font};
+    return [self boundingRectWithSize:CGSizeMake(MAXFLOAT, MAXFLOAT) options:NSStringDrawingUsesLineFragmentOrigin attributes:attrs context:nil].size.width;
+    
+}
 @end

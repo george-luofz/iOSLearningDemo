@@ -678,7 +678,6 @@
 		3CCB05AB205A5B5900AF6760 /* Objective-C */ = {
 			isa = PBXGroup;
 			children = (
-				3C686C5D217E82760037F85D /* New Group */,
 				3C8206CB20747596009BE5A6 /* runtime */,
 				3C9C373C206C7AF400F3ECD9 /* memoryLearning */,
 				3C9C372F206B2EB800F3ECD9 /* categoryLearning */,
@@ -1091,7 +1090,7 @@
 				ENABLE_STRICT_OBJC_MSGSEND = NO;
 				GCC_PREFIX_HEADER = "iOSLearnigDemo/supporting files/iOSLearningDemo.pch";
 				INFOPLIST_FILE = "$(SRCROOT)/iOSLearnigDemo/supporting files/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.yixia.iOSLearnigDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1112,7 +1111,7 @@
 				ENABLE_STRICT_OBJC_MSGSEND = NO;
 				GCC_PREFIX_HEADER = "iOSLearnigDemo/supporting files/iOSLearningDemo.pch";
 				INFOPLIST_FILE = "$(SRCROOT)/iOSLearnigDemo/supporting files/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.yixia.iOSLearnigDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";

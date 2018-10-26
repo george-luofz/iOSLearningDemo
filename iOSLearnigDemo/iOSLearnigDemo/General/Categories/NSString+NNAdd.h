@@ -19,4 +19,5 @@
 - (CGSize)nn_CommentSizeWithFont:(UIFont *)font constrainedToSize:(CGSize)size WithLineSpace:(CGFloat)lineSpace;
 
 - (NSString *)clipFitStringForLabel:(CGSize)labelSize font:(UIFont *)font;
+- (NSString *)clipFitStringForLabel2:(CGSize)labelSize font:(UIFont *)font;
 @end
