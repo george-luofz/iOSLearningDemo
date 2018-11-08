@@ -27,6 +27,8 @@
     
 //    [self _test_usePrivateMethod];
     [self _test_call_same_method];
+    
+    [self _testPointer];
 }
 
 #pragma mark -- extension
@@ -68,5 +70,13 @@
     }
 }
 
+#pragma mark - tagged pointer
 
+- (void)_testPointer{
+    CategoryObj *obj = [CategoryObj new];
+    obj.width = 100;
+    NSLog(@"obj width:%lf, %@",obj.width,@(obj.width));
+    obj.width = 100.1f;
+    NSLog(@"obj width2:%lf, %@",obj.width,@(obj.width));
+}
 @end

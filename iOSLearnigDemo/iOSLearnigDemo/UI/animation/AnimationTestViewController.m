@@ -8,9 +8,11 @@
 
 #import "AnimationTestViewController.h"
 #import <AVFoundation/AVFoundation.h>
+#import "YXLGradientColorView.h"
+#import "YXLBubbleCell.h"
 
 @interface AnimationTestViewController () <CAAnimationDelegate>
-
+@property (nonatomic, strong) YXLGradientColorView *gradientView;
 @end
 
 @implementation AnimationTestViewController
@@ -19,6 +21,13 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
+
+//    [self _testOpacity];
+    [self _testRotation];
+}
+
+#pragma mark - 测试渐隐动画
+- (void)_testOpacity{
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
         [self arrangeSubtitle];
     });
@@ -92,4 +101,86 @@
     
 }
 
+#pragma mark - 测试翻转动画
+
+- (void)_testRotation{
+    CGRect frame = CGRectMake(self.view.nn_width - 140 , self.view.nn_height - 48 - 49, 140, 48);
+    UIView *containerView = [[UIView alloc] initWithFrame:frame];
+    [self.view addSubview:containerView];
+    
+    YXLGradientColorView *gradientView = [[YXLGradientColorView alloc] initWithFrame:containerView.bounds];
+    [gradientView setBeginColor:[UIColor colorWithRed:1.000 green:0.141 blue:0.282 alpha:1.00] endColor:[UIColor colorWithRed:1.000 green:0.592 blue:0.063 alpha:1.00]];
+    [containerView addSubview:gradientView];
+    self.gradientView = gradientView;
+    
+    YXLBubbleCell *cell = [[YXLBubbleCell alloc] initWithFrame:gradientView.bounds];
+    [gradientView addSubview:cell];
+
+//    [self _testKeyframeAni];
+    [self _testSystemAni];
+}
+
+- (void)_testSystemAni{
+    /// 系统动画
+        [UIView transitionWithView:self.gradientView duration:0 options:UIViewAnimationOptionTransitionFlipFromTop animations:^{
+
+        } completion:^(BOOL finished) {
+            [self.gradientView setBeginColor:[UIColor greenColor] endColor:[UIColor greenColor]];
+            [UIView transitionWithView:self.gradientView duration:1 options:UIViewAnimationOptionTransitionFlipFromTop animations:^{
+//
+            } completion:^(BOOL finished) {
+//                [self.gradientView setBeginColor:[UIColor greenColor] endColor:[UIColor greenColor]];
+                NSLog(@"旋转动画结束");
+            }];
+        }];
+
+//    [UIView animateWithDuration:1.f  animations:^{
+//        self.gradientView.layer.transform = CATransform3DMakeRotation(M_PI,1.0,0.0,0.0);
+//    } completion:^(BOOL finished){
+//        [self.gradientView setBeginColor:[UIColor greenColor] endColor:[UIColor greenColor]];
+//        [UIView animateWithDuration:1.f  animations:^{
+//            self.gradientView.layer.transform = CATransform3DMakeRotation(M_PI,1.0,0.0,0.0);
+//        } completion:^(BOOL finished){
+//            // code to be executed when flip is completed
+////            self.gradientView.layer.transform = CATransform3DIdentity;
+//        }];
+//    }];
+}
+
+- (void)_testKeyframeAni{
+    /// 关键帧动画
+    CAKeyframeAnimation *keyAnimation = [CAKeyframeAnimation animation];
+    
+    // 旋转角度， 其中的value表示图像旋转的最终位置
+    
+    keyAnimation.values = [NSArray arrayWithObjects:
+                           
+                           [NSValue valueWithCATransform3D:CATransform3DMakeRotation(0, 1,0,0)],
+                           
+                           [NSValue valueWithCATransform3D:CATransform3DMakeRotation((M_PI/2), 1,0,0)],
+                           
+                           [NSValue valueWithCATransform3D:CATransform3DMakeRotation(0, 1,0,0)],
+                           
+                           nil];
+    
+    keyAnimation.cumulative = NO;
+    
+    keyAnimation.duration = 1.6f;
+    
+    keyAnimation.repeatCount = 0;
+    
+    keyAnimation.removedOnCompletion = NO;
+    
+    keyAnimation.delegate = self;
+    
+    self.gradientView.layer.shadowColor = [UIColor lightGrayColor].CGColor;
+    
+    [self.gradientView.layer addAnimation:keyAnimation forKey:@"transform"];
+    
+    [self performSelector:@selector(changeImageView) withObject:nil afterDelay:.8];
+}
+
+- (void)changeImageView{
+    [self.gradientView setBeginColor:[UIColor greenColor] endColor:[UIColor greenColor]];
+}
 @end

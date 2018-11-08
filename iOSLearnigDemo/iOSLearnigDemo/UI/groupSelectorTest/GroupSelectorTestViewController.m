@@ -9,8 +9,9 @@
 #import "GroupSelectorTestViewController.h"
 #import "VSGroupSelector.h"
 #import "VSGroupSelectorHeader.h"
+#import "YXLiveRoomSpendPanelTabSelector.h"
 
-@interface GroupSelectorTestViewController ()
+@interface GroupSelectorTestViewController () <YXLiveRoomSpendPanelTabSelectorDelegate>
 @property (nonatomic) VSGroupSelector *groupSelector;
 @end
 
@@ -26,6 +27,11 @@
     header.frame = CGRectMake(0, 100, header.nn_width, header.nn_height);
     [header setupSubViews];
     [self.view addSubview:header];
+    
+    YXLiveRoomSpendPanelTabSelector *tabSelector = [[YXLiveRoomSpendPanelTabSelector alloc] initWithFrame:CGRectMake(0, 200, self.view.nn_width, 36)];
+    tabSelector.delegate = self;
+    [tabSelector setupSubViews];
+    [self.view addSubview:tabSelector];
 }
 
 - (VSGroupSelector *)groupSelector{

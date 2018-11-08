@@ -10,6 +10,7 @@
 
 @interface CategoryObj : NSObject
 @property NSString *prop1;
+@property (nonatomic, assign) CGFloat width;
 - (void)test2;
 
 - (void)print;
