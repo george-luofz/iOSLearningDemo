@@ -7,6 +7,8 @@
 //
 
 #import "CategoryObj.h"
+#import <objc/runtime.h>
+
 @interface CategoryObj()
 @property NSString *prop2;
 @property NSString *prop3;
@@ -32,5 +34,15 @@
 
 - (void)print{
     NSLog(@"%s",__func__);
+}
+
+#pragma mark - g/setter
+
+- (CGFloat)width{
+    return [objc_getAssociatedObject(self, _cmd) doubleValue];
+}
+
+- (void)setWidth:(CGFloat)width{
+    objc_setAssociatedObject(self, @selector(width), @(width), OBJC_ASSOCIATION_RETAIN);
 }
 @end

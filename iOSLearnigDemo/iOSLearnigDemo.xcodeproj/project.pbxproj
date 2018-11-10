@@ -16,6 +16,7 @@
 		3C0BEED12064A4B70022055C /* ListNode.c in Sources */ = {isa = PBXBuildFile; fileRef = 3C0BEECE2064A3D40022055C /* ListNode.c */; };
 		3C0BEED22064AAD40022055C /* Stack.c in Sources */ = {isa = PBXBuildFile; fileRef = 3C0BEEC82064A3930022055C /* Stack.c */; };
 		3C0BEED52064E2080022055C /* StringArrayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C0BEED42064E2080022055C /* StringArrayViewController.m */; };
+		3C104F67218F049000C55078 /* YXLiveRoomSpendPanelTabSelector.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C104F66218F049000C55078 /* YXLiveRoomSpendPanelTabSelector.m */; };
 		3C1E6C5B213D4559002112AF /* AnimationTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C1E6C5A213D4559002112AF /* AnimationTestViewController.m */; };
 		3C1F09DB2153D339005D4692 /* AppearanceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C1F09DA2153D339005D4692 /* AppearanceViewController.m */; };
 		3C1F09DF2153D3AC005D4692 /* CustomView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C1F09DE2153D3AC005D4692 /* CustomView.m */; };
@@ -27,6 +28,10 @@
 		3C35BFA62078B3CC00066B05 /* CategoryObj+Test2.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C35BFA52078B3CC00066B05 /* CategoryObj+Test2.m */; };
 		3C35BFA72078B42900066B05 /* CategoryObj+Test.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C35BFA22078A02000066B05 /* CategoryObj+Test.m */; };
 		3C398FCA206DE85C008BDFB3 /* FJReplayKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C398FC9206DE85C008BDFB3 /* FJReplayKit.m */; };
+		3C3B7C2621885A220075A804 /* ImageViewTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C3B7C2421885A220075A804 /* ImageViewTestViewController.m */; };
+		3C3B7C2721885A220075A804 /* ImageViewTestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C3B7C2521885A220075A804 /* ImageViewTestViewController.xib */; };
+		3C5995AE21927B09008FA79B /* YXLGradientColorView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C5995AD21927B09008FA79B /* YXLGradientColorView.m */; };
+		3C5995B121928129008FA79B /* YXLBubbleCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C5995B021928129008FA79B /* YXLBubbleCell.m */; };
 		3C71C1C9211D6BEE00132B60 /* BaseTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C71C1C8211D6BEE00132B60 /* BaseTableViewController.m */; };
 		3C71C1CC211D6C7000132B60 /* HtmlToPdfViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C71C1CB211D6C7000132B60 /* HtmlToPdfViewController.m */; };
 		3C71C1D5211D6DA400132B60 /* BNHtmlPdfKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C71C1D4211D6DA300132B60 /* BNHtmlPdfKit.m */; };
@@ -63,6 +68,8 @@
 		3C9C373F206C7C8100F3ECD9 /* MRCTestObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C9C373E206C7C8100F3ECD9 /* MRCTestObject.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		3C9C3742206C8E3500F3ECD9 /* MRCSubTestObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C9C3741206C8E3500F3ECD9 /* MRCSubTestObject.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		3C9C3745206CC5D000F3ECD9 /* ARCObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C9C3744206CC5D000F3ECD9 /* ARCObject.m */; };
+		3CB0517D217821AE00FE90BB /* ScrollTestCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CB0517B217821AE00FE90BB /* ScrollTestCollectionViewCell.m */; };
+		3CB0517E217821AE00FE90BB /* ScrollTestCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3CB0517C217821AE00FE90BB /* ScrollTestCollectionViewCell.xib */; };
 		3CB721692095D010001901C3 /* CoreTextController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CB721682095D010001901C3 /* CoreTextController.m */; };
 		3CB7216C2095D054001901C3 /* CTDisplayView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CB7216B2095D054001901C3 /* CTDisplayView.m */; };
 		3CCB058820590F7700AF6760 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CCB058720590F7700AF6760 /* AppDelegate.m */; };
@@ -106,6 +113,8 @@
 		3C0BEECE2064A3D40022055C /* ListNode.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = ListNode.c; sourceTree = "<group>"; };
 		3C0BEED32064E2080022055C /* StringArrayViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StringArrayViewController.h; sourceTree = "<group>"; };
 		3C0BEED42064E2080022055C /* StringArrayViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StringArrayViewController.m; sourceTree = "<group>"; };
+		3C104F65218F049000C55078 /* YXLiveRoomSpendPanelTabSelector.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YXLiveRoomSpendPanelTabSelector.h; sourceTree = "<group>"; };
+		3C104F66218F049000C55078 /* YXLiveRoomSpendPanelTabSelector.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YXLiveRoomSpendPanelTabSelector.m; sourceTree = "<group>"; };
 		3C1E6C59213D4559002112AF /* AnimationTestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AnimationTestViewController.h; sourceTree = "<group>"; };
 		3C1E6C5A213D4559002112AF /* AnimationTestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AnimationTestViewController.m; sourceTree = "<group>"; };
 		3C1F09D92153D339005D4692 /* AppearanceViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppearanceViewController.h; sourceTree = "<group>"; };
@@ -131,6 +140,13 @@
 		3C35BFA52078B3CC00066B05 /* CategoryObj+Test2.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "CategoryObj+Test2.m"; sourceTree = "<group>"; };
 		3C398FC8206DE85C008BDFB3 /* FJReplayKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FJReplayKit.h; sourceTree = "<group>"; };
 		3C398FC9206DE85C008BDFB3 /* FJReplayKit.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FJReplayKit.m; sourceTree = "<group>"; };
+		3C3B7C2321885A220075A804 /* ImageViewTestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ImageViewTestViewController.h; sourceTree = "<group>"; };
+		3C3B7C2421885A220075A804 /* ImageViewTestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ImageViewTestViewController.m; sourceTree = "<group>"; };
+		3C3B7C2521885A220075A804 /* ImageViewTestViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ImageViewTestViewController.xib; sourceTree = "<group>"; };
+		3C5995AC21927B09008FA79B /* YXLGradientColorView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YXLGradientColorView.h; sourceTree = "<group>"; };
+		3C5995AD21927B09008FA79B /* YXLGradientColorView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YXLGradientColorView.m; sourceTree = "<group>"; };
+		3C5995AF21928129008FA79B /* YXLBubbleCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YXLBubbleCell.h; sourceTree = "<group>"; };
+		3C5995B021928129008FA79B /* YXLBubbleCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YXLBubbleCell.m; sourceTree = "<group>"; };
 		3C71C1C7211D6BEE00132B60 /* BaseTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseTableViewController.h; sourceTree = "<group>"; };
 		3C71C1C8211D6BEE00132B60 /* BaseTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseTableViewController.m; sourceTree = "<group>"; };
 		3C71C1CA211D6C7000132B60 /* HtmlToPdfViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HtmlToPdfViewController.h; sourceTree = "<group>"; };
@@ -206,6 +222,9 @@
 		3C9C3741206C8E3500F3ECD9 /* MRCSubTestObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MRCSubTestObject.m; sourceTree = "<group>"; };
 		3C9C3743206CC5D000F3ECD9 /* ARCObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ARCObject.h; sourceTree = "<group>"; };
 		3C9C3744206CC5D000F3ECD9 /* ARCObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ARCObject.m; sourceTree = "<group>"; };
+		3CB0517A217821AE00FE90BB /* ScrollTestCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ScrollTestCollectionViewCell.h; sourceTree = "<group>"; };
+		3CB0517B217821AE00FE90BB /* ScrollTestCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ScrollTestCollectionViewCell.m; sourceTree = "<group>"; };
+		3CB0517C217821AE00FE90BB /* ScrollTestCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ScrollTestCollectionViewCell.xib; sourceTree = "<group>"; };
 		3CB721672095D010001901C3 /* CoreTextController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CoreTextController.h; sourceTree = "<group>"; };
 		3CB721682095D010001901C3 /* CoreTextController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CoreTextController.m; sourceTree = "<group>"; };
 		3CB7216A2095D054001901C3 /* CTDisplayView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CTDisplayView.h; sourceTree = "<group>"; };
@@ -314,6 +333,10 @@
 			children = (
 				3C1E6C59213D4559002112AF /* AnimationTestViewController.h */,
 				3C1E6C5A213D4559002112AF /* AnimationTestViewController.m */,
+				3C5995AC21927B09008FA79B /* YXLGradientColorView.h */,
+				3C5995AD21927B09008FA79B /* YXLGradientColorView.m */,
+				3C5995AF21928129008FA79B /* YXLBubbleCell.h */,
+				3C5995B021928129008FA79B /* YXLBubbleCell.m */,
 			);
 			path = animation;
 			sourceTree = "<group>";
@@ -345,6 +368,16 @@
 				3C2A3CC1214FA1A80071B9CE /* AVFoundationTestController.m */,
 			);
 			path = AVFoundation;
+			sourceTree = "<group>";
+		};
+		3C3B7C22218859FF0075A804 /* imageView */ = {
+			isa = PBXGroup;
+			children = (
+				3C3B7C2321885A220075A804 /* ImageViewTestViewController.h */,
+				3C3B7C2421885A220075A804 /* ImageViewTestViewController.m */,
+				3C3B7C2521885A220075A804 /* ImageViewTestViewController.xib */,
+			);
+			path = imageView;
 			sourceTree = "<group>";
 		};
 		3C71C1C6211D6BCD00132B60 /* Base */ = {
@@ -509,6 +542,7 @@
 		3C8206C420736320009BE5A6 /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				3C3B7C22218859FF0075A804 /* imageView */,
 				3C1F09D82153D30F005D4692 /* Appearance */,
 				3C1E6C5C213D455D002112AF /* animation */,
 				3C03E21621354C1900900A65 /* DiaryNameTest */,
@@ -673,7 +707,6 @@
 		3CCB05AB205A5B5900AF6760 /* Objective-C */ = {
 			isa = PBXGroup;
 			children = (
-				3C686C5D217E82760037F85D /* New Group */,
 				3C8206CB20747596009BE5A6 /* runtime */,
 				3C9C373C206C7AF400F3ECD9 /* memoryLearning */,
 				3C9C372F206B2EB800F3ECD9 /* categoryLearning */,
@@ -705,6 +738,9 @@
 			children = (
 				3CDDB299212BE3B40047BFAB /* ColletionInScrollController.h */,
 				3CDDB29A212BE3B40047BFAB /* ColletionInScrollController.m */,
+				3CB0517A217821AE00FE90BB /* ScrollTestCollectionViewCell.h */,
+				3CB0517B217821AE00FE90BB /* ScrollTestCollectionViewCell.m */,
+				3CB0517C217821AE00FE90BB /* ScrollTestCollectionViewCell.xib */,
 			);
 			path = collectionViewInScrollView;
 			sourceTree = "<group>";
@@ -734,6 +770,8 @@
 				3CDDB2A4212D3CCF0047BFAB /* groupSelector */,
 				3CDDB2B8212D445B0047BFAB /* GroupSelectorTestViewController.h */,
 				3CDDB2B9212D445B0047BFAB /* GroupSelectorTestViewController.m */,
+				3C104F65218F049000C55078 /* YXLiveRoomSpendPanelTabSelector.h */,
+				3C104F66218F049000C55078 /* YXLiveRoomSpendPanelTabSelector.m */,
 			);
 			path = groupSelectorTest;
 			sourceTree = "<group>";
@@ -807,6 +845,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3CB0517E217821AE00FE90BB /* ScrollTestCollectionViewCell.xib in Resources */,
+				3C3B7C2721885A220075A804 /* ImageViewTestViewController.xib in Resources */,
 				3CCB059320590F7700AF6760 /* LaunchScreen.storyboard in Resources */,
 				3CCB059020590F7700AF6760 /* Assets.xcassets in Resources */,
 				3C71C1D8211D6FA600132B60 /* 1.html in Resources */,
@@ -883,7 +923,9 @@
 				3CB721692095D010001901C3 /* CoreTextController.m in Sources */,
 				3CCB058820590F7700AF6760 /* AppDelegate.m in Sources */,
 				3CDDB2B4212D3CCF0047BFAB /* VSGroupSelectorContainer.m in Sources */,
+				3CB0517D217821AE00FE90BB /* ScrollTestCollectionViewCell.m in Sources */,
 				3CDDB29B212BE3B40047BFAB /* ColletionInScrollController.m in Sources */,
+				3C5995B121928129008FA79B /* YXLBubbleCell.m in Sources */,
 				3C9C3738206C7AD600F3ECD9 /* MRCObject.m in Sources */,
 				3C8206CE207475A8009BE5A6 /* RuntimeTestViewController.m in Sources */,
 				3C9C3735206B2F4E00F3ECD9 /* AutoreleasePoolController.m in Sources */,
@@ -898,6 +940,7 @@
 				3C8206D12074ACAA009BE5A6 /* Person2.m in Sources */,
 				3C9C373B206C7AEF00F3ECD9 /* MemoryManageViewController.m in Sources */,
 				3C71C23C2122E57B00132B60 /* FSCalenderController.m in Sources */,
+				3C3B7C2621885A220075A804 /* ImageViewTestViewController.m in Sources */,
 				3CDDB2B1212D3CCF0047BFAB /* VSFilterGroupSelector.m in Sources */,
 				3C9C37242068D85500F3ECD9 /* FunctionalViewController.m in Sources */,
 				3C398FCA206DE85C008BDFB3 /* FJReplayKit.m in Sources */,
@@ -916,6 +959,7 @@
 				3C03E22221355F9F00900A65 /* FlowLayoutTestController.m in Sources */,
 				3C03E21C21354EF800900A65 /* HeaderCollectionViewCell.m in Sources */,
 				3C1F09DF2153D3AC005D4692 /* CustomView.m in Sources */,
+				3C5995AE21927B09008FA79B /* YXLGradientColorView.m in Sources */,
 				3C9C372B206B2C9300F3ECD9 /* PropertyLearningController.m in Sources */,
 				3C03E21F213558B400900A65 /* CustomFlowLayout.m in Sources */,
 				3C2A3CC2214FA1A80071B9CE /* AVFoundationTestController.m in Sources */,
@@ -930,6 +974,7 @@
 				3C9C372E206B2DA200F3ECD9 /* ObjectCMainTableController.m in Sources */,
 				3C0BEEC520649D950022055C /* LinkListViewController.m in Sources */,
 				3CCB05A62059182600AF6760 /* UIViewController+Push.m in Sources */,
+				3C104F67218F049000C55078 /* YXLiveRoomSpendPanelTabSelector.m in Sources */,
 				3C71C1CC211D6C7000132B60 /* HtmlToPdfViewController.m in Sources */,
 				3CDDB2BA212D445B0047BFAB /* GroupSelectorTestViewController.m in Sources */,
 				3C8206CA207363CE009BE5A6 /* ViewTestController.m in Sources */,
@@ -1081,7 +1126,7 @@
 				ENABLE_STRICT_OBJC_MSGSEND = NO;
 				GCC_PREFIX_HEADER = "iOSLearnigDemo/supporting files/iOSLearningDemo.pch";
 				INFOPLIST_FILE = "$(SRCROOT)/iOSLearnigDemo/supporting files/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.yixia.iOSLearnigDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1102,7 +1147,7 @@
 				ENABLE_STRICT_OBJC_MSGSEND = NO;
 				GCC_PREFIX_HEADER = "iOSLearnigDemo/supporting files/iOSLearningDemo.pch";
 				INFOPLIST_FILE = "$(SRCROOT)/iOSLearnigDemo/supporting files/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.yixia.iOSLearnigDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";

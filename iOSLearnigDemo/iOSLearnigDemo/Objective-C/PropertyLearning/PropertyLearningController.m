@@ -7,6 +7,8 @@
 //
 
 #import "PropertyLearningController.h"
+#import "NSString+NNAdd.h"
+
 typedef void(^Block) (void);
 
 @interface PropertyLearningController ()
@@ -31,6 +33,12 @@ typedef void(^Block) (void);
     [self _test1];
     [self _test_copy_mutableCopy];
     
+
+//    NSString *oriStr = @"我是中国人🇨🇳🆔吆☣️📴☢️";
+    NSString *oriStr = @"恩铄铄铄铄铄铄🔥🔥🔥";
+    NSString *resultStr = [oriStr clipFitStringForLabel2:CGSizeMake(116.666667, 20) font:[UIFont systemFontOfSize:14 weight:UIFontWeightMedium]];
+    NSLog(@"ori:%@,resultStr:%@",oriStr, resultStr);
+
     NSLog(@"12.0 = %@ \n",[self stringFromDouble:12.0]);
     NSLog(@"12.10 = %@ \n",[self stringFromDouble:12.10]);
     NSLog(@"12.12340 = %@ \n",[self stringFromDouble:12.12340]);
