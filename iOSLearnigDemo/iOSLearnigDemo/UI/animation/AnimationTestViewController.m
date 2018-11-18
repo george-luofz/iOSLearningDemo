@@ -11,6 +11,11 @@
 #import "YXLGradientColorView.h"
 #import "YXLBubbleCell.h"
 
+static CGFloat KShapelayerLineWidth = 2;
+static CGFloat KShapeLayerMargin = 10;
+static CGFloat KShapeLayerRadius = 30;
+static CGFloat KShapeLayerWidth = 60;
+
 @interface AnimationTestViewController () <CAAnimationDelegate>
 @property (nonatomic, strong) YXLGradientColorView *gradientView;
 @end
@@ -24,6 +29,7 @@
 
 //    [self _testOpacity];
     [self _testRotation];
+    [self _testCircleLoadingAni];
 }
 
 #pragma mark - 测试渐隐动画
@@ -182,5 +188,81 @@
 
 - (void)changeImageView{
     [self.gradientView setBeginColor:[UIColor greenColor] endColor:[UIColor greenColor]];
+}
+
+#pragma mark - 圆周动画
+- (void)_testCircleLoadingAni{
+    /// 底部的灰色layer
+    CAShapeLayer *bottomShapeLayer = [CAShapeLayer layer];
+    bottomShapeLayer.strokeColor = [UIColor colorWithRed:229/255.0 green:229/255.0 blue:229/255.0 alpha:1].CGColor;
+    bottomShapeLayer.fillColor = [UIColor clearColor].CGColor;
+    bottomShapeLayer.lineWidth = KShapelayerLineWidth;
+    bottomShapeLayer.path = [UIBezierPath
+                             bezierPathWithRoundedRect:CGRectMake(KShapeLayerMargin, 0, KShapeLayerWidth, KShapeLayerWidth) cornerRadius:KShapeLayerRadius].CGPath;
+    [self.view.layer addSublayer:bottomShapeLayer];
+    /// 橘黄色的layer
+    CAShapeLayer *ovalShapeLayer = [CAShapeLayer layer];
+    ovalShapeLayer.strokeColor = [UIColor colorWithRed:0.984 green:0.153 blue:0.039 alpha:1.000].CGColor;
+    ovalShapeLayer.fillColor = [UIColor clearColor].CGColor;
+    ovalShapeLayer.lineWidth = KShapelayerLineWidth;
+    ovalShapeLayer.path = [UIBezierPath bezierPathWithRoundedRect:CGRectMake(KShapeLayerMargin, 0,KShapeLayerWidth, KShapeLayerWidth) cornerRadius:KShapeLayerRadius].CGPath;
+    [self.view.layer addSublayer:ovalShapeLayer];
+    
+    bottomShapeLayer.frame = CGRectMake(0, 100, KShapeLayerWidth, KShapeLayerWidth);
+    ovalShapeLayer.frame = bottomShapeLayer.frame;
+//    ovalShapeLayer.lineDashPattern = @[@6,@3];
+    
+    /// 起点动画[占满整个圆]
+    CABasicAnimation * strokeStartAnimation = [CABasicAnimation animationWithKeyPath:@"strokeStart"];
+    strokeStartAnimation.fromValue = @(0);
+    strokeStartAnimation.toValue = @(1);
+    
+    /// 终点动画
+    CABasicAnimation * strokeEndAnimation = [CABasicAnimation animationWithKeyPath:@"strokeEnd"];
+    strokeEndAnimation.fromValue = @(0.0);
+    strokeEndAnimation.toValue = @(1.0);
+    
+    /// 组合动画
+    CAAnimationGroup *animationGroup = [CAAnimationGroup animation];
+    animationGroup.animations = @[strokeStartAnimation];
+    animationGroup.duration = 2.f;
+    animationGroup.repeatCount = CGFLOAT_MAX;
+    animationGroup.fillMode = kCAFillModeForwards;
+    animationGroup.removedOnCompletion = NO;
+    [ovalShapeLayer addAnimation:animationGroup forKey:nil];
+
+}
+
+- (void)_testCircle2{
+    CAKeyframeAnimation *pathAnimation = [CAKeyframeAnimation animationWithKeyPath:@"position"];
+    
+        pathAnimation.calculationMode = kCAAnimationPaced;
+    
+        pathAnimation.fillMode = kCAFillModeForwards;
+    
+        pathAnimation.removedOnCompletion = NO;
+    
+        pathAnimation.duration = 0.5;
+    
+        pathAnimation.repeatCount = 0;
+    
+        
+    
+        CGMutablePathRef curvedPath = CGPathCreateMutable();
+    
+        
+    
+        CGPathMoveToPoint(curvedPath, NULL, LeftDragLine.center.x, LeftDragLine.center.y);//移动到动画开始的点（10，200）
+    
+        CGPathAddArcToPoint(curvedPath, NULL, 200 ,320,RightDragCricleBtn.center.x, RightDragCricleBtn.center. y , 0);
+    
+        CGPathAddArcToPoint(curvedPath, NULL ,RightDragCricleBtn.center.x-3, 150 ,102 ,50, 0);
+    
+        pathAnimation.path = curvedPath;
+    
+        CGPathRelease(curvedPath);
+    
+        [LeftDragLine.layer addAnimation:pathAnimation forKey:@"moveTheSquare"];
+
 }
 @end
