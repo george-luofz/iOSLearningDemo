@@ -29,6 +29,13 @@
     [self _test_call_same_method];
     
     [self _testPointer];
+    
+    NSArray *array = nil;
+    if (array.count == 0){
+        NSLog(@"array 1");
+    } else {
+        NSLog(@"array 2");
+    }
 }
 
 #pragma mark -- extension
