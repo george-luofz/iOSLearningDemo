@@ -44,6 +44,9 @@ typedef void(^Block) (void);
     NSLog(@"12.12340 = %@ \n",[self stringFromDouble:12.12340]);
     NSLog(@"12.1234567890 = %@ \n",[self stringFromDouble:12.1234567890]);
     NSLog(@"12.1234567891234567890 = %@ \n",[self stringFromDouble:12.1234567891234567890]);
+    
+    NSMutableArray *array = [NSMutableArray array];
+    [array removeLastObject];
 }
 
 #pragma mark --

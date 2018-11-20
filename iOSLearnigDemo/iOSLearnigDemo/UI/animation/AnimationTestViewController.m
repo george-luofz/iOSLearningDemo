@@ -23,9 +23,16 @@
     
 
 //    [self _testOpacity];
-    [self _testRotation];
+//    [self _testRotation];
+    [self _testCellAnimation];
+//    [self animation1];
 }
 
+- (void)viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:animated];
+    self.navigationController.navigationBarHidden = YES;
+    self.view.backgroundColor = [UIColor blackColor];
+}
 #pragma mark - 测试渐隐动画
 - (void)_testOpacity{
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
@@ -183,4 +190,114 @@
 - (void)changeImageView{
     [self.gradientView setBeginColor:[UIColor greenColor] endColor:[UIColor greenColor]];
 }
+
+#pragma mark - 粒子动画
+
+- (void)_testCellAnimation{
+    CAEmitterLayer *fireworksLayer = [CAEmitterLayer layer];
+    CGRect bounds = self.view.layer.bounds;
+    fireworksLayer.emitterPosition = CGPointMake(bounds.size.width / 2.f, bounds.size.height);
+    fireworksLayer.emitterSize = CGSizeMake(bounds.size.width / 2.0f, 0);
+    fireworksLayer.emitterMode = kCAEmitterLayerOutline;
+    fireworksLayer.emitterShape = kCAEmitterLayerLine;
+    fireworksLayer.renderMode = kCAEmitterLayerAdditive;
+    fireworksLayer.seed = arc4random() % 100 + 1;
+    
+    CAEmitterCell *rockect = [CAEmitterCell emitterCell];
+//    rockect.name = @"snow";
+    rockect.birthRate = 1.f;
+    rockect.emissionRange = .25 * M_PI;
+    rockect.velocity = 380;
+    rockect.velocityRange = 100;
+    rockect.yAcceleration = 75;
+    rockect.lifetime = 1.02;
+    rockect.contents = (id)[[UIImage imageNamed:@"DazRing"] CGImage];
+    rockect.scale = .2;
+    rockect.color = [[UIColor yellowColor] CGColor];
+    rockect.greenRange = 1.f;
+    rockect.redRange = 1.f;
+    rockect.blueRange = 1.f;
+    rockect.spinRange = M_PI;
+    
+    CAEmitterCell *burst = [CAEmitterCell emitterCell];
+    burst.birthRate = 1.f;
+    burst.velocity = 0;
+    burst.scale = 2.5;
+    burst.redSpeed = -1.5f;
+    burst.blueSpeed = 1.5f;
+    burst.greenSpeed = 1.0;
+    burst.lifetime = .35;
+    
+    CAEmitterCell *spark = [CAEmitterCell emitterCell];
+    spark.birthRate = 400;
+    spark.velocityRange = 125;
+    spark.emissionRange = 2 * M_PI;
+    spark.yAcceleration = 75;
+    spark.lifetime = 3;
+    spark.contents = (id)[[UIImage imageNamed:@"DazStarOutline"] CGImage];
+    spark.scaleSpeed = -.2;
+    spark.greenSpeed = -.1;
+    spark.redSpeed = .4;
+    spark.blueSpeed = -.1;
+    spark.alphaSpeed = - .25;
+    spark.spin = 2 * M_PI;
+    spark.spinRange = 2 * M_PI;
+    
+    
+    fireworksLayer.emitterCells = @[rockect];
+    rockect.emitterCells = @[burst];
+    burst.emitterCells = @[spark];
+    [self.view.layer addSublayer:fireworksLayer];
+
+}
+
+
+//雪花动画
+- (void)animation1 {
+    
+    //粒子发射器
+    CAEmitterLayer *snowEmitter = [CAEmitterLayer layer];
+    //粒子发射的位置
+    snowEmitter.emitterPosition = CGPointMake(100, 30);
+    //发射源的大小
+    snowEmitter.emitterSize        = CGSizeMake(self.view.bounds.size.width, 0.0);;
+    //发射模式
+    snowEmitter.emitterMode        = kCAEmitterLayerOutline;
+    //发射源的形状
+    snowEmitter.emitterShape    = kCAEmitterLayerLine;
+    
+    //创建雪花粒子
+    CAEmitterCell *snowflake = [CAEmitterCell emitterCell];
+    //粒子的名称
+    snowflake.name = @"snow";
+    //粒子参数的速度乘数因子。越大出现的越快
+    snowflake.birthRate        = 1.0;
+    //存活时间
+    snowflake.lifetime        = 120.0;
+    //粒子速度
+    snowflake.velocity        = -10;                // falling down slowly
+    //粒子速度范围
+    snowflake.velocityRange = 10;
+    //粒子y方向的加速度分量
+    snowflake.yAcceleration = 2;
+    //周围发射角度
+    snowflake.emissionRange = 0.5 * M_PI;        // some variation in angle
+    //子旋转角度范围
+    snowflake.spinRange        = 0.25 * M_PI;        // slow spin
+    //粒子图片
+    snowflake.contents        = (id) [[UIImage imageNamed:@"DazFlake"] CGImage];
+    //粒子颜色
+    snowflake.color            = [[UIColor redColor] CGColor];
+    
+    //设置阴影
+    snowEmitter.shadowOpacity = 1.0;
+    snowEmitter.shadowRadius  = 0.0;
+    snowEmitter.shadowOffset  = CGSizeMake(0.0, 1.0);
+    snowEmitter.shadowColor   = [[UIColor whiteColor] CGColor];
+    
+    // 将粒子添加到粒子发射器上
+    snowEmitter.emitterCells = [NSArray arrayWithObject:snowflake];
+    [self.view.layer insertSublayer:snowEmitter atIndex:0];
+}
+
 @end
