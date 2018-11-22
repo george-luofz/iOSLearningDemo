@@ -7,7 +7,7 @@
 //
 
 #import "ViewController.h"
-
+#import "YXLiveRoomFreeGiftAnimationViewHandler.h"
 
 /**
  1·      一个或多个 CAEmitterCells ：发射器电池可以看作是单个粒子的原型（例如，一个单一的粉扑在一团烟雾）。当散发出一个粒子，UIKit根据这个发射粒子和定义的基础上创建一个随机粒子。此原型包括一些属性来控制粒子的图片，颜色，方向，运动，缩放比例和生命周期。
@@ -18,7 +18,8 @@
  */
 
 @interface ViewController ()
-
+@property (nonatomic, strong) CAEmitterLayer *emitterLayer;
+@property (nonatomic, strong) YXLiveRoomFreeGiftAnimationViewHandler *viewHandler;
 @end
 
 @implementation ViewController
@@ -30,10 +31,37 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor blackColor];
-    [self animation2]; //0.7Mb 内存
+//    [self animation2]; //0.7Mb 内存
 //    [self animation1];
+    
+//    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(5 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+//        self.emitterLayer.birthRate = 0;
+//    });
+//
+//    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(15 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+//        self.emitterLayer.birthRate = 1;
+//    });
+    CGRect viewBounds = self.view.bounds;
+    CGRect frame = CGRectMake(viewBounds.size.width/2.0, viewBounds.size.height / 2, 100, 800 );
+    
+    YXLiveRoomFreeGiftAnimationViewHandler *view = [[YXLiveRoomFreeGiftAnimationViewHandler alloc] initWithFrame:frame];
+    self.viewHandler = view;
+    [self.view addSubview:view];
+    
+    [view startAnimation];
+    
+    
+    UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
+    btn.frame = CGRectMake(0, 100, 100, 30);
+    [btn setTitle:@"点我" forState:UIControlStateNormal];
+    [btn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+    [btn addTarget:self action:@selector(btnClicked:) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:btn];
 }
 
+- (void)btnClicked:(UIButton *)sender{
+    [self.viewHandler startAnimation];
+}
 //雪花动画
 - (void)animation1 {
 
@@ -94,6 +122,7 @@
     
     //分为3种粒子，子弹粒子，爆炸粒子，散开粒子
     CAEmitterLayer *fireworksEmitter = [CAEmitterLayer layer];
+    self.emitterLayer = fireworksEmitter;
     fireworksEmitter.frame = containerLayer.bounds;
     
     fireworksEmitter.emitterPosition = CGPointMake(50,800);
@@ -110,7 +139,7 @@
     rocket.emissionRange	= 0;  // some variation in angle
     rocket.velocity			= 500;
     rocket.velocityRange	= 0;
-    rocket.yAcceleration	= -400;
+    rocket.yAcceleration	= -350;
     rocket.lifetime			= 1.02;	// we cannot set the birthrate < 1.0 for the burst
     
     //小圆球图片
@@ -124,33 +153,31 @@
     burst.birthRate			= 1.0;		// at the end of travel
     burst.velocity			= 0.5;        //速度为0
     burst.scale				= 0.5;      //大小
-    burst.lifetime			= 0.35;     //存在时间
+    burst.lifetime			= .3;     //存在时间
     
     // and finally, the sparks
     CAEmitterCell* spark = [CAEmitterCell emitterCell];
     
 //    spark.scale             = 1.0f;
     spark.birthRate			= 20;
-    spark.velocity			= 125;
-    spark.emissionRange		= M_PI;	// 360 度
-    spark.yAcceleration		= 75;		// gravity
-    spark.lifetime			= 3;
+    spark.velocity			= 250;
+    spark.emissionLatitude  = .5f;
+    spark.emissionRange		= M_PI_2;	// 360 度
+    spark.yAcceleration		= 125;		// gravity
+    spark.lifetime			= 1.5;
     //星星图片
     spark.contents			= (id) [[UIImage imageNamed:@"emitterGift"] CGImage];
     spark.scaleSpeed		=-0.3;
     spark.alphaSpeed		=-0.25;
     spark.spin				= 2* M_PI;
     spark.spinRange			= 2* M_PI;
-    
-    // 烟花尾焰
-    CAEmitterCell *dots = [CAEmitterCell emitterCell];
-    dots.birthRate = 3;
+    spark.scaleRange        = 0;
     
     
     // 3种粒子组合，可以根据顺序，依次烟花弹－烟花弹粒子爆炸－爆炸散开粒子
     fireworksEmitter.emitterCells	= [NSArray arrayWithObject:rocket];
     rocket.emitterCells				= [NSArray arrayWithObject:burst];
-    burst.emitterCells				= [NSArray arrayWithObject:spark];
+    burst.emitterCells                = [NSArray arrayWithObject:spark];
     [self.view.layer addSublayer:containerLayer];
     [containerLayer addSublayer:fireworksEmitter];
 }
