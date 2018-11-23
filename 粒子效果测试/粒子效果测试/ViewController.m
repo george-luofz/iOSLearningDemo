@@ -34,13 +34,6 @@
 //    [self animation2]; //0.7Mb 内存
 //    [self animation1];
     
-//    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(5 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-//        self.emitterLayer.birthRate = 0;
-//    });
-//
-//    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(15 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-//        self.emitterLayer.birthRate = 1;
-//    });
     CGRect viewBounds = self.view.bounds;
     CGRect frame = CGRectMake(viewBounds.size.width/2.0, viewBounds.size.height / 2, 100, 800 );
     

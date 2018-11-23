@@ -30,6 +30,8 @@ static NSTimeInterval KYXLiveRoomAnimationLifeTime = 1.02f;
 
 - (void)startAnimation{
     YXLiveRoomFreeGiftAnimationView *animationView = [self _findAnimationView];
+    [animationView startAnimation];
+    return;
     if (!animationView) {
         dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(self.animationLifeTime * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
            YXLiveRoomFreeGiftAnimationView *animationView = [self _findAnimationView];
@@ -56,18 +58,18 @@ static NSTimeInterval KYXLiveRoomAnimationLifeTime = 1.02f;
 #pragma mark - private
 
 - (YXLiveRoomFreeGiftAnimationView *)_findAnimationView{
-    for (YXLiveRoomFreeGiftAnimationView *animationView in self.animationViews) {
-        if (animationView.animationStatus == YXLiveRoomFreeGiftAnimationStatusEnded || animationView.animationStatus == YXLiveRoomFreeGiftAnimationStatusReady) {
-            return animationView;
-        }
-    }
-    if (self.animationViews.count >= KYXLiveRoomMaxAnimationViews){
-        return nil;
-    }
+//    for (YXLiveRoomFreeGiftAnimationView *animationView in self.animationViews) {
+//        if (animationView.animationStatus == YXLiveRoomFreeGiftAnimationStatusEnded || animationView.animationStatus == YXLiveRoomFreeGiftAnimationStatusReady) {
+//            return animationView;
+//        }
+//    }
+//    if (self.animationViews.count >= KYXLiveRoomMaxAnimationViews){
+//        return nil;
+//    }
     YXLiveRoomFreeGiftAnimationView *animationView = [[YXLiveRoomFreeGiftAnimationView alloc] init];
     animationView.animationSuperLayer = self.containerLayer;
     animationView.animationLifeTime = self.animationLifeTime;
-    [self.animationViews addObject:animationView];
+//    [self.animationViews addObject:animationView];
     return animationView;
 }
 
