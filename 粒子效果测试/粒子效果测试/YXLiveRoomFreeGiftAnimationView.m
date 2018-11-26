@@ -63,47 +63,63 @@
     fireworksEmitter.emitterShape    = kCAEmitterLayerLine;
     fireworksEmitter.renderMode        = kCAEmitterLayerOldestFirst;
     fireworksEmitter.birthRate      = 0;
-    CAEmitterCell* rocket = [CAEmitterCell emitterCell];
-    self.rocketCell = rocket;
+//    fireworksEmitter.seed = 3;
     
+    CAEmitterCell* rocket = [CAEmitterCell emitterCell];
     rocket.birthRate        = 1;
     rocket.emissionRange    = 0;  // some variation in angle
     rocket.velocity            = 500;
     rocket.yAcceleration    = -450;
     rocket.lifetime            = 1.02;    // we cannot set the birthrate < 1.0 for the burst
-    
     rocket.contents            = (id) [[UIImage imageNamed:@"emitterGift"] CGImage];
     rocket.scale            = 1.0;
     
     CAEmitterCell* burst = [CAEmitterCell emitterCell];
-    self.burst = burst;
     burst.birthRate            = 1.0;        // at the end of travel
     burst.velocity            = .5;        //速度为0
     burst.scale                = 0.5;      //大小
     burst.lifetime            = .2;     //存在时间
     
     CAEmitterCell* spark = [CAEmitterCell emitterCell];
-    
-    spark.birthRate            = 40;
+    spark.birthRate            = 20;
     spark.velocity            = 250;
-    spark.emissionLatitude  = .5f;
-    spark.emissionRange        = M_PI_2;    // 360 度
+    spark.emissionLatitude  = 1 / 2 * M_PI;
+    spark.emissionRange        = 2 * M_PI;    // 360 度
     spark.yAcceleration        = 125;        // gravity
     spark.lifetime            = 1.5;
-    
-    //星星图片
     spark.contents            = (id) [[UIImage imageNamed:@"emitterGift"] CGImage];
-    spark.scaleSpeed        =-0.3;
     spark.alphaSpeed        =-0.25;
-    spark.spin                = 2* M_PI;
-    spark.spinRange            = 2* M_PI;
+    spark.spin                = 3 / 2 * M_PI; //越小转得越慢
+//    spark.spinRange            = 1/8 * M_PI;
     
-
-    // 3种粒子组合，可以根据顺序，依次烟花弹－烟花弹粒子爆炸－爆炸散开粒子
-    fireworksEmitter.emitterCells    = [NSArray arrayWithObject:rocket];
-    rocket.emitterCells                = [NSArray arrayWithObject:burst];
-    burst.emitterCells                = [NSArray arrayWithObject:spark];
-
+    // 上升尾焰
+    CAEmitterCell *upStars = [CAEmitterCell emitterCell];
+    upStars.birthRate = 6;
+    upStars.lifetime = .5f;
+    upStars.velocity = 500;
+    upStars.yAcceleration = -250;
+    upStars.contents      = (id) [[UIImage imageNamed:@"emitterGift"] CGImage];
+    upStars.scale         = .15f;
+    upStars.emissionLatitude  = -1/2 * M_PI;
+    upStars.emissionRange = M_PI * 1/36;
+    upStars.alphaSpeed = - 1.5 ;
+    
+    // 爆炸尾焰
+    CAEmitterCell *boomStars = [CAEmitterCell emitterCell];
+    boomStars.birthRate = 40;
+    boomStars.lifetime = 1.5f;
+    boomStars.lifetimeRange = 1.f;
+    boomStars.velocity = 100;
+    boomStars.yAcceleration = 60;
+    boomStars.contents      = (id) [[UIImage imageNamed:@"emitterGift"] CGImage];
+    boomStars.scale         = .1f;
+    boomStars.emissionLatitude  =  M_PI * 2;
+    boomStars.emissionRange = M_PI * 2;
+    boomStars.alphaSpeed -=.25;
+    
+    fireworksEmitter.emitterCells    = [NSArray arrayWithObjects:rocket,nil];
+    rocket.emitterCells                = [NSArray arrayWithObjects:upStars,burst,nil];
+    burst.emitterCells                = [NSArray arrayWithObjects:spark,boomStars,nil];
     return fireworksEmitter;
 }
 
