@@ -42,6 +42,9 @@
 //    }
     imageView.image = [self scaleImageHorizontalAndRedrawToSize:imageView.frame.size image:originalImg];
     
+    
+    // blend
+//    self.ivStar.image = [[UIImage imageNamed:@"image"] imageWithGradientTintColor:[UIColor blueColor]];
 }
 
 - (UIImage *)scaleImageHorizontalAndRedrawToSize:(CGSize)size image:(UIImage *)image{
