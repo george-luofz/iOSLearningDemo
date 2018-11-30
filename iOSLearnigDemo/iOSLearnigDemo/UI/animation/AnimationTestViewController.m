@@ -28,14 +28,11 @@ static CGFloat KShapeLayerWidth = 60;
     
 
 //    [self _testOpacity];
-<<<<<<< HEAD
 //    [self _testRotation];
     [self _testCellAnimation];
 //    [self animation1];
-=======
     [self _testRotation];
     [self _testCircleLoadingAni];
->>>>>>> c11e27de19a405a2a5eab81c94c17e95016df60a
 }
 
 - (void)viewWillAppear:(BOOL)animated{
@@ -201,7 +198,6 @@ static CGFloat KShapeLayerWidth = 60;
     [self.gradientView setBeginColor:[UIColor greenColor] endColor:[UIColor greenColor]];
 }
 
-<<<<<<< HEAD
 #pragma mark - 粒子动画
 
 - (void)_testCellAnimation{
@@ -311,7 +307,6 @@ static CGFloat KShapeLayerWidth = 60;
     [self.view.layer insertSublayer:snowEmitter atIndex:0];
 }
 
-=======
 #pragma mark - 圆周动画
 - (void)_testCircleLoadingAni{
     /// 底部的灰色layer
@@ -356,36 +351,36 @@ static CGFloat KShapeLayerWidth = 60;
 }
 
 - (void)_testCircle2{
-    CAKeyframeAnimation *pathAnimation = [CAKeyframeAnimation animationWithKeyPath:@"position"];
-    
-        pathAnimation.calculationMode = kCAAnimationPaced;
-    
-        pathAnimation.fillMode = kCAFillModeForwards;
-    
-        pathAnimation.removedOnCompletion = NO;
-    
-        pathAnimation.duration = 0.5;
-    
-        pathAnimation.repeatCount = 0;
-    
-        
-    
-        CGMutablePathRef curvedPath = CGPathCreateMutable();
-    
-        
-    
-        CGPathMoveToPoint(curvedPath, NULL, LeftDragLine.center.x, LeftDragLine.center.y);//移动到动画开始的点（10，200）
-    
-        CGPathAddArcToPoint(curvedPath, NULL, 200 ,320,RightDragCricleBtn.center.x, RightDragCricleBtn.center. y , 0);
-    
-        CGPathAddArcToPoint(curvedPath, NULL ,RightDragCricleBtn.center.x-3, 150 ,102 ,50, 0);
-    
-        pathAnimation.path = curvedPath;
-    
-        CGPathRelease(curvedPath);
-    
-        [LeftDragLine.layer addAnimation:pathAnimation forKey:@"moveTheSquare"];
+//    CAKeyframeAnimation *pathAnimation = [CAKeyframeAnimation animationWithKeyPath:@"position"];
+//    
+//        pathAnimation.calculationMode = kCAAnimationPaced;
+//    
+//        pathAnimation.fillMode = kCAFillModeForwards;
+//    
+//        pathAnimation.removedOnCompletion = NO;
+//    
+//        pathAnimation.duration = 0.5;
+//    
+//        pathAnimation.repeatCount = 0;
+//    
+//        
+//    
+//        CGMutablePathRef curvedPath = CGPathCreateMutable();
+//    
+//        
+//    
+//        CGPathMoveToPoint(curvedPath, NULL, LeftDragLine.center.x, LeftDragLine.center.y);//移动到动画开始的点（10，200）
+//    
+//        CGPathAddArcToPoint(curvedPath, NULL, 200 ,320,RightDragCricleBtn.center.x, RightDragCricleBtn.center. y , 0);
+//    
+//        CGPathAddArcToPoint(curvedPath, NULL ,RightDragCricleBtn.center.x-3, 150 ,102 ,50, 0);
+//    
+//        pathAnimation.path = curvedPath;
+//    
+//        CGPathRelease(curvedPath);
+//    
+//        [LeftDragLine.layer addAnimation:pathAnimation forKey:@"moveTheSquare"];
 
 }
->>>>>>> c11e27de19a405a2a5eab81c94c17e95016df60a
+
 @end

@@ -67,7 +67,6 @@
     
     CAEmitterCell* rocket = [CAEmitterCell emitterCell];
     rocket.birthRate        = 1;
-    rocket.emissionRange    = 0;  // some variation in angle
     rocket.velocity            = 500;
     rocket.yAcceleration    = -450;
     rocket.lifetime            = 1.02;    // we cannot set the birthrate < 1.0 for the burst
@@ -79,18 +78,19 @@
     burst.velocity            = .5;        //速度为0
     burst.scale                = 0.5;      //大小
     burst.lifetime            = .2;     //存在时间
+//    burst.emissionLongitude = 2 * M_PI;
     
     CAEmitterCell* spark = [CAEmitterCell emitterCell];
     spark.birthRate            = 20;
     spark.velocity            = 250;
-    spark.emissionLatitude  = 1 / 2 * M_PI;
+    spark.emissionLongitude  = 0; //垂直方向
     spark.emissionRange        = 2 * M_PI;    // 360 度
     spark.yAcceleration        = 125;        // gravity
     spark.lifetime            = 1.5;
     spark.contents            = (id) [[UIImage imageNamed:@"emitterGift"] CGImage];
     spark.alphaSpeed        =-0.25;
-    spark.spin                = 3 / 2 * M_PI; //越小转得越慢
-//    spark.spinRange            = 1/8 * M_PI;
+    spark.spin                = 2 * M_PI; //越小转得越慢
+//    spark.spinRange            =  M_PI;
     
     // 上升尾焰
     CAEmitterCell *upStars = [CAEmitterCell emitterCell];
@@ -100,7 +100,7 @@
     upStars.yAcceleration = -250;
     upStars.contents      = (id) [[UIImage imageNamed:@"emitterGift"] CGImage];
     upStars.scale         = .15f;
-    upStars.emissionLatitude  = -1/2 * M_PI;
+    upStars.emissionLongitude  = 0;
     upStars.emissionRange = M_PI * 1/36;
     upStars.alphaSpeed = - 1.5 ;
     
@@ -113,7 +113,7 @@
     boomStars.yAcceleration = 60;
     boomStars.contents      = (id) [[UIImage imageNamed:@"emitterGift"] CGImage];
     boomStars.scale         = .1f;
-    boomStars.emissionLatitude  =  M_PI * 2;
+    boomStars.emissionLongitude  = 0;
     boomStars.emissionRange = M_PI * 2;
     boomStars.alphaSpeed -=.25;
     
