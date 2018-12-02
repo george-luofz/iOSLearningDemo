@@ -17,7 +17,7 @@ typedef NS_OPTIONS(NSUInteger, YXLiveRoomFreeGiftAnimationStatus) {
     YXLiveRoomFreeGiftAnimationStatusEnded       = 3
 };
 
-@interface YXLiveRoomFreeGiftAnimationView : NSObject
+@interface YXLiveRoomFreeGiftAnimationView : UIView
 
 @property (nonatomic, assign) YXLiveRoomFreeGiftAnimationStatus animationStatus;
 @property (nonatomic, weak) CALayer *animationSuperLayer;

@@ -66,7 +66,7 @@ static NSTimeInterval KYXLiveRoomAnimationLifeTime = 1.02f;
 //    if (self.animationViews.count >= KYXLiveRoomMaxAnimationViews){
 //        return nil;
 //    }
-    YXLiveRoomFreeGiftAnimationView *animationView = [[YXLiveRoomFreeGiftAnimationView alloc] init];
+    YXLiveRoomFreeGiftAnimationView *animationView = [[YXLiveRoomFreeGiftAnimationView alloc] initWithFrame:self.bounds];
     animationView.animationSuperLayer = self.containerLayer;
     animationView.animationLifeTime = self.animationLifeTime;
 //    [self.animationViews addObject:animationView];
