@@ -30,6 +30,8 @@
 		3C398FCA206DE85C008BDFB3 /* FJReplayKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C398FC9206DE85C008BDFB3 /* FJReplayKit.m */; };
 		3C3B7C2621885A220075A804 /* ImageViewTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C3B7C2421885A220075A804 /* ImageViewTestViewController.m */; };
 		3C3B7C2721885A220075A804 /* ImageViewTestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C3B7C2521885A220075A804 /* ImageViewTestViewController.xib */; };
+		3C54F0FE21B5169400B4D696 /* CALayerTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C54F0FC21B5169400B4D696 /* CALayerTestViewController.m */; };
+		3C54F0FF21B5169400B4D696 /* CALayerTestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C54F0FD21B5169400B4D696 /* CALayerTestViewController.xib */; };
 		3C5995AE21927B09008FA79B /* YXLGradientColorView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C5995AD21927B09008FA79B /* YXLGradientColorView.m */; };
 		3C5995B121928129008FA79B /* YXLBubbleCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C5995B021928129008FA79B /* YXLBubbleCell.m */; };
 		3C71C1C9211D6BEE00132B60 /* BaseTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C71C1C8211D6BEE00132B60 /* BaseTableViewController.m */; };
@@ -145,6 +147,9 @@
 		3C3B7C2321885A220075A804 /* ImageViewTestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ImageViewTestViewController.h; sourceTree = "<group>"; };
 		3C3B7C2421885A220075A804 /* ImageViewTestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ImageViewTestViewController.m; sourceTree = "<group>"; };
 		3C3B7C2521885A220075A804 /* ImageViewTestViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ImageViewTestViewController.xib; sourceTree = "<group>"; };
+		3C54F0FB21B5169400B4D696 /* CALayerTestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CALayerTestViewController.h; sourceTree = "<group>"; };
+		3C54F0FC21B5169400B4D696 /* CALayerTestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CALayerTestViewController.m; sourceTree = "<group>"; };
+		3C54F0FD21B5169400B4D696 /* CALayerTestViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CALayerTestViewController.xib; sourceTree = "<group>"; };
 		3C5995AC21927B09008FA79B /* YXLGradientColorView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YXLGradientColorView.h; sourceTree = "<group>"; };
 		3C5995AD21927B09008FA79B /* YXLGradientColorView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YXLGradientColorView.m; sourceTree = "<group>"; };
 		3C5995AF21928129008FA79B /* YXLBubbleCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YXLBubbleCell.h; sourceTree = "<group>"; };
@@ -385,6 +390,16 @@
 			path = imageView;
 			sourceTree = "<group>";
 		};
+		3C54F0FA21B5165300B4D696 /* CAlayer */ = {
+			isa = PBXGroup;
+			children = (
+				3C54F0FB21B5169400B4D696 /* CALayerTestViewController.h */,
+				3C54F0FC21B5169400B4D696 /* CALayerTestViewController.m */,
+				3C54F0FD21B5169400B4D696 /* CALayerTestViewController.xib */,
+			);
+			path = CAlayer;
+			sourceTree = "<group>";
+		};
 		3C71C1C6211D6BCD00132B60 /* Base */ = {
 			isa = PBXGroup;
 			children = (
@@ -547,6 +562,7 @@
 		3C8206C420736320009BE5A6 /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				3C54F0FA21B5165300B4D696 /* CAlayer */,
 				3C859C2921B0DC1F004488FA /* UIImage */,
 				3C3B7C22218859FF0075A804 /* imageView */,
 				3C1F09D82153D30F005D4692 /* Appearance */,
@@ -867,6 +883,7 @@
 				3CCB059020590F7700AF6760 /* Assets.xcassets in Resources */,
 				3C859C2E21B0DC78004488FA /* image.png in Resources */,
 				3C71C1D8211D6FA600132B60 /* 1.html in Resources */,
+				3C54F0FF21B5169400B4D696 /* CALayerTestViewController.xib in Resources */,
 				3CCB058E20590F7700AF6760 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -991,6 +1008,7 @@
 				3C9C373F206C7C8100F3ECD9 /* MRCTestObject.m in Sources */,
 				3C9C372E206B2DA200F3ECD9 /* ObjectCMainTableController.m in Sources */,
 				3C0BEEC520649D950022055C /* LinkListViewController.m in Sources */,
+				3C54F0FE21B5169400B4D696 /* CALayerTestViewController.m in Sources */,
 				3CCB05A62059182600AF6760 /* UIViewController+Push.m in Sources */,
 				3C104F67218F049000C55078 /* YXLiveRoomSpendPanelTabSelector.m in Sources */,
 				3C71C1CC211D6C7000132B60 /* HtmlToPdfViewController.m in Sources */,
