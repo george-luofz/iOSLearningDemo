@@ -12,15 +12,18 @@
 static NSUInteger KYXLiveRoomMaxAnimationViews = 5;
 static NSTimeInterval KYXLiveRoomAnimationLifeTime = 1.02f;
 
-@interface YXLiveRoomFreeGiftAnimationViewHandler()
+@interface YXLiveRoomFreeGiftAnimationViewHandler()<YXLiveRoomFreeGiftAnimationViewDelegate>
 @property (nonatomic, strong) CALayer *containerLayer;
-@property (nonatomic, strong) NSMutableArray<YXLiveRoomFreeGiftAnimationView *> *animationViews;
+@property (nonatomic, strong) YXLiveRoomFreeGiftAnimationView *currentAnimationView;
+@property (nonatomic, assign) NSInteger lastAnimationCount;
+
 @end
 
 @implementation YXLiveRoomFreeGiftAnimationViewHandler
 
 - (instancetype)initWithFrame:(CGRect)frame{
     if (self = [super initWithFrame:frame]){
+        self.lastAnimationCount = 0;
         self.animationLifeTime = KYXLiveRoomAnimationLifeTime;
         self.maxAnimationViews = KYXLiveRoomMaxAnimationViews;
         [self.layer addSublayer:self.containerLayer];
@@ -29,48 +32,34 @@ static NSTimeInterval KYXLiveRoomAnimationLifeTime = 1.02f;
 }
 
 - (void)startAnimation{
-    YXLiveRoomFreeGiftAnimationView *animationView = [self _findAnimationView];
-    [animationView startAnimation];
-    return;
-    if (!animationView) {
-        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(self.animationLifeTime * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-           YXLiveRoomFreeGiftAnimationView *animationView = [self _findAnimationView];
-            if (animationView.animationStatus == YXLiveRoomFreeGiftAnimationStatusReady ||animationView.animationStatus == YXLiveRoomFreeGiftAnimationStatusEnded){
-                [animationView startAnimation];
-                NSLog(@"after animationView count:%ld",self.animationViews.count);
-            }
-        });
-    } else {
-        [animationView startAnimation];
-        NSLog(@"animationView count:%ld",self.animationViews.count);
-    }
-    
+    [self _startAnimation];
 }
 
 - (void)stopAnimation{
-    for (YXLiveRoomFreeGiftAnimationView *animationView in self.animationViews) {
-        if (animationView.animationStatus == YXLiveRoomFreeGiftAnimationStatusStart ||animationView.animationStatus == YXLiveRoomFreeGiftAnimationStatusPlaying){
-            [animationView stopAnimation];
-        }
-    }
+    
+//    for (YXLiveRoomFreeGiftAnimationView *animationView in self.animationViews) {
+//        if (animationView.animationStatus == YXLiveRoomFreeGiftAnimationStatusStart ||animationView.animationStatus == YXLiveRoomFreeGiftAnimationStatusPlaying){
+//            [animationView stopAnimation];
+//        }
+//    }
 }
+
+- (void)startAnimationWithCount:(NSUInteger)count{
+    if (count <=0 )return;
+    self.lastAnimationCount+=count;
+    
+}
+
 
 #pragma mark - private
 
-- (YXLiveRoomFreeGiftAnimationView *)_findAnimationView{
-//    for (YXLiveRoomFreeGiftAnimationView *animationView in self.animationViews) {
-//        if (animationView.animationStatus == YXLiveRoomFreeGiftAnimationStatusEnded || animationView.animationStatus == YXLiveRoomFreeGiftAnimationStatusReady) {
-//            return animationView;
-//        }
-//    }
-//    if (self.animationViews.count >= KYXLiveRoomMaxAnimationViews){
-//        return nil;
-//    }
+- (void)_startAnimation{
+    self.lastAnimationCount--;
     YXLiveRoomFreeGiftAnimationView *animationView = [[YXLiveRoomFreeGiftAnimationView alloc] initWithFrame:self.bounds];
     animationView.animationSuperLayer = self.containerLayer;
     animationView.animationLifeTime = self.animationLifeTime;
-//    [self.animationViews addObject:animationView];
-    return animationView;
+    animationView.delegate = self;
+    [animationView startAnimation];
 }
 
 #pragma mark - g/setters
@@ -82,13 +71,6 @@ static NSTimeInterval KYXLiveRoomAnimationLifeTime = 1.02f;
         _containerLayer = containerLayer;
     }
     return _containerLayer;
-}
-
-- (NSMutableArray *)animationViews{
-    if (!_animationViews){
-        _animationViews = [NSMutableArray array];
-    }
-    return _animationViews;
 }
 
 @end

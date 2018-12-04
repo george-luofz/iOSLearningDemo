@@ -34,10 +34,11 @@
 
 - (void)stopAnimation{
     self.emitterLayer.birthRate = 0.f;
-    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(2.f * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(2.24f * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
         self.emitterLayer.hidden = YES;
         [self.emitterLayer removeFromSuperlayer];
         self.emitterLayer = nil;
+        self.animationStatus = YXLiveRoomFreeGiftAnimationStatusEnded;
     });
 }
 
@@ -45,7 +46,7 @@
 
 - (CAEmitterLayer *)_buildEmitterLayer{
     CAEmitterLayer *fireworksEmitter = [CAEmitterLayer layer];
-    fireworksEmitter.emitterPosition = CGPointMake(self.bounds.size.width -23,self.bounds.size.height + 60);
+    fireworksEmitter.emitterPosition = CGPointMake(self.bounds.size.width -23,self.bounds.size.height + 500); //500
     fireworksEmitter.emitterSize    = CGSizeMake(0, 0);
     fireworksEmitter.emitterMode    = kCAEmitterLayerPoints;
     fireworksEmitter.emitterShape    = kCAEmitterLayerPoint;
@@ -55,30 +56,30 @@
     CAEmitterCell *rocket = [CAEmitterCell emitterCell];
     rocket.emissionLongitude = - M_PI / 2;
     rocket.birthRate        = 1;
-    rocket.velocity         = 890;
+    rocket.velocity         = 1780; //1780
     rocket.velocityRange    = 20;
-    rocket.yAcceleration    = 900;
+    rocket.yAcceleration    = 1800; //1800
     rocket.lifetime         = 1.04f;
     rocket.contents         = (id) [[UIImage imageNamed:@"emitterGift_big"] CGImage];
     rocket.scale = .6;
     
     CAEmitterCell *burst = [CAEmitterCell emitterCell];
     burst.birthRate            = 1;
-    burst.velocity            = 0.5;
+    burst.velocity            = 0;
     burst.lifetime            = .2;
     
     CAEmitterCell *spark = [CAEmitterCell emitterCell];
     spark.birthRate            = 20;
-    spark.velocity            = 150;
-    spark.emissionLongitude  = M_PI * 9/8;
-    spark.emissionRange        = M_PI * 3/8;
-    spark.yAcceleration        = 100;
+    spark.velocity            = 200;
+    spark.emissionLongitude  = -M_PI_2;
+    spark.emissionRange        = -M_PI * 5/18;
+    spark.yAcceleration        = 200;
     spark.lifetime            = 1.1;
     spark.lifetimeRange       = .1f;
     spark.contents            = (id) [[UIImage imageNamed:@"emitterGift"] CGImage];
     spark.alphaSpeed        = -0.8;
     spark.spin                =  M_PI;
-    spark.spinRange            = 1/2 * M_PI;
+    spark.spinRange            = M_PI_2;
     spark.scale = .9f;
     
     CAEmitterCell *boomStars = [CAEmitterCell emitterCell];
@@ -104,8 +105,8 @@
     upStars.alphaSpeed = -1.;
     
     fireworksEmitter.emitterCells    = @[rocket];
-    rocket.emitterCells                = @[upStars,burst];
-    burst.emitterCells                = @[spark,boomStars];
+    rocket.emitterCells                = @[burst];
+    burst.emitterCells                = @[spark];
     
     return fireworksEmitter;
 }

@@ -17,11 +17,18 @@ typedef NS_OPTIONS(NSUInteger, YXLiveRoomFreeGiftAnimationStatus) {
     YXLiveRoomFreeGiftAnimationStatusEnded       = 3
 };
 
-@interface YXLiveRoomFreeGiftAnimationView : UIView
+@class YXLiveRoomFreeGiftAnimationView;
+@protocol YXLiveRoomFreeGiftAnimationViewDelegate <NSObject>
+- (void)freeGiftAnimationViewStartAnimation:(YXLiveRoomFreeGiftAnimationView *)animationView;
+- (void)freeGiftAnimationViewAnimationEnded:(YXLiveRoomFreeGiftAnimationView *)animationView;
 
+@end
+
+@interface YXLiveRoomFreeGiftAnimationView : UIView
 @property (nonatomic, assign) YXLiveRoomFreeGiftAnimationStatus animationStatus;
 @property (nonatomic, weak) CALayer *animationSuperLayer;
 @property (nonatomic, assign) NSTimeInterval animationLifeTime;
+@property (nonatomic, assign) id<YXLiveRoomFreeGiftAnimationViewDelegate> delegate;
 
 - (void)startAnimation;
 - (void)stopAnimation;
