@@ -35,7 +35,7 @@
 //    [self animation1];
     
     CGRect viewBounds = self.view.bounds;
-    CGRect frame = CGRectMake(viewBounds.size.width - 100, 0, 100, viewBounds.size.height);
+    CGRect frame = CGRectMake(viewBounds.size.width - 200, 0, 200, viewBounds.size.height);
     YXLiveRoomFreeGiftAnimationViewHandler *view = [[YXLiveRoomFreeGiftAnimationViewHandler alloc] initWithFrame:frame];
     self.viewHandler = view;
     [self.view addSubview:view];

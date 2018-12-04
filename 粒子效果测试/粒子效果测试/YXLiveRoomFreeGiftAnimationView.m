@@ -28,7 +28,7 @@
     self.animationStatus = YXLiveRoomFreeGiftAnimationStatusStart;
     if (!self.emitterLayer.superlayer){
         [self.animationSuperLayer addSublayer:self.emitterLayer];
-        [self.animationSuperLayer addSublayer:self.emitterLayer2];
+//        [self.animationSuperLayer addSublayer:self.emitterLayer2];
     }
 //    if (self.emitterLayer.beginTime == 0){
 //        self.emitterLayer.beginTime = CACurrentMediaTime() - 1; //
@@ -61,99 +61,88 @@
     
     //分为3种粒子，子弹粒子，爆炸粒子，散开粒子
     CAEmitterLayer *fireworksEmitter = [CAEmitterLayer layer];
+//    fireworksEmitter.repeatCount = 1.f;
+//    fireworksEmitter.repeatDuration = 1.9f;
     
-    fireworksEmitter.emitterPosition = CGPointMake(self.bounds.size.width / 2,self.bounds.size.height - 40);
+    fireworksEmitter.emitterPosition = CGPointMake(self.bounds.size.width -23,self.bounds.size.height + 60);
     fireworksEmitter.emitterSize    = CGSizeMake(0, 0);
     fireworksEmitter.emitterMode    = kCAEmitterLayerPoints;
     fireworksEmitter.emitterShape    = kCAEmitterLayerPoint;
-    fireworksEmitter.renderMode        = kCAEmitterLayerAdditive;
+    fireworksEmitter.renderMode        = kCAEmitterLayerUnordered;
     fireworksEmitter.birthRate      = 1;
-//    fireworksEmitter.seed = 3;
     
     CAEmitterCell* rocket = [CAEmitterCell emitterCell];
     rocket.emissionLongitude = - M_PI / 2;
     rocket.birthRate        = 1;
-    rocket.velocity         = 800;
-    rocket.velocityRange    = 100;
+    rocket.velocity         = 890;
+    rocket.velocityRange    = 20;
     rocket.yAcceleration    = 900;
     rocket.lifetime         = 1.04f;
-    rocket.contents         = (id) [[UIImage imageNamed:@"emitterGift"] CGImage];
-    rocket.contentsScale    = 1.0;
+    rocket.contents         = (id) [[UIImage imageNamed:@"emitterGift_big"] CGImage];
+    rocket.scale = .6;
     
     CAEmitterCell* burst = [CAEmitterCell emitterCell];
     burst.birthRate            = 1;        // at the end of travel
     burst.velocity            = 0.5;        //速度为0
-    burst.scale                = 0.5;      //大小
+//    burst.scale                = 0.5;      //大小
     burst.lifetime            = .2;     //存在时间
-//    burst.beginTime = rocket.beginTime - .2;
-//    burst.emissionLongitude   = - M_PI / 2;
-//    burst.emissionLongitude  = 7 / 8 * M_PI; //垂直方向
-//    burst.emissionRange        = 1/2 * M_PI;    // 360 度
     
     CAEmitterCell* spark = [CAEmitterCell emitterCell];
     spark.birthRate            = 20;
     spark.velocity            = 150;
-//    spark.emissionLongitude  = M_PI / 2; //垂直方向
-    spark.emissionRange        = 2 * M_PI;    // 360 度
+    spark.emissionLongitude  = M_PI; //垂直方向
+    spark.emissionRange        = M_PI / 2;    // 360 度
     spark.yAcceleration        = 100;        // gravity
-    spark.lifetime            = 1.7;
+    spark.lifetime            = 1.1;
     spark.lifetimeRange       = .1f;
     spark.contents            = (id) [[UIImage imageNamed:@"emitterGift"] CGImage];
-    spark.alphaSpeed        = -0.5;
+    spark.alphaSpeed        = -0.8;
     spark.spin                =  M_PI; //越小转得越慢
     spark.spinRange            = 1/2 * M_PI;
-
-    
-//    upStars.alphaSpeed = - .2 ;
+//    spark.contentsRect     = CGRectMake(0, 0, self.bounds.size.width, 50);
+    spark.scale = .9f;
     
     // 爆炸尾焰
     CAEmitterCell *boomStars = [CAEmitterCell emitterCell];
     boomStars.birthRate = 50;
     boomStars.lifetime = 1.f;
     boomStars.lifetimeRange = .1f;
-    boomStars.velocity = 160;
+    boomStars.velocity = 150;
     boomStars.yAcceleration = 100;
-    boomStars.contents      = (id) [[UIImage imageNamed:@"emitterGift"] CGImage];
-    boomStars.scale         = .15f;
-    boomStars.scaleRange    = .15f;
-    boomStars.emissionLongitude  = 0;
-    boomStars.emissionRange = M_PI * 2;
-    boomStars.alphaSpeed -=.2f;
-    
-//    fireworksEmitter.emitterCells    = [NSArray arrayWithObjects:rocket,nil];
-//    rocket.emitterCells                = [NSArray arrayWithObjects:burst,nil];
-//    burst.emitterCells                = [NSArray arrayWithObjects:spark,nil];
-//    NSMutableArray *firstEmiterArr = [NSMutableArray arrayWithArray:upstarsArray];
-//    [upstarsArray insertObject:rocket atIndex:0];
-    fireworksEmitter.emitterCells    = @[rocket];
-    rocket.emitterCells                = [NSArray arrayWithObjects:burst,nil];
-    burst.emitterCells                = [NSArray arrayWithObjects:spark,boomStars,nil];
-    
-    CAEmitterLayer *fireworksEmitter2 = [CAEmitterLayer layer];
-    self.emitterLayer2 = fireworksEmitter;
-    fireworksEmitter2.emitterPosition = CGPointMake(self.bounds.size.width / 2,self.bounds.size.height - 40);
-    fireworksEmitter2.emitterSize    = CGSizeMake(10, 0);
-    fireworksEmitter2.emitterMode    = kCAEmitterLayerPoints;
-    fireworksEmitter2.emitterShape    = kCAEmitterLayerLine;
-    fireworksEmitter2.renderMode      = kCAEmitterLayerAdditive;
-    fireworksEmitter2.birthRate      = 0;
+    boomStars.contents      = (id) [[UIImage imageNamed:@"boomDot"] CGImage];
+    boomStars.emissionLongitude  = M_PI;
+    boomStars.emissionRange = M_PI / 2;
+    boomStars.alphaRange = .5f;
+    boomStars.alphaSpeed = -1.f;
     
     // 上升尾焰
-    NSMutableArray *upstarsArray = [NSMutableArray arrayWithCapacity:6];
-    for (int i = 0;i < 5 ;i++){
-        CAEmitterCell *upStars = [CAEmitterCell emitterCell];
-        upStars.birthRate = 5;
-        upStars.lifetime = .3f;
-        upStars.velocity = 1000;
-        upStars.yAcceleration = 900;
-        upStars.contents      = (id) [[UIImage imageNamed:@"emitterGift1"] CGImage];
-        upStars.scale         = .15f;
-        upStars.scaleRange    = .05f;
-        upStars.emissionLongitude  = - M_PI / 2;
-        upStars.emissionRange = M_PI * 1.f/18;
-        [upstarsArray addObject:upStars];
-    }
-    fireworksEmitter2.emitterCells = [upstarsArray copy];
+//    NSMutableArray *tempArray = [NSMutableArray arrayWithCapacity:6];
+//    for (int i = 0 ;i < 5 ;i ++){
+//        CAEmitterCell *upStars = [CAEmitterCell emitterCell];
+//        upStars.birthRate = 1;
+//        upStars.lifetime = .8f;
+//        upStars.velocity = 200;
+//        upStars.yAcceleration = 300;
+//        upStars.contents      = (id) [[UIImage imageNamed:@"upDot"] CGImage];
+//        //    upStars.scaleRange    = .5f;
+////        upStars.emissionLongitude  = - M_PI / 2;
+//        upStars.emissionRange = M_PI * 1.f/18;
+//        upStars.beginTime = rocket.beginTime - 1.05f;
+//        [tempArray addObject:upStars];
+//    }
+    CAEmitterCell *upStars = [CAEmitterCell emitterCell];
+    upStars.birthRate = 8;
+    upStars.lifetime = .6f;
+    upStars.velocity = 200;
+    upStars.yAcceleration = 300;
+    upStars.contents      = (id) [[UIImage imageNamed:@"upDot"] CGImage];
+    upStars.emissionRange = M_PI * 1.f/18;
+    upStars.beginTime = rocket.beginTime - 1.05f;
+    upStars.alphaSpeed = -1.;
+    
+    fireworksEmitter.emitterCells    = @[rocket];
+    rocket.emitterCells                = @[upStars,burst];
+    burst.emitterCells                = [NSArray arrayWithObjects:spark,boomStars,nil];
     
     return fireworksEmitter;
 }
