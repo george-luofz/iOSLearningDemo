@@ -76,11 +76,11 @@
     spark.yAcceleration        = 200;
     spark.lifetime            = 1.1;
     spark.lifetimeRange       = .1f;
-    spark.contents            = (id) [[UIImage imageNamed:@"emitterGift"] CGImage];
+    spark.contents            = (id) [[UIImage imageNamed:@"emitterGift_big"] CGImage];
     spark.alphaSpeed        = -0.8;
     spark.spin                =  M_PI;
     spark.spinRange            = M_PI_2;
-    spark.scale = .9f;
+    spark.scale = .4f;
     
     CAEmitterCell *boomStars = [CAEmitterCell emitterCell];
     boomStars.birthRate = 50;

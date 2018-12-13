@@ -27,7 +27,6 @@ typedef NS_OPTIONS(NSUInteger, YXLiveRoomFreeGiftAnimationStatus) {
 @interface YXLiveRoomFreeGiftAnimationView : UIView
 @property (nonatomic, assign) YXLiveRoomFreeGiftAnimationStatus animationStatus;
 @property (nonatomic, weak) CALayer *animationSuperLayer;
-@property (nonatomic, assign) NSTimeInterval animationLifeTime;
 @property (nonatomic, assign) id<YXLiveRoomFreeGiftAnimationViewDelegate> delegate;
 
 - (void)startAnimation;

@@ -7,7 +7,7 @@
 //
 
 #import "ViewController.h"
-#import "YXLiveRoomFreeGiftAnimationViewHandler.h"
+#import "YXLiveRoomFreeGiftAnimationManager.h"
 
 /**
  1·      一个或多个 CAEmitterCells ：发射器电池可以看作是单个粒子的原型（例如，一个单一的粉扑在一团烟雾）。当散发出一个粒子，UIKit根据这个发射粒子和定义的基础上创建一个随机粒子。此原型包括一些属性来控制粒子的图片，颜色，方向，运动，缩放比例和生命周期。
@@ -19,7 +19,7 @@
 
 @interface ViewController ()
 @property (nonatomic, strong) CAEmitterLayer *emitterLayer;
-@property (nonatomic, strong) YXLiveRoomFreeGiftAnimationViewHandler *viewHandler;
+@property (nonatomic, strong) YXLiveRoomFreeGiftAnimationManager *viewHandler;
 @end
 
 @implementation ViewController
@@ -36,7 +36,7 @@
     
     CGRect viewBounds = self.view.bounds;
     CGRect frame = CGRectMake(viewBounds.size.width - 200, 0, 200, viewBounds.size.height);
-    YXLiveRoomFreeGiftAnimationViewHandler *view = [[YXLiveRoomFreeGiftAnimationViewHandler alloc] initWithFrame:frame];
+    YXLiveRoomFreeGiftAnimationManager *view = [[YXLiveRoomFreeGiftAnimationManager alloc] initWithFrame:frame];
     self.viewHandler = view;
     [self.view addSubview:view];
     
@@ -50,7 +50,7 @@
 }
 
 - (void)btnClicked:(UIButton *)sender{
-    [self.viewHandler startAnimation];
+    [self.viewHandler startAnimationWithCount:1];
 }
 
 

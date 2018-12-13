@@ -1,30 +1,29 @@
 //
-//  YXLiveRoomFreeGiftAnimationViewHandler.m
+//  YXLiveRoomFreeGiftAnimationManager.m
 //  粒子效果测试
 //
 //  Created by 罗富中 on 2018/11/22.
 //  Copyright © 2018 tqh. All rights reserved.
 //
 
-#import "YXLiveRoomFreeGiftAnimationViewHandler.h"
+#import "YXLiveRoomFreeGiftAnimationManager.h"
 #import "YXLiveRoomFreeGiftAnimationView.h"
 
 static NSUInteger KYXLiveRoomMaxAnimationViews = 5;
 static NSTimeInterval KYXLiveRoomAnimationLifeTime = 1.02f;
 
-@interface YXLiveRoomFreeGiftAnimationViewHandler()<YXLiveRoomFreeGiftAnimationViewDelegate>
+@interface YXLiveRoomFreeGiftAnimationManager()<YXLiveRoomFreeGiftAnimationViewDelegate>
 @property (nonatomic, strong) CALayer *containerLayer;
 @property (nonatomic, strong) YXLiveRoomFreeGiftAnimationView *currentAnimationView;
-@property (nonatomic, assign) NSInteger lastAnimationCount;
+@property (nonatomic, assign) NSInteger lastAnimationCount; //剩余动画个数
 
 @end
 
-@implementation YXLiveRoomFreeGiftAnimationViewHandler
+@implementation YXLiveRoomFreeGiftAnimationManager
 
 - (instancetype)initWithFrame:(CGRect)frame{
     if (self = [super initWithFrame:frame]){
         self.lastAnimationCount = 0;
-        self.animationLifeTime = KYXLiveRoomAnimationLifeTime;
         self.maxAnimationViews = KYXLiveRoomMaxAnimationViews;
         [self.layer addSublayer:self.containerLayer];
     }
@@ -37,19 +36,24 @@ static NSTimeInterval KYXLiveRoomAnimationLifeTime = 1.02f;
 
 - (void)stopAnimation{
     
-//    for (YXLiveRoomFreeGiftAnimationView *animationView in self.animationViews) {
-//        if (animationView.animationStatus == YXLiveRoomFreeGiftAnimationStatusStart ||animationView.animationStatus == YXLiveRoomFreeGiftAnimationStatusPlaying){
-//            [animationView stopAnimation];
-//        }
-//    }
 }
 
 - (void)startAnimationWithCount:(NSUInteger)count{
     if (count <=0 )return;
     self.lastAnimationCount+=count;
-    
+    [self _startAnimation];
 }
 
+#pragma mark - <YXLiveAnimationViewDelegate>
+- (void)freeGiftAnimationViewAnimationEnded:(YXLiveRoomFreeGiftAnimationView *)animationView{
+    if (self.lastAnimationCount > 0){
+        [self _startAnimation];
+    }
+}
+
+- (void)freeGiftAnimationViewStartAnimation:(YXLiveRoomFreeGiftAnimationView *)animationView{
+    
+}
 
 #pragma mark - private
 
@@ -57,7 +61,6 @@ static NSTimeInterval KYXLiveRoomAnimationLifeTime = 1.02f;
     self.lastAnimationCount--;
     YXLiveRoomFreeGiftAnimationView *animationView = [[YXLiveRoomFreeGiftAnimationView alloc] initWithFrame:self.bounds];
     animationView.animationSuperLayer = self.containerLayer;
-    animationView.animationLifeTime = self.animationLifeTime;
     animationView.delegate = self;
     [animationView startAnimation];
 }

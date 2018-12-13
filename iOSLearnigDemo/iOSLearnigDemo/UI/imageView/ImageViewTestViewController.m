@@ -8,10 +8,11 @@
 
 #import "ImageViewTestViewController.h"
 
-@interface ImageViewTestViewController ()
+@interface ImageViewTestViewController () <UIGestureRecognizerDelegate>
 @property (weak, nonatomic) IBOutlet UIImageView *nomalImgView;
 @property (weak, nonatomic) IBOutlet UIImageView *fullscreenImgView;
 
+@property (nonatomic, strong) UIScrollView *scrollView;
 @end
 
 @implementation ImageViewTestViewController
@@ -43,8 +44,17 @@
     imageView.image = [self scaleImageHorizontalAndRedrawToSize:imageView.frame.size image:originalImg];
     
     
-    // blend
-//    self.ivStar.image = [[UIImage imageNamed:@"image"] imageWithGradientTintColor:[UIColor blueColor]];
+    UIScrollView *scrollView = [[UIScrollView alloc] initWithFrame:CGRectMake(100, 100, 100, 100)];
+//    scrollView.panGestureRecognizer.delegate = self;
+    scrollView.backgroundColor = [UIColor blueColor];
+    scrollView.contentSize = CGSizeMake(200, 200);
+    [self.view addSubview:scrollView];
+    self.scrollView = scrollView;
+    
+    UIPanGestureRecognizer *panGesture = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(handlePan:)];
+    panGesture.delegate = self;
+    [self.view addGestureRecognizer:panGesture];
+
 }
 
 - (UIImage *)scaleImageHorizontalAndRedrawToSize:(CGSize)size image:(UIImage *)image{
@@ -60,4 +70,22 @@
     return resultImg;
 }
 
+- (BOOL)gestureRecognizer:(UIGestureRecognizer *)gestureRecognizer shouldRecognizeSimultaneouslyWithGestureRecognizer:(UIGestureRecognizer *)otherGestureRecognizer{
+    return YES;
+}
+
+//- (BOOL)gestureRecognizer:(UIGestureRecognizer *)gestureRecognizer shouldReceiveTouch:(UITouch *)touch{
+//    if ([gestureRecognizer isEqual:self.scrollView.panGestureRecognizer]) return false;
+//}
+
+
+
+- (void)handlePan:(UIPanGestureRecognizer  *)pan{
+    NSLog(@"location :%@",NSStringFromCGPoint([pan velocityInView:self.view]));
+    if (pan.state == UIGestureRecognizerStateBegan || pan.state == UIGestureRecognizerStateChanged) {
+        self.scrollView.scrollEnabled = NO;
+    } else {
+        self.scrollView.scrollEnabled = YES;
+    }
+}
 @end

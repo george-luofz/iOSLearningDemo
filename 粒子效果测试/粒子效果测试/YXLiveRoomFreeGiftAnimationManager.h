@@ -1,5 +1,5 @@
 //
-//  YXLiveRoomFreeGiftAnimationViewHandler.h
+//  YXLiveRoomFreeGiftAnimationManager.h
 //  粒子效果测试
 //
 //  Created by 罗富中 on 2018/11/22.
@@ -10,11 +10,10 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface YXLiveRoomFreeGiftAnimationViewHandler : UIView
+@interface YXLiveRoomFreeGiftAnimationManager : UIView
 @property (nonatomic, assign) NSUInteger maxAnimationViews; ///最大创建动画数默认5个
-@property (nonatomic, assign) NSTimeInterval animationLifeTime;  ///动画时长，默认1s
+@property (nonatomic, assign) NSTimeInterval animationRepeatDuration; // 动画得间隔
 
-- (void)startAnimation;
 - (void)stopAnimation;
 
 - (void)startAnimationWithCount:(NSUInteger)count; 

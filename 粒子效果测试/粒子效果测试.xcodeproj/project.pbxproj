@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		3C61F84821A6597600A2C389 /* YXLiveRoomFreeGiftAnimationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C61F84721A6597600A2C389 /* YXLiveRoomFreeGiftAnimationView.m */; };
-		3C61F84B21A6811500A2C389 /* YXLiveRoomFreeGiftAnimationViewHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C61F84A21A6811500A2C389 /* YXLiveRoomFreeGiftAnimationViewHandler.m */; };
+		3C61F84B21A6811500A2C389 /* YXLiveRoomFreeGiftAnimationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C61F84A21A6811500A2C389 /* YXLiveRoomFreeGiftAnimationManager.m */; };
 		4CC8BDDF1C9AA47D00A11ECE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CC8BDDE1C9AA47D00A11ECE /* main.m */; };
 		4CC8BDE21C9AA47D00A11ECE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CC8BDE11C9AA47D00A11ECE /* AppDelegate.m */; };
 		4CC8BDE51C9AA47D00A11ECE /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CC8BDE41C9AA47D00A11ECE /* ViewController.m */; };
@@ -46,8 +46,8 @@
 /* Begin PBXFileReference section */
 		3C61F84621A6597600A2C389 /* YXLiveRoomFreeGiftAnimationView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YXLiveRoomFreeGiftAnimationView.h; sourceTree = "<group>"; };
 		3C61F84721A6597600A2C389 /* YXLiveRoomFreeGiftAnimationView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YXLiveRoomFreeGiftAnimationView.m; sourceTree = "<group>"; };
-		3C61F84921A6811500A2C389 /* YXLiveRoomFreeGiftAnimationViewHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YXLiveRoomFreeGiftAnimationViewHandler.h; sourceTree = "<group>"; };
-		3C61F84A21A6811500A2C389 /* YXLiveRoomFreeGiftAnimationViewHandler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YXLiveRoomFreeGiftAnimationViewHandler.m; sourceTree = "<group>"; };
+		3C61F84921A6811500A2C389 /* YXLiveRoomFreeGiftAnimationManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YXLiveRoomFreeGiftAnimationManager.h; sourceTree = "<group>"; };
+		3C61F84A21A6811500A2C389 /* YXLiveRoomFreeGiftAnimationManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YXLiveRoomFreeGiftAnimationManager.m; sourceTree = "<group>"; };
 		4CC8BDDA1C9AA47D00A11ECE /* 粒子效果测试.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "粒子效果测试.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4CC8BDDE1C9AA47D00A11ECE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		4CC8BDE01C9AA47D00A11ECE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -138,8 +138,8 @@
 				4CC8BDEE1C9AA47D00A11ECE /* Info.plist */,
 				3C61F84621A6597600A2C389 /* YXLiveRoomFreeGiftAnimationView.h */,
 				3C61F84721A6597600A2C389 /* YXLiveRoomFreeGiftAnimationView.m */,
-				3C61F84921A6811500A2C389 /* YXLiveRoomFreeGiftAnimationViewHandler.h */,
-				3C61F84A21A6811500A2C389 /* YXLiveRoomFreeGiftAnimationViewHandler.m */,
+				3C61F84921A6811500A2C389 /* YXLiveRoomFreeGiftAnimationManager.h */,
+				3C61F84A21A6811500A2C389 /* YXLiveRoomFreeGiftAnimationManager.m */,
 				4CC8BDDD1C9AA47D00A11ECE /* Supporting Files */,
 			);
 			path = "粒子效果测试";
@@ -312,7 +312,7 @@
 			files = (
 				4CC8BDE51C9AA47D00A11ECE /* ViewController.m in Sources */,
 				4CC8BDE21C9AA47D00A11ECE /* AppDelegate.m in Sources */,
-				3C61F84B21A6811500A2C389 /* YXLiveRoomFreeGiftAnimationViewHandler.m in Sources */,
+				3C61F84B21A6811500A2C389 /* YXLiveRoomFreeGiftAnimationManager.m in Sources */,
 				4CC8BDDF1C9AA47D00A11ECE /* main.m in Sources */,
 				3C61F84821A6597600A2C389 /* YXLiveRoomFreeGiftAnimationView.m in Sources */,
 			);
