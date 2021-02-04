@@ -11,7 +11,8 @@
 
 int main(int argc, char * argv[]) {
 //    CFRunLoopStop(CFRunLoopGetCurrent()); //停止主runloop是不可能的
-    
+    CGRect rect = CGRectFromString(@"");
+    NSLog(@"rect:%@",NSStringFromCGRect(rect));
     @autoreleasepool {
         return UIApplicationMain(argc, argv, nil, NSStringFromClass([AppDelegate class]));
     }

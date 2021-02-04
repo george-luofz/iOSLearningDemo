@@ -39,10 +39,11 @@
 #pragma mark - g/setter
 
 - (CGFloat)width{
-    return [objc_getAssociatedObject(self, _cmd) doubleValue];
+    id obj = objc_getAssociatedObject(self, _cmd);
+    return [obj doubleValue];
 }
 
-- (void)setWidth:(CGFloat)width{
-    objc_setAssociatedObject(self, @selector(width), @(width), OBJC_ASSOCIATION_RETAIN);
-}
+//- (void)setWidth:(CGFloat)width{
+//    objc_setAssociatedObject(self, @selector(width), @(width), OBJC_ASSOCIATION_RETAIN);
+//}
 @end

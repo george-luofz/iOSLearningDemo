@@ -223,8 +223,8 @@ void ReportFunction(id self, SEL _cmd)
 
 #pragma mark -- objc_msgSend
 - (void)_test_objcMsgSend{
-    id person = objc_msgSend(objc_getClass("Person2"),@selector(alloc),@selector(init));
-    objc_msgSend(person,@selector(test));
+//    id person = objc_msgSend(objc_getClass("Person2"),@selector(alloc),@selector(init));
+//    objc_msgSend(person,@selector(test));
 }
 
 

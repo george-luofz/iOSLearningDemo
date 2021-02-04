@@ -47,6 +47,14 @@ typedef void(^Block) (void);
     
     NSMutableArray *array = [NSMutableArray array];
     [array removeLastObject];
+    
+    NSObject *obj = [NSObject new];
+    __weak typeof(obj) weakObj = obj;
+    NSArray *array1 = @[obj];
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        NSLog(@"obj:%@,weakObj:%@",obj,weakObj);
+    });
+    
 }
 
 #pragma mark --

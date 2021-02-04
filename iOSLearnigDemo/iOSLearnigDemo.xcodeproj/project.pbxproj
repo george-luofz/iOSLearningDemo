@@ -11,17 +11,28 @@
 		3C03E21C21354EF800900A65 /* HeaderCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C03E21B21354EF800900A65 /* HeaderCollectionViewCell.m */; };
 		3C03E21F213558B400900A65 /* CustomFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C03E21E213558B400900A65 /* CustomFlowLayout.m */; };
 		3C03E22221355F9F00900A65 /* FlowLayoutTestController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C03E22121355F9F00900A65 /* FlowLayoutTestController.m */; };
+		3C0569FC2228DAF200B05A1A /* TestCollectionAnimationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C0569FB2228DAF200B05A1A /* TestCollectionAnimationViewController.m */; };
 		3C0BEEC2206232B30022055C /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C0BEEC1206232B30022055C /* Person.m */; };
 		3C0BEEC520649D950022055C /* LinkListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C0BEEC420649D950022055C /* LinkListViewController.m */; };
 		3C0BEED12064A4B70022055C /* ListNode.c in Sources */ = {isa = PBXBuildFile; fileRef = 3C0BEECE2064A3D40022055C /* ListNode.c */; };
 		3C0BEED22064AAD40022055C /* Stack.c in Sources */ = {isa = PBXBuildFile; fileRef = 3C0BEEC82064A3930022055C /* Stack.c */; };
 		3C0BEED52064E2080022055C /* StringArrayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C0BEED42064E2080022055C /* StringArrayViewController.m */; };
 		3C104F67218F049000C55078 /* YXLiveRoomSpendPanelTabSelector.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C104F66218F049000C55078 /* YXLiveRoomSpendPanelTabSelector.m */; };
+		3C1C24052452845F00430512 /* YXLiveRoomView1.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C1C24042452845E00430512 /* YXLiveRoomView1.m */; };
+		3C1C24082452877E00430512 /* YXLiveRoomMovableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C1C24072452877E00430512 /* YXLiveRoomMovableView.m */; };
+		3C1C240B2452885600430512 /* YXLiveRoomView2.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C1C240A2452885600430512 /* YXLiveRoomView2.m */; };
+		3C1C240E24528A5900430512 /* YXLiveRoomDisplayerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C1C240D24528A5900430512 /* YXLiveRoomDisplayerView.m */; };
+		3C1C241124528ACB00430512 /* YXLiveRoomLiteView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C1C241024528ACB00430512 /* YXLiveRoomLiteView.m */; };
+		3C1C241424528AF500430512 /* YXLiveRoomView3.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C1C241324528AF500430512 /* YXLiveRoomView3.m */; };
 		3C1E6C5B213D4559002112AF /* AnimationTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C1E6C5A213D4559002112AF /* AnimationTestViewController.m */; };
 		3C1F09DB2153D339005D4692 /* AppearanceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C1F09DA2153D339005D4692 /* AppearanceViewController.m */; };
 		3C1F09DF2153D3AC005D4692 /* CustomView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C1F09DE2153D3AC005D4692 /* CustomView.m */; };
 		3C2A3CBF214F999D0071B9CE /* FZVideoSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C2A3CBE214F999D0071B9CE /* FZVideoSource.m */; };
 		3C2A3CC2214FA1A80071B9CE /* AVFoundationTestController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C2A3CC1214FA1A80071B9CE /* AVFoundationTestController.m */; };
+		3C32FC7F24D52054000BA932 /* PanTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C32FC7E24D52054000BA932 /* PanTestViewController.m */; };
+		3C32FC8224D520A0000BA932 /* WBLEditableImageStickerWidget.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C32FC8024D520A0000BA932 /* WBLEditableImageStickerWidget.m */; };
+		3C32FC8824D5217A000BA932 /* WBLPerformerStickerWidget.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C32FC8624D5217A000BA932 /* WBLPerformerStickerWidget.m */; };
+		3C32FC8B24D52181000BA932 /* WBLPerformerStickerDeleteView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C32FC8924D52180000BA932 /* WBLPerformerStickerDeleteView.m */; };
 		3C35BF9A20761E1900066B05 /* TestRuntimeForward.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C35BF9920761E1900066B05 /* TestRuntimeForward.m */; };
 		3C35BF9D2078738700066B05 /* TestRuntimeForward+category.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C35BF9C2078738700066B05 /* TestRuntimeForward+category.m */; };
 		3C35BFA020789D7100066B05 /* CategoryObj.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C35BF9F20789D7100066B05 /* CategoryObj.m */; };
@@ -54,6 +65,8 @@
 		3C71C2412123C4AF00132B60 /* LunarCore.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C71C2402123C4AF00132B60 /* LunarCore.m */; };
 		3C71C2442123CA0C00132B60 /* NNLunarCalenderManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C71C2432123CA0C00132B60 /* NNLunarCalenderManager.m */; };
 		3C71C24921241F1900132B60 /* DIYCalendarCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C71C24821241F1900132B60 /* DIYCalendarCell.m */; };
+		3C7D11022306B3A50030FC26 /* YXLiveRoomView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C7D11012306B3A50030FC26 /* YXLiveRoomView.m */; };
+		3C7D11062306B6880030FC26 /* EventTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C7D11052306B6880030FC26 /* EventTestViewController.m */; };
 		3C8206C72073633B009BE5A6 /* UITestTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C8206C62073633B009BE5A6 /* UITestTableViewController.m */; };
 		3C8206CA207363CE009BE5A6 /* ViewTestController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C8206C9207363CE009BE5A6 /* ViewTestController.m */; };
 		3C8206CE207475A8009BE5A6 /* RuntimeTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C8206CD207475A8009BE5A6 /* RuntimeTestViewController.m */; };
@@ -87,6 +100,7 @@
 		3CCB05AA2059198100AF6760 /* GCDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CCB05A92059198100AF6760 /* GCDViewController.m */; };
 		3CCB05AE205A5B8000AF6760 /* ObjectiveCTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CCB05AD205A5B8000AF6760 /* ObjectiveCTableViewController.m */; };
 		3CDC807F20676A2C00D3AEEB /* PointerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CDC807E20676A2C00D3AEEB /* PointerViewController.m */; };
+		3CDCE1E5230B8F0D002786F7 /* YXTouchableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CDCE1E4230B8F0D002786F7 /* YXTouchableView.m */; };
 		3CDDB29B212BE3B40047BFAB /* ColletionInScrollController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CDDB29A212BE3B40047BFAB /* ColletionInScrollController.m */; };
 		3CDDB2B1212D3CCF0047BFAB /* VSFilterGroupSelector.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CDDB2A5212D3CCF0047BFAB /* VSFilterGroupSelector.m */; };
 		3CDDB2B2212D3CCF0047BFAB /* VSGroupSelector.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CDDB2A7212D3CCF0047BFAB /* VSGroupSelector.m */; };
@@ -107,6 +121,8 @@
 		3C03E21E213558B400900A65 /* CustomFlowLayout.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomFlowLayout.m; sourceTree = "<group>"; };
 		3C03E22021355F9F00900A65 /* FlowLayoutTestController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FlowLayoutTestController.h; sourceTree = "<group>"; };
 		3C03E22121355F9F00900A65 /* FlowLayoutTestController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FlowLayoutTestController.m; sourceTree = "<group>"; };
+		3C0569FA2228DAF200B05A1A /* TestCollectionAnimationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestCollectionAnimationViewController.h; sourceTree = "<group>"; };
+		3C0569FB2228DAF200B05A1A /* TestCollectionAnimationViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestCollectionAnimationViewController.m; sourceTree = "<group>"; };
 		3C0BEEC0206232B30022055C /* Person.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
 		3C0BEEC1206232B30022055C /* Person.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
 		3C0BEEC320649D950022055C /* LinkListViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LinkListViewController.h; sourceTree = "<group>"; };
@@ -119,6 +135,18 @@
 		3C0BEED42064E2080022055C /* StringArrayViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StringArrayViewController.m; sourceTree = "<group>"; };
 		3C104F65218F049000C55078 /* YXLiveRoomSpendPanelTabSelector.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YXLiveRoomSpendPanelTabSelector.h; sourceTree = "<group>"; };
 		3C104F66218F049000C55078 /* YXLiveRoomSpendPanelTabSelector.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YXLiveRoomSpendPanelTabSelector.m; sourceTree = "<group>"; };
+		3C1C24032452845E00430512 /* YXLiveRoomView1.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YXLiveRoomView1.h; sourceTree = "<group>"; };
+		3C1C24042452845E00430512 /* YXLiveRoomView1.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YXLiveRoomView1.m; sourceTree = "<group>"; };
+		3C1C24062452877E00430512 /* YXLiveRoomMovableView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YXLiveRoomMovableView.h; sourceTree = "<group>"; };
+		3C1C24072452877E00430512 /* YXLiveRoomMovableView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YXLiveRoomMovableView.m; sourceTree = "<group>"; };
+		3C1C24092452885600430512 /* YXLiveRoomView2.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YXLiveRoomView2.h; sourceTree = "<group>"; };
+		3C1C240A2452885600430512 /* YXLiveRoomView2.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YXLiveRoomView2.m; sourceTree = "<group>"; };
+		3C1C240C24528A5900430512 /* YXLiveRoomDisplayerView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YXLiveRoomDisplayerView.h; sourceTree = "<group>"; };
+		3C1C240D24528A5900430512 /* YXLiveRoomDisplayerView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YXLiveRoomDisplayerView.m; sourceTree = "<group>"; };
+		3C1C240F24528ACB00430512 /* YXLiveRoomLiteView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YXLiveRoomLiteView.h; sourceTree = "<group>"; };
+		3C1C241024528ACB00430512 /* YXLiveRoomLiteView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YXLiveRoomLiteView.m; sourceTree = "<group>"; };
+		3C1C241224528AF500430512 /* YXLiveRoomView3.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YXLiveRoomView3.h; sourceTree = "<group>"; };
+		3C1C241324528AF500430512 /* YXLiveRoomView3.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YXLiveRoomView3.m; sourceTree = "<group>"; };
 		3C1E6C59213D4559002112AF /* AnimationTestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AnimationTestViewController.h; sourceTree = "<group>"; };
 		3C1E6C5A213D4559002112AF /* AnimationTestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AnimationTestViewController.m; sourceTree = "<group>"; };
 		3C1F09D92153D339005D4692 /* AppearanceViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppearanceViewController.h; sourceTree = "<group>"; };
@@ -132,6 +160,17 @@
 		3C2A3CBE214F999D0071B9CE /* FZVideoSource.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FZVideoSource.m; sourceTree = "<group>"; };
 		3C2A3CC0214FA1A80071B9CE /* AVFoundationTestController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AVFoundationTestController.h; sourceTree = "<group>"; };
 		3C2A3CC1214FA1A80071B9CE /* AVFoundationTestController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AVFoundationTestController.m; sourceTree = "<group>"; };
+		3C32FC7D24D52054000BA932 /* PanTestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PanTestViewController.h; sourceTree = "<group>"; };
+		3C32FC7E24D52054000BA932 /* PanTestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PanTestViewController.m; sourceTree = "<group>"; };
+		3C32FC8024D520A0000BA932 /* WBLEditableImageStickerWidget.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBLEditableImageStickerWidget.m; sourceTree = "<group>"; };
+		3C32FC8124D520A0000BA932 /* WBLEditableImageStickerWidget.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBLEditableImageStickerWidget.h; sourceTree = "<group>"; };
+		3C32FC8324D520B5000BA932 /* WBLStickerEditAreaLayoutProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBLStickerEditAreaLayoutProtocol.h; sourceTree = "<group>"; };
+		3C32FC8424D520EE000BA932 /* WBLStickerLayoutProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBLStickerLayoutProtocol.h; sourceTree = "<group>"; };
+		3C32FC8524D52113000BA932 /* WBLStickerModuleDefine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WBLStickerModuleDefine.h; sourceTree = "<group>"; };
+		3C32FC8624D5217A000BA932 /* WBLPerformerStickerWidget.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBLPerformerStickerWidget.m; sourceTree = "<group>"; };
+		3C32FC8724D5217A000BA932 /* WBLPerformerStickerWidget.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBLPerformerStickerWidget.h; sourceTree = "<group>"; };
+		3C32FC8924D52180000BA932 /* WBLPerformerStickerDeleteView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBLPerformerStickerDeleteView.m; sourceTree = "<group>"; };
+		3C32FC8A24D52181000BA932 /* WBLPerformerStickerDeleteView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBLPerformerStickerDeleteView.h; sourceTree = "<group>"; };
 		3C35BF9820761E1900066B05 /* TestRuntimeForward.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestRuntimeForward.h; sourceTree = "<group>"; };
 		3C35BF9920761E1900066B05 /* TestRuntimeForward.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestRuntimeForward.m; sourceTree = "<group>"; };
 		3C35BF9B2078738700066B05 /* TestRuntimeForward+category.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TestRuntimeForward+category.h"; sourceTree = "<group>"; };
@@ -195,6 +234,10 @@
 		3C71C2462123D2A900132B60 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
 		3C71C24721241F1900132B60 /* DIYCalendarCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DIYCalendarCell.h; sourceTree = "<group>"; };
 		3C71C24821241F1900132B60 /* DIYCalendarCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DIYCalendarCell.m; sourceTree = "<group>"; };
+		3C7D11002306B3A50030FC26 /* YXLiveRoomView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YXLiveRoomView.h; sourceTree = "<group>"; };
+		3C7D11012306B3A50030FC26 /* YXLiveRoomView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YXLiveRoomView.m; sourceTree = "<group>"; };
+		3C7D11042306B6880030FC26 /* EventTestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EventTestViewController.h; sourceTree = "<group>"; };
+		3C7D11052306B6880030FC26 /* EventTestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EventTestViewController.m; sourceTree = "<group>"; };
 		3C8206C52073633B009BE5A6 /* UITestTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UITestTableViewController.h; sourceTree = "<group>"; };
 		3C8206C62073633B009BE5A6 /* UITestTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UITestTableViewController.m; sourceTree = "<group>"; };
 		3C8206C8207363CE009BE5A6 /* ViewTestController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewTestController.h; sourceTree = "<group>"; };
@@ -262,6 +305,8 @@
 		3CCB05B5205A703B00AF6760 /* blockTest_block.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = blockTest_block.cpp; path = iOSLearnigDemo/blockTest_block.cpp; sourceTree = SOURCE_ROOT; };
 		3CDC807D20676A2C00D3AEEB /* PointerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PointerViewController.h; sourceTree = "<group>"; };
 		3CDC807E20676A2C00D3AEEB /* PointerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PointerViewController.m; sourceTree = "<group>"; };
+		3CDCE1E3230B8F0D002786F7 /* YXTouchableView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YXTouchableView.h; sourceTree = "<group>"; };
+		3CDCE1E4230B8F0D002786F7 /* YXTouchableView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YXTouchableView.m; sourceTree = "<group>"; };
 		3CDDB299212BE3B40047BFAB /* ColletionInScrollController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ColletionInScrollController.h; sourceTree = "<group>"; };
 		3CDDB29A212BE3B40047BFAB /* ColletionInScrollController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ColletionInScrollController.m; sourceTree = "<group>"; };
 		3CDDB2A5212D3CCF0047BFAB /* VSFilterGroupSelector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VSFilterGroupSelector.m; sourceTree = "<group>"; };
@@ -378,6 +423,32 @@
 				3C2A3CC1214FA1A80071B9CE /* AVFoundationTestController.m */,
 			);
 			path = AVFoundation;
+			sourceTree = "<group>";
+		};
+		3C32FC8C24D52185000BA932 /* pan */ = {
+			isa = PBXGroup;
+			children = (
+				3C32FC8D24D521F2000BA932 /* Define */,
+				3C32FC8A24D52181000BA932 /* WBLPerformerStickerDeleteView.h */,
+				3C32FC8924D52180000BA932 /* WBLPerformerStickerDeleteView.m */,
+				3C32FC8724D5217A000BA932 /* WBLPerformerStickerWidget.h */,
+				3C32FC8624D5217A000BA932 /* WBLPerformerStickerWidget.m */,
+				3C32FC8124D520A0000BA932 /* WBLEditableImageStickerWidget.h */,
+				3C32FC8024D520A0000BA932 /* WBLEditableImageStickerWidget.m */,
+				3C32FC7D24D52054000BA932 /* PanTestViewController.h */,
+				3C32FC7E24D52054000BA932 /* PanTestViewController.m */,
+			);
+			path = pan;
+			sourceTree = "<group>";
+		};
+		3C32FC8D24D521F2000BA932 /* Define */ = {
+			isa = PBXGroup;
+			children = (
+				3C32FC8524D52113000BA932 /* WBLStickerModuleDefine.h */,
+				3C32FC8324D520B5000BA932 /* WBLStickerEditAreaLayoutProtocol.h */,
+				3C32FC8424D520EE000BA932 /* WBLStickerLayoutProtocol.h */,
+			);
+			path = Define;
 			sourceTree = "<group>";
 		};
 		3C3B7C22218859FF0075A804 /* imageView */ = {
@@ -559,9 +630,20 @@
 			path = LunarCore;
 			sourceTree = "<group>";
 		};
+		3C7D11032306B6550030FC26 /* Event */ = {
+			isa = PBXGroup;
+			children = (
+				3C7D11042306B6880030FC26 /* EventTestViewController.h */,
+				3C7D11052306B6880030FC26 /* EventTestViewController.m */,
+			);
+			path = Event;
+			sourceTree = "<group>";
+		};
 		3C8206C420736320009BE5A6 /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				3C32FC8C24D52185000BA932 /* pan */,
+				3C7D11032306B6550030FC26 /* Event */,
 				3C54F0FA21B5165300B4D696 /* CAlayer */,
 				3C859C2921B0DC1F004488FA /* UIImage */,
 				3C3B7C22218859FF0075A804 /* imageView */,
@@ -577,6 +659,24 @@
 				3CB721662095CFF5001901C3 /* coreText */,
 				3C8206C52073633B009BE5A6 /* UITestTableViewController.h */,
 				3C8206C62073633B009BE5A6 /* UITestTableViewController.m */,
+				3C0569FA2228DAF200B05A1A /* TestCollectionAnimationViewController.h */,
+				3C0569FB2228DAF200B05A1A /* TestCollectionAnimationViewController.m */,
+				3C7D11002306B3A50030FC26 /* YXLiveRoomView.h */,
+				3C7D11012306B3A50030FC26 /* YXLiveRoomView.m */,
+				3CDCE1E3230B8F0D002786F7 /* YXTouchableView.h */,
+				3CDCE1E4230B8F0D002786F7 /* YXTouchableView.m */,
+				3C1C24032452845E00430512 /* YXLiveRoomView1.h */,
+				3C1C24042452845E00430512 /* YXLiveRoomView1.m */,
+				3C1C24062452877E00430512 /* YXLiveRoomMovableView.h */,
+				3C1C24072452877E00430512 /* YXLiveRoomMovableView.m */,
+				3C1C24092452885600430512 /* YXLiveRoomView2.h */,
+				3C1C240A2452885600430512 /* YXLiveRoomView2.m */,
+				3C1C240C24528A5900430512 /* YXLiveRoomDisplayerView.h */,
+				3C1C240D24528A5900430512 /* YXLiveRoomDisplayerView.m */,
+				3C1C240F24528ACB00430512 /* YXLiveRoomLiteView.h */,
+				3C1C241024528ACB00430512 /* YXLiveRoomLiteView.m */,
+				3C1C241224528AF500430512 /* YXLiveRoomView3.h */,
+				3C1C241324528AF500430512 /* YXLiveRoomView3.m */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -850,7 +950,7 @@
 				TargetAttributes = {
 					3CCB058220590F7700AF6760 = {
 						CreatedOnToolsVersion = 9.2;
-						ProvisioningStyle = Manual;
+						ProvisioningStyle = Automatic;
 					};
 				};
 			};
@@ -861,6 +961,7 @@
 			knownRegions = (
 				en,
 				Base,
+				"zh-Hans",
 			);
 			mainGroup = 3CCB057A20590F7700AF6760;
 			productRefGroup = 3CCB058420590F7700AF6760 /* Products */;
@@ -948,12 +1049,17 @@
 				3CCB059620590F7700AF6760 /* main.m in Sources */,
 				3C9C3732206B2ECF00F3ECD9 /* CategoryViewController.m in Sources */,
 				3CCB05AE205A5B8000AF6760 /* ObjectiveCTableViewController.m in Sources */,
+				3C32FC8B24D52181000BA932 /* WBLPerformerStickerDeleteView.m in Sources */,
 				3C71C2342122BD2B00132B60 /* UIView+NNAdd.m in Sources */,
 				3CCB05AA2059198100AF6760 /* GCDViewController.m in Sources */,
+				3C7D11022306B3A50030FC26 /* YXLiveRoomView.m in Sources */,
+				3C32FC8224D520A0000BA932 /* WBLEditableImageStickerWidget.m in Sources */,
+				3C1C240B2452885600430512 /* YXLiveRoomView2.m in Sources */,
 				3C71C2442123CA0C00132B60 /* NNLunarCalenderManager.m in Sources */,
 				3CCB05A32059153B00AF6760 /* ThreadTableViewController.m in Sources */,
 				3C71C24921241F1900132B60 /* DIYCalendarCell.m in Sources */,
 				3C71C2312122BD2B00132B60 /* NSArray+NNAdd.m in Sources */,
+				3C1C24052452845F00430512 /* YXLiveRoomView1.m in Sources */,
 				3CB721692095D010001901C3 /* CoreTextController.m in Sources */,
 				3CCB058820590F7700AF6760 /* AppDelegate.m in Sources */,
 				3CDDB2B4212D3CCF0047BFAB /* VSGroupSelectorContainer.m in Sources */,
@@ -971,6 +1077,7 @@
 				3C0BEED12064A4B70022055C /* ListNode.c in Sources */,
 				3C859C2C21B0DC2B004488FA /* UIImage+Tint.m in Sources */,
 				3C9C37272069EEFA00F3ECD9 /* SortViewController.m in Sources */,
+				3C1C24082452877E00430512 /* YXLiveRoomMovableView.m in Sources */,
 				3C71C1E0212164F400132B60 /* NetworkRequest.m in Sources */,
 				3C8206D12074ACAA009BE5A6 /* Person2.m in Sources */,
 				3C9C373B206C7AEF00F3ECD9 /* MemoryManageViewController.m in Sources */,
@@ -980,6 +1087,7 @@
 				3C9C37242068D85500F3ECD9 /* FunctionalViewController.m in Sources */,
 				3C398FCA206DE85C008BDFB3 /* FJReplayKit.m in Sources */,
 				3C0BEED22064AAD40022055C /* Stack.c in Sources */,
+				3C1C241424528AF500430512 /* YXLiveRoomView3.m in Sources */,
 				3C71C22F2122BD2B00132B60 /* NSMutableArray+NNAdd.m in Sources */,
 				3CB7216C2095D054001901C3 /* CTDisplayView.m in Sources */,
 				3C03E21921354C7500900A65 /* Header.m in Sources */,
@@ -992,7 +1100,9 @@
 				3CDDB2B6212D3CCF0047BFAB /* VSGroupSelectorHeader.m in Sources */,
 				3CDC807F20676A2C00D3AEEB /* PointerViewController.m in Sources */,
 				3C03E22221355F9F00900A65 /* FlowLayoutTestController.m in Sources */,
+				3C1C240E24528A5900430512 /* YXLiveRoomDisplayerView.m in Sources */,
 				3C03E21C21354EF800900A65 /* HeaderCollectionViewCell.m in Sources */,
+				3C0569FC2228DAF200B05A1A /* TestCollectionAnimationViewController.m in Sources */,
 				3C1F09DF2153D3AC005D4692 /* CustomView.m in Sources */,
 				3C5995AE21927B09008FA79B /* YXLGradientColorView.m in Sources */,
 				3C9C372B206B2C9300F3ECD9 /* PropertyLearningController.m in Sources */,
@@ -1001,9 +1111,12 @@
 				3C71C2322122BD2B00132B60 /* NSString+NNAdd.m in Sources */,
 				3C8206C72073633B009BE5A6 /* UITestTableViewController.m in Sources */,
 				3CDDB2B3212D3CCF0047BFAB /* VSGroupSelectorBaseCollectionView.m in Sources */,
+				3C1C241124528ACB00430512 /* YXLiveRoomLiteView.m in Sources */,
+				3C32FC7F24D52054000BA932 /* PanTestViewController.m in Sources */,
 				3C0BEEC2206232B30022055C /* Person.m in Sources */,
 				3C968A352061FE53002BAC80 /* AlgoTableViewController.m in Sources */,
 				3C71C1E62121802E00132B60 /* APIRequest.m in Sources */,
+				3C32FC8824D5217A000BA932 /* WBLPerformerStickerWidget.m in Sources */,
 				3C71C1E321217E2D00132B60 /* NetworkRequsetTestController.m in Sources */,
 				3C9C373F206C7C8100F3ECD9 /* MRCTestObject.m in Sources */,
 				3C9C372E206B2DA200F3ECD9 /* ObjectCMainTableController.m in Sources */,
@@ -1017,7 +1130,9 @@
 				3C71C2352122BD2B00132B60 /* NSDictionary+NNAdd.m in Sources */,
 				3C0BEED52064E2080022055C /* StringArrayViewController.m in Sources */,
 				3C2A3CBF214F999D0071B9CE /* FZVideoSource.m in Sources */,
+				3C7D11062306B6880030FC26 /* EventTestViewController.m in Sources */,
 				3CDDB2B5212D3CCF0047BFAB /* VSBeautyGroupSelector.m in Sources */,
+				3CDCE1E5230B8F0D002786F7 /* YXTouchableView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1156,18 +1271,18 @@
 			baseConfigurationReference = D58921FDD7E4250EC4D61A75 /* Pods-iOSLearnigDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = WXTZ6MS2YH;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = D7X74D2YD8;
 				ENABLE_STRICT_OBJC_MSGSEND = NO;
 				GCC_PREFIX_HEADER = "iOSLearnigDemo/supporting files/iOSLearningDemo.pch";
 				INFOPLIST_FILE = "$(SRCROOT)/iOSLearnigDemo/supporting files/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.yixia.iOSLearnigDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yixia.iOSLearnigDemo1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
-				PROVISIONING_PROFILE_SPECIFIER = warmDiaryTest_all;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;

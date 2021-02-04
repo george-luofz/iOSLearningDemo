@@ -15,10 +15,6 @@ target 'iOSLearnigDemo' do
   pod 'FDFullscreenPopGesture', '1.1'
   pod 'AFNetworking', '3.2.1'
   
-  pod 'UMengUShare/Social/WeChat', '6.4.8.1'
-  pod 'UMengUShare/Social/QQ', '6.4.8.1'
-  pod 'UMengUShare/Social/Sina', '6.4.8.1'
-  pod 'UMengAnalytics-NO-IDFA'
   pod 'JTCalendar', '2.2.3'
   pod 'FSCalendar', '2.7.9'
 end

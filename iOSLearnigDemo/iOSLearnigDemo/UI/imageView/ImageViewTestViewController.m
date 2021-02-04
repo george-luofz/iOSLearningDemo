@@ -31,7 +31,7 @@
     
     
     UIImageView *imageView = [[UIImageView alloc] init];
-    imageView.frame = CGRectMake(30, 300, 50, 20);
+    imageView.frame = CGRectMake(30, 300, 50, 50);
     imageView.userInteractionEnabled = YES;
     [self.view addSubview:imageView];
     
@@ -41,8 +41,18 @@
 //    if (scaleImg){
 //        imageView.image = scaleImg;
 //    }
-    imageView.image = [self scaleImageHorizontalAndRedrawToSize:imageView.frame.size image:originalImg];
+//    imageView.image = [self scaleImageHorizontalAndRedrawToSize:imageView.frame.size image:originalImg];
     
+    //imageView 可以显示gif得第一帧
+    dispatch_async(dispatch_get_global_queue(0, 0), ^{
+        NSData *data = [NSData dataWithContentsOfURL:[NSURL URLWithString:@"http://img.wowoqq.com/allimg/180112/1-1P112040437.gif"]];
+        UIImage *image = [UIImage imageWithData:data scale:3.f];
+        if (image){
+            dispatch_async(dispatch_get_main_queue(), ^{
+                imageView.image = image;
+            });
+        }
+    });
     
     UIScrollView *scrollView = [[UIScrollView alloc] initWithFrame:CGRectMake(100, 100, 100, 100)];
 //    scrollView.panGestureRecognizer.delegate = self;

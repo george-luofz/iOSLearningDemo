@@ -36,6 +36,9 @@
     } else {
         NSLog(@"array 2");
     }
+    
+    CategoryObj *obj = [CategoryObj new];
+    NSLog(@"width:%lf", obj.width);
 }
 
 #pragma mark -- extension

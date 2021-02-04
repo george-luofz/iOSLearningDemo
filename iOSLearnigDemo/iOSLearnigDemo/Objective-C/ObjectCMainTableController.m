@@ -22,9 +22,30 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    int a = 10;
+    double b = 20;
+    float c = 30;
+    
+    
     self.dataSource = @[@"property相关",@"category",@"autoreleasepool",@"内存管理",@"runtime",@"网络模块"];
+    NSTimer *timer = [NSTimer timerWithTimeInterval:1.f target:self selector:@selector(timerFuc:) userInfo:nil repeats:YES];
+//    [timer fire];
+    [[NSRunLoop currentRunLoop] addTimer:timer forMode:NSRunLoopCommonModes];
+    
+    NSString *string = @"sdkjflsdj";
+    NSString *newStr = [string stringByAppendingPathComponent:nil];
+    NSLog(@"newStri:%@",newStr);
+    
+//    NSMutableDictionary *dict = [@{} mutableCopy];
+//    NSLog(@"%@",[dict objectForKey:nil]);
+//    [dict setObject:@{} forKey:nil];
+//    NSLog(@"dict:%@",dict);
 }
 
+- (void)timerFuc:(NSTimer *)timer{
+    NSLog(@"%s",__func__);
+}
 #pragma mark - Table view data source
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {

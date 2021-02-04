@@ -18,6 +18,8 @@
 #import "AnimationTestViewController.h"
 #import "ImageViewTestViewController.h"
 #import "CALayerTestViewController.h"
+#import "EventTestViewController.h"
+#import "PanTestViewController.h"
 
 @interface UITestTableViewController ()
 @property (nonatomic, strong) NSArray   *dataSource;
@@ -28,7 +30,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.dataSource = @[@"view",@"CoreText",@"html->pdf",@"JTCalendar测试",@"FSCalendar测试",@"collectionViewInScrollView",@"groupSelector",@"flowLayout",@"动画",@"imageView测试",@"CALayer测试"];
+    self.dataSource = @[@"view",@"CoreText",@"html->pdf",@"JTCalendar测试",@"FSCalendar测试",@"collectionViewInScrollView",@"groupSelector",@"flowLayout",@"动画",@"imageView测试",@"CALayer测试",@"事件传递",@"pan手势"];
     
     UIView *view = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 10, 10)];
     [self.view addSubview:view];
@@ -87,6 +89,10 @@
         vc = [ImageViewTestViewController new];
     }else if (indexPath.row == 10){
         vc = [CALayerTestViewController new];
+    }else if (indexPath.row == 11){
+        vc = [EventTestViewController new];
+    }else if (indexPath.row == 12){
+        vc = [PanTestViewController new];
     }
     vc.title = self.dataSource[indexPath.row];
     [self pushToVc:vc];
