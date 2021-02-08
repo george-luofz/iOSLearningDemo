@@ -1,6 +1,12 @@
+xcshareddata
+.xcsheme
+.xcbkptlist
+.xcuserstate
+.xcshareddata
 ._Store
 .DS_Store
-xcuserdatad/
+xcuserdata
+xcuserdata/
 .xcuserdatad/
 xcuserdatad
 */Build

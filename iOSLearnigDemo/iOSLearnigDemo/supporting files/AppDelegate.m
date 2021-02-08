@@ -29,11 +29,6 @@
     self.window.rootViewController = nav;
     [self.window makeKeyAndVisible];
     
-
-    for (int i = 0;i < 50;i++) {
-        NSLog(@"requestId:%@\n",buildRequestTimeStr());
-    }
-    
     return YES;
 }
 

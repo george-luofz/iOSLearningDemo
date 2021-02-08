@@ -1,36 +1,25 @@
 //
-//  ObjectCMainTableController.m
+//  OptMainTableViewController.m
 //  iOSLearnigDemo
 //
-//  Created by 罗富中 on 2018/3/28.
-//  Copyright © 2018年 George_luofz. All rights reserved.
+//  Created by 罗富中 on 2021/2/8.
+//  Copyright © 2021 George_luofz. All rights reserved.
 //
 
-#import "ObjectCMainTableController.h"
-#import "PropertyLearningController.h"
-#import "CategoryViewController.h"
-#import "AutoreleasePoolController.h"
-#import "MemoryManageViewController.h"
-#import "RuntimeTestViewController.h"
-#import "NetworkRequsetTestController.h"
-#import "TimerViewController.h"
+#import "OptMainTableViewController.h"
+#import "OPTBatteryViewController.h"
 
-@interface ObjectCMainTableController ()
-@property (nonatomic, nullable, strong) NSArray *dataSource;
+@interface OptMainTableViewController ()
+@property (nonatomic, strong) NSArray *dataSource;
 @end
 
-@implementation ObjectCMainTableController
+@implementation OptMainTableViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     
     self.dataSource = @[
-                @{@"property": @"PropertyLearningController"},
-                @{@"category": @"CategoryViewController"},
-                @{@"内存": @"MemoryManageViewController"},
-                @{@"runtime": @"RuntimeTestViewController"},
-                @{@"网络": @"NetworkRequsetTestController"},
-                @{@"timer": @"TimerViewController"},
+                @{@"电池": @"OPTBatteryViewController"},
                 ];
 }
 
@@ -53,7 +42,7 @@
     return cell;
 }
 
-- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     NSDictionary *vcDict = self.dataSource[indexPath.row];
     NSString *title = vcDict.allKeys.firstObject;
     NSString *vcClazz = vcDict.allValues.firstObject;
@@ -63,6 +52,5 @@
     UIViewController *vc = [[NSClassFromString(vcClazz) alloc] init];
     vc.title = title;
     [self pushToVc:vc];
-    
 }
 @end
