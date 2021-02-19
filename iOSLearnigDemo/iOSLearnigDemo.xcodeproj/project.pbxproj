@@ -75,6 +75,7 @@
 		3C8206D12074ACAA009BE5A6 /* Person2.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C8206D02074ACAA009BE5A6 /* Person2.m */; };
 		3C859C2C21B0DC2B004488FA /* UIImage+Tint.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C859C2B21B0DC2B004488FA /* UIImage+Tint.m */; };
 		3C859C2E21B0DC78004488FA /* image.png in Resources */ = {isa = PBXBuildFile; fileRef = 3C859C2D21B0DC78004488FA /* image.png */; };
+		3C90145625D0F2F000230341 /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C90145525D0F2EA00230341 /* IOKit.framework */; };
 		3C968A352061FE53002BAC80 /* AlgoTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C968A342061FE53002BAC80 /* AlgoTableViewController.m */; };
 		3C9A85C725CD2F6600F91B7F /* TimerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C9A85C625CD2F6600F91B7F /* TimerViewController.m */; };
 		3C9C37242068D85500F3ECD9 /* FunctionalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C9C37232068D85500F3ECD9 /* FunctionalViewController.m */; };
@@ -322,11 +323,15 @@
 		3C26157B25D0051600A598BB /* CFUnicodeDecomposition.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = CFUnicodeDecomposition.c; sourceTree = "<group>"; };
 		3C26157C25D0051600A598BB /* CFPlugIn_PlugIn.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = CFPlugIn_PlugIn.c; sourceTree = "<group>"; };
 		3C26157D25D0051600A598BB /* CFPlugIn.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = CFPlugIn.c; sourceTree = "<group>"; };
-		3C26157F25D0E3F300A598BB /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = ../../../../IOKit.framework; sourceTree = "<group>"; };
 		3C26158425D0E5B600A598BB /* OPTBatteryViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OPTBatteryViewController.h; sourceTree = "<group>"; };
 		3C26158525D0E5B600A598BB /* OPTBatteryViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OPTBatteryViewController.m; sourceTree = "<group>"; };
 		3C26158925D0E7B400A598BB /* OptMainTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OptMainTableViewController.h; sourceTree = "<group>"; };
 		3C26158A25D0E7B400A598BB /* OptMainTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OptMainTableViewController.m; sourceTree = "<group>"; };
+		3C2615B325D0F0A000A598BB /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks/IOKit.framework; sourceTree = DEVELOPER_DIR; };
+		3C2615B425D0F0E400A598BB /* IOPSKeys.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = IOPSKeys.h; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks/IOKit.framework/Versions/A/Headers/ps/IOPSKeys.h; sourceTree = DEVELOPER_DIR; };
+		3C2615B525D0F0E900A598BB /* IOPSKeys.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = IOPSKeys.h; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks/IOKit.framework/Versions/A/Headers/ps/IOPSKeys.h; sourceTree = DEVELOPER_DIR; };
+		3C2615B625D0F0F200A598BB /* IOPSKeys.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = IOPSKeys.h; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks/IOKit.framework/Versions/A/Headers/ps/IOPSKeys.h; sourceTree = DEVELOPER_DIR; };
+		3C2615B825D0F10A00A598BB /* IOPowerSources.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = IOPowerSources.h; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks/IOKit.framework/Versions/A/Headers/ps/IOPowerSources.h; sourceTree = DEVELOPER_DIR; };
 		3C29803D2088C06800AFA2A4 /* MyWindow.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyWindow.m; sourceTree = "<group>"; };
 		3C2980402088C0B000AFA2A4 /* ParentView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ParentView.m; sourceTree = "<group>"; };
 		3C2980432088C0BF00AFA2A4 /* childView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = childView.m; sourceTree = "<group>"; };
@@ -423,6 +428,7 @@
 		3C859C2A21B0DC2B004488FA /* UIImage+Tint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Tint.h"; sourceTree = "<group>"; };
 		3C859C2B21B0DC2B004488FA /* UIImage+Tint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Tint.m"; sourceTree = "<group>"; };
 		3C859C2D21B0DC78004488FA /* image.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = image.png; sourceTree = "<group>"; };
+		3C90145525D0F2EA00230341 /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks/IOKit.framework; sourceTree = DEVELOPER_DIR; };
 		3C968A1C205A74B6002BAC80 /* blockTest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = blockTest.h; sourceTree = "<group>"; };
 		3C968A1D205A74E2002BAC80 /* blockTest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = blockTest.cpp; sourceTree = "<group>"; };
 		3C968A332061FE53002BAC80 /* AlgoTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AlgoTableViewController.h; sourceTree = "<group>"; };
@@ -510,6 +516,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				517680A87E52F3B371329E40 /* libPods-iOSLearnigDemo.a in Frameworks */,
+				3C90145625D0F2F000230341 /* IOKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -519,7 +526,7 @@
 		226AFB23E662FA89C576F591 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				3C26157F25D0E3F300A598BB /* IOKit.framework */,
+				3C2615B325D0F0A000A598BB /* IOKit.framework */,
 				8230C408191D4CE3E976186D /* libPods-iOSLearnigDemo.a */,
 			);
 			name = Frameworks;
@@ -783,6 +790,9 @@
 		3C26158325D0E59400A598BB /* opt_battery */ = {
 			isa = PBXGroup;
 			children = (
+				3C2615B825D0F10A00A598BB /* IOPowerSources.h */,
+				3C2615B525D0F0E900A598BB /* IOPSKeys.h */,
+				3C90145525D0F2EA00230341 /* IOKit.framework */,
 				3C26158425D0E5B600A598BB /* OPTBatteryViewController.h */,
 				3C26158525D0E5B600A598BB /* OPTBatteryViewController.m */,
 			);
@@ -792,6 +802,7 @@
 		3C26158725D0E79400A598BB /* Opt */ = {
 			isa = PBXGroup;
 			children = (
+				3C2615B625D0F0F200A598BB /* IOPSKeys.h */,
 				3C26158825D0E7A300A598BB /* Main */,
 				3C26158325D0E59400A598BB /* opt_battery */,
 			);
@@ -1213,6 +1224,7 @@
 			children = (
 				3CCB059C2059142200AF6760 /* MainTableViewController.h */,
 				3CCB059D2059142200AF6760 /* MainTableViewController.m */,
+				3C26158725D0E79400A598BB /* Opt */,
 				3C2A3CBC214F988C0071B9CE /* AVFoundation */,
 				3C71C1D1211D6CF500132B60 /* supporting files */,
 				3C71C1CE211D6CA100132B60 /* General */,
@@ -1241,7 +1253,7 @@
 		3CCB05AB205A5B5900AF6760 /* Objective-C */ = {
 			isa = PBXGroup;
 			children = (
-				3C26158725D0E79400A598BB /* Opt */,
+				3C2615B425D0F0E400A598BB /* IOPSKeys.h */,
 				3C2614D525D004FD00A598BB /* runloop */,
 				3C9A85C425CD2F4A00F91B7F /* timer */,
 				3C8206CB20747596009BE5A6 /* runtime */,

@@ -16,7 +16,7 @@
 #import "YXLiveRoomView2.h"
 #import "YXLiveRoomView3.h"
 
-@interface EventTestViewController ()
+@interface EventTestViewController ()<UIScrollViewDelegate>
 
 @end
 
@@ -29,51 +29,26 @@
 //    roomView.backgroundColor = [UIColor redColor];
 //    [self.view addSubview:roomView];
     
-    YXLiveRoomView *displayerView = [[YXLiveRoomView alloc] initWithFrame:CGRectMake(100, 100, 100, 100)];
+    UIScrollView *scrollView = [[UIScrollView alloc] initWithFrame:self.view.frame];
+    scrollView.contentSize = CGSizeMake(self.view.frame.size.width, self.view.frame.size.height * 3);
+    scrollView.delegate = self;
+    [self.view addSubview:scrollView];
+    
+    UIView *displayerView = [[UIView alloc] initWithFrame:CGRectMake(100, 100, 200, 300)];
     displayerView.backgroundColor = [UIColor blueColor];
     
-//    displayerView.penetrate = YES;
-    [self.view addSubview:displayerView];
-    
-    YXLiveRoomView *liteView = [[YXLiveRoomView alloc] initWithFrame:CGRectMake(100, 100, 100, 100)];
-    liteView.backgroundColor = [UIColor blueColor];
-    liteView.penetrate = YES;
-    [self.view addSubview:liteView];
-    
-    YXLiveRoomMovableView *movableView = [[YXLiveRoomMovableView alloc] initWithFrame:CGRectMake(100, 100, 100, 100)];
-    movableView.backgroundColor = [UIColor yellowColor];
-    movableView.penetrate = YES;
-    
-    [self.view addSubview:movableView];
-    
-//    YXLiveRoomView *fixedMovableView = [[YXLiveRoomView alloc] initWithFrame:CGRectMake(100, 100, 100, 100)];
-//    fixedMovableView.backgroundColor = [UIColor grayColor];
-//    fixedMovableView.penetrate = YES;
-//    [self.view addSubview:fixedMovableView];
-    
-    YXLiveRoomView1 *roomView1 = [[YXLiveRoomView1 alloc] initWithFrame:CGRectMake(25, 25, 50, 50)];
-    roomView1.backgroundColor = [UIColor whiteColor];
-    roomView1.penetrate = YES;
-    [movableView addSubview:roomView1];
-    
-    YXLiveRoomView2 *roomView2 = [[YXLiveRoomView2 alloc] initWithFrame:CGRectMake(50, 50, 50, 50)];
-    roomView2.backgroundColor = [UIColor redColor];
-    [displayerView addSubview:roomView2];
-    
-    YXLiveRoomView3 *roomView3 = [[YXLiveRoomView3 alloc] initWithFrame:CGRectMake(50, 50, 50, 50)];
-    roomView3.backgroundColor = [UIColor redColor];
-    [liteView addSubview:roomView3];
-//    NSLog(@"富中 %@,%@,%@",roomView,displayerView,fixedMovableView);
+    // scrollView内子视图，使用pan手势拦截scrollView滑动手势
+    UIPanGestureRecognizer *pan = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(pan)];
+    [displayerView addGestureRecognizer:pan];
+    [scrollView addSubview:displayerView];
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+- (void)scrollViewDidScroll:(UIScrollView *)scrollView {
+    NSLog(@"scrollViewDidScroll:%@",NSStringFromCGPoint(scrollView.contentOffset));
 }
-*/
+
+- (void)pan {
+    NSLog(@"pan");
+}
 
 @end
