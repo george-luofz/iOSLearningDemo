@@ -15,6 +15,7 @@
 #import "YXLiveRoomView1.h"
 #import "YXLiveRoomView2.h"
 #import "YXLiveRoomView3.h"
+#import "WBLBaseButton.h"
 
 @interface EventTestViewController ()<UIScrollViewDelegate>
 
@@ -34,13 +35,22 @@
     scrollView.delegate = self;
     [self.view addSubview:scrollView];
     
-    UIView *displayerView = [[UIView alloc] initWithFrame:CGRectMake(100, 100, 200, 300)];
+    YXLiveRoomView *displayerView = [[YXLiveRoomView alloc] initWithFrame:CGRectMake(100, 100, 200, 300)];
     displayerView.backgroundColor = [UIColor blueColor];
     
     // scrollView内子视图，使用pan手势拦截scrollView滑动手势
     UIPanGestureRecognizer *pan = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(pan)];
     [displayerView addGestureRecognizer:pan];
+    
+    UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tap)];
+    [displayerView addGestureRecognizer:tap];
     [scrollView addSubview:displayerView];
+    
+    WBLBaseButton *btn = [WBLBaseButton buttonWithType:UIButtonTypeCustom];
+    btn.frame = CGRectMake(0, 0, 50, 50);
+    [btn setBackgroundColor:[UIColor yellowColor]];
+    [btn addTarget:self action:@selector(btnClick) forControlEvents:UIControlEventTouchUpInside];
+    [displayerView addSubview:btn];
 }
 
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView {
@@ -51,4 +61,11 @@
     NSLog(@"pan");
 }
 
+- (void)tap {
+    NSLog(@"tap");
+}
+
+- (void)btnClick {
+    NSLog(@"btn click");
+}
 @end

@@ -76,6 +76,7 @@
 		3C859C2C21B0DC2B004488FA /* UIImage+Tint.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C859C2B21B0DC2B004488FA /* UIImage+Tint.m */; };
 		3C859C2E21B0DC78004488FA /* image.png in Resources */ = {isa = PBXBuildFile; fileRef = 3C859C2D21B0DC78004488FA /* image.png */; };
 		3C90145625D0F2F000230341 /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C90145525D0F2EA00230341 /* IOKit.framework */; };
+		3C90148925DFBCF700230341 /* WBLBaseButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C90148825DFBCF700230341 /* WBLBaseButton.m */; };
 		3C968A352061FE53002BAC80 /* AlgoTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C968A342061FE53002BAC80 /* AlgoTableViewController.m */; };
 		3C9A85C725CD2F6600F91B7F /* TimerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C9A85C625CD2F6600F91B7F /* TimerViewController.m */; };
 		3C9C37242068D85500F3ECD9 /* FunctionalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C9C37232068D85500F3ECD9 /* FunctionalViewController.m */; };
@@ -429,6 +430,8 @@
 		3C859C2B21B0DC2B004488FA /* UIImage+Tint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Tint.m"; sourceTree = "<group>"; };
 		3C859C2D21B0DC78004488FA /* image.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = image.png; sourceTree = "<group>"; };
 		3C90145525D0F2EA00230341 /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks/IOKit.framework; sourceTree = DEVELOPER_DIR; };
+		3C90148725DFBCF700230341 /* WBLBaseButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WBLBaseButton.h; sourceTree = "<group>"; };
+		3C90148825DFBCF700230341 /* WBLBaseButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WBLBaseButton.m; sourceTree = "<group>"; };
 		3C968A1C205A74B6002BAC80 /* blockTest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = blockTest.h; sourceTree = "<group>"; };
 		3C968A1D205A74E2002BAC80 /* blockTest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = blockTest.cpp; sourceTree = "<group>"; };
 		3C968A332061FE53002BAC80 /* AlgoTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AlgoTableViewController.h; sourceTree = "<group>"; };
@@ -1039,6 +1042,8 @@
 			children = (
 				3C7D11042306B6880030FC26 /* EventTestViewController.h */,
 				3C7D11052306B6880030FC26 /* EventTestViewController.m */,
+				3C90148725DFBCF700230341 /* WBLBaseButton.h */,
+				3C90148825DFBCF700230341 /* WBLBaseButton.m */,
 			);
 			path = Event;
 			sourceTree = "<group>";
@@ -1548,6 +1553,7 @@
 				3CDDB2BA212D445B0047BFAB /* GroupSelectorTestViewController.m in Sources */,
 				3C8206CA207363CE009BE5A6 /* ViewTestController.m in Sources */,
 				3C71C2352122BD2B00132B60 /* NSDictionary+NNAdd.m in Sources */,
+				3C90148925DFBCF700230341 /* WBLBaseButton.m in Sources */,
 				3C0BEED52064E2080022055C /* StringArrayViewController.m in Sources */,
 				3C2A3CBF214F999D0071B9CE /* FZVideoSource.m in Sources */,
 				3C7D11062306B6880030FC26 /* EventTestViewController.m in Sources */,
