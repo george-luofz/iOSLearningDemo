@@ -10,7 +10,8 @@
 #import <mach/mach.h>
 
 @interface TimerViewController ()
-
+@property (nonatomic, strong) NSMutableDictionary *tempDict;
+@property (nonatomic, strong) dispatch_source_t gcdTimer;
 @end
 
 @implementation TimerViewController
@@ -19,7 +20,12 @@
     [super viewDidLoad];
     
 //    [self testPreTimers];
-    [self testMultiTimers];
+//    [self testMultiTimers];
+    self.tempDict = [NSMutableDictionary dictionary];
+    NSLog(@"gcd create timer");
+    for (int i = 0;i < 20;i++) {
+        [self testGCDTimer:i];
+    }
 }
 
 - (void)testMultiTimers {
@@ -74,4 +80,23 @@
     assert(vm_deallocate(mach_task_self(), (vm_address_t)threads, threadCount * sizeof(thread_t)) == KERN_SUCCESS);
     return cpuUsage;
 }
+
+#pragma mark - gcd timer
+
+// timer必须强引，不然出了函数作用域就释放了
+- (void)testGCDTimer:(int)index {
+    dispatch_source_t timer = dispatch_source_create(DISPATCH_SOURCE_TYPE_TIMER, 0, 0, dispatch_get_main_queue());
+    dispatch_time_t startTime = dispatch_time(DISPATCH_TIME_NOW, 1.f * NSEC_PER_SEC);
+    dispatch_source_set_timer(timer, startTime, 1.f * NSEC_PER_SEC, 0 * NSEC_PER_SEC);
+    dispatch_source_set_event_handler(timer, ^{
+        [self timerFuc:index]; // 如果不用__weak，dealloc可能不会走
+    });
+    dispatch_resume(timer);
+    [self.tempDict setObject:timer forKey:@(index).stringValue];
+}
+
+- (void)timerFuc:(NSInteger)index {
+    NSLog(@"gcd timer fired :%ld",(long)index);
+}
+
 @end
