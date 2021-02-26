@@ -104,6 +104,7 @@
 		3CCB05A62059182600AF6760 /* UIViewController+Push.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CCB05A52059182600AF6760 /* UIViewController+Push.m */; };
 		3CCB05AA2059198100AF6760 /* GCDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CCB05A92059198100AF6760 /* GCDViewController.m */; };
 		3CCB05AE205A5B8000AF6760 /* ObjectiveCTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CCB05AD205A5B8000AF6760 /* ObjectiveCTableViewController.m */; };
+		3CD937D625E89C9F00CD58BE /* NSObject+DLIntrospection.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CD937D525E89C9F00CD58BE /* NSObject+DLIntrospection.m */; };
 		3CDC807F20676A2C00D3AEEB /* PointerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CDC807E20676A2C00D3AEEB /* PointerViewController.m */; };
 		3CDCE1E5230B8F0D002786F7 /* YXTouchableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CDCE1E4230B8F0D002786F7 /* YXTouchableView.m */; };
 		3CDDB29B212BE3B40047BFAB /* ColletionInScrollController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CDDB29A212BE3B40047BFAB /* ColletionInScrollController.m */; };
@@ -488,6 +489,8 @@
 		3CCB05AD205A5B8000AF6760 /* ObjectiveCTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ObjectiveCTableViewController.m; sourceTree = "<group>"; };
 		3CCB05B3205A701D00AF6760 /* blockTest.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = blockTest.c; sourceTree = "<group>"; };
 		3CCB05B5205A703B00AF6760 /* blockTest_block.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = blockTest_block.cpp; path = iOSLearnigDemo/blockTest_block.cpp; sourceTree = SOURCE_ROOT; };
+		3CD937D425E89C9F00CD58BE /* NSObject+DLIntrospection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+DLIntrospection.h"; sourceTree = "<group>"; };
+		3CD937D525E89C9F00CD58BE /* NSObject+DLIntrospection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+DLIntrospection.m"; sourceTree = "<group>"; };
 		3CDC807D20676A2C00D3AEEB /* PointerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PointerViewController.h; sourceTree = "<group>"; };
 		3CDC807E20676A2C00D3AEEB /* PointerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PointerViewController.m; sourceTree = "<group>"; };
 		3CDCE1E3230B8F0D002786F7 /* YXTouchableView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YXTouchableView.h; sourceTree = "<group>"; };
@@ -1227,6 +1230,7 @@
 		3CCB058520590F7700AF6760 /* iOSLearnigDemo */ = {
 			isa = PBXGroup;
 			children = (
+				3CD937D225E89C9300CD58BE /* lib */,
 				3CCB059C2059142200AF6760 /* MainTableViewController.h */,
 				3CCB059D2059142200AF6760 /* MainTableViewController.m */,
 				3C26158725D0E79400A598BB /* Opt */,
@@ -1285,6 +1289,23 @@
 				3C968A1C205A74B6002BAC80 /* blockTest.h */,
 			);
 			path = block;
+			sourceTree = "<group>";
+		};
+		3CD937D225E89C9300CD58BE /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				3CD937D325E89C9F00CD58BE /* DLIntrospection */,
+			);
+			path = lib;
+			sourceTree = "<group>";
+		};
+		3CD937D325E89C9F00CD58BE /* DLIntrospection */ = {
+			isa = PBXGroup;
+			children = (
+				3CD937D425E89C9F00CD58BE /* NSObject+DLIntrospection.h */,
+				3CD937D525E89C9F00CD58BE /* NSObject+DLIntrospection.m */,
+			);
+			path = DLIntrospection;
 			sourceTree = "<group>";
 		};
 		3CDDB298212BE3820047BFAB /* collectionViewInScrollView */ = {
@@ -1500,6 +1521,7 @@
 				3C0BEED12064A4B70022055C /* ListNode.c in Sources */,
 				3C859C2C21B0DC2B004488FA /* UIImage+Tint.m in Sources */,
 				3C9C37272069EEFA00F3ECD9 /* SortViewController.m in Sources */,
+				3CD937D625E89C9F00CD58BE /* NSObject+DLIntrospection.m in Sources */,
 				3C1C24082452877E00430512 /* YXLiveRoomMovableView.m in Sources */,
 				3C71C1E0212164F400132B60 /* NetworkRequest.m in Sources */,
 				3C8206D12074ACAA009BE5A6 /* Person2.m in Sources */,
