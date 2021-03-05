@@ -24,12 +24,12 @@
         self.testView = testView;
         
         // bind
-//        [self addObserver:self forKeyPath:@"name" options:NSKeyValueObservingOptionNew context:@"MVVMTestViewModel"];
+        [self addObserver:self forKeyPath:@"name" options:NSKeyValueObservingOptionNew context:@"MVVMTestViewModel"];
         __weak typeof(self) weakSelf = self;
         // 安全kvo，不需要手动移除；block支持
-        [self.KVOController observe:self keyPath:@"name" options:NSKeyValueObservingOptionNew block:^(id  _Nullable observer, id  _Nonnull object, NSDictionary<NSString *,id> * _Nonnull change) {
-            weakSelf.testView.textLabel.text = @"luo";
-        }];
+//        [self.KVOController observe:self keyPath:@"name" options:NSKeyValueObservingOptionNew block:^(id  _Nullable observer, id  _Nonnull object, NSDictionary<NSString *,id> * _Nonnull change) {
+//            weakSelf.testView.textLabel.text = @"luo";
+//        }];
         
         // 数据
         [self loadRequest:^(id data) {
@@ -50,6 +50,10 @@
     if (change[NSKeyValueChangeNewKey]) {
         self.testView.textLabel.text = @"luo";
     }
+}
+
+- (void)dealloc {
+    
 }
 
 @end

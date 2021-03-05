@@ -20,8 +20,8 @@
     
     self.dataSource = @[
                 @{@"MVC": @"MVCTestViewController"},
-                @{@"MVVM": @"MVVMTestViewController"},
                 @{@"MVP": @"MVPTestViewController"},
+                @{@"MVVM": @"MVVMTestViewController"},
                 ];
 }
 
