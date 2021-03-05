@@ -1,35 +1,29 @@
 //
-//  MainTableViewController.m
+//  ArchictureMainTableViewController.m
 //  iOSLearnigDemo
 //
-//  Created by 罗富中 on 2018/3/14.
-//  Copyright © 2018年 George_luofz. All rights reserved.
-//
+//  Created by 罗富中 on 2021/3/5.
+//  Copyright © 2021 George_luofz. All rights reserved.
+//  tableView复用
+//  controller庞大
 
-#import "MainTableViewController.h"
+#import "ArchictureMainTableViewController.h"
 
-@interface MainTableViewController ()
-@property (nonatomic, strong) NSArray   *dataSource;
+@interface ArchictureMainTableViewController ()
+@property (nonatomic, strong) NSArray *dataSource;
 @end
 
-@implementation MainTableViewController
+@implementation ArchictureMainTableViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.title = @"iOS learning demo";
     
     self.dataSource = @[
-                @{@"Objective-C": @"ObjectCMainTableController"},
-                @{@"UI": @"UITestTableViewController"},
-                @{@"多线程": @"ThreadTableViewController"},
-                @{@"算法": @"AlgoTableViewController"},
-                @{@"AVFoundation": @"AVFoundationTestController"},
-                @{@"优化相关": @"OptMainTableViewController"},
-                @{@"网络" : @"NetWorkMainViewController"},
-                @{@"架构" : @"ArchictureMainTableViewController"},
+                @{@"MVC": @"MVCTestViewController"},
+                @{@"MVVM": @"MVVMTestViewController"},
+                @{@"MVP": @"MVPTestViewController"},
                 ];
 }
-
 
 #pragma mark - Table view data source
 

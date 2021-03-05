@@ -17,4 +17,5 @@ target 'iOSLearnigDemo' do
   
   pod 'JTCalendar', '2.2.3'
   pod 'FSCalendar', '2.7.9'
+  pod 'KVOController'
 end
