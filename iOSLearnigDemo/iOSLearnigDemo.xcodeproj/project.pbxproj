@@ -47,6 +47,7 @@
 		3C54F0FF21B5169400B4D696 /* CALayerTestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C54F0FD21B5169400B4D696 /* CALayerTestViewController.xib */; };
 		3C5995AE21927B09008FA79B /* YXLGradientColorView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C5995AD21927B09008FA79B /* YXLGradientColorView.m */; };
 		3C5995B121928129008FA79B /* YXLBubbleCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C5995B021928129008FA79B /* YXLBubbleCell.m */; };
+		3C67DF8925EE1145009DF3AF /* NetWorkMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C67DF8825EE1145009DF3AF /* NetWorkMainViewController.m */; };
 		3C71C1C9211D6BEE00132B60 /* BaseTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C71C1C8211D6BEE00132B60 /* BaseTableViewController.m */; };
 		3C71C1CC211D6C7000132B60 /* HtmlToPdfViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C71C1CB211D6C7000132B60 /* HtmlToPdfViewController.m */; };
 		3C71C1D5211D6DA400132B60 /* BNHtmlPdfKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C71C1D4211D6DA300132B60 /* BNHtmlPdfKit.m */; };
@@ -374,6 +375,8 @@
 		3C5995AD21927B09008FA79B /* YXLGradientColorView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YXLGradientColorView.m; sourceTree = "<group>"; };
 		3C5995AF21928129008FA79B /* YXLBubbleCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YXLBubbleCell.h; sourceTree = "<group>"; };
 		3C5995B021928129008FA79B /* YXLBubbleCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YXLBubbleCell.m; sourceTree = "<group>"; };
+		3C67DF8725EE1145009DF3AF /* NetWorkMainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NetWorkMainViewController.h; sourceTree = "<group>"; };
+		3C67DF8825EE1145009DF3AF /* NetWorkMainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NetWorkMainViewController.m; sourceTree = "<group>"; };
 		3C71C1C7211D6BEE00132B60 /* BaseTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseTableViewController.h; sourceTree = "<group>"; };
 		3C71C1C8211D6BEE00132B60 /* BaseTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseTableViewController.m; sourceTree = "<group>"; };
 		3C71C1CA211D6C7000132B60 /* HtmlToPdfViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HtmlToPdfViewController.h; sourceTree = "<group>"; };
@@ -881,6 +884,15 @@
 			path = CAlayer;
 			sourceTree = "<group>";
 		};
+		3C67DF8625EE1100009DF3AF /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				3C67DF8725EE1145009DF3AF /* NetWorkMainViewController.h */,
+				3C67DF8825EE1145009DF3AF /* NetWorkMainViewController.m */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
 		3C71C1C6211D6BCD00132B60 /* Base */ = {
 			isa = PBXGroup;
 			children = (
@@ -1230,6 +1242,7 @@
 		3CCB058520590F7700AF6760 /* iOSLearnigDemo */ = {
 			isa = PBXGroup;
 			children = (
+				3C67DF8625EE1100009DF3AF /* Network */,
 				3CD937D225E89C9300CD58BE /* lib */,
 				3CCB059C2059142200AF6760 /* MainTableViewController.h */,
 				3CCB059D2059142200AF6760 /* MainTableViewController.m */,
@@ -1530,6 +1543,7 @@
 				3C3B7C2621885A220075A804 /* ImageViewTestViewController.m in Sources */,
 				3CDDB2B1212D3CCF0047BFAB /* VSFilterGroupSelector.m in Sources */,
 				3C9C37242068D85500F3ECD9 /* FunctionalViewController.m in Sources */,
+				3C67DF8925EE1145009DF3AF /* NetWorkMainViewController.m in Sources */,
 				3C398FCA206DE85C008BDFB3 /* FJReplayKit.m in Sources */,
 				3C0BEED22064AAD40022055C /* Stack.c in Sources */,
 				3C1C241424528AF500430512 /* YXLiveRoomView3.m in Sources */,

@@ -31,6 +31,7 @@
                 @{@"算法": @"AlgoTableViewController"},
                 @{@"AVFoundation": @"AVFoundationTestController"},
                 @{@"优化相关": @"OptMainTableViewController"},
+                @{@"网络" : @"NetWorkMainViewController"}
                 ];
 }
 
