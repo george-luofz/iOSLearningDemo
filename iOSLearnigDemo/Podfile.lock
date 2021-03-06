@@ -70,19 +70,18 @@ DEPENDENCIES:
   - YYModel (= 1.0.4)
 
 SPEC REPOS:
-  https://github.com/CocoaPods/Specs.git:
+  https://github.com/cocoapods/specs.git:
     - AFNetworking
     - CYLTabBarController
     - FDFullscreenPopGesture
     - FLAnimatedImage
     - FSCalendar
     - JTCalendar
+    - KVOController
     - libwebp
     - Masonry
     - SDWebImage
     - YYModel
-  trunk:
-    - KVOController
 
 SPEC CHECKSUMS:
   AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
@@ -99,4 +98,4 @@ SPEC CHECKSUMS:
 
 PODFILE CHECKSUM: 3b740ad2a33ca9a16838627bd9bf28344c7f1b30
 
-COCOAPODS: 1.8.3
+COCOAPODS: 1.5.3

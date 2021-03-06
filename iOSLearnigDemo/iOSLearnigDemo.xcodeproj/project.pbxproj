@@ -91,6 +91,8 @@
 		3C9C373F206C7C8100F3ECD9 /* MRCTestObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C9C373E206C7C8100F3ECD9 /* MRCTestObject.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		3C9C3742206C8E3500F3ECD9 /* MRCSubTestObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C9C3741206C8E3500F3ECD9 /* MRCSubTestObject.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		3C9C3745206CC5D000F3ECD9 /* ARCObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C9C3744206CC5D000F3ECD9 /* ARCObject.m */; };
+		3CAD521225F3202D00E1D188 /* KVOTestController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CAD521125F3202D00E1D188 /* KVOTestController.m */; };
+		3CAD521725F3204600E1D188 /* MJPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CAD521625F3204600E1D188 /* MJPerson.m */; };
 		3CB0517D217821AE00FE90BB /* ScrollTestCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CB0517B217821AE00FE90BB /* ScrollTestCollectionViewCell.m */; };
 		3CB0517E217821AE00FE90BB /* ScrollTestCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3CB0517C217821AE00FE90BB /* ScrollTestCollectionViewCell.xib */; };
 		3CB721692095D010001901C3 /* CoreTextController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CB721682095D010001901C3 /* CoreTextController.m */; };
@@ -472,6 +474,10 @@
 		3C9C3741206C8E3500F3ECD9 /* MRCSubTestObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MRCSubTestObject.m; sourceTree = "<group>"; };
 		3C9C3743206CC5D000F3ECD9 /* ARCObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ARCObject.h; sourceTree = "<group>"; };
 		3C9C3744206CC5D000F3ECD9 /* ARCObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ARCObject.m; sourceTree = "<group>"; };
+		3CAD521025F3202D00E1D188 /* KVOTestController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KVOTestController.h; sourceTree = "<group>"; };
+		3CAD521125F3202D00E1D188 /* KVOTestController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KVOTestController.m; sourceTree = "<group>"; };
+		3CAD521525F3204600E1D188 /* MJPerson.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MJPerson.h; sourceTree = "<group>"; };
+		3CAD521625F3204600E1D188 /* MJPerson.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MJPerson.m; sourceTree = "<group>"; };
 		3CB0517A217821AE00FE90BB /* ScrollTestCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ScrollTestCollectionViewCell.h; sourceTree = "<group>"; };
 		3CB0517B217821AE00FE90BB /* ScrollTestCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ScrollTestCollectionViewCell.m; sourceTree = "<group>"; };
 		3CB0517C217821AE00FE90BB /* ScrollTestCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ScrollTestCollectionViewCell.xib; sourceTree = "<group>"; };
@@ -1233,6 +1239,17 @@
 			path = memoryLearning;
 			sourceTree = "<group>";
 		};
+		3CAD520F25F3200C00E1D188 /* KVO */ = {
+			isa = PBXGroup;
+			children = (
+				3CAD521025F3202D00E1D188 /* KVOTestController.h */,
+				3CAD521125F3202D00E1D188 /* KVOTestController.m */,
+				3CAD521525F3204600E1D188 /* MJPerson.h */,
+				3CAD521625F3204600E1D188 /* MJPerson.m */,
+			);
+			path = KVO;
+			sourceTree = "<group>";
+		};
 		3CB721662095CFF5001901C3 /* coreText */ = {
 			isa = PBXGroup;
 			children = (
@@ -1347,6 +1364,7 @@
 		3CCB05AB205A5B5900AF6760 /* Objective-C */ = {
 			isa = PBXGroup;
 			children = (
+				3CAD520F25F3200C00E1D188 /* KVO */,
 				3C2615B425D0F0E400A598BB /* IOPSKeys.h */,
 				3C2614D525D004FD00A598BB /* runloop */,
 				3C9A85C425CD2F4A00F91B7F /* timer */,
@@ -1569,6 +1587,7 @@
 				3C71C24921241F1900132B60 /* DIYCalendarCell.m in Sources */,
 				3C71C2312122BD2B00132B60 /* NSArray+NNAdd.m in Sources */,
 				3C1C24052452845F00430512 /* YXLiveRoomView1.m in Sources */,
+				3CAD521225F3202D00E1D188 /* KVOTestController.m in Sources */,
 				3CB721692095D010001901C3 /* CoreTextController.m in Sources */,
 				3CCB058820590F7700AF6760 /* AppDelegate.m in Sources */,
 				3CDDB2B4212D3CCF0047BFAB /* VSGroupSelectorContainer.m in Sources */,
@@ -1636,6 +1655,7 @@
 				3C32FC8824D5217A000BA932 /* WBLPerformerStickerWidget.m in Sources */,
 				3C71C1E321217E2D00132B60 /* NetworkRequsetTestController.m in Sources */,
 				3C9C373F206C7C8100F3ECD9 /* MRCTestObject.m in Sources */,
+				3CAD521725F3204600E1D188 /* MJPerson.m in Sources */,
 				3C9C372E206B2DA200F3ECD9 /* ObjectCMainTableController.m in Sources */,
 				3C0BEEC520649D950022055C /* LinkListViewController.m in Sources */,
 				3C54F0FE21B5169400B4D696 /* CALayerTestViewController.m in Sources */,

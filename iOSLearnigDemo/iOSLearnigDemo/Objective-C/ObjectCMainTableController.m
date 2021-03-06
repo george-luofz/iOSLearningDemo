@@ -29,8 +29,8 @@
                 @{@"category": @"CategoryViewController"},
                 @{@"内存": @"MemoryManageViewController"},
                 @{@"runtime": @"RuntimeTestViewController"},
-                @{@"网络": @"NetworkRequsetTestController"},
                 @{@"timer": @"TimerViewController"},
+                @{@"KVO": @"KVOTestController"},
                 ];
 }
 
