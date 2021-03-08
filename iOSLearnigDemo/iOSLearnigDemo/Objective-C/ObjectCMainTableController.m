@@ -31,6 +31,7 @@
                 @{@"runtime": @"RuntimeTestViewController"},
                 @{@"timer": @"TimerViewController"},
                 @{@"KVO": @"KVOTestController"},
+                @{@"KVC": @"KVCTestViewController"},
                 ];
 }
 

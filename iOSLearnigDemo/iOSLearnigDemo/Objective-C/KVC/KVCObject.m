@@ -1,20 +1,36 @@
 //
-//  MJPerson.m
+//  KVCObject.m
 //  iOSLearnigDemo
 //
 //  Created by george_luo on 2021/3/6.
 //  Copyright © 2021 George_luofz. All rights reserved.
 //
 
-#import "MJPerson.h"
+#import "KVCObject.h"
+#import <objc/runtime.h>
 
-@implementation MJPerson
+@interface KVCObject()
+@end
 
-- (void)setAge:(NSInteger)age {
-//    [self willChangeValueForKey:@"age"];
+@implementation KVCObject
+
+//@dynamic age;
+
+- (void)setAge:(int)age {
     _age = age;
-//    [self didChangeValueForKey:@"age"];
+
+    NSLog(@"%s",__func__);
 }
+
+//- (void)_setAge:(int)age {
+//    _age = age;
+//
+//    NSLog(@"%s",__func__);
+//}
+
+//+ (BOOL)accessInstanceVariablesDirectly {
+//    return YES;
+//}
 
 - (void)willChangeValueForKey:(NSString *)key {
     NSLog(@"before %s",__func__);
@@ -28,8 +44,8 @@
     NSLog(@"after %s",__func__);
 }
 
-//+ (BOOL)automaticallyNotifiesObserversForKey:(NSString *)key {
-//    return NO;
-//}
+- (NSString *)debugDescription {
+    return @"debug description";
+}
 
 @end

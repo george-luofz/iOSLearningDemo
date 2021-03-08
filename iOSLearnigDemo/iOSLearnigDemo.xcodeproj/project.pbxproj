@@ -93,6 +93,8 @@
 		3C9C3745206CC5D000F3ECD9 /* ARCObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C9C3744206CC5D000F3ECD9 /* ARCObject.m */; };
 		3CAD521225F3202D00E1D188 /* KVOTestController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CAD521125F3202D00E1D188 /* KVOTestController.m */; };
 		3CAD521725F3204600E1D188 /* MJPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CAD521625F3204600E1D188 /* MJPerson.m */; };
+		3CAD521C25F36B4000E1D188 /* KVCTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CAD521B25F36B4000E1D188 /* KVCTestViewController.m */; };
+		3CAD522125F36D4400E1D188 /* KVCObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CAD522025F36D4400E1D188 /* KVCObject.m */; };
 		3CB0517D217821AE00FE90BB /* ScrollTestCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CB0517B217821AE00FE90BB /* ScrollTestCollectionViewCell.m */; };
 		3CB0517E217821AE00FE90BB /* ScrollTestCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3CB0517C217821AE00FE90BB /* ScrollTestCollectionViewCell.xib */; };
 		3CB721692095D010001901C3 /* CoreTextController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CB721682095D010001901C3 /* CoreTextController.m */; };
@@ -140,6 +142,7 @@
 		3C03E22121355F9F00900A65 /* FlowLayoutTestController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FlowLayoutTestController.m; sourceTree = "<group>"; };
 		3C0569FA2228DAF200B05A1A /* TestCollectionAnimationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestCollectionAnimationViewController.h; sourceTree = "<group>"; };
 		3C0569FB2228DAF200B05A1A /* TestCollectionAnimationViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestCollectionAnimationViewController.m; sourceTree = "<group>"; };
+		3C0A991525F5E0C600927D06 /* IOPSKeys.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = IOPSKeys.h; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks/IOKit.framework/Versions/A/Headers/ps/IOPSKeys.h; sourceTree = DEVELOPER_DIR; };
 		3C0BEEC0206232B30022055C /* Person.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
 		3C0BEEC1206232B30022055C /* Person.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
 		3C0BEEC320649D950022055C /* LinkListViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LinkListViewController.h; sourceTree = "<group>"; };
@@ -478,6 +481,10 @@
 		3CAD521125F3202D00E1D188 /* KVOTestController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KVOTestController.m; sourceTree = "<group>"; };
 		3CAD521525F3204600E1D188 /* MJPerson.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MJPerson.h; sourceTree = "<group>"; };
 		3CAD521625F3204600E1D188 /* MJPerson.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MJPerson.m; sourceTree = "<group>"; };
+		3CAD521A25F36B4000E1D188 /* KVCTestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KVCTestViewController.h; sourceTree = "<group>"; };
+		3CAD521B25F36B4000E1D188 /* KVCTestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KVCTestViewController.m; sourceTree = "<group>"; };
+		3CAD521F25F36D4400E1D188 /* KVCObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KVCObject.h; sourceTree = "<group>"; };
+		3CAD522025F36D4400E1D188 /* KVCObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KVCObject.m; sourceTree = "<group>"; };
 		3CB0517A217821AE00FE90BB /* ScrollTestCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ScrollTestCollectionViewCell.h; sourceTree = "<group>"; };
 		3CB0517B217821AE00FE90BB /* ScrollTestCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ScrollTestCollectionViewCell.m; sourceTree = "<group>"; };
 		3CB0517C217821AE00FE90BB /* ScrollTestCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ScrollTestCollectionViewCell.xib; sourceTree = "<group>"; };
@@ -1250,6 +1257,17 @@
 			path = KVO;
 			sourceTree = "<group>";
 		};
+		3CAD521925F36A8300E1D188 /* KVC */ = {
+			isa = PBXGroup;
+			children = (
+				3CAD521A25F36B4000E1D188 /* KVCTestViewController.h */,
+				3CAD521B25F36B4000E1D188 /* KVCTestViewController.m */,
+				3CAD521F25F36D4400E1D188 /* KVCObject.h */,
+				3CAD522025F36D4400E1D188 /* KVCObject.m */,
+			);
+			path = KVC;
+			sourceTree = "<group>";
+		};
 		3CB721662095CFF5001901C3 /* coreText */ = {
 			isa = PBXGroup;
 			children = (
@@ -1330,11 +1348,11 @@
 		3CCB058520590F7700AF6760 /* iOSLearnigDemo */ = {
 			isa = PBXGroup;
 			children = (
+				3CCB059C2059142200AF6760 /* MainTableViewController.h */,
+				3CCB059D2059142200AF6760 /* MainTableViewController.m */,
 				3CBD774F25F1DEB800475BBA /* Acrchitecture */,
 				3C67DF8625EE1100009DF3AF /* Network */,
 				3CD937D225E89C9300CD58BE /* lib */,
-				3CCB059C2059142200AF6760 /* MainTableViewController.h */,
-				3CCB059D2059142200AF6760 /* MainTableViewController.m */,
 				3C26158725D0E79400A598BB /* Opt */,
 				3C2A3CBC214F988C0071B9CE /* AVFoundation */,
 				3C71C1D1211D6CF500132B60 /* supporting files */,
@@ -1364,6 +1382,7 @@
 		3CCB05AB205A5B5900AF6760 /* Objective-C */ = {
 			isa = PBXGroup;
 			children = (
+				3CAD521925F36A8300E1D188 /* KVC */,
 				3CAD520F25F3200C00E1D188 /* KVO */,
 				3C2615B425D0F0E400A598BB /* IOPSKeys.h */,
 				3C2614D525D004FD00A598BB /* runloop */,
@@ -1397,6 +1416,7 @@
 		3CD937D225E89C9300CD58BE /* lib */ = {
 			isa = PBXGroup;
 			children = (
+				3C0A991525F5E0C600927D06 /* IOPSKeys.h */,
 				3CD937D325E89C9F00CD58BE /* DLIntrospection */,
 			);
 			path = lib;
@@ -1568,6 +1588,7 @@
 				3C35BFA72078B42900066B05 /* CategoryObj+Test.m in Sources */,
 				3C26158625D0E5B600A598BB /* OPTBatteryViewController.m in Sources */,
 				3CDDB2B2212D3CCF0047BFAB /* VSGroupSelector.m in Sources */,
+				3CAD521C25F36B4000E1D188 /* KVCTestViewController.m in Sources */,
 				3C71C1F32122BAEC00132B60 /* JTCalendarTestController.m in Sources */,
 				3C35BFA62078B3CC00066B05 /* CategoryObj+Test2.m in Sources */,
 				3C35BF9D2078738700066B05 /* TestRuntimeForward+category.m in Sources */,
@@ -1594,6 +1615,7 @@
 				3CB0517D217821AE00FE90BB /* ScrollTestCollectionViewCell.m in Sources */,
 				3CDDB29B212BE3B40047BFAB /* ColletionInScrollController.m in Sources */,
 				3C5995B121928129008FA79B /* YXLBubbleCell.m in Sources */,
+				3CAD522125F36D4400E1D188 /* KVCObject.m in Sources */,
 				3C9C3738206C7AD600F3ECD9 /* MRCObject.m in Sources */,
 				3C8206CE207475A8009BE5A6 /* RuntimeTestViewController.m in Sources */,
 				3C9C3735206B2F4E00F3ECD9 /* AutoreleasePoolController.m in Sources */,
@@ -1748,7 +1770,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -1798,7 +1820,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -1816,7 +1838,7 @@
 				ENABLE_STRICT_OBJC_MSGSEND = NO;
 				GCC_PREFIX_HEADER = "iOSLearnigDemo/supporting files/iOSLearningDemo.pch";
 				INFOPLIST_FILE = "$(SRCROOT)/iOSLearnigDemo/supporting files/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.yixia.iOSLearnigDemo1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1837,7 +1859,7 @@
 				ENABLE_STRICT_OBJC_MSGSEND = NO;
 				GCC_PREFIX_HEADER = "iOSLearnigDemo/supporting files/iOSLearningDemo.pch";
 				INFOPLIST_FILE = "$(SRCROOT)/iOSLearnigDemo/supporting files/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.yixia.iOSLearnigDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
