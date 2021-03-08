@@ -34,9 +34,12 @@
 }
 
 /*
- 代理类，实现了<NSObject>协议，performSelector等方法
- 没有init方法
- 子类需要实现methodSignature方法，及forwardToInvocation方法
- 
+ 1.代理类，实现了<NSObject>协议，performSelector等方法
+ 2.没有init方法
+ 3.子类需要实现methodSignature方法，及forwardToInvocation方法
+ 应用场景:
+ 1. 解决NSTimer循环引用
+ 2. 事件分发
+ 3. 模拟多继承
  */
 @end

@@ -146,7 +146,6 @@
 		3C03E22121355F9F00900A65 /* FlowLayoutTestController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FlowLayoutTestController.m; sourceTree = "<group>"; };
 		3C0569FA2228DAF200B05A1A /* TestCollectionAnimationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestCollectionAnimationViewController.h; sourceTree = "<group>"; };
 		3C0569FB2228DAF200B05A1A /* TestCollectionAnimationViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestCollectionAnimationViewController.m; sourceTree = "<group>"; };
-		3C0A991525F5E0C600927D06 /* IOPSKeys.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = IOPSKeys.h; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks/IOKit.framework/Versions/A/Headers/ps/IOPSKeys.h; sourceTree = DEVELOPER_DIR; };
 		3C0A991725F5E18000927D06 /* NXProxyTestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NXProxyTestViewController.h; sourceTree = "<group>"; };
 		3C0A991825F5E18000927D06 /* NXProxyTestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NXProxyTestViewController.m; sourceTree = "<group>"; };
 		3C0A991C25F5E1A500927D06 /* FZProxy.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FZProxy.h; sourceTree = "<group>"; };
@@ -155,6 +154,7 @@
 		3C0A992125F5E21C00927D06 /* ClassA.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ClassA.m; sourceTree = "<group>"; };
 		3C0A992425F5E22700927D06 /* ClassB.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ClassB.h; sourceTree = "<group>"; };
 		3C0A992525F5E22700927D06 /* ClassB.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ClassB.m; sourceTree = "<group>"; };
+		3C0A992D25F5F8AC00927D06 /* IOPSKeys.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = IOPSKeys.h; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks/IOKit.framework/Versions/A/Headers/ps/IOPSKeys.h; sourceTree = DEVELOPER_DIR; };
 		3C0BEEC0206232B30022055C /* Person.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
 		3C0BEEC1206232B30022055C /* Person.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
 		3C0BEEC320649D950022055C /* LinkListViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LinkListViewController.h; sourceTree = "<group>"; };
@@ -360,9 +360,6 @@
 		3C2615B525D0F0E900A598BB /* IOPSKeys.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = IOPSKeys.h; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks/IOKit.framework/Versions/A/Headers/ps/IOPSKeys.h; sourceTree = DEVELOPER_DIR; };
 		3C2615B625D0F0F200A598BB /* IOPSKeys.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = IOPSKeys.h; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks/IOKit.framework/Versions/A/Headers/ps/IOPSKeys.h; sourceTree = DEVELOPER_DIR; };
 		3C2615B825D0F10A00A598BB /* IOPowerSources.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = IOPowerSources.h; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks/IOKit.framework/Versions/A/Headers/ps/IOPowerSources.h; sourceTree = DEVELOPER_DIR; };
-		3C29803D2088C06800AFA2A4 /* MyWindow.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyWindow.m; sourceTree = "<group>"; };
-		3C2980402088C0B000AFA2A4 /* ParentView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ParentView.m; sourceTree = "<group>"; };
-		3C2980432088C0BF00AFA2A4 /* childView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = childView.m; sourceTree = "<group>"; };
 		3C2A3CBD214F999D0071B9CE /* FZVideoSource.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FZVideoSource.h; sourceTree = "<group>"; };
 		3C2A3CBE214F999D0071B9CE /* FZVideoSource.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FZVideoSource.m; sourceTree = "<group>"; };
 		3C2A3CC0214FA1A80071B9CE /* AVFoundationTestController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AVFoundationTestController.h; sourceTree = "<group>"; };
@@ -618,6 +615,18 @@
 				3C0A992525F5E22700927D06 /* ClassB.m */,
 			);
 			path = NSProxy;
+			sourceTree = "<group>";
+		};
+		3C0A992925F5F86500927D06 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				3C2A3CBC214F988C0071B9CE /* AVFoundation */,
+				3CCB059F2059151600AF6760 /* thread */,
+				3C8206C420736320009BE5A6 /* UI */,
+				3C26158725D0E79400A598BB /* Opt */,
+				3CCB05AB205A5B5900AF6760 /* Objective-C */,
+			);
+			path = iOS;
 			sourceTree = "<group>";
 		};
 		3C0BEEBF2062329F0022055C /* copyMutableCopy */ = {
@@ -969,6 +978,7 @@
 		3C71C1CE211D6CA100132B60 /* General */ = {
 			isa = PBXGroup;
 			children = (
+				3C71C1C6211D6BCD00132B60 /* Base */,
 				3C71C1D0211D6CB600132B60 /* Lib */,
 				3C71C1CF211D6CA900132B60 /* Categories */,
 			);
@@ -1003,6 +1013,8 @@
 		3C71C1D0211D6CB600132B60 /* Lib */ = {
 			isa = PBXGroup;
 			children = (
+				3C0A992D25F5F8AC00927D06 /* IOPSKeys.h */,
+				3CD937D325E89C9F00CD58BE /* DLIntrospection */,
 				3C71C23E2123C4A400132B60 /* LunarCore */,
 				3C71C1D2211D6D9700132B60 /* htmlToPdf */,
 				3C71C1D6211D6DAC00132B60 /* ReplayKit */,
@@ -1013,6 +1025,7 @@
 		3C71C1D1211D6CF500132B60 /* supporting files */ = {
 			isa = PBXGroup;
 			children = (
+				3CCB058F20590F7700AF6760 /* Assets.xcassets */,
 				3CCB058C20590F7700AF6760 /* Main.storyboard */,
 				3CCB059120590F7700AF6760 /* LaunchScreen.storyboard */,
 				3CCB059420590F7700AF6760 /* Info.plist */,
@@ -1040,16 +1053,6 @@
 				3C398FC9206DE85C008BDFB3 /* FJReplayKit.m */,
 			);
 			path = ReplayKit;
-			sourceTree = "<group>";
-		};
-		3C71C1DC211E84A600132B60 /* Recovered References */ = {
-			isa = PBXGroup;
-			children = (
-				3C2980432088C0BF00AFA2A4 /* childView.m */,
-				3C2980402088C0B000AFA2A4 /* ParentView.m */,
-				3C29803D2088C06800AFA2A4 /* MyWindow.m */,
-			);
-			name = "Recovered References";
 			sourceTree = "<group>";
 		};
 		3C71C1DD212164AC00132B60 /* network */ = {
@@ -1357,8 +1360,8 @@
 			isa = PBXGroup;
 			children = (
 				3CCB058520590F7700AF6760 /* iOSLearnigDemo */,
+				3C71C1D1211D6CF500132B60 /* supporting files */,
 				3CCB058420590F7700AF6760 /* Products */,
-				3C71C1DC211E84A600132B60 /* Recovered References */,
 				D745BAB49044DF411F009ADA /* Pods */,
 				226AFB23E662FA89C576F591 /* Frameworks */,
 			);
@@ -1377,20 +1380,12 @@
 			children = (
 				3CCB059C2059142200AF6760 /* MainTableViewController.h */,
 				3CCB059D2059142200AF6760 /* MainTableViewController.m */,
+				3C0A992925F5F86500927D06 /* iOS */,
 				3CBD774F25F1DEB800475BBA /* Acrchitecture */,
 				3C67DF8625EE1100009DF3AF /* Network */,
-				3CD937D225E89C9300CD58BE /* lib */,
-				3C26158725D0E79400A598BB /* Opt */,
-				3C2A3CBC214F988C0071B9CE /* AVFoundation */,
-				3C71C1D1211D6CF500132B60 /* supporting files */,
 				3C71C1CE211D6CA100132B60 /* General */,
-				3C71C1C6211D6BCD00132B60 /* Base */,
-				3C8206C420736320009BE5A6 /* UI */,
 				3C0BEEC62064A37A0022055C /* dataStructure */,
 				3C968A322061FE0D002BAC80 /* algo */,
-				3CCB05AB205A5B5900AF6760 /* Objective-C */,
-				3CCB059F2059151600AF6760 /* thread */,
-				3CCB058F20590F7700AF6760 /* Assets.xcassets */,
 			);
 			path = iOSLearnigDemo;
 			sourceTree = "<group>";
@@ -1439,15 +1434,6 @@
 				3C968A1C205A74B6002BAC80 /* blockTest.h */,
 			);
 			path = block;
-			sourceTree = "<group>";
-		};
-		3CD937D225E89C9300CD58BE /* lib */ = {
-			isa = PBXGroup;
-			children = (
-				3C0A991525F5E0C600927D06 /* IOPSKeys.h */,
-				3CD937D325E89C9F00CD58BE /* DLIntrospection */,
-			);
-			path = lib;
 			sourceTree = "<group>";
 		};
 		3CD937D325E89C9F00CD58BE /* DLIntrospection */ = {
@@ -1868,8 +1854,8 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = D7X74D2YD8;
 				ENABLE_STRICT_OBJC_MSGSEND = NO;
-				GCC_PREFIX_HEADER = "iOSLearnigDemo/supporting files/iOSLearningDemo.pch";
-				INFOPLIST_FILE = "$(SRCROOT)/iOSLearnigDemo/supporting files/Info.plist";
+				GCC_PREFIX_HEADER = "supporting files/iOSLearningDemo.pch";
+				INFOPLIST_FILE = "$(SRCROOT)/supporting files/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.yixia.iOSLearnigDemo1;
@@ -1889,8 +1875,8 @@
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = "";
 				ENABLE_STRICT_OBJC_MSGSEND = NO;
-				GCC_PREFIX_HEADER = "iOSLearnigDemo/supporting files/iOSLearningDemo.pch";
-				INFOPLIST_FILE = "$(SRCROOT)/iOSLearnigDemo/supporting files/Info.plist";
+				GCC_PREFIX_HEADER = "supporting files/iOSLearningDemo.pch";
+				INFOPLIST_FILE = "$(SRCROOT)/supporting files/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.yixia.iOSLearnigDemo;

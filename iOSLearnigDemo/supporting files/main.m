@@ -10,9 +10,7 @@
 #import "AppDelegate.h"
 
 int main(int argc, char * argv[]) {
-//    CFRunLoopStop(CFRunLoopGetCurrent()); //停止主runloop是不可能的
-    CGRect rect = CGRectFromString(@"");
-    NSLog(@"rect:%@",NSStringFromCGRect(rect));
+    NSObject *obj = [[NSObject alloc] init];
     @autoreleasepool {
         return UIApplicationMain(argc, argv, nil, NSStringFromClass([AppDelegate class]));
     }
