@@ -32,6 +32,7 @@
                 @{@"timer": @"TimerViewController"},
                 @{@"KVO": @"KVOTestController"},
                 @{@"KVC": @"KVCTestViewController"},
+                @{@"NXProxy": @"NXProxyTestViewController"},
                 ];
 }
 

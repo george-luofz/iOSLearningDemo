@@ -12,6 +12,10 @@
 		3C03E21F213558B400900A65 /* CustomFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C03E21E213558B400900A65 /* CustomFlowLayout.m */; };
 		3C03E22221355F9F00900A65 /* FlowLayoutTestController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C03E22121355F9F00900A65 /* FlowLayoutTestController.m */; };
 		3C0569FC2228DAF200B05A1A /* TestCollectionAnimationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C0569FB2228DAF200B05A1A /* TestCollectionAnimationViewController.m */; };
+		3C0A991925F5E18000927D06 /* NXProxyTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C0A991825F5E18000927D06 /* NXProxyTestViewController.m */; };
+		3C0A991E25F5E1A500927D06 /* FZProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C0A991D25F5E1A500927D06 /* FZProxy.m */; };
+		3C0A992225F5E21C00927D06 /* ClassA.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C0A992125F5E21C00927D06 /* ClassA.m */; };
+		3C0A992625F5E22700927D06 /* ClassB.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C0A992525F5E22700927D06 /* ClassB.m */; };
 		3C0BEEC2206232B30022055C /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C0BEEC1206232B30022055C /* Person.m */; };
 		3C0BEEC520649D950022055C /* LinkListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C0BEEC420649D950022055C /* LinkListViewController.m */; };
 		3C0BEED12064A4B70022055C /* ListNode.c in Sources */ = {isa = PBXBuildFile; fileRef = 3C0BEECE2064A3D40022055C /* ListNode.c */; };
@@ -143,6 +147,14 @@
 		3C0569FA2228DAF200B05A1A /* TestCollectionAnimationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestCollectionAnimationViewController.h; sourceTree = "<group>"; };
 		3C0569FB2228DAF200B05A1A /* TestCollectionAnimationViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestCollectionAnimationViewController.m; sourceTree = "<group>"; };
 		3C0A991525F5E0C600927D06 /* IOPSKeys.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = IOPSKeys.h; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks/IOKit.framework/Versions/A/Headers/ps/IOPSKeys.h; sourceTree = DEVELOPER_DIR; };
+		3C0A991725F5E18000927D06 /* NXProxyTestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NXProxyTestViewController.h; sourceTree = "<group>"; };
+		3C0A991825F5E18000927D06 /* NXProxyTestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NXProxyTestViewController.m; sourceTree = "<group>"; };
+		3C0A991C25F5E1A500927D06 /* FZProxy.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FZProxy.h; sourceTree = "<group>"; };
+		3C0A991D25F5E1A500927D06 /* FZProxy.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FZProxy.m; sourceTree = "<group>"; };
+		3C0A992025F5E21C00927D06 /* ClassA.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ClassA.h; sourceTree = "<group>"; };
+		3C0A992125F5E21C00927D06 /* ClassA.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ClassA.m; sourceTree = "<group>"; };
+		3C0A992425F5E22700927D06 /* ClassB.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ClassB.h; sourceTree = "<group>"; };
+		3C0A992525F5E22700927D06 /* ClassB.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ClassB.m; sourceTree = "<group>"; };
 		3C0BEEC0206232B30022055C /* Person.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
 		3C0BEEC1206232B30022055C /* Person.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
 		3C0BEEC320649D950022055C /* LinkListViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LinkListViewController.h; sourceTree = "<group>"; };
@@ -591,6 +603,21 @@
 				3C03E22121355F9F00900A65 /* FlowLayoutTestController.m */,
 			);
 			path = DiaryNameTest;
+			sourceTree = "<group>";
+		};
+		3C0A991625F5E14E00927D06 /* NSProxy */ = {
+			isa = PBXGroup;
+			children = (
+				3C0A991725F5E18000927D06 /* NXProxyTestViewController.h */,
+				3C0A991825F5E18000927D06 /* NXProxyTestViewController.m */,
+				3C0A991C25F5E1A500927D06 /* FZProxy.h */,
+				3C0A991D25F5E1A500927D06 /* FZProxy.m */,
+				3C0A992025F5E21C00927D06 /* ClassA.h */,
+				3C0A992125F5E21C00927D06 /* ClassA.m */,
+				3C0A992425F5E22700927D06 /* ClassB.h */,
+				3C0A992525F5E22700927D06 /* ClassB.m */,
+			);
+			path = NSProxy;
 			sourceTree = "<group>";
 		};
 		3C0BEEBF2062329F0022055C /* copyMutableCopy */ = {
@@ -1382,6 +1409,7 @@
 		3CCB05AB205A5B5900AF6760 /* Objective-C */ = {
 			isa = PBXGroup;
 			children = (
+				3C0A991625F5E14E00927D06 /* NSProxy */,
 				3CAD521925F36A8300E1D188 /* KVC */,
 				3CAD520F25F3200C00E1D188 /* KVO */,
 				3C2615B425D0F0E400A598BB /* IOPSKeys.h */,
@@ -1610,10 +1638,12 @@
 				3C1C24052452845F00430512 /* YXLiveRoomView1.m in Sources */,
 				3CAD521225F3202D00E1D188 /* KVOTestController.m in Sources */,
 				3CB721692095D010001901C3 /* CoreTextController.m in Sources */,
+				3C0A991E25F5E1A500927D06 /* FZProxy.m in Sources */,
 				3CCB058820590F7700AF6760 /* AppDelegate.m in Sources */,
 				3CDDB2B4212D3CCF0047BFAB /* VSGroupSelectorContainer.m in Sources */,
 				3CB0517D217821AE00FE90BB /* ScrollTestCollectionViewCell.m in Sources */,
 				3CDDB29B212BE3B40047BFAB /* ColletionInScrollController.m in Sources */,
+				3C0A991925F5E18000927D06 /* NXProxyTestViewController.m in Sources */,
 				3C5995B121928129008FA79B /* YXLBubbleCell.m in Sources */,
 				3CAD522125F36D4400E1D188 /* KVCObject.m in Sources */,
 				3C9C3738206C7AD600F3ECD9 /* MRCObject.m in Sources */,
@@ -1623,6 +1653,7 @@
 				3C35BF9A20761E1900066B05 /* TestRuntimeForward.m in Sources */,
 				3C71C2412123C4AF00132B60 /* LunarCore.m in Sources */,
 				3CBD775825F1E05600475BBA /* MVPTestViewController.m in Sources */,
+				3C0A992625F5E22700927D06 /* ClassB.m in Sources */,
 				3C9C3742206C8E3500F3ECD9 /* MRCSubTestObject.m in Sources */,
 				3C71C2332122BD2B00132B60 /* NSData+NNAdd.m in Sources */,
 				3C0BEED12064A4B70022055C /* ListNode.c in Sources */,
@@ -1686,6 +1717,7 @@
 				3C104F67218F049000C55078 /* YXLiveRoomSpendPanelTabSelector.m in Sources */,
 				3C71C1CC211D6C7000132B60 /* HtmlToPdfViewController.m in Sources */,
 				3CDDB2BA212D445B0047BFAB /* GroupSelectorTestViewController.m in Sources */,
+				3C0A992225F5E21C00927D06 /* ClassA.m in Sources */,
 				3C8206CA207363CE009BE5A6 /* ViewTestController.m in Sources */,
 				3C71C2352122BD2B00132B60 /* NSDictionary+NNAdd.m in Sources */,
 				3C90148925DFBCF700230341 /* WBLBaseButton.m in Sources */,
