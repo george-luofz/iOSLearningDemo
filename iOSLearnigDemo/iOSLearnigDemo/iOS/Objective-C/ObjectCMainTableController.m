@@ -33,6 +33,7 @@
                 @{@"KVO": @"KVOTestController"},
                 @{@"KVC": @"KVCTestViewController"},
                 @{@"NXProxy": @"NXProxyTestViewController"},
+                @{@"block" : @"BlockTestViewController"}
                 ];
 }
 

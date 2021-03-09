@@ -16,6 +16,10 @@
 		3C0A991E25F5E1A500927D06 /* FZProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C0A991D25F5E1A500927D06 /* FZProxy.m */; };
 		3C0A992225F5E21C00927D06 /* ClassA.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C0A992125F5E21C00927D06 /* ClassA.m */; };
 		3C0A992625F5E22700927D06 /* ClassB.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C0A992525F5E22700927D06 /* ClassB.m */; };
+		3C0A994625F602AC00927D06 /* RuntimeTestController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C0A994525F602AC00927D06 /* RuntimeTestController.m */; };
+		3C0A994F25F66EA700927D06 /* BlockTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C0A994E25F66EA700927D06 /* BlockTestViewController.m */; };
+		3C0A995525F66EEB00927D06 /* TestClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C0A995425F66EEB00927D06 /* TestClass.m */; };
+		3C0A996025F7191800927D06 /* BlockObj.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C0A995F25F7191800927D06 /* BlockObj.m */; };
 		3C0BEEC2206232B30022055C /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C0BEEC1206232B30022055C /* Person.m */; };
 		3C0BEEC520649D950022055C /* LinkListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C0BEEC420649D950022055C /* LinkListViewController.m */; };
 		3C0BEED12064A4B70022055C /* ListNode.c in Sources */ = {isa = PBXBuildFile; fileRef = 3C0BEECE2064A3D40022055C /* ListNode.c */; };
@@ -118,7 +122,6 @@
 		3CCB05A32059153B00AF6760 /* ThreadTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CCB05A22059153B00AF6760 /* ThreadTableViewController.m */; };
 		3CCB05A62059182600AF6760 /* UIViewController+Push.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CCB05A52059182600AF6760 /* UIViewController+Push.m */; };
 		3CCB05AA2059198100AF6760 /* GCDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CCB05A92059198100AF6760 /* GCDViewController.m */; };
-		3CCB05AE205A5B8000AF6760 /* ObjectiveCTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CCB05AD205A5B8000AF6760 /* ObjectiveCTableViewController.m */; };
 		3CD3ECE325F2548700AB584D /* MVVMTestModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CD3ECE225F2548700AB584D /* MVVMTestModel.m */; };
 		3CD3ECE725F254A400AB584D /* MVVMTestView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CD3ECE625F254A400AB584D /* MVVMTestView.m */; };
 		3CD937D625E89C9F00CD58BE /* NSObject+DLIntrospection.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CD937D525E89C9F00CD58BE /* NSObject+DLIntrospection.m */; };
@@ -155,6 +158,16 @@
 		3C0A992425F5E22700927D06 /* ClassB.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ClassB.h; sourceTree = "<group>"; };
 		3C0A992525F5E22700927D06 /* ClassB.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ClassB.m; sourceTree = "<group>"; };
 		3C0A992D25F5F8AC00927D06 /* IOPSKeys.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = IOPSKeys.h; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks/IOKit.framework/Versions/A/Headers/ps/IOPSKeys.h; sourceTree = DEVELOPER_DIR; };
+		3C0A994425F602AC00927D06 /* RuntimeTestController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RuntimeTestController.h; sourceTree = "<group>"; };
+		3C0A994525F602AC00927D06 /* RuntimeTestController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RuntimeTestController.m; sourceTree = "<group>"; };
+		3C0A994B25F6071C00927D06 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = main.cpp; path = "supporting files/main.cpp"; sourceTree = SOURCE_ROOT; };
+		3C0A994D25F66EA700927D06 /* BlockTestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BlockTestViewController.h; sourceTree = "<group>"; };
+		3C0A994E25F66EA700927D06 /* BlockTestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BlockTestViewController.m; sourceTree = "<group>"; };
+		3C0A995325F66EEB00927D06 /* TestClass.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestClass.h; sourceTree = "<group>"; };
+		3C0A995425F66EEB00927D06 /* TestClass.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestClass.m; sourceTree = "<group>"; };
+		3C0A995725F6703D00927D06 /* TestClass.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = TestClass.cpp; sourceTree = "<group>"; };
+		3C0A995E25F7191800927D06 /* BlockObj.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BlockObj.h; sourceTree = "<group>"; };
+		3C0A995F25F7191800927D06 /* BlockObj.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BlockObj.m; sourceTree = "<group>"; };
 		3C0BEEC0206232B30022055C /* Person.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
 		3C0BEEC1206232B30022055C /* Person.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
 		3C0BEEC320649D950022055C /* LinkListViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LinkListViewController.h; sourceTree = "<group>"; };
@@ -458,8 +471,6 @@
 		3C90145525D0F2EA00230341 /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks/IOKit.framework; sourceTree = DEVELOPER_DIR; };
 		3C90148725DFBCF700230341 /* WBLBaseButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WBLBaseButton.h; sourceTree = "<group>"; };
 		3C90148825DFBCF700230341 /* WBLBaseButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WBLBaseButton.m; sourceTree = "<group>"; };
-		3C968A1C205A74B6002BAC80 /* blockTest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = blockTest.h; sourceTree = "<group>"; };
-		3C968A1D205A74E2002BAC80 /* blockTest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = blockTest.cpp; sourceTree = "<group>"; };
 		3C968A332061FE53002BAC80 /* AlgoTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AlgoTableViewController.h; sourceTree = "<group>"; };
 		3C968A342061FE53002BAC80 /* AlgoTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AlgoTableViewController.m; sourceTree = "<group>"; };
 		3C9A85C525CD2F6600F91B7F /* TimerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TimerViewController.h; sourceTree = "<group>"; };
@@ -530,10 +541,6 @@
 		3CCB05A72059189A00AF6760 /* iOSLearningDemo.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = iOSLearningDemo.pch; sourceTree = "<group>"; };
 		3CCB05A82059198100AF6760 /* GCDViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GCDViewController.h; sourceTree = "<group>"; };
 		3CCB05A92059198100AF6760 /* GCDViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GCDViewController.m; sourceTree = "<group>"; };
-		3CCB05AC205A5B8000AF6760 /* ObjectiveCTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ObjectiveCTableViewController.h; sourceTree = "<group>"; };
-		3CCB05AD205A5B8000AF6760 /* ObjectiveCTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ObjectiveCTableViewController.m; sourceTree = "<group>"; };
-		3CCB05B3205A701D00AF6760 /* blockTest.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = blockTest.c; sourceTree = "<group>"; };
-		3CCB05B5205A703B00AF6760 /* blockTest_block.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = blockTest_block.cpp; path = iOSLearnigDemo/blockTest_block.cpp; sourceTree = SOURCE_ROOT; };
 		3CD3ECE125F2548700AB584D /* MVVMTestModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MVVMTestModel.h; sourceTree = "<group>"; };
 		3CD3ECE225F2548700AB584D /* MVVMTestModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MVVMTestModel.m; sourceTree = "<group>"; };
 		3CD3ECE525F254A400AB584D /* MVVMTestView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MVVMTestView.h; sourceTree = "<group>"; };
@@ -1175,6 +1182,7 @@
 		3C8206CB20747596009BE5A6 /* runtime */ = {
 			isa = PBXGroup;
 			children = (
+				3C0A994B25F6071C00927D06 /* main.cpp */,
 				3C8206CC207475A8009BE5A6 /* RuntimeTestViewController.h */,
 				3C8206CD207475A8009BE5A6 /* RuntimeTestViewController.m */,
 				3C8206CF2074ACAA009BE5A6 /* Person2.h */,
@@ -1183,6 +1191,8 @@
 				3C35BF9920761E1900066B05 /* TestRuntimeForward.m */,
 				3C35BF9B2078738700066B05 /* TestRuntimeForward+category.h */,
 				3C35BF9C2078738700066B05 /* TestRuntimeForward+category.m */,
+				3C0A994425F602AC00927D06 /* RuntimeTestController.h */,
+				3C0A994525F602AC00927D06 /* RuntimeTestController.m */,
 			);
 			path = runtime;
 			sourceTree = "<group>";
@@ -1417,8 +1427,6 @@
 				3C9C37212068D83900F3ECD9 /* functionalProgram */,
 				3C0BEEBF2062329F0022055C /* copyMutableCopy */,
 				3CCB05B2205A6FFC00AF6760 /* block */,
-				3CCB05AC205A5B8000AF6760 /* ObjectiveCTableViewController.h */,
-				3CCB05AD205A5B8000AF6760 /* ObjectiveCTableViewController.m */,
 				3C9C372C206B2DA200F3ECD9 /* ObjectCMainTableController.h */,
 				3C9C372D206B2DA200F3ECD9 /* ObjectCMainTableController.m */,
 			);
@@ -1428,10 +1436,13 @@
 		3CCB05B2205A6FFC00AF6760 /* block */ = {
 			isa = PBXGroup;
 			children = (
-				3C968A1D205A74E2002BAC80 /* blockTest.cpp */,
-				3CCB05B5205A703B00AF6760 /* blockTest_block.cpp */,
-				3CCB05B3205A701D00AF6760 /* blockTest.c */,
-				3C968A1C205A74B6002BAC80 /* blockTest.h */,
+				3C0A994D25F66EA700927D06 /* BlockTestViewController.h */,
+				3C0A994E25F66EA700927D06 /* BlockTestViewController.m */,
+				3C0A995325F66EEB00927D06 /* TestClass.h */,
+				3C0A995425F66EEB00927D06 /* TestClass.m */,
+				3C0A995725F6703D00927D06 /* TestClass.cpp */,
+				3C0A995E25F7191800927D06 /* BlockObj.h */,
+				3C0A995F25F7191800927D06 /* BlockObj.m */,
 			);
 			path = block;
 			sourceTree = "<group>";
@@ -1606,10 +1617,10 @@
 				3C71C1F32122BAEC00132B60 /* JTCalendarTestController.m in Sources */,
 				3C35BFA62078B3CC00066B05 /* CategoryObj+Test2.m in Sources */,
 				3C35BF9D2078738700066B05 /* TestRuntimeForward+category.m in Sources */,
+				3C0A994F25F66EA700927D06 /* BlockTestViewController.m in Sources */,
 				3C35BFA020789D7100066B05 /* CategoryObj.m in Sources */,
 				3CCB059620590F7700AF6760 /* main.m in Sources */,
 				3C9C3732206B2ECF00F3ECD9 /* CategoryViewController.m in Sources */,
-				3CCB05AE205A5B8000AF6760 /* ObjectiveCTableViewController.m in Sources */,
 				3C32FC8B24D52181000BA932 /* WBLPerformerStickerDeleteView.m in Sources */,
 				3C71C2342122BD2B00132B60 /* UIView+NNAdd.m in Sources */,
 				3CCB05AA2059198100AF6760 /* GCDViewController.m in Sources */,
@@ -1636,6 +1647,7 @@
 				3C8206CE207475A8009BE5A6 /* RuntimeTestViewController.m in Sources */,
 				3C9C3735206B2F4E00F3ECD9 /* AutoreleasePoolController.m in Sources */,
 				3C71C1D5211D6DA400132B60 /* BNHtmlPdfKit.m in Sources */,
+				3C0A995525F66EEB00927D06 /* TestClass.m in Sources */,
 				3C35BF9A20761E1900066B05 /* TestRuntimeForward.m in Sources */,
 				3C71C2412123C4AF00132B60 /* LunarCore.m in Sources */,
 				3CBD775825F1E05600475BBA /* MVPTestViewController.m in Sources */,
@@ -1652,6 +1664,7 @@
 				3C9C373B206C7AEF00F3ECD9 /* MemoryManageViewController.m in Sources */,
 				3C71C23C2122E57B00132B60 /* FSCalenderController.m in Sources */,
 				3C3B7C2621885A220075A804 /* ImageViewTestViewController.m in Sources */,
+				3C0A996025F7191800927D06 /* BlockObj.m in Sources */,
 				3CBD776525F1E21600475BBA /* MVPTestPresenter.m in Sources */,
 				3CDDB2B1212D3CCF0047BFAB /* VSFilterGroupSelector.m in Sources */,
 				3C9C37242068D85500F3ECD9 /* FunctionalViewController.m in Sources */,
@@ -1706,6 +1719,7 @@
 				3C0A992225F5E21C00927D06 /* ClassA.m in Sources */,
 				3C8206CA207363CE009BE5A6 /* ViewTestController.m in Sources */,
 				3C71C2352122BD2B00132B60 /* NSDictionary+NNAdd.m in Sources */,
+				3C0A994625F602AC00927D06 /* RuntimeTestController.m in Sources */,
 				3C90148925DFBCF700230341 /* WBLBaseButton.m in Sources */,
 				3C0BEED52064E2080022055C /* StringArrayViewController.m in Sources */,
 				3C2A3CBF214F999D0071B9CE /* FZVideoSource.m in Sources */,
