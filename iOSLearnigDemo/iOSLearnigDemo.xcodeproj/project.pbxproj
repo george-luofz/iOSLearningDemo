@@ -20,6 +20,10 @@
 		3C0A994F25F66EA700927D06 /* BlockTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C0A994E25F66EA700927D06 /* BlockTestViewController.m */; };
 		3C0A995525F66EEB00927D06 /* TestClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C0A995425F66EEB00927D06 /* TestClass.m */; };
 		3C0A996025F7191800927D06 /* BlockObj.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C0A995F25F7191800927D06 /* BlockObj.m */; };
+		3C0A996525F7213600927D06 /* WeakTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C0A996425F7213600927D06 /* WeakTestViewController.m */; };
+		3C0A996A25F721BA00927D06 /* WeakObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C0A996925F721BA00927D06 /* WeakObject.m */; };
+		3C0A996F25F7255600927D06 /* AutoReleaseTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C0A996E25F7255600927D06 /* AutoReleaseTestViewController.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		3C0A997425F7256800927D06 /* AutoReleaseObj.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C0A997325F7256800927D06 /* AutoReleaseObj.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		3C0BEEC2206232B30022055C /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C0BEEC1206232B30022055C /* Person.m */; };
 		3C0BEEC520649D950022055C /* LinkListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C0BEEC420649D950022055C /* LinkListViewController.m */; };
 		3C0BEED12064A4B70022055C /* ListNode.c in Sources */ = {isa = PBXBuildFile; fileRef = 3C0BEECE2064A3D40022055C /* ListNode.c */; };
@@ -168,6 +172,16 @@
 		3C0A995725F6703D00927D06 /* TestClass.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = TestClass.cpp; sourceTree = "<group>"; };
 		3C0A995E25F7191800927D06 /* BlockObj.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BlockObj.h; sourceTree = "<group>"; };
 		3C0A995F25F7191800927D06 /* BlockObj.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BlockObj.m; sourceTree = "<group>"; };
+		3C0A996325F7213600927D06 /* WeakTestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WeakTestViewController.h; sourceTree = "<group>"; };
+		3C0A996425F7213600927D06 /* WeakTestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WeakTestViewController.m; sourceTree = "<group>"; };
+		3C0A996825F721BA00927D06 /* WeakObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WeakObject.h; sourceTree = "<group>"; };
+		3C0A996925F721BA00927D06 /* WeakObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WeakObject.m; sourceTree = "<group>"; };
+		3C0A996D25F7255600927D06 /* AutoReleaseTestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AutoReleaseTestViewController.h; sourceTree = "<group>"; };
+		3C0A996E25F7255600927D06 /* AutoReleaseTestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AutoReleaseTestViewController.m; sourceTree = "<group>"; };
+		3C0A997225F7256800927D06 /* AutoReleaseObj.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AutoReleaseObj.h; sourceTree = "<group>"; };
+		3C0A997325F7256800927D06 /* AutoReleaseObj.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AutoReleaseObj.m; sourceTree = "<group>"; };
+		3C0A997625F7262900927D06 /* AutoReleaseObj.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = AutoReleaseObj.cpp; sourceTree = "<group>"; };
+		3C0A997F25F76D2D00927D06 /* WeakObject.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = WeakObject.cpp; sourceTree = "<group>"; };
 		3C0BEEC0206232B30022055C /* Person.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
 		3C0BEEC1206232B30022055C /* Person.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
 		3C0BEEC320649D950022055C /* LinkListViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LinkListViewController.h; sourceTree = "<group>"; };
@@ -634,6 +648,30 @@
 				3CCB05AB205A5B5900AF6760 /* Objective-C */,
 			);
 			path = iOS;
+			sourceTree = "<group>";
+		};
+		3C0A996225F7212200927D06 /* weak */ = {
+			isa = PBXGroup;
+			children = (
+				3C0A996325F7213600927D06 /* WeakTestViewController.h */,
+				3C0A996425F7213600927D06 /* WeakTestViewController.m */,
+				3C0A996825F721BA00927D06 /* WeakObject.h */,
+				3C0A996925F721BA00927D06 /* WeakObject.m */,
+				3C0A997F25F76D2D00927D06 /* WeakObject.cpp */,
+			);
+			path = weak;
+			sourceTree = "<group>";
+		};
+		3C0A996C25F7253000927D06 /* Autorelease */ = {
+			isa = PBXGroup;
+			children = (
+				3C0A996D25F7255600927D06 /* AutoReleaseTestViewController.h */,
+				3C0A996E25F7255600927D06 /* AutoReleaseTestViewController.m */,
+				3C0A997225F7256800927D06 /* AutoReleaseObj.h */,
+				3C0A997325F7256800927D06 /* AutoReleaseObj.m */,
+				3C0A997625F7262900927D06 /* AutoReleaseObj.cpp */,
+			);
+			path = Autorelease;
 			sourceTree = "<group>";
 		};
 		3C0BEEBF2062329F0022055C /* copyMutableCopy */ = {
@@ -1414,6 +1452,8 @@
 		3CCB05AB205A5B5900AF6760 /* Objective-C */ = {
 			isa = PBXGroup;
 			children = (
+				3C0A996C25F7253000927D06 /* Autorelease */,
+				3C0A996225F7212200927D06 /* weak */,
 				3C0A991625F5E14E00927D06 /* NSProxy */,
 				3CAD521925F36A8300E1D188 /* KVC */,
 				3CAD520F25F3200C00E1D188 /* KVO */,
@@ -1618,6 +1658,7 @@
 				3C35BFA62078B3CC00066B05 /* CategoryObj+Test2.m in Sources */,
 				3C35BF9D2078738700066B05 /* TestRuntimeForward+category.m in Sources */,
 				3C0A994F25F66EA700927D06 /* BlockTestViewController.m in Sources */,
+				3C0A997425F7256800927D06 /* AutoReleaseObj.m in Sources */,
 				3C35BFA020789D7100066B05 /* CategoryObj.m in Sources */,
 				3CCB059620590F7700AF6760 /* main.m in Sources */,
 				3C9C3732206B2ECF00F3ECD9 /* CategoryViewController.m in Sources */,
@@ -1627,6 +1668,7 @@
 				3C7D11022306B3A50030FC26 /* YXLiveRoomView.m in Sources */,
 				3C32FC8224D520A0000BA932 /* WBLEditableImageStickerWidget.m in Sources */,
 				3C1C240B2452885600430512 /* YXLiveRoomView2.m in Sources */,
+				3C0A996A25F721BA00927D06 /* WeakObject.m in Sources */,
 				3C71C2442123CA0C00132B60 /* NNLunarCalenderManager.m in Sources */,
 				3CBD775C25F1E17C00475BBA /* MVCTestViewController.m in Sources */,
 				3CCB05A32059153B00AF6760 /* ThreadTableViewController.m in Sources */,
@@ -1681,6 +1723,7 @@
 				3C71C1C9211D6BEE00132B60 /* BaseTableViewController.m in Sources */,
 				3C1F09DB2153D339005D4692 /* AppearanceViewController.m in Sources */,
 				3CCB059E2059142200AF6760 /* MainTableViewController.m in Sources */,
+				3C0A996525F7213600927D06 /* WeakTestViewController.m in Sources */,
 				3C71C2362122BD2B00132B60 /* NSMutableDictionary+NNAdd.m in Sources */,
 				3CDDB2B6212D3CCF0047BFAB /* VSGroupSelectorHeader.m in Sources */,
 				3C26158B25D0E7B400A598BB /* OptMainTableViewController.m in Sources */,
@@ -1726,6 +1769,7 @@
 				3C7D11062306B6880030FC26 /* EventTestViewController.m in Sources */,
 				3CDDB2B5212D3CCF0047BFAB /* VSBeautyGroupSelector.m in Sources */,
 				3CDCE1E5230B8F0D002786F7 /* YXTouchableView.m in Sources */,
+				3C0A996F25F7255600927D06 /* AutoReleaseTestViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1864,6 +1908,7 @@
 			baseConfigurationReference = D58921FDD7E4250EC4D61A75 /* Pods-iOSLearnigDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_OBJC_ARC = YES;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = D7X74D2YD8;
@@ -1885,6 +1930,7 @@
 			baseConfigurationReference = 9EEAC000E3D6A472A25CE362 /* Pods-iOSLearnigDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_OBJC_ARC = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = "";

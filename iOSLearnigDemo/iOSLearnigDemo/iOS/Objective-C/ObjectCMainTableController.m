@@ -33,7 +33,9 @@
                 @{@"KVO": @"KVOTestController"},
                 @{@"KVC": @"KVCTestViewController"},
                 @{@"NXProxy": @"NXProxyTestViewController"},
-                @{@"block" : @"BlockTestViewController"}
+                @{@"block" : @"BlockTestViewController"},
+                @{@"weak" : @"WeakTestViewController"},
+                @{@"autorelease" : @"AutoReleaseTestViewController"},
                 ];
 }
 
