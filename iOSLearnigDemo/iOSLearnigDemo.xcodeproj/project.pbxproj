@@ -89,6 +89,7 @@
 		3C859C2E21B0DC78004488FA /* image.png in Resources */ = {isa = PBXBuildFile; fileRef = 3C859C2D21B0DC78004488FA /* image.png */; };
 		3C90145625D0F2F000230341 /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C90145525D0F2EA00230341 /* IOKit.framework */; };
 		3C90148925DFBCF700230341 /* WBLBaseButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C90148825DFBCF700230341 /* WBLBaseButton.m */; };
+		3C93CF4F2604DD8100EA3612 /* BSBacktraceLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C93CF4D2604DD8100EA3612 /* BSBacktraceLogger.m */; };
 		3C968A352061FE53002BAC80 /* AlgoTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C968A342061FE53002BAC80 /* AlgoTableViewController.m */; };
 		3C9A85C725CD2F6600F91B7F /* TimerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C9A85C625CD2F6600F91B7F /* TimerViewController.m */; };
 		3C9C37242068D85500F3ECD9 /* FunctionalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C9C37232068D85500F3ECD9 /* FunctionalViewController.m */; };
@@ -482,6 +483,8 @@
 		3C90145525D0F2EA00230341 /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks/IOKit.framework; sourceTree = DEVELOPER_DIR; };
 		3C90148725DFBCF700230341 /* WBLBaseButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WBLBaseButton.h; sourceTree = "<group>"; };
 		3C90148825DFBCF700230341 /* WBLBaseButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WBLBaseButton.m; sourceTree = "<group>"; };
+		3C93CF4D2604DD8100EA3612 /* BSBacktraceLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSBacktraceLogger.m; sourceTree = "<group>"; };
+		3C93CF4E2604DD8100EA3612 /* BSBacktraceLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSBacktraceLogger.h; sourceTree = "<group>"; };
 		3C968A332061FE53002BAC80 /* AlgoTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AlgoTableViewController.h; sourceTree = "<group>"; };
 		3C968A342061FE53002BAC80 /* AlgoTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AlgoTableViewController.m; sourceTree = "<group>"; };
 		3C9A85C525CD2F6600F91B7F /* TimerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TimerViewController.h; sourceTree = "<group>"; };
@@ -727,6 +730,8 @@
 		3C221099260499ED006A5F00 /* opt_thread */ = {
 			isa = PBXGroup;
 			children = (
+				3C93CF4E2604DD8100EA3612 /* BSBacktraceLogger.h */,
+				3C93CF4D2604DD8100EA3612 /* BSBacktraceLogger.m */,
 				3C22109A26049A08006A5F00 /* ThreadOptViewController.h */,
 				3C22109B26049A08006A5F00 /* ThreadOptViewController.m */,
 			);
@@ -1684,6 +1689,7 @@
 				3CAD521225F3202D00E1D188 /* KVOTestController.m in Sources */,
 				3CB721692095D010001901C3 /* CoreTextController.m in Sources */,
 				3C0A991E25F5E1A500927D06 /* FZProxy.m in Sources */,
+				3C93CF4F2604DD8100EA3612 /* BSBacktraceLogger.m in Sources */,
 				3CCB058820590F7700AF6760 /* AppDelegate.m in Sources */,
 				3CDDB2B4212D3CCF0047BFAB /* VSGroupSelectorContainer.m in Sources */,
 				3CB0517D217821AE00FE90BB /* ScrollTestCollectionViewCell.m in Sources */,
@@ -1925,7 +1931,7 @@
 				LD_GENERATE_MAP_FILE = YES;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				ORDER_FILE = "$(SRCROOT)/order_file.txt";
-				PRODUCT_BUNDLE_IDENTIFIER = com.yixia.iOSLearnigDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yixia.iOSLearnigDemo.fz;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -1949,7 +1955,7 @@
 				LD_GENERATE_MAP_FILE = YES;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				ORDER_FILE = "";
-				PRODUCT_BUNDLE_IDENTIFIER = com.yixia.iOSLearnigDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yixia.iOSLearnigDemo.fz;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
