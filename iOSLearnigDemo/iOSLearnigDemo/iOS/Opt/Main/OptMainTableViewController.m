@@ -20,6 +20,7 @@
     
     self.dataSource = @[
                 @{@"电池": @"OPTBatteryViewController"},
+                @{@"线程": @"ThreadOptViewController"},
                 ];
 }
 

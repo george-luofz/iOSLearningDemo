@@ -38,6 +38,7 @@
 		3C1E6C5B213D4559002112AF /* AnimationTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C1E6C5A213D4559002112AF /* AnimationTestViewController.m */; };
 		3C1F09DB2153D339005D4692 /* AppearanceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C1F09DA2153D339005D4692 /* AppearanceViewController.m */; };
 		3C1F09DF2153D3AC005D4692 /* CustomView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C1F09DE2153D3AC005D4692 /* CustomView.m */; };
+		3C22109C26049A08006A5F00 /* ThreadOptViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C22109B26049A08006A5F00 /* ThreadOptViewController.m */; };
 		3C26158625D0E5B600A598BB /* OPTBatteryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C26158525D0E5B600A598BB /* OPTBatteryViewController.m */; };
 		3C26158B25D0E7B400A598BB /* OptMainTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C26158A25D0E7B400A598BB /* OptMainTableViewController.m */; };
 		3C2A3CBF214F999D0071B9CE /* FZVideoSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C2A3CBE214F999D0071B9CE /* FZVideoSource.m */; };
@@ -209,6 +210,8 @@
 		3C1F09DA2153D339005D4692 /* AppearanceViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppearanceViewController.m; sourceTree = "<group>"; };
 		3C1F09DD2153D3AC005D4692 /* CustomView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustomView.h; sourceTree = "<group>"; };
 		3C1F09DE2153D3AC005D4692 /* CustomView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomView.m; sourceTree = "<group>"; };
+		3C22109A26049A08006A5F00 /* ThreadOptViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ThreadOptViewController.h; sourceTree = "<group>"; };
+		3C22109B26049A08006A5F00 /* ThreadOptViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ThreadOptViewController.m; sourceTree = "<group>"; };
 		3C2614D725D0051500A598BB /* CFUUID.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CFUUID.h; sourceTree = "<group>"; };
 		3C2614D825D0051500A598BB /* CFUniCharPriv.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CFUniCharPriv.h; sourceTree = "<group>"; };
 		3C2614D925D0051500A598BB /* CFBundle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CFBundle.h; sourceTree = "<group>"; };
@@ -382,7 +385,6 @@
 		3C2615B325D0F0A000A598BB /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks/IOKit.framework; sourceTree = DEVELOPER_DIR; };
 		3C2615B425D0F0E400A598BB /* IOPSKeys.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = IOPSKeys.h; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks/IOKit.framework/Versions/A/Headers/ps/IOPSKeys.h; sourceTree = DEVELOPER_DIR; };
 		3C2615B525D0F0E900A598BB /* IOPSKeys.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = IOPSKeys.h; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks/IOKit.framework/Versions/A/Headers/ps/IOPSKeys.h; sourceTree = DEVELOPER_DIR; };
-		3C2615B625D0F0F200A598BB /* IOPSKeys.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = IOPSKeys.h; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks/IOKit.framework/Versions/A/Headers/ps/IOPSKeys.h; sourceTree = DEVELOPER_DIR; };
 		3C2615B825D0F10A00A598BB /* IOPowerSources.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = IOPowerSources.h; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks/IOKit.framework/Versions/A/Headers/ps/IOPowerSources.h; sourceTree = DEVELOPER_DIR; };
 		3C2A3CBD214F999D0071B9CE /* FZVideoSource.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FZVideoSource.h; sourceTree = "<group>"; };
 		3C2A3CBE214F999D0071B9CE /* FZVideoSource.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FZVideoSource.m; sourceTree = "<group>"; };
@@ -722,6 +724,15 @@
 			path = Appearance;
 			sourceTree = "<group>";
 		};
+		3C221099260499ED006A5F00 /* opt_thread */ = {
+			isa = PBXGroup;
+			children = (
+				3C22109A26049A08006A5F00 /* ThreadOptViewController.h */,
+				3C22109B26049A08006A5F00 /* ThreadOptViewController.m */,
+			);
+			path = opt_thread;
+			sourceTree = "<group>";
+		};
 		3C2614D525D004FD00A598BB /* runloop */ = {
 			isa = PBXGroup;
 			children = (
@@ -926,7 +937,7 @@
 		3C26158725D0E79400A598BB /* Opt */ = {
 			isa = PBXGroup;
 			children = (
-				3C2615B625D0F0F200A598BB /* IOPSKeys.h */,
+				3C221099260499ED006A5F00 /* opt_thread */,
 				3C26158825D0E7A300A598BB /* Main */,
 				3C26158325D0E59400A598BB /* opt_battery */,
 			);
@@ -1753,6 +1764,7 @@
 				3CCB05A62059182600AF6760 /* UIViewController+Push.m in Sources */,
 				3C104F67218F049000C55078 /* YXLiveRoomSpendPanelTabSelector.m in Sources */,
 				3C71C1CC211D6C7000132B60 /* HtmlToPdfViewController.m in Sources */,
+				3C22109C26049A08006A5F00 /* ThreadOptViewController.m in Sources */,
 				3CDDB2BA212D445B0047BFAB /* GroupSelectorTestViewController.m in Sources */,
 				3C0A992225F5E21C00927D06 /* ClassA.m in Sources */,
 				3C8206CA207363CE009BE5A6 /* ViewTestController.m in Sources */,
