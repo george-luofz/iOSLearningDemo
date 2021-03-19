@@ -109,6 +109,7 @@
 		3CB0517E217821AE00FE90BB /* ScrollTestCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3CB0517C217821AE00FE90BB /* ScrollTestCollectionViewCell.xib */; };
 		3CB721692095D010001901C3 /* CoreTextController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CB721682095D010001901C3 /* CoreTextController.m */; };
 		3CB7216C2095D054001901C3 /* CTDisplayView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CB7216B2095D054001901C3 /* CTDisplayView.m */; };
+		3CBBC08025FB0CC1002B118B /* StringViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CBBC07F25FB0CC1002B118B /* StringViewController.m */; };
 		3CBD775325F1DF1A00475BBA /* ArchictureMainTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CBD775225F1DF1A00475BBA /* ArchictureMainTableViewController.m */; };
 		3CBD775825F1E05600475BBA /* MVPTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CBD775725F1E05600475BBA /* MVPTestViewController.m */; };
 		3CBD775C25F1E17C00475BBA /* MVCTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CBD775B25F1E17C00475BBA /* MVCTestViewController.m */; };
@@ -520,6 +521,8 @@
 		3CB721682095D010001901C3 /* CoreTextController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CoreTextController.m; sourceTree = "<group>"; };
 		3CB7216A2095D054001901C3 /* CTDisplayView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CTDisplayView.h; sourceTree = "<group>"; };
 		3CB7216B2095D054001901C3 /* CTDisplayView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CTDisplayView.m; sourceTree = "<group>"; };
+		3CBBC07E25FB0CC1002B118B /* StringViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StringViewController.h; sourceTree = "<group>"; };
+		3CBBC07F25FB0CC1002B118B /* StringViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StringViewController.m; sourceTree = "<group>"; };
 		3CBD775125F1DF1A00475BBA /* ArchictureMainTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ArchictureMainTableViewController.h; sourceTree = "<group>"; };
 		3CBD775225F1DF1A00475BBA /* ArchictureMainTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ArchictureMainTableViewController.m; sourceTree = "<group>"; };
 		3CBD775625F1E05600475BBA /* MVPTestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MVPTestViewController.h; sourceTree = "<group>"; };
@@ -1248,6 +1251,8 @@
 				3CDC807E20676A2C00D3AEEB /* PointerViewController.m */,
 				3C9C37252069EEFA00F3ECD9 /* SortViewController.h */,
 				3C9C37262069EEFA00F3ECD9 /* SortViewController.m */,
+				3CBBC07E25FB0CC1002B118B /* StringViewController.h */,
+				3CBBC07F25FB0CC1002B118B /* StringViewController.m */,
 			);
 			path = algo;
 			sourceTree = "<group>";
@@ -1678,6 +1683,7 @@
 				3C9C3738206C7AD600F3ECD9 /* MRCObject.m in Sources */,
 				3C8206CE207475A8009BE5A6 /* RuntimeTestViewController.m in Sources */,
 				3C9C3735206B2F4E00F3ECD9 /* AutoreleasePoolController.m in Sources */,
+				3CBBC08025FB0CC1002B118B /* StringViewController.m in Sources */,
 				3C71C1D5211D6DA400132B60 /* BNHtmlPdfKit.m in Sources */,
 				3C0A995525F66EEB00927D06 /* TestClass.m in Sources */,
 				3C35BF9A20761E1900066B05 /* TestRuntimeForward.m in Sources */,
@@ -1903,9 +1909,11 @@
 				ENABLE_STRICT_OBJC_MSGSEND = NO;
 				GCC_PREFIX_HEADER = "supporting files/iOSLearningDemo.pch";
 				INFOPLIST_FILE = "$(SRCROOT)/supporting files/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_GENERATE_MAP_FILE = YES;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.yixia.iOSLearnigDemo1;
+				ORDER_FILE = "$(SRCROOT)/order_file.txt";
+				PRODUCT_BUNDLE_IDENTIFIER = com.yixia.iOSLearnigDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -1919,14 +1927,16 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_OBJC_ARC = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = "";
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = D7X74D2YD8;
 				ENABLE_STRICT_OBJC_MSGSEND = NO;
 				GCC_PREFIX_HEADER = "supporting files/iOSLearningDemo.pch";
 				INFOPLIST_FILE = "$(SRCROOT)/supporting files/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_GENERATE_MAP_FILE = YES;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				ORDER_FILE = "";
 				PRODUCT_BUNDLE_IDENTIFIER = com.yixia.iOSLearnigDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";

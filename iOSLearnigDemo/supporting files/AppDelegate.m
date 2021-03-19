@@ -10,6 +10,7 @@
 #import "FJReplayKit.h"
 
 #import "MainTableViewController.h"
+#import <OSLog/OSLog.h>
 
 @interface AppDelegate ()
 
@@ -21,6 +22,13 @@
     return YES;
 }
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    
+    os_log_t logger = os_log_create("com.yixia.iOSLearnigDemo", "performance");
+    os_signpost_id_t spid = os_signpost_id_generate(logger);
+    os_signpost_id_t signPostId = os_signpost_id_make_with_pointer(logger,spid);
+    //标记时间段开始
+    os_signpost_interval_begin(logger, signPostId, "Launch","%{public}s", "");
+    
     // Override point for customization after application launch.
     // 开启屏幕录制
 //    [[FJReplayKit sharedReplay] catreButton:YES];
@@ -29,6 +37,8 @@
     self.window.rootViewController = nav;
     [self.window makeKeyAndVisible];
     
+    //标记结束
+    os_signpost_interval_end(logger, signPostId, "Launch");
     return YES;
 }
 

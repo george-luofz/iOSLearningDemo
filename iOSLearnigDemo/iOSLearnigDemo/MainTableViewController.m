@@ -22,11 +22,11 @@
                 @{@"Objective-C": @"ObjectCMainTableController"},
                 @{@"UI": @"UITestTableViewController"},
                 @{@"多线程": @"ThreadTableViewController"},
-                @{@"算法": @"AlgoTableViewController"},
+                @{@"网络" : @"NetWorkMainViewController"},
                 @{@"AVFoundation": @"AVFoundationTestController"},
                 @{@"优化相关": @"OptMainTableViewController"},
-                @{@"网络" : @"NetWorkMainViewController"},
                 @{@"架构" : @"ArchictureMainTableViewController"},
+                @{@"算法": @"AlgoTableViewController"},
                 ];
 }
 

@@ -11,6 +11,7 @@
 #import "LinkListViewController.h"
 #import "PointerViewController.h"
 #import "SortViewController.h"
+#import "StringViewController.h"
 
 @interface AlgoTableViewController ()
 @property (nonatomic, strong)   NSArray *dataSource;
@@ -23,7 +24,7 @@
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor whiteColor];
     self.title = @"算法与数据结构";
-    self.dataSource = @[@"链表",@"字符串与数组",@"指针",@"排序",@"二叉树"];
+    self.dataSource = @[@"链表",@"数组",@"指针",@"排序",@"字符串"];
    
 }
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
@@ -51,6 +52,8 @@
         vc = [PointerViewController new];
     }else if (indexPath.row == 3){
         vc = [SortViewController new];
+    }else if (indexPath.row == 4){
+        vc = [StringViewController new];
     }
     vc.title = self.dataSource[indexPath.row];
     [self pushToVc:vc];

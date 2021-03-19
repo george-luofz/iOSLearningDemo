@@ -70,7 +70,7 @@ DEPENDENCIES:
   - YYModel (= 1.0.4)
 
 SPEC REPOS:
-  https://github.com/cocoapods/specs.git:
+  https://github.com/CocoaPods/Specs.git:
     - AFNetworking
     - CYLTabBarController
     - FDFullscreenPopGesture
@@ -98,4 +98,4 @@ SPEC CHECKSUMS:
 
 PODFILE CHECKSUM: 3b740ad2a33ca9a16838627bd9bf28344c7f1b30
 
-COCOAPODS: 1.5.3
+COCOAPODS: 1.8.3
