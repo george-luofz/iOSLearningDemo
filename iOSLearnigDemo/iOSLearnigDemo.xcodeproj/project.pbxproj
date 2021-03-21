@@ -59,6 +59,9 @@
 		3C54F0FF21B5169400B4D696 /* CALayerTestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C54F0FD21B5169400B4D696 /* CALayerTestViewController.xib */; };
 		3C5995AE21927B09008FA79B /* YXLGradientColorView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C5995AD21927B09008FA79B /* YXLGradientColorView.m */; };
 		3C5995B121928129008FA79B /* YXLBubbleCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C5995B021928129008FA79B /* YXLBubbleCell.m */; };
+		3C5F242A26060421001E6062 /* RunloopTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C5F242926060421001E6062 /* RunloopTestViewController.m */; };
+		3C5F242E2606FB3B001E6062 /* TestView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C5F242D2606FB3B001E6062 /* TestView.m */; };
+		3C5F243226072465001E6062 /* CATransaction+runloop.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C5F243126072465001E6062 /* CATransaction+runloop.m */; };
 		3C67DF8925EE1145009DF3AF /* NetWorkMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C67DF8825EE1145009DF3AF /* NetWorkMainViewController.m */; };
 		3C71C1C9211D6BEE00132B60 /* BaseTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C71C1C8211D6BEE00132B60 /* BaseTableViewController.m */; };
 		3C71C1CC211D6C7000132B60 /* HtmlToPdfViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C71C1CB211D6C7000132B60 /* HtmlToPdfViewController.m */; };
@@ -424,6 +427,12 @@
 		3C5995AD21927B09008FA79B /* YXLGradientColorView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YXLGradientColorView.m; sourceTree = "<group>"; };
 		3C5995AF21928129008FA79B /* YXLBubbleCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YXLBubbleCell.h; sourceTree = "<group>"; };
 		3C5995B021928129008FA79B /* YXLBubbleCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YXLBubbleCell.m; sourceTree = "<group>"; };
+		3C5F242826060421001E6062 /* RunloopTestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RunloopTestViewController.h; sourceTree = "<group>"; };
+		3C5F242926060421001E6062 /* RunloopTestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RunloopTestViewController.m; sourceTree = "<group>"; };
+		3C5F242C2606FB3B001E6062 /* TestView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestView.h; sourceTree = "<group>"; };
+		3C5F242D2606FB3B001E6062 /* TestView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestView.m; sourceTree = "<group>"; };
+		3C5F243026072465001E6062 /* CATransaction+runloop.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CATransaction+runloop.h"; sourceTree = "<group>"; };
+		3C5F243126072465001E6062 /* CATransaction+runloop.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "CATransaction+runloop.m"; sourceTree = "<group>"; };
 		3C67DF8725EE1145009DF3AF /* NetWorkMainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NetWorkMainViewController.h; sourceTree = "<group>"; };
 		3C67DF8825EE1145009DF3AF /* NetWorkMainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NetWorkMainViewController.m; sourceTree = "<group>"; };
 		3C71C1C7211D6BEE00132B60 /* BaseTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseTableViewController.h; sourceTree = "<group>"; };
@@ -742,6 +751,12 @@
 			isa = PBXGroup;
 			children = (
 				3C2614D625D0051500A598BB /* CF-1151.16 */,
+				3C5F242826060421001E6062 /* RunloopTestViewController.h */,
+				3C5F242926060421001E6062 /* RunloopTestViewController.m */,
+				3C5F242C2606FB3B001E6062 /* TestView.h */,
+				3C5F242D2606FB3B001E6062 /* TestView.m */,
+				3C5F243026072465001E6062 /* CATransaction+runloop.h */,
+				3C5F243126072465001E6062 /* CATransaction+runloop.m */,
 			);
 			path = runloop;
 			sourceTree = "<group>";
@@ -1732,6 +1747,8 @@
 				3C03E21921354C7500900A65 /* Header.m in Sources */,
 				3C71C2302122BD2B00132B60 /* UIFont+NNAdd.m in Sources */,
 				3C9C3745206CC5D000F3ECD9 /* ARCObject.m in Sources */,
+				3C5F242A26060421001E6062 /* RunloopTestViewController.m in Sources */,
+				3C5F242E2606FB3B001E6062 /* TestView.m in Sources */,
 				3C71C1C9211D6BEE00132B60 /* BaseTableViewController.m in Sources */,
 				3C1F09DB2153D339005D4692 /* AppearanceViewController.m in Sources */,
 				3CCB059E2059142200AF6760 /* MainTableViewController.m in Sources */,
@@ -1752,6 +1769,7 @@
 				3C03E21F213558B400900A65 /* CustomFlowLayout.m in Sources */,
 				3C2A3CC2214FA1A80071B9CE /* AVFoundationTestController.m in Sources */,
 				3C71C2322122BD2B00132B60 /* NSString+NNAdd.m in Sources */,
+				3C5F243226072465001E6062 /* CATransaction+runloop.m in Sources */,
 				3C8206C72073633B009BE5A6 /* UITestTableViewController.m in Sources */,
 				3CDDB2B3212D3CCF0047BFAB /* VSGroupSelectorBaseCollectionView.m in Sources */,
 				3C1C241124528ACB00430512 /* YXLiveRoomLiteView.m in Sources */,

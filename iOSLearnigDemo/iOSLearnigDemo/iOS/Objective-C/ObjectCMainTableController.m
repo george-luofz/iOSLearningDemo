@@ -29,6 +29,7 @@
                 @{@"category": @"CategoryViewController"},
                 @{@"内存": @"MemoryManageViewController"},
                 @{@"runtime": @"RuntimeTestViewController"},
+                @{@"runloop": @"RunloopTestViewController"},
                 @{@"timer": @"TimerViewController"},
                 @{@"KVO": @"KVOTestController"},
                 @{@"KVC": @"KVCTestViewController"},

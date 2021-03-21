@@ -63,9 +63,14 @@ int main(int argc, char * argv[]) {
     Class metaClass = [sClass class];
     
     struct MJ_object_class *meta_class_st = (__bridge struct MJ_object_class *)sClass;
-    NSLog(@"hhh");
     
+    CFArrayRef arr = CFRunLoopCopyAllModes(CFRunLoopGetCurrent());
+    CFIndex count = CFArrayGetCount(arr);
+    
+    NSLog(@"");
     @autoreleasepool {
+        CFArrayRef arr = CFRunLoopCopyAllModes(CFRunLoopGetCurrent());
+        CFIndex count = CFArrayGetCount(arr);
         return UIApplicationMain(argc, argv, nil, NSStringFromClass([AppDelegate class]));
     }
 }
