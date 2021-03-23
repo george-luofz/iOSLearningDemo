@@ -25,8 +25,8 @@
                 @{@"网络" : @"NetWorkMainViewController"},
                 @{@"AVFoundation": @"AVFoundationTestController"},
                 @{@"优化相关": @"OptMainTableViewController"},
-                @{@"架构" : @"ArchictureMainTableViewController"},
                 @{@"算法": @"AlgoTableViewController"},
+                @{@"架构" : @"ArchictureMainTableViewController"},
                 ];
 }
 

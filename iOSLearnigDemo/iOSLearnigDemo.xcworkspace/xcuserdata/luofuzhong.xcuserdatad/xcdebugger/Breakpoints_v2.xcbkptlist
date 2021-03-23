@@ -1422,11 +1422,9 @@
             symbolName = "*0x1022dcb38">
             <Locations>
                <Location
-                  uuid = "F266E4BB-18C1-4EF3-A1B6-D0858493CB54 - 32c344bd9924e60"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  moduleName = "iOSLearnigDemo"
                   usesParentBreakpointCondition = "Yes"
                   offsetFromSymbolStart = "0">
                </Location>

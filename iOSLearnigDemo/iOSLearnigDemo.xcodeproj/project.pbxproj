@@ -130,6 +130,10 @@
 		3CCB05A32059153B00AF6760 /* ThreadTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CCB05A22059153B00AF6760 /* ThreadTableViewController.m */; };
 		3CCB05A62059182600AF6760 /* UIViewController+Push.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CCB05A52059182600AF6760 /* UIViewController+Push.m */; };
 		3CCB05AA2059198100AF6760 /* GCDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CCB05A92059198100AF6760 /* GCDViewController.m */; };
+		3CD10171260981CB00AB4800 /* DesignPatternMainTableController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CD10170260981CB00AB4800 /* DesignPatternMainTableController.m */; };
+		3CD101762609824200AB4800 /* SingleInstanceController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CD101752609824200AB4800 /* SingleInstanceController.m */; };
+		3CD1017A2609824F00AB4800 /* FactoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CD101792609824F00AB4800 /* FactoryViewController.m */; };
+		3CD101822609831600AB4800 /* SingleTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CD101812609831600AB4800 /* SingleTest.m */; };
 		3CD3ECE325F2548700AB584D /* MVVMTestModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CD3ECE225F2548700AB584D /* MVVMTestModel.m */; };
 		3CD3ECE725F254A400AB584D /* MVVMTestView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CD3ECE625F254A400AB584D /* MVVMTestView.m */; };
 		3CD937D625E89C9F00CD58BE /* NSObject+DLIntrospection.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CD937D525E89C9F00CD58BE /* NSObject+DLIntrospection.m */; };
@@ -566,6 +570,14 @@
 		3CCB05A72059189A00AF6760 /* iOSLearningDemo.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = iOSLearningDemo.pch; sourceTree = "<group>"; };
 		3CCB05A82059198100AF6760 /* GCDViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GCDViewController.h; sourceTree = "<group>"; };
 		3CCB05A92059198100AF6760 /* GCDViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GCDViewController.m; sourceTree = "<group>"; };
+		3CD1016F260981CB00AB4800 /* DesignPatternMainTableController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DesignPatternMainTableController.h; sourceTree = "<group>"; };
+		3CD10170260981CB00AB4800 /* DesignPatternMainTableController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DesignPatternMainTableController.m; sourceTree = "<group>"; };
+		3CD101742609824200AB4800 /* SingleInstanceController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SingleInstanceController.h; sourceTree = "<group>"; };
+		3CD101752609824200AB4800 /* SingleInstanceController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SingleInstanceController.m; sourceTree = "<group>"; };
+		3CD101782609824F00AB4800 /* FactoryViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FactoryViewController.h; sourceTree = "<group>"; };
+		3CD101792609824F00AB4800 /* FactoryViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FactoryViewController.m; sourceTree = "<group>"; };
+		3CD101802609831600AB4800 /* SingleTest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SingleTest.h; sourceTree = "<group>"; };
+		3CD101812609831600AB4800 /* SingleTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SingleTest.m; sourceTree = "<group>"; };
 		3CD3ECE125F2548700AB584D /* MVVMTestModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MVVMTestModel.h; sourceTree = "<group>"; };
 		3CD3ECE225F2548700AB584D /* MVVMTestModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MVVMTestModel.m; sourceTree = "<group>"; };
 		3CD3ECE525F254A400AB584D /* MVVMTestView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MVVMTestView.h; sourceTree = "<group>"; };
@@ -1387,6 +1399,7 @@
 		3CBD774F25F1DEB800475BBA /* Acrchitecture */ = {
 			isa = PBXGroup;
 			children = (
+				3CD1016E2609819200AB4800 /* DesignPattern */,
 				3CBD776125F1E1BF00475BBA /* MVVM */,
 				3CBD776025F1E1BA00475BBA /* MVP */,
 				3CBD775F25F1E1B600475BBA /* MVC */,
@@ -1511,6 +1524,37 @@
 				3C0A995F25F7191800927D06 /* BlockObj.m */,
 			);
 			path = block;
+			sourceTree = "<group>";
+		};
+		3CD1016E2609819200AB4800 /* DesignPattern */ = {
+			isa = PBXGroup;
+			children = (
+				3CD1017D2609826800AB4800 /* Factory */,
+				3CD1017C2609825A00AB4800 /* SingleInstance */,
+				3CD1016F260981CB00AB4800 /* DesignPatternMainTableController.h */,
+				3CD10170260981CB00AB4800 /* DesignPatternMainTableController.m */,
+			);
+			path = DesignPattern;
+			sourceTree = "<group>";
+		};
+		3CD1017C2609825A00AB4800 /* SingleInstance */ = {
+			isa = PBXGroup;
+			children = (
+				3CD101742609824200AB4800 /* SingleInstanceController.h */,
+				3CD101752609824200AB4800 /* SingleInstanceController.m */,
+				3CD101802609831600AB4800 /* SingleTest.h */,
+				3CD101812609831600AB4800 /* SingleTest.m */,
+			);
+			path = SingleInstance;
+			sourceTree = "<group>";
+		};
+		3CD1017D2609826800AB4800 /* Factory */ = {
+			isa = PBXGroup;
+			children = (
+				3CD101782609824F00AB4800 /* FactoryViewController.h */,
+				3CD101792609824F00AB4800 /* FactoryViewController.m */,
+			);
+			path = Factory;
 			sourceTree = "<group>";
 		};
 		3CD937D325E89C9F00CD58BE /* DLIntrospection */ = {
@@ -1703,8 +1747,10 @@
 				3C1C24052452845F00430512 /* YXLiveRoomView1.m in Sources */,
 				3CAD521225F3202D00E1D188 /* KVOTestController.m in Sources */,
 				3CB721692095D010001901C3 /* CoreTextController.m in Sources */,
+				3CD10171260981CB00AB4800 /* DesignPatternMainTableController.m in Sources */,
 				3C0A991E25F5E1A500927D06 /* FZProxy.m in Sources */,
 				3C93CF4F2604DD8100EA3612 /* BSBacktraceLogger.m in Sources */,
+				3CD1017A2609824F00AB4800 /* FactoryViewController.m in Sources */,
 				3CCB058820590F7700AF6760 /* AppDelegate.m in Sources */,
 				3CDDB2B4212D3CCF0047BFAB /* VSGroupSelectorContainer.m in Sources */,
 				3CB0517D217821AE00FE90BB /* ScrollTestCollectionViewCell.m in Sources */,
@@ -1752,6 +1798,7 @@
 				3C71C1C9211D6BEE00132B60 /* BaseTableViewController.m in Sources */,
 				3C1F09DB2153D339005D4692 /* AppearanceViewController.m in Sources */,
 				3CCB059E2059142200AF6760 /* MainTableViewController.m in Sources */,
+				3CD101762609824200AB4800 /* SingleInstanceController.m in Sources */,
 				3C0A996525F7213600927D06 /* WeakTestViewController.m in Sources */,
 				3C71C2362122BD2B00132B60 /* NSMutableDictionary+NNAdd.m in Sources */,
 				3CDDB2B6212D3CCF0047BFAB /* VSGroupSelectorHeader.m in Sources */,
@@ -1788,6 +1835,7 @@
 				3CCB05A62059182600AF6760 /* UIViewController+Push.m in Sources */,
 				3C104F67218F049000C55078 /* YXLiveRoomSpendPanelTabSelector.m in Sources */,
 				3C71C1CC211D6C7000132B60 /* HtmlToPdfViewController.m in Sources */,
+				3CD101822609831600AB4800 /* SingleTest.m in Sources */,
 				3C22109C26049A08006A5F00 /* ThreadOptViewController.m in Sources */,
 				3CDDB2BA212D445B0047BFAB /* GroupSelectorTestViewController.m in Sources */,
 				3C0A992225F5E21C00927D06 /* ClassA.m in Sources */,
