@@ -25,4 +25,7 @@
 //    NSLog(@"%@, %@, %@",test1, test2, test3);
 }
 
+// 1.重写allocWithZone copyWithZone mutableCopyWithZone
+// 2.利用编译器属性，禁止访问new、alloc、init、copy等
+// 3.NSZone一段内存，传nil，不能单独创建
 @end
