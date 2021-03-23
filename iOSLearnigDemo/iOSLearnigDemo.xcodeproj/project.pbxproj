@@ -100,9 +100,7 @@
 		3C9C372B206B2C9300F3ECD9 /* PropertyLearningController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C9C372A206B2C9300F3ECD9 /* PropertyLearningController.m */; };
 		3C9C372E206B2DA200F3ECD9 /* ObjectCMainTableController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C9C372D206B2DA200F3ECD9 /* ObjectCMainTableController.m */; };
 		3C9C3732206B2ECF00F3ECD9 /* CategoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C9C3731206B2ECF00F3ECD9 /* CategoryViewController.m */; };
-		3C9C3735206B2F4E00F3ECD9 /* AutoreleasePoolController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C9C3734206B2F4E00F3ECD9 /* AutoreleasePoolController.m */; };
 		3C9C3738206C7AD600F3ECD9 /* MRCObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C9C3737206C7AD600F3ECD9 /* MRCObject.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		3C9C373B206C7AEF00F3ECD9 /* MemoryManageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C9C373A206C7AEF00F3ECD9 /* MemoryManageViewController.m */; };
 		3C9C373F206C7C8100F3ECD9 /* MRCTestObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C9C373E206C7C8100F3ECD9 /* MRCTestObject.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		3C9C3742206C8E3500F3ECD9 /* MRCSubTestObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C9C3741206C8E3500F3ECD9 /* MRCSubTestObject.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		3C9C3745206CC5D000F3ECD9 /* ARCObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C9C3744206CC5D000F3ECD9 /* ARCObject.m */; };
@@ -121,6 +119,10 @@
 		3CBD776525F1E21600475BBA /* MVPTestPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CBD776425F1E21600475BBA /* MVPTestPresenter.m */; };
 		3CBD777525F1EB1000475BBA /* MVVMTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CBD777425F1EB1000475BBA /* MVVMTestViewController.m */; };
 		3CBD777925F1EB4A00475BBA /* MVVMTestViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CBD777825F1EB4A00475BBA /* MVVMTestViewModel.m */; };
+		3CC04F92260A2842005D0544 /* MemoryMainTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CC04F91260A2842005D0544 /* MemoryMainTableViewController.m */; };
+		3CC04F98260A289A005D0544 /* BaseMainTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CC04F97260A289A005D0544 /* BaseMainTableViewController.m */; };
+		3CC04F9C260A2A45005D0544 /* MemoryBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CC04F9B260A2A45005D0544 /* MemoryBaseViewController.m */; };
+		3CC04FA1260A2B4D005D0544 /* NetCatchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CC04FA0260A2B4D005D0544 /* NetCatchViewController.m */; };
 		3CCB058820590F7700AF6760 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CCB058720590F7700AF6760 /* AppDelegate.m */; };
 		3CCB058E20590F7700AF6760 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3CCB058C20590F7700AF6760 /* Main.storyboard */; };
 		3CCB059020590F7700AF6760 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3CCB058F20590F7700AF6760 /* Assets.xcassets */; };
@@ -391,7 +393,6 @@
 		3C26158925D0E7B400A598BB /* OptMainTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OptMainTableViewController.h; sourceTree = "<group>"; };
 		3C26158A25D0E7B400A598BB /* OptMainTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OptMainTableViewController.m; sourceTree = "<group>"; };
 		3C2615B325D0F0A000A598BB /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks/IOKit.framework; sourceTree = DEVELOPER_DIR; };
-		3C2615B425D0F0E400A598BB /* IOPSKeys.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = IOPSKeys.h; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks/IOKit.framework/Versions/A/Headers/ps/IOPSKeys.h; sourceTree = DEVELOPER_DIR; };
 		3C2615B525D0F0E900A598BB /* IOPSKeys.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = IOPSKeys.h; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks/IOKit.framework/Versions/A/Headers/ps/IOPSKeys.h; sourceTree = DEVELOPER_DIR; };
 		3C2615B825D0F10A00A598BB /* IOPowerSources.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = IOPowerSources.h; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks/IOKit.framework/Versions/A/Headers/ps/IOPowerSources.h; sourceTree = DEVELOPER_DIR; };
 		3C2A3CBD214F999D0071B9CE /* FZVideoSource.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FZVideoSource.h; sourceTree = "<group>"; };
@@ -512,12 +513,8 @@
 		3C9C372D206B2DA200F3ECD9 /* ObjectCMainTableController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ObjectCMainTableController.m; sourceTree = "<group>"; };
 		3C9C3730206B2ECF00F3ECD9 /* CategoryViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CategoryViewController.h; sourceTree = "<group>"; };
 		3C9C3731206B2ECF00F3ECD9 /* CategoryViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CategoryViewController.m; sourceTree = "<group>"; };
-		3C9C3733206B2F4E00F3ECD9 /* AutoreleasePoolController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AutoreleasePoolController.h; sourceTree = "<group>"; };
-		3C9C3734206B2F4E00F3ECD9 /* AutoreleasePoolController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AutoreleasePoolController.m; sourceTree = "<group>"; };
 		3C9C3736206C7AD600F3ECD9 /* MRCObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MRCObject.h; sourceTree = "<group>"; };
 		3C9C3737206C7AD600F3ECD9 /* MRCObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MRCObject.m; sourceTree = "<group>"; };
-		3C9C3739206C7AEF00F3ECD9 /* MemoryManageViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MemoryManageViewController.h; sourceTree = "<group>"; };
-		3C9C373A206C7AEF00F3ECD9 /* MemoryManageViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MemoryManageViewController.m; sourceTree = "<group>"; };
 		3C9C373D206C7C8100F3ECD9 /* MRCTestObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MRCTestObject.h; sourceTree = "<group>"; };
 		3C9C373E206C7C8100F3ECD9 /* MRCTestObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MRCTestObject.m; sourceTree = "<group>"; };
 		3C9C3740206C8E3500F3ECD9 /* MRCSubTestObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MRCSubTestObject.h; sourceTree = "<group>"; };
@@ -553,6 +550,14 @@
 		3CBD777425F1EB1000475BBA /* MVVMTestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MVVMTestViewController.m; sourceTree = "<group>"; };
 		3CBD777725F1EB4A00475BBA /* MVVMTestViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MVVMTestViewModel.h; sourceTree = "<group>"; };
 		3CBD777825F1EB4A00475BBA /* MVVMTestViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MVVMTestViewModel.m; sourceTree = "<group>"; };
+		3CC04F90260A2842005D0544 /* MemoryMainTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MemoryMainTableViewController.h; sourceTree = "<group>"; };
+		3CC04F91260A2842005D0544 /* MemoryMainTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MemoryMainTableViewController.m; sourceTree = "<group>"; };
+		3CC04F96260A289A005D0544 /* BaseMainTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseMainTableViewController.h; sourceTree = "<group>"; };
+		3CC04F97260A289A005D0544 /* BaseMainTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseMainTableViewController.m; sourceTree = "<group>"; };
+		3CC04F9A260A2A45005D0544 /* MemoryBaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MemoryBaseViewController.h; sourceTree = "<group>"; };
+		3CC04F9B260A2A45005D0544 /* MemoryBaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MemoryBaseViewController.m; sourceTree = "<group>"; };
+		3CC04F9F260A2B4D005D0544 /* NetCatchViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NetCatchViewController.h; sourceTree = "<group>"; };
+		3CC04FA0260A2B4D005D0544 /* NetCatchViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NetCatchViewController.m; sourceTree = "<group>"; };
 		3CCB058320590F7700AF6760 /* iOSLearnigDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSLearnigDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3CCB058620590F7700AF6760 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		3CCB058720590F7700AF6760 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -1045,6 +1050,7 @@
 		3C67DF8625EE1100009DF3AF /* Network */ = {
 			isa = PBXGroup;
 			children = (
+				3CC04F9E260A2B39005D0544 /* catch */,
 				3C67DF8725EE1145009DF3AF /* NetWorkMainViewController.h */,
 				3C67DF8825EE1145009DF3AF /* NetWorkMainViewController.m */,
 			);
@@ -1118,6 +1124,8 @@
 				3CCB05A72059189A00AF6760 /* iOSLearningDemo.pch */,
 				3CCB058620590F7700AF6760 /* AppDelegate.h */,
 				3CCB058720590F7700AF6760 /* AppDelegate.m */,
+				3CC04F96260A289A005D0544 /* BaseMainTableViewController.h */,
+				3CC04F97260A289A005D0544 /* BaseMainTableViewController.m */,
 			);
 			path = "supporting files";
 			sourceTree = "<group>";
@@ -1347,18 +1355,13 @@
 		3C9C373C206C7AF400F3ECD9 /* memoryLearning */ = {
 			isa = PBXGroup;
 			children = (
-				3C9C3733206B2F4E00F3ECD9 /* AutoreleasePoolController.h */,
-				3C9C3734206B2F4E00F3ECD9 /* AutoreleasePoolController.m */,
-				3C9C3739206C7AEF00F3ECD9 /* MemoryManageViewController.h */,
-				3C9C373A206C7AEF00F3ECD9 /* MemoryManageViewController.m */,
-				3C9C3736206C7AD600F3ECD9 /* MRCObject.h */,
-				3C9C3737206C7AD600F3ECD9 /* MRCObject.m */,
-				3C9C373D206C7C8100F3ECD9 /* MRCTestObject.h */,
-				3C9C373E206C7C8100F3ECD9 /* MRCTestObject.m */,
-				3C9C3740206C8E3500F3ECD9 /* MRCSubTestObject.h */,
-				3C9C3741206C8E3500F3ECD9 /* MRCSubTestObject.m */,
-				3C9C3743206CC5D000F3ECD9 /* ARCObject.h */,
-				3C9C3744206CC5D000F3ECD9 /* ARCObject.m */,
+				3C0A996225F7212200927D06 /* weak */,
+				3C0A996C25F7253000927D06 /* Autorelease */,
+				3CC04F8E260A273E005D0544 /* MRC */,
+				3CC04F90260A2842005D0544 /* MemoryMainTableViewController.h */,
+				3CC04F91260A2842005D0544 /* MemoryMainTableViewController.m */,
+				3CC04F9A260A2A45005D0544 /* MemoryBaseViewController.h */,
+				3CC04F9B260A2A45005D0544 /* MemoryBaseViewController.m */,
 			);
 			path = memoryLearning;
 			sourceTree = "<group>";
@@ -1444,10 +1447,35 @@
 			path = MVVM;
 			sourceTree = "<group>";
 		};
+		3CC04F8E260A273E005D0544 /* MRC */ = {
+			isa = PBXGroup;
+			children = (
+				3C9C3736206C7AD600F3ECD9 /* MRCObject.h */,
+				3C9C3737206C7AD600F3ECD9 /* MRCObject.m */,
+				3C9C373D206C7C8100F3ECD9 /* MRCTestObject.h */,
+				3C9C373E206C7C8100F3ECD9 /* MRCTestObject.m */,
+				3C9C3740206C8E3500F3ECD9 /* MRCSubTestObject.h */,
+				3C9C3741206C8E3500F3ECD9 /* MRCSubTestObject.m */,
+				3C9C3743206CC5D000F3ECD9 /* ARCObject.h */,
+				3C9C3744206CC5D000F3ECD9 /* ARCObject.m */,
+			);
+			path = MRC;
+			sourceTree = "<group>";
+		};
+		3CC04F9E260A2B39005D0544 /* catch */ = {
+			isa = PBXGroup;
+			children = (
+				3CC04F9F260A2B4D005D0544 /* NetCatchViewController.h */,
+				3CC04FA0260A2B4D005D0544 /* NetCatchViewController.m */,
+			);
+			path = catch;
+			sourceTree = "<group>";
+		};
 		3CCB057A20590F7700AF6760 = {
 			isa = PBXGroup;
 			children = (
 				3CCB058520590F7700AF6760 /* iOSLearnigDemo */,
+				3C71C1CE211D6CA100132B60 /* General */,
 				3C71C1D1211D6CF500132B60 /* supporting files */,
 				3CCB058420590F7700AF6760 /* Products */,
 				D745BAB49044DF411F009ADA /* Pods */,
@@ -1471,7 +1499,6 @@
 				3C0A992925F5F86500927D06 /* iOS */,
 				3CBD774F25F1DEB800475BBA /* Acrchitecture */,
 				3C67DF8625EE1100009DF3AF /* Network */,
-				3C71C1CE211D6CA100132B60 /* General */,
 				3C968A322061FE0D002BAC80 /* algo */,
 			);
 			path = iOSLearnigDemo;
@@ -1491,12 +1518,9 @@
 		3CCB05AB205A5B5900AF6760 /* Objective-C */ = {
 			isa = PBXGroup;
 			children = (
-				3C0A996C25F7253000927D06 /* Autorelease */,
-				3C0A996225F7212200927D06 /* weak */,
 				3C0A991625F5E14E00927D06 /* NSProxy */,
 				3CAD521925F36A8300E1D188 /* KVC */,
 				3CAD520F25F3200C00E1D188 /* KVO */,
-				3C2615B425D0F0E400A598BB /* IOPSKeys.h */,
 				3C2614D525D004FD00A598BB /* runloop */,
 				3C9A85C425CD2F4A00F91B7F /* timer */,
 				3C8206CB20747596009BE5A6 /* runtime */,
@@ -1737,6 +1761,7 @@
 				3CCB05AA2059198100AF6760 /* GCDViewController.m in Sources */,
 				3C7D11022306B3A50030FC26 /* YXLiveRoomView.m in Sources */,
 				3C32FC8224D520A0000BA932 /* WBLEditableImageStickerWidget.m in Sources */,
+				3CC04F92260A2842005D0544 /* MemoryMainTableViewController.m in Sources */,
 				3C1C240B2452885600430512 /* YXLiveRoomView2.m in Sources */,
 				3C0A996A25F721BA00927D06 /* WeakObject.m in Sources */,
 				3C71C2442123CA0C00132B60 /* NNLunarCalenderManager.m in Sources */,
@@ -1760,7 +1785,6 @@
 				3CAD522125F36D4400E1D188 /* KVCObject.m in Sources */,
 				3C9C3738206C7AD600F3ECD9 /* MRCObject.m in Sources */,
 				3C8206CE207475A8009BE5A6 /* RuntimeTestViewController.m in Sources */,
-				3C9C3735206B2F4E00F3ECD9 /* AutoreleasePoolController.m in Sources */,
 				3CBBC08025FB0CC1002B118B /* StringViewController.m in Sources */,
 				3C71C1D5211D6DA400132B60 /* BNHtmlPdfKit.m in Sources */,
 				3C0A995525F66EEB00927D06 /* TestClass.m in Sources */,
@@ -1776,7 +1800,6 @@
 				3CD937D625E89C9F00CD58BE /* NSObject+DLIntrospection.m in Sources */,
 				3C1C24082452877E00430512 /* YXLiveRoomMovableView.m in Sources */,
 				3C71C1E0212164F400132B60 /* NetworkRequest.m in Sources */,
-				3C9C373B206C7AEF00F3ECD9 /* MemoryManageViewController.m in Sources */,
 				3C71C23C2122E57B00132B60 /* FSCalenderController.m in Sources */,
 				3C3B7C2621885A220075A804 /* ImageViewTestViewController.m in Sources */,
 				3C0A996025F7191800927D06 /* BlockObj.m in Sources */,
@@ -1799,6 +1822,7 @@
 				3C1F09DB2153D339005D4692 /* AppearanceViewController.m in Sources */,
 				3CCB059E2059142200AF6760 /* MainTableViewController.m in Sources */,
 				3CD101762609824200AB4800 /* SingleInstanceController.m in Sources */,
+				3CC04F98260A289A005D0544 /* BaseMainTableViewController.m in Sources */,
 				3C0A996525F7213600927D06 /* WeakTestViewController.m in Sources */,
 				3C71C2362122BD2B00132B60 /* NSMutableDictionary+NNAdd.m in Sources */,
 				3CDDB2B6212D3CCF0047BFAB /* VSGroupSelectorHeader.m in Sources */,
@@ -1825,6 +1849,7 @@
 				3C968A352061FE53002BAC80 /* AlgoTableViewController.m in Sources */,
 				3C71C1E62121802E00132B60 /* APIRequest.m in Sources */,
 				3C32FC8824D5217A000BA932 /* WBLPerformerStickerWidget.m in Sources */,
+				3CC04F9C260A2A45005D0544 /* MemoryBaseViewController.m in Sources */,
 				3C71C1E321217E2D00132B60 /* NetworkRequsetTestController.m in Sources */,
 				3C9C373F206C7C8100F3ECD9 /* MRCTestObject.m in Sources */,
 				3CAD521725F3204600E1D188 /* MJPerson.m in Sources */,
@@ -1833,6 +1858,7 @@
 				3C54F0FE21B5169400B4D696 /* CALayerTestViewController.m in Sources */,
 				3CBD777525F1EB1000475BBA /* MVVMTestViewController.m in Sources */,
 				3CCB05A62059182600AF6760 /* UIViewController+Push.m in Sources */,
+				3CC04FA1260A2B4D005D0544 /* NetCatchViewController.m in Sources */,
 				3C104F67218F049000C55078 /* YXLiveRoomSpendPanelTabSelector.m in Sources */,
 				3C71C1CC211D6C7000132B60 /* HtmlToPdfViewController.m in Sources */,
 				3CD101822609831600AB4800 /* SingleTest.m in Sources */,

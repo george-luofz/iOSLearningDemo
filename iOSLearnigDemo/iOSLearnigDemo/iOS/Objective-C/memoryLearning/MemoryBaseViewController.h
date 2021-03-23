@@ -1,8 +1,8 @@
 //
-//  NetWorkMainViewController.h
+//  MemoryBaseViewController.h
 //  iOSLearnigDemo
 //
-//  Created by 罗富中 on 2021/3/2.
+//  Created by george_luo on 2021/3/23.
 //  Copyright © 2021 George_luofz. All rights reserved.
 //
 
@@ -10,7 +10,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface NetWorkMainViewController : BaseMainTableViewController
+@interface MemoryBaseViewController : UIViewController
 
 @end
 

@@ -19,9 +19,11 @@
     self.view.backgroundColor = [UIColor whiteColor];
     self.title = @"gcd学习";
     
-    [self test_barrier_async];
+//    [self test_barrier_async];
+//
+//    [self _test_sync];
     
-    [self _test_sync];
+    [self testSelector];
 }
 
 #pragma mark -- 多线程
@@ -116,4 +118,20 @@
         
     });
 }
+
+#pragma mark - perform selector
+/// 面试题测试：
+- (void)testSelector {
+    dispatch_async(dispatch_queue_create("", 0), ^{
+        NSLog(@"1");
+        
+        [self performSelector:@selector(test2) withObject:nil afterDelay:1.];
+        NSLog(@"3");
+    });
+}
+
+- (void)test2 {
+    NSLog(@"2");
+}
+
 @end

@@ -21,5 +21,8 @@
 #import "UIFont+NNAdd.h"
 #import "NSArray+NNAdd.h"
 #import "NSDictionary+NNAdd.h"
+
+#import "BaseMainTableViewController.h"
+
 #endif
 #endif /* iOSLearningDemo_h */

@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ObjectCMainTableController : UITableViewController
+@interface ObjectCMainTableController : BaseMainTableViewController
 
 @end
