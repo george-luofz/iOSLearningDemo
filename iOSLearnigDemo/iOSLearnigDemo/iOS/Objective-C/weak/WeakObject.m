@@ -19,6 +19,7 @@
     NSObject *obj = [NSObject new];
 //    __weak NSObject *weakObj = obj;
     id __weak obj1 = obj;
+    NSLog(@"%s",__func__);
 }
 
 @end

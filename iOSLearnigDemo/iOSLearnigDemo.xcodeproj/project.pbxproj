@@ -1272,6 +1272,7 @@
 		3C968A322061FE0D002BAC80 /* algo */ = {
 			isa = PBXGroup;
 			children = (
+				3C0BEEC62064A37A0022055C /* dataStructure */,
 				3C968A332061FE53002BAC80 /* AlgoTableViewController.h */,
 				3C968A342061FE53002BAC80 /* AlgoTableViewController.m */,
 				3C0BEEC320649D950022055C /* LinkListViewController.h */,
@@ -1458,7 +1459,6 @@
 				3CBD774F25F1DEB800475BBA /* Acrchitecture */,
 				3C67DF8625EE1100009DF3AF /* Network */,
 				3C71C1CE211D6CA100132B60 /* General */,
-				3C0BEEC62064A37A0022055C /* dataStructure */,
 				3C968A322061FE0D002BAC80 /* algo */,
 			);
 			path = iOSLearnigDemo;

@@ -18,9 +18,30 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
+    NSObject *obj = [NSObject new];
+//    __weak NSObject *weakObj = obj;
+    id __weak weakObj = obj;
+    __weak typeof(self) weakSelf = self;
+    NSLog(@"%s",__func__);
 }
 
-// __weak 原理
+/* __weak 原理
+ objc_initWeak //非线程安全
+    store_weak();
+        
+*/
 
+/* SideTable结构体
+ struct SideTable {
+     spinlock_t slock;
+     RefcountMap refcnts;
+     weak_table_t weak_table;
+ */
+
+/*
+ T& operator[] (const void *p) {
+     return array[indexForPointer(p)].value;
+ }
+ */
 
 @end
