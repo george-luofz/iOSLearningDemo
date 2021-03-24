@@ -21,6 +21,7 @@
 #import "UIFont+NNAdd.h"
 #import "NSArray+NNAdd.h"
 #import "NSDictionary+NNAdd.h"
+#import "NSObject+DLIntrospection.h"
 
 #import "BaseMainTableViewController.h"
 

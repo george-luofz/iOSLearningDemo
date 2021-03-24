@@ -25,8 +25,7 @@
         @{@"KVC": @"KVCTestViewController"},
         @{@"NXProxy": @"NXProxyTestViewController"},
         @{@"block" : @"BlockTestViewController"},
-        @{@"weak" : @"WeakTestViewController"},
-        @{@"autorelease" : @"AutoReleaseTestViewController"},
+        @{@"NSArray" : @"NSArrayTestViewController"},
         ];
 }
 

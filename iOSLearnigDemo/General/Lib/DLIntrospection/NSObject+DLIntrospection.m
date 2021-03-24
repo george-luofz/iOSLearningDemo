@@ -99,7 +99,7 @@ static void getSuper(Class class, NSMutableString *result) {
     for (unsigned int i = 0; i < outCount; i++) {
         NSString *type = [NSString decodeType:ivar_getTypeEncoding(ivars[i])];
         NSString *name = [NSString stringWithCString:ivar_getName(ivars[i]) encoding:NSUTF8StringEncoding];
-        NSString *ivarDescription = [NSString stringWithFormat:@"%@ %@", type, name];
+        NSString *ivarDescription = [NSString stringWithFormat:@"%@ %@ | ", type, name];
         [result addObject:ivarDescription];
     }
     free(ivars);
