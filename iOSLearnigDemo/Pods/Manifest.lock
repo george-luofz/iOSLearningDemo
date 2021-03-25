@@ -57,9 +57,6 @@ PODS:
   - SDWebImage/WebP (4.4.2):
     - libwebp (~> 0.5)
     - SDWebImage/Core
-  - SocketRocket (0.5.1)
-  - WeexSDK (0.12.0):
-    - SocketRocket
   - YYModel (1.0.4)
 
 DEPENDENCIES:
@@ -74,26 +71,22 @@ DEPENDENCIES:
   - SDWebImage (= 4.4.2)
   - SDWebImage/GIF
   - SDWebImage/WebP
-  - WeexSDK (= 0.12.0)
   - YYModel (= 1.0.4)
 
 SPEC REPOS:
-  https://github.com/CocoaPods/Specs.git:
+  https://github.com/cocoapods/specs.git:
     - AFNetworking
     - CYLTabBarController
     - FDFullscreenPopGesture
     - FLAnimatedImage
     - FSCalendar
+    - JSPatch
     - JTCalendar
     - KVOController
     - libwebp
     - Masonry
     - SDWebImage
     - YYModel
-  trunk:
-    - JSPatch
-    - SocketRocket
-    - WeexSDK
 
 SPEC CHECKSUMS:
   AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
@@ -107,10 +100,8 @@ SPEC CHECKSUMS:
   libwebp: 38b601da310fe7c329c638d0c0d10aed006a54fe
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   SDWebImage: 624d6e296c69b244bcede364c72ae0430ac14681
-  SocketRocket: d57c7159b83c3c6655745cd15302aa24b6bae531
-  WeexSDK: 8573b6e15195d4efc7c786ddc3be6f50d9ccb01c
   YYModel: 2a7fdd96aaa4b86a824e26d0c517de8928c04b30
 
-PODFILE CHECKSUM: f5679337ef79fe7f2a73994ffadc9824053f19f7
+PODFILE CHECKSUM: df22f2802b3eefbd70f79e6d49b3a7b22474ab5a
 
-COCOAPODS: 1.8.3
+COCOAPODS: 1.5.3
