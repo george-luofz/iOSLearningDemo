@@ -22,4 +22,10 @@
     NSLog(@"%s",__func__);
 }
 
+// objc源码说会回调_setWeaklyReferenced方法，测试无效
+//- (void)setWeaklyReferenced {
+//    NSLog(@"%s",__func__);
+//    NSLog(@"%@",[NSThread callStackSymbols]);
+//}
+
 @end
