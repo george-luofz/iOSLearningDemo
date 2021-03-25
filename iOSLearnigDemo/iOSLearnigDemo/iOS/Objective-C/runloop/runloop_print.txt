@@ -1,0 +1,130 @@
+2021-03-25 10:29:47.914227+0800 iOSLearnigDemo[18218:1263090] runloop is:
+ <CFRunLoop 0x283124300 [0x1e08f9b20]>{wakeup port = 0x1707, stopped = false, ignoreWakeUps = false,
+current mode = kCFRunLoopDefaultMode,
+common modes = <CFBasicHash 0x280326130 [0x1e08f9b20]>{type = mutable set, count = 2,
+entries =>
+    0 : <CFString 0x1e0d7e480 [0x1e08f9b20]>{contents = "UITrackingRunLoopMode"}
+    2 : <CFString 0x1e0ad7d90 [0x1e08f9b20]>{contents = "kCFRunLoopDefaultMode"}
+}
+,
+common mode items = <CFBasicHash 0x280375650 [0x1e08f9b20]>{type = mutable set, count = 15,
+entries =>
+    0 : <CFRunLoopSource 0x2838200c0 [0x1e08f9b20]>{signalled = No, valid = Yes, order = -1, context = <CFRunLoopSource context>{version = 0, info = 0x0, callout = <redacted> (0x1a618d3bc)}}
+    3 : <CFRunLoopSource 0x283828c00 [0x1e08f9b20]>{signalled = No, valid = Yes, order = 0, context = <CFRunLoopSource MIG Server> {port = 25371, subsystem = 0x1e0fa8bb8, context = 0x28292ee20}}
+    4 : <CFRunLoopObserver 0x283c24d20 [0x1e08f9b20]>{valid = Yes, activities = 0xa0, repeats = Yes, order = 2147483647, callout = <redacted> (0x19186e320), context = (
+    "<_UIWeakReference: 0x280f3c0f0>"
+)}
+    5 : <CFRunLoopObserver 0x283c24c80 [0x1e08f9b20]>{valid = Yes, activities = 0x1, repeats = Yes, order = -2147483647, callout = <redacted> (0x19186e320), context = (
+    "<_UIWeakReference: 0x280f3c0f0>"
+)}
+    6 : <CFRunLoopObserver 0x283c24be0 [0x1e08f9b20]>{valid = Yes, activities = 0xa0, repeats = Yes, order = 2001000, callout = <redacted> (0x191d6e51c), context = <CFRunLoopObserver context 0x105907c70>}
+    12 : <CFRunLoopObserver 0x283c24820 [0x1e08f9b20]>{valid = Yes, activities = 0xa0, repeats = Yes, order = 1999000, callout = <redacted> (0x191d6e4a8), context = <CFRunLoopObserver context 0x105907c70>}
+    13 : <CFRunLoopSource 0x283820180 [0x1e08f9b20]>{signalled = No, valid = Yes, order = -1, context = <CFRunLoopSource context>{version = 1, info = 0x5003, callout = <redacted> (0x1a618d3c4)}}
+    14 : <CFRunLoopSource 0x2838203c0 [0x1e08f9b20]>{signalled = No, valid = Yes, order = -1, context = <CFRunLoopSource context>{version = 0, info = 0x283620820, callout = <redacted> (0x191ddaad8)}}
+    15 : <CFRunLoopSource 0x283820540 [0x1e08f9b20]>{signalled = No, valid = Yes, order = -2, context = <CFRunLoopSource context>{version = 0, info = 0x280375ad0, callout = <redacted> (0x191ddab4c)}}
+    17 : <CFRunLoopSource 0x283820300 [0x1e08f9b20]>{signalled = No, valid = Yes, order = 0, context = <CFRunLoopSource context>{version = 0, info = 0x28292ef40, callout = <redacted> (0x19e82f374)}}
+    18 : <CFRunLoopObserver 0x283c252c0 [0x1e08f9b20]>{valid = Yes, activities = 0x20, repeats = Yes, order = 2147483647, callout = <redacted> (0x191d4120c), context = <CFRunLoopObserver context 0x0>}
+    19 : <CFRunLoopObserver 0x283c25360 [0x1e08f9b20]>{valid = Yes, activities = 0x46, repeats = Yes, order = -2147483648, callout = <redacted> (0x191d4120c), context = <CFRunLoopObserver context 0x0>}
+    20 : <CFRunLoopTimer 0x28382c240 [0x1e08f9b20]>{valid = Yes, firing = No, interval = 3.1536e+09, tolerance = 0, next fire date = 638332188 (0.483667016 @ 6119208720972), callout = <redacted> (0x1926d6770 / 0x1926d6770) (/System/Library/Frameworks/QuartzCore.framework/QuartzCore), context = <CFRunLoopTimer context 0x0>}
+    21 : <CFRunLoopObserver 0x283c20be0 [0x1e08f9b20]>{valid = Yes, activities = 0xa0, repeats = Yes, order = 2000000, callout = <redacted> (0x1926d6578), context = <CFRunLoopObserver context 0x0>}
+    22 : <CFRunLoopObserver 0x283c24280 [0x1e08f9b20]>{valid = Yes, activities = 0x20, repeats = Yes, order = 0, callout = <redacted> (0x1918bc014), context = <CFRunLoopObserver context 0x282626990>}
+}
+,
+modes = <CFBasicHash 0x280325b60 [0x1e08f9b20]>{type = mutable set, count = 4,
+entries =>
+    2 : <CFRunLoopMode 0x283620340 [0x1e08f9b20]>{name = UITrackingRunLoopMode, port set = 0x2e03, queue = 0x282321e80, source = 0x282321f80 (not fired), timer port = 0x3003,
+    sources0 = <CFBasicHash 0x2803756b0 [0x1e08f9b20]>{type = mutable set, count = 4,
+entries =>
+    0 : <CFRunLoopSource 0x2838200c0 [0x1e08f9b20]>{signalled = No, valid = Yes, order = -1, context = <CFRunLoopSource context>{version = 0, info = 0x0, callout = <redacted> (0x1a618d3bc)}}
+    1 : <CFRunLoopSource 0x2838203c0 [0x1e08f9b20]>{signalled = No, valid = Yes, order = -1, context = <CFRunLoopSource context>{version = 0, info = 0x283620820, callout = <redacted> (0x191ddaad8)}}
+    2 : <CFRunLoopSource 0x283820300 [0x1e08f9b20]>{signalled = No, valid = Yes, order = 0, context = <CFRunLoopSource context>{version = 0, info = 0x28292ef40, callout = <redacted> (0x19e82f374)}}
+    3 : <CFRunLoopSource 0x283820540 [0x1e08f9b20]>{signalled = No, valid = Yes, order = -2, context = <CFRunLoopSource context>{version = 0, info = 0x280375ad0, callout = <redacted> (0x191ddab4c)}}
+}
+,
+    sources1 = <CFBasicHash 0x2803756e0 [0x1e08f9b20]>{type = mutable set, count = 2,
+entries =>
+    0 : <CFRunLoopSource 0x283828c00 [0x1e08f9b20]>{signalled = No, valid = Yes, order = 0, context = <CFRunLoopSource MIG Server> {port = 25371, subsystem = 0x1e0fa8bb8, context = 0x28292ee20}}
+    2 : <CFRunLoopSource 0x283820180 [0x1e08f9b20]>{signalled = No, valid = Yes, order = -1, context = <CFRunLoopSource context>{version = 1, info = 0x5003, callout = <redacted> (0x1a618d3c4)}}
+}
+,
+    observers = (
+    "<CFRunLoopObserver 0x283c25360 [0x1e08f9b20]>{valid = Yes, activities = 0x46, repeats = Yes, order = -2147483648, callout = <redacted> (0x191d4120c), context = <CFRunLoopObserver context 0x0>}",
+    "<CFRunLoopObserver 0x283c24c80 [0x1e08f9b20]>{valid = Yes, activities = 0x1, repeats = Yes, order = -2147483647, callout = <redacted> (0x19186e320), context = (\n    \"<_UIWeakReference: 0x280f3c0f0>\"\n)}",
+    "<CFRunLoopObserver 0x283c24280 [0x1e08f9b20]>{valid = Yes, activities = 0x20, repeats = Yes, order = 0, callout = <redacted> (0x1918bc014), context = <CFRunLoopObserver context 0x282626990>}",
+    "<CFRunLoopObserver 0x283c24820 [0x1e08f9b20]>{valid = Yes, activities = 0xa0, repeats = Yes, order = 1999000, callout = <redacted> (0x191d6e4a8), context = <CFRunLoopObserver context 0x105907c70>}",
+    "<CFRunLoopObserver 0x283c20be0 [0x1e08f9b20]>{valid = Yes, activities = 0xa0, repeats = Yes, order = 2000000, callout = <redacted> (0x1926d6578), context = <CFRunLoopObserver context 0x0>}",
+    "<CFRunLoopObserver 0x283c24be0 [0x1e08f9b20]>{valid = Yes, activities = 0xa0, repeats = Yes, order = 2001000, callout = <redacted> (0x191d6e51c), context = <CFRunLoopObserver context 0x105907c70>}",
+    "<CFRunLoopObserver 0x283c24d20 [0x1e08f9b20]>{valid = Yes, activities = 0xa0, repeats = Yes, order = 2147483647, callout = <redacted> (0x19186e320), context = (\n    \"<_UIWeakReference: 0x280f3c0f0>\"\n)}",
+    "<CFRunLoopObserver 0x283c252c0 [0x1e08f9b20]>{valid = Yes, activities = 0x20, repeats = Yes, order = 2147483647, callout = <redacted> (0x191d4120c), context = <CFRunLoopObserver context 0x0>}"
+),
+    timers = <CFArray 0x28293c480 [0x1e08f9b20]>{type = mutable-small, count = 1, values = (
+    0 : <CFRunLoopTimer 0x28382c240 [0x1e08f9b20]>{valid = Yes, firing = No, interval = 3.1536e+09, tolerance = 0, next fire date = 638332188 (0.478219986 @ 6119208720972), callout = <redacted> (0x1926d6770 / 0x1926d6770) (/System/Library/Frameworks/QuartzCore.framework/QuartzCore), context = <CFRunLoopTimer context 0x0>}
+)},
+    currently 638332188 (6119197129056) / soft deadline in: 0.482996417 sec (@ 6119208720972) / hard deadline in: 0.482995625 sec (@ 6119208720972)
+},
+
+    3 : <CFRunLoopMode 0x283620750 [0x1e08f9b20]>{name = GSEventReceiveRunLoopMode, port set = 0x5403, queue = 0x282322000, source = 0x282322100 (not fired), timer port = 0x5303,
+    sources0 = <CFBasicHash 0x280375770 [0x1e08f9b20]>{type = mutable set, count = 1,
+entries =>
+    0 : <CFRunLoopSource 0x2838200c0 [0x1e08f9b20]>{signalled = No, valid = Yes, order = -1, context = <CFRunLoopSource context>{version = 0, info = 0x0, callout = <redacted> (0x1a618d3bc)}}
+}
+,
+    sources1 = <CFBasicHash 0x2803757a0 [0x1e08f9b20]>{type = mutable set, count = 1,
+entries =>
+    2 : <CFRunLoopSource 0x283820240 [0x1e08f9b20]>{signalled = No, valid = Yes, order = -1, context = <CFRunLoopSource context>{version = 1, info = 0x5003, callout = <redacted> (0x1a618d3c4)}}
+}
+,
+    observers = (null),
+    timers = (null),
+    currently 638332188 (6119197245603) / soft deadline in: 7.68614081e+11 sec (@ -1) / hard deadline in: 7.68614081e+11 sec (@ -1)
+},
+
+    4 : <CFRunLoopMode 0x2836241a0 [0x1e08f9b20]>{name = kCFRunLoopDefaultMode, port set = 0x1803, queue = 0x282325380, source = 0x282325480 (not fired), timer port = 0x1903,
+    sources0 = <CFBasicHash 0x280375710 [0x1e08f9b20]>{type = mutable set, count = 4,
+entries =>
+    0 : <CFRunLoopSource 0x2838200c0 [0x1e08f9b20]>{signalled = No, valid = Yes, order = -1, context = <CFRunLoopSource context>{version = 0, info = 0x0, callout = <redacted> (0x1a618d3bc)}}
+    1 : <CFRunLoopSource 0x2838203c0 [0x1e08f9b20]>{signalled = No, valid = Yes, order = -1, context = <CFRunLoopSource context>{version = 0, info = 0x283620820, callout = <redacted> (0x191ddaad8)}}
+    2 : <CFRunLoopSource 0x283820300 [0x1e08f9b20]>{signalled = No, valid = Yes, order = 0, context = <CFRunLoopSource context>{version = 0, info = 0x28292ef40, callout = <redacted> (0x19e82f374)}}
+    3 : <CFRunLoopSource 0x283820540 [0x1e08f9b20]>{signalled = No, valid = Yes, order = -2, context = <CFRunLoopSource context>{version = 0, info = 0x280375ad0, callout = <redacted> (0x191ddab4c)}}
+}
+,
+    sources1 = <CFBasicHash 0x280375740 [0x1e08f9b20]>{type = mutable set, count = 2,
+entries =>
+    0 : <CFRunLoopSource 0x283828c00 [0x1e08f9b20]>{signalled = No, valid = Yes, order = 0, context = <CFRunLoopSource MIG Server> {port = 25371, subsystem = 0x1e0fa8bb8, context = 0x28292ee20}}
+    2 : <CFRunLoopSource 0x283820180 [0x1e08f9b20]>{signalled = No, valid = Yes, order = -1, context = <CFRunLoopSource context>{version = 1, info = 0x5003, callout = <redacted> (0x1a618d3c4)}}
+}
+,
+    observers = (
+    "<CFRunLoopObserver 0x283c25360 [0x1e08f9b20]>{valid = Yes, activities = 0x46, repeats = Yes, order = -2147483648, callout = <redacted> (0x191d4120c), context = <CFRunLoopObserver context 0x0>}",
+    "<CFRunLoopObserver 0x283c24c80 [0x1e08f9b20]>{valid = Yes, activities = 0x1, repeats = Yes, order = -2147483647, callout = <redacted> (0x19186e320), context = (\n    \"<_UIWeakReference: 0x280f3c0f0>\"\n)}",
+    "<CFRunLoopObserver 0x283c24280 [0x1e08f9b20]>{valid = Yes, activities = 0x20, repeats = Yes, order = 0, callout = <redacted> (0x1918bc014), context = <CFRunLoopObserver context 0x282626990>}",
+    "<CFRunLoopObserver 0x283c24820 [0x1e08f9b20]>{valid = Yes, activities = 0xa0, repeats = Yes, order = 1999000, callout = <redacted> (0x191d6e4a8), context = <CFRunLoopObserver context 0x105907c70>}",
+    "<CFRunLoopObserver 0x283c20be0 [0x1e08f9b20]>{valid = Yes, activities = 0xa0, repeats = Yes, order = 2000000, callout = <redacted> (0x1926d6578), context = <CFRunLoopObserver context 0x0>}",
+    "<CFRunLoopObserver 0x283c24be0 [0x1e08f9b20]>{valid = Yes, activities = 0xa0, repeats = Yes, order = 2001000, callout = <redacted> (0x191d6e51c), context = <CFRunLoopObserver context 0x105907c70>}",
+    "<CFRunLoopObserver 0x283c24d20 [0x1e08f9b20]>{valid = Yes, activities = 0xa0, repeats = Yes, order = 2147483647, callout = <redacted> (0x19186e320), context = (\n    \"<_UIWeakReference: 0x280f3c0f0>\"\n)}",
+    "<CFRunLoopObserver 0x283c252c0 [0x1e08f9b20]>{valid = Yes, activities = 0x20, repeats = Yes, order = 2147483647, callout = <redacted> (0x191d4120c), context = <CFRunLoopObserver context 0x0>}"
+),
+    timers = <CFArray 0x28292fb40 [0x1e08f9b20]>{type = mutable-small, count = 2, values = (
+    0 : <CFRunLoopTimer 0x28382c240 [0x1e08f9b20]>{valid = Yes, firing = No, interval = 3.1536e+09, tolerance = 0, next fire date = 638332188 (0.473538995 @ 6119208720972), callout = <redacted> (0x1926d6770 / 0x1926d6770) (/System/Library/Frameworks/QuartzCore.framework/QuartzCore), context = <CFRunLoopTimer context 0x0>}
+    1 : <CFRunLoopTimer 0x283828b40 [0x1e08f9b20]>{valid = Yes, firing = No, interval = 60, tolerance = 0, next fire date = 638332238 (50.2305111 @ 6120402950013), callout = (NSTimer) [_NSTimerBlockTarget fire:] (0x1907cc3f0 / 0x1906e489c) (/System/Library/Frameworks/Foundation.framework/Foundation), context = <CFRunLoopTimer context 0x280d6d1c0>}
+)},
+    currently 638332188 (6119197249382) / soft deadline in: 0.477982875 sec (@ 6119208720972) / hard deadline in: 0.47798275 sec (@ 6119208720972)
+},
+
+    5 : <CFRunLoopMode 0x283621e10 [0x1e08f9b20]>{name = kCFRunLoopCommonModes, port set = 0xa103, queue = 0x28233ee80, source = 0x28233f980 (not fired), timer port = 0xa003,
+    sources0 = (null),
+    sources1 = (null),
+    observers = (null),
+    timers = (null),
+    currently 638332188 (6119197421360) / soft deadline in: 7.68614081e+11 sec (@ -1) / hard deadline in: 7.68614081e+11 sec (@ -1)
+},
+
+}
+}
+2021-03-25 10:29:47.916759+0800 iOSLearnigDemo[18218:1263090] all modes:
+ (
+    UITrackingRunLoopMode,
+    GSEventReceiveRunLoopMode,
+    kCFRunLoopDefaultMode,
+    kCFRunLoopCommonModes
+)

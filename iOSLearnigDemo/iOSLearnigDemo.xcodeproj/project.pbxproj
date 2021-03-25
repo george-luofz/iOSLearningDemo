@@ -138,6 +138,7 @@
 		3CD101822609831600AB4800 /* SingleTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CD101812609831600AB4800 /* SingleTest.m */; };
 		3CD101AF260AD68C00AB4800 /* NSArrayTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CD101AE260AD68C00AB4800 /* NSArrayTestViewController.m */; };
 		3CD101C4260AF0DC00AB4800 /* FZMutableArray.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CD101C3260AF0DC00AB4800 /* FZMutableArray.m */; };
+		3CD101C8260C2D4F00AB4800 /* runloop_print.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3CD101C7260C2D4E00AB4800 /* runloop_print.txt */; };
 		3CD3ECE325F2548700AB584D /* MVVMTestModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CD3ECE225F2548700AB584D /* MVVMTestModel.m */; };
 		3CD3ECE725F254A400AB584D /* MVVMTestView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CD3ECE625F254A400AB584D /* MVVMTestView.m */; };
 		3CD937D625E89C9F00CD58BE /* NSObject+DLIntrospection.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CD937D525E89C9F00CD58BE /* NSObject+DLIntrospection.m */; };
@@ -589,6 +590,7 @@
 		3CD101AE260AD68C00AB4800 /* NSArrayTestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSArrayTestViewController.m; sourceTree = "<group>"; };
 		3CD101C2260AF0DC00AB4800 /* FZMutableArray.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FZMutableArray.h; sourceTree = "<group>"; };
 		3CD101C3260AF0DC00AB4800 /* FZMutableArray.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FZMutableArray.m; sourceTree = "<group>"; };
+		3CD101C7260C2D4E00AB4800 /* runloop_print.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = runloop_print.txt; sourceTree = "<group>"; };
 		3CD3ECE125F2548700AB584D /* MVVMTestModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MVVMTestModel.h; sourceTree = "<group>"; };
 		3CD3ECE225F2548700AB584D /* MVVMTestModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MVVMTestModel.m; sourceTree = "<group>"; };
 		3CD3ECE525F254A400AB584D /* MVVMTestView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MVVMTestView.h; sourceTree = "<group>"; };
@@ -780,6 +782,7 @@
 				3C5F242D2606FB3B001E6062 /* TestView.m */,
 				3C5F243026072465001E6062 /* CATransaction+runloop.h */,
 				3C5F243126072465001E6062 /* CATransaction+runloop.m */,
+				3CD101C7260C2D4E00AB4800 /* runloop_print.txt */,
 			);
 			path = runloop;
 			sourceTree = "<group>";
@@ -1671,6 +1674,7 @@
 				3CCB057F20590F7700AF6760 /* Sources */,
 				3CCB058020590F7700AF6760 /* Frameworks */,
 				3CCB058120590F7700AF6760 /* Resources */,
+				4D544EB509F57529030616AA /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -1728,6 +1732,7 @@
 				3C71C1D8211D6FA600132B60 /* 1.html in Resources */,
 				3C54F0FF21B5169400B4D696 /* CALayerTestViewController.xib in Resources */,
 				3CCB058E20590F7700AF6760 /* Main.storyboard in Resources */,
+				3CD101C8260C2D4F00AB4800 /* runloop_print.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1750,6 +1755,28 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4D544EB509F57529030616AA /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-iOSLearnigDemo/Pods-iOSLearnigDemo-resources.sh",
+				"${PODS_ROOT}/JSPatch/JSPatch/JSPatch.js",
+				"${PODS_ROOT}/WeexSDK/WeexSDK.framework/main.js",
+				"${PODS_ROOT}/WeexSDK/WeexSDK.framework/wx_load_error@3x.png",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/JSPatch.js",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/main.js",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/wx_load_error@3x.png",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-iOSLearnigDemo/Pods-iOSLearnigDemo-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */

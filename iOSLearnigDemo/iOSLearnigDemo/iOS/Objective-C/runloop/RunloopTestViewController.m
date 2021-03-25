@@ -20,7 +20,7 @@
     // Do any additional setup after loading the view.
 //    [self testBlock];
 //
-    [self addRunloopObserver];
+//    [self addRunloopObserver];
 //
 //    [self testPerformSelect];
 //    [self testGCDAfter];
@@ -32,7 +32,7 @@
     
     [self testViewLayout];
     
-//    [self testRunloop];
+    [self testRunloop];
 }
 
 #pragma mark - block
