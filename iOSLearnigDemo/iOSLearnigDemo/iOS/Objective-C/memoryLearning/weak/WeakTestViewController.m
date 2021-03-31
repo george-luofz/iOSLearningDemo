@@ -7,6 +7,7 @@
 //
 
 #import "WeakTestViewController.h"
+#import "WeakObject.h"
 
 @interface WeakTestViewController ()
 
@@ -17,12 +18,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    
-    NSObject *obj = [NSObject new];
-//    __weak NSObject *weakObj = obj;
-    id __weak weakObj = obj;
-    __weak typeof(self) weakSelf = self;
-    NSLog(@"%s",__func__);
+    [self test_callback];
 }
 
 /* __weak 原理
@@ -43,5 +39,19 @@
      return array[indexForPointer(p)].value;
  }
  */
+
+- (void)test_fun1 {
+    NSObject *obj = [NSObject new];
+//    __weak NSObject *weakObj = obj;
+    id __weak weakObj = obj;
+    __weak typeof(self) weakSelf = self;
+    NSLog(@"%s",__func__);
+}
+
+- (void)test_callback {
+    WeakObject *obj = [WeakObject new];
+    __weak WeakObject *weakObj = obj;
+    [weakObj testMethod];
+}
 
 @end
