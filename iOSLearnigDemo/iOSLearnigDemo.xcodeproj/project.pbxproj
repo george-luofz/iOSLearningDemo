@@ -83,6 +83,7 @@
 		3C71C2412123C4AF00132B60 /* LunarCore.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C71C2402123C4AF00132B60 /* LunarCore.m */; };
 		3C71C2442123CA0C00132B60 /* NNLunarCalenderManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C71C2432123CA0C00132B60 /* NNLunarCalenderManager.m */; };
 		3C71C24921241F1900132B60 /* DIYCalendarCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C71C24821241F1900132B60 /* DIYCalendarCell.m */; };
+		3C76F24B2613025800BD2369 /* HookCMethod.c in Sources */ = {isa = PBXBuildFile; fileRef = 3C76F24A2613025800BD2369 /* HookCMethod.c */; };
 		3C7D11022306B3A50030FC26 /* YXLiveRoomView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C7D11012306B3A50030FC26 /* YXLiveRoomView.m */; };
 		3C7D11062306B6880030FC26 /* EventTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C7D11052306B6880030FC26 /* EventTestViewController.m */; };
 		3C8206C72073633B009BE5A6 /* UITestTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C8206C62073633B009BE5A6 /* UITestTableViewController.m */; };
@@ -484,6 +485,8 @@
 		3C71C2462123D2A900132B60 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
 		3C71C24721241F1900132B60 /* DIYCalendarCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DIYCalendarCell.h; sourceTree = "<group>"; };
 		3C71C24821241F1900132B60 /* DIYCalendarCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DIYCalendarCell.m; sourceTree = "<group>"; };
+		3C76F2492613025800BD2369 /* HookCMethod.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HookCMethod.h; sourceTree = "<group>"; };
+		3C76F24A2613025800BD2369 /* HookCMethod.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = HookCMethod.c; sourceTree = "<group>"; };
 		3C7D11002306B3A50030FC26 /* YXLiveRoomView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YXLiveRoomView.h; sourceTree = "<group>"; };
 		3C7D11012306B3A50030FC26 /* YXLiveRoomView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YXLiveRoomView.m; sourceTree = "<group>"; };
 		3C7D11042306B6880030FC26 /* EventTestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EventTestViewController.h; sourceTree = "<group>"; };
@@ -1221,6 +1224,15 @@
 			path = LunarCore;
 			sourceTree = "<group>";
 		};
+		3C76F2482613014500BD2369 /* hook_objc_msg_send */ = {
+			isa = PBXGroup;
+			children = (
+				3C76F2492613025800BD2369 /* HookCMethod.h */,
+				3C76F24A2613025800BD2369 /* HookCMethod.c */,
+			);
+			path = hook_objc_msg_send;
+			sourceTree = "<group>";
+		};
 		3C7D11032306B6550030FC26 /* Event */ = {
 			isa = PBXGroup;
 			children = (
@@ -1277,6 +1289,7 @@
 		3C8206CB20747596009BE5A6 /* runtime */ = {
 			isa = PBXGroup;
 			children = (
+				3C76F2482613014500BD2369 /* hook_objc_msg_send */,
 				3C0A994B25F6071C00927D06 /* main.cpp */,
 				3C8206CC207475A8009BE5A6 /* RuntimeTestViewController.h */,
 				3C8206CD207475A8009BE5A6 /* RuntimeTestViewController.m */,
@@ -1821,6 +1834,7 @@
 				3CD10171260981CB00AB4800 /* DesignPatternMainTableController.m in Sources */,
 				3C0A991E25F5E1A500927D06 /* FZProxy.m in Sources */,
 				3C93CF4F2604DD8100EA3612 /* BSBacktraceLogger.m in Sources */,
+				3C76F24B2613025800BD2369 /* HookCMethod.c in Sources */,
 				3CD1017A2609824F00AB4800 /* FactoryViewController.m in Sources */,
 				3CCB058820590F7700AF6760 /* AppDelegate.m in Sources */,
 				3CDDB2B4212D3CCF0047BFAB /* VSGroupSelectorContainer.m in Sources */,

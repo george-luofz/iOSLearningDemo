@@ -20,4 +20,5 @@ target 'iOSLearnigDemo' do
   pod 'KVOController'
   pod 'WeexSDK', '0.12.0'
   pod 'JSPatch','1.1.3'
+  pod 'fishhook'
 end
