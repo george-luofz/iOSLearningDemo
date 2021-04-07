@@ -30,9 +30,14 @@
 //
 //    [self testTapGesture];
     
-    [self testViewLayout];
+//    [self testViewLayout];
+//
+//    [self testRunloop];
     
-    [self testRunloop];
+    NSLog(@"%@",[NSRunLoop currentRunLoop]); //打印也是CFRunloop
+    
+    [self test_inGCD];
+    [self test_inOperation];
 }
 
 #pragma mark - block
@@ -136,7 +141,7 @@ void runloopCallback(CFRunLoopObserverRef observer,  CFRunLoopActivity activity,
  */
 - (void)testRunloop {
     CFRunLoopRef ref = CFRunLoopGetCurrent();
-    NSLog(@"runloop is: \n %@",ref);
+    NSLog(@"runloop is: \n %@, %@",ref, CFRunLoopCopyCurrentMode(ref));
     
     CFArrayRef arr = CFRunLoopCopyAllModes(ref);
     NSLog(@"all modes: \n %@",arr);
@@ -156,6 +161,34 @@ void runloopCallback(CFRunLoopObserverRef observer,  CFRunLoopActivity activity,
     view.frame = CGRectMake(0, 100, 100, 100);
     view.backgroundColor = [UIColor yellowColor];
     view.layer.contents = [UIImage new];
+}
+
+
+#pragma mark - runloop 与 gcd / operation
+
+// 自己创建得线程才需要 创建runloop，
+// 队列里，系统创建得线程，会自动创建runloop
+// 打印结果：3种队列，当前线程得runloop都有，是CFRunloop类型
+
+- (void)test_inGCD {
+    dispatch_async(dispatch_get_global_queue(0, 0), ^{
+        NSLog(@"******************************************************\n");
+        NSLog(@"gcd global \n: %@", [NSRunLoop currentRunLoop]);
+    });
+    
+    dispatch_async(dispatch_queue_create("com.fz.queue", NULL), ^{
+        NSLog(@"******************************************************\n");
+        NSLog(@"gcd create \n: %@", [NSRunLoop currentRunLoop]);
+    });
+}
+
+- (void)test_inOperation {
+    NSOperationQueue *queue = [[NSOperationQueue alloc] init];
+    queue.maxConcurrentOperationCount = 1;
+    [queue addOperationWithBlock:^{
+        NSLog(@"******************************************************\n");
+        NSLog(@"operation \n:%@", [NSRunLoop currentRunLoop]);
+        }];
 }
 
 @end
