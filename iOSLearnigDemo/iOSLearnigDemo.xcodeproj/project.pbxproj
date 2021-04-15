@@ -93,6 +93,7 @@
 		3C859C2E21B0DC78004488FA /* image.png in Resources */ = {isa = PBXBuildFile; fileRef = 3C859C2D21B0DC78004488FA /* image.png */; };
 		3C90145625D0F2F000230341 /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C90145525D0F2EA00230341 /* IOKit.framework */; };
 		3C90148925DFBCF700230341 /* WBLBaseButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C90148825DFBCF700230341 /* WBLBaseButton.m */; };
+		3C92B79326288EE6002A8272 /* TagPointerNum.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C92B79226288EE6002A8272 /* TagPointerNum.m */; };
 		3C93CF4F2604DD8100EA3612 /* BSBacktraceLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C93CF4D2604DD8100EA3612 /* BSBacktraceLogger.m */; };
 		3C968A352061FE53002BAC80 /* AlgoTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C968A342061FE53002BAC80 /* AlgoTableViewController.m */; };
 		3C9A85C725CD2F6600F91B7F /* TimerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C9A85C625CD2F6600F91B7F /* TimerViewController.m */; };
@@ -503,6 +504,8 @@
 		3C90145525D0F2EA00230341 /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks/IOKit.framework; sourceTree = DEVELOPER_DIR; };
 		3C90148725DFBCF700230341 /* WBLBaseButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WBLBaseButton.h; sourceTree = "<group>"; };
 		3C90148825DFBCF700230341 /* WBLBaseButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WBLBaseButton.m; sourceTree = "<group>"; };
+		3C92B79126288EE6002A8272 /* TagPointerNum.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TagPointerNum.h; sourceTree = "<group>"; };
+		3C92B79226288EE6002A8272 /* TagPointerNum.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TagPointerNum.m; sourceTree = "<group>"; };
 		3C93CF4D2604DD8100EA3612 /* BSBacktraceLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSBacktraceLogger.m; sourceTree = "<group>"; };
 		3C93CF4E2604DD8100EA3612 /* BSBacktraceLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSBacktraceLogger.h; sourceTree = "<group>"; };
 		3C968A332061FE53002BAC80 /* AlgoTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AlgoTableViewController.h; sourceTree = "<group>"; };
@@ -697,6 +700,8 @@
 				3C0A996825F721BA00927D06 /* WeakObject.h */,
 				3C0A996925F721BA00927D06 /* WeakObject.m */,
 				3C0A997F25F76D2D00927D06 /* WeakObject.cpp */,
+				3C92B79126288EE6002A8272 /* TagPointerNum.h */,
+				3C92B79226288EE6002A8272 /* TagPointerNum.m */,
 			);
 			path = weak;
 			sourceTree = "<group>";
@@ -1840,6 +1845,7 @@
 				3CDDB2B4212D3CCF0047BFAB /* VSGroupSelectorContainer.m in Sources */,
 				3CB0517D217821AE00FE90BB /* ScrollTestCollectionViewCell.m in Sources */,
 				3CDDB29B212BE3B40047BFAB /* ColletionInScrollController.m in Sources */,
+				3C92B79326288EE6002A8272 /* TagPointerNum.m in Sources */,
 				3C0A991925F5E18000927D06 /* NXProxyTestViewController.m in Sources */,
 				3C5995B121928129008FA79B /* YXLBubbleCell.m in Sources */,
 				3CAD522125F36D4400E1D188 /* KVCObject.m in Sources */,

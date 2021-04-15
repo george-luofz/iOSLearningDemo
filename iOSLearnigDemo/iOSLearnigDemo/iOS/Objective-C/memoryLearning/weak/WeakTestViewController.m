@@ -8,6 +8,7 @@
 
 #import "WeakTestViewController.h"
 #import "WeakObject.h"
+#import "TagPointerNum.h"
 
 @interface WeakTestViewController ()
 
@@ -19,6 +20,8 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     [self test_callback];
+    
+    [self testTagPointer];
 }
 
 /* __weak 原理
@@ -52,6 +55,13 @@
     WeakObject *obj = [WeakObject new];
     __weak WeakObject *weakObj = obj;
     [weakObj testMethod];
+}
+
+#pragma mark - tag pointer
+
+- (void)testTagPointer {
+    TagPointerNum *tpNum = [TagPointerNum numberWithInt:1];
+    
 }
 
 @end
