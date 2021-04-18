@@ -8,6 +8,7 @@
 
 #import "RuntimeTestViewController.h"
 #import <objc/runtime.h>
+#import "TestRuntimeForward.h"
 
 @interface RuntimeTestViewController ()
 @end
@@ -17,11 +18,14 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 
-//    method_array_t
+    [self test_resolveInstanceMethod];
 }
 
 #pragma mark - hook objc_msg_send
 
-
+- (void)test_resolveInstanceMethod {
+    TestRuntimeForward *obj = [TestRuntimeForward new];
+    [obj test];
+}
 
 @end

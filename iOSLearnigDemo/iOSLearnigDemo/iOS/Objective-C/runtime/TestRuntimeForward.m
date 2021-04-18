@@ -56,27 +56,29 @@
 }
 #pragma Mark - 消息转发
 + (BOOL)resolveInstanceMethod:(SEL)sel{
-    if([NSStringFromSelector(sel) isEqualToString:@"test"]){
-        Method method = class_getInstanceMethod(self, @selector(_testIMP));
-        bool success = class_addMethod(self, @selector(test), method_getImplementation(method), "v@:");
-        if(success) return YES;
-        return NO;
-    }
     return NO;
+//    if([NSStringFromSelector(sel) isEqualToString:@"test"]){
+//        Method method = class_getInstanceMethod(self, @selector(_testIMP));
+//        bool success = class_addMethod(self, @selector(test), method_getImplementation(method), "v@:");
+//        if(success) return YES;
+//        return NO;
+//    }
+//    return NO;
 }
-- (NSMethodSignature *)methodSignatureForSelector:(SEL)aSelector{
-    if([NSStringFromSelector(aSelector) isEqualToString:@"test"]){
-        return [NSMethodSignature signatureWithObjCTypes:"v@:"];
-    }
-    
-    return [super methodSignatureForSelector:aSelector];
-}
+//- (NSMethodSignature *)methodSignatureForSelector:(SEL)aSelector{
+//    if([NSStringFromSelector(aSelector) isEqualToString:@"test"]){
+//        return [NSMethodSignature signatureWithObjCTypes:"v@:"];
+//    }
+//
+//    return [super methodSignatureForSelector:aSelector];
+//}
 -(id)forwardingTargetForSelector:(SEL)aSelector{
 //    if([NSStringFromSelector(aSelector) isEqualToString:@"test"]){
 //        return [[TestObj alloc] init];
 //    }
     return [super forwardingTargetForSelector:aSelector];
 }
+
 - (void)forwardInvocation:(NSInvocation *)anInvocation{
 //    SEL sel = anInvocation.selector;
 //    if([NSStringFromSelector(sel) isEqualToString:@"test"]){

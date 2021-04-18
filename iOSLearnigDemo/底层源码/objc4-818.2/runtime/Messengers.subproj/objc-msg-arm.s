@@ -791,9 +791,10 @@ LNilReceiver:
 *
 ********************************************************************/
 
-	MI_EXTERN(__objc_forward_handler)
+	MI_EXTERN(__objc_forward_handler) // 消息转发走这个方法，貌似没开源
 	MI_EXTERN(__objc_forward_stret_handler)
 	
+    // 动态方法解析，也是执行汇编
 	STATIC_ENTRY __objc_msgForward_impcache
 	// Method cache version
 

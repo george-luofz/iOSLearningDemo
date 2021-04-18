@@ -6144,7 +6144,7 @@ Method class_getInstanceMethod(Class cls, SEL sel)
     // wants a Method instead of an IMP.
 
 #warning fixme build and search caches
-        
+     // class_getInstanceMethod方法不会查找缓存
     // Search method lists, try method resolver, etc.
     lookUpImpOrForward(nil, sel, cls, LOOKUP_RESOLVER);
 
@@ -6224,13 +6224,16 @@ static void resolveInstanceMethod(id inst, SEL sel, Class cls)
         return;
     }
 
+    // 执行resolveInstanceMethod方法
     BOOL (*msg)(Class, SEL, SEL) = (typeof(msg))objc_msgSend;
     bool resolved = msg(cls, resolve_sel, sel);
 
     // Cache the result (good or bad) so the resolver doesn't fire next time.
     // +resolveInstanceMethod adds to self a.k.a. cls
+    // 查找一次imp，找到放入缓存中
     IMP imp = lookUpImpOrNilTryCache(inst, sel, cls);
 
+    // 解析成功
     if (resolved  &&  PrintResolving) {
         if (imp) {
             _objc_inform("RESOLVE: method %c[%s %s] "
@@ -6265,11 +6268,12 @@ resolveMethod_locked(id inst, SEL sel, Class cls, int behavior)
 
     runtimeLock.unlock();
 
+    // 不是元类，解析对象方法
     if (! cls->isMetaClass()) {
         // try [cls resolveInstanceMethod:sel]
         resolveInstanceMethod(inst, sel, cls);
     } 
-    else {
+    else { // 解析类方法
         // try [nonMetaClass resolveClassMethod:sel]
         // and [cls resolveInstanceMethod:sel]
         resolveClassMethod(inst, sel, cls);
@@ -6302,6 +6306,7 @@ log_and_fill_cache(Class cls, IMP imp, SEL sel, id receiver, Class implementer)
         if (!cacheIt) return;
     }
 #endif
+    // 执行cache insert
     cls->cache.insert(sel, imp, receiver);
 }
 
@@ -6373,6 +6378,7 @@ static IMP _lookUpImpTryCache(id inst, SEL sel, Class cls, int behavior)
     }
 
 done:
+    // 没找到，返回nil
     if ((behavior & LOOKUP_NIL) && imp == (IMP)_objc_msgForward_impcache) {
         return nil;
     }
@@ -6434,6 +6440,7 @@ IMP lookUpImpOrForward(id inst, SEL sel, Class cls, int behavior)
     // objc_duplicateClass, objc_initializeClassPair or objc_allocateClassPair.
     checkIsKnownClass(cls);
 
+    // 是否初始化类
     cls = realizeAndInitializeIfNeeded_locked(inst, cls, behavior & LOOKUP_INITIALIZE);
     // runtimeLock may have been dropped but is now locked again
     runtimeLock.assertLocked();
@@ -6446,6 +6453,7 @@ IMP lookUpImpOrForward(id inst, SEL sel, Class cls, int behavior)
     // The only codepath calling into this without having performed some
     // kind of cache lookup is class_getInstanceMethod().
 
+    // class_getInstanceMethod方法调用，这种没有存入缓存，再找一次缓存
     for (unsigned attempts = unreasonableClassCount();;) {
         if (curClass->cache.isConstantOptimizedCache(/* strict */true)) {
 #if CONFIG_USE_PREOPT_CACHES
@@ -6455,12 +6463,15 @@ IMP lookUpImpOrForward(id inst, SEL sel, Class cls, int behavior)
 #endif
         } else {
             // curClass method list.
+            // 从当前方法列表找一次
             Method meth = getMethodNoSuper_nolock(curClass, sel);
             if (meth) {
                 imp = meth->imp(false);
                 goto done;
             }
 
+            // 这部取父类
+            // 已经没有父类，imp == forward_imp
             if (slowpath((curClass = curClass->getSuperclass()) == nil)) {
                 // No implementation found, and method resolver didn't help.
                 // Use forwarding.
@@ -6474,6 +6485,7 @@ IMP lookUpImpOrForward(id inst, SEL sel, Class cls, int behavior)
             _objc_fatal("Memory corruption in class list.");
         }
 
+        // 找superclass cache
         // Superclass cache.
         imp = cache_getImp(curClass, sel);
         if (slowpath(imp == forward_imp)) {
@@ -6490,6 +6502,7 @@ IMP lookUpImpOrForward(id inst, SEL sel, Class cls, int behavior)
 
     // No implementation found. Try method resolver once.
 
+    // 执行动态方法解析
     if (slowpath(behavior & LOOKUP_RESOLVER)) {
         behavior ^= LOOKUP_RESOLVER;
         return resolveMethod_locked(inst, sel, cls, behavior);
@@ -6502,6 +6515,7 @@ IMP lookUpImpOrForward(id inst, SEL sel, Class cls, int behavior)
             cls = cls->cache.preoptFallbackClass();
         }
 #endif
+        // 填入缓存
         log_and_fill_cache(cls, imp, sel, inst, curClass);
     }
  done_unlock:

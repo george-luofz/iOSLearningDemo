@@ -847,13 +847,15 @@ void cache_t::insert(SEL sel, IMP imp, id receiver)
     ASSERT(sel != 0 && cls()->isInitialized());
 
     // Use the cache as-is if until we exceed our expected fill ratio.
+    // 容量+1
     mask_t newOccupied = occupied() + 1;
     unsigned oldCapacity = capacity(), capacity = oldCapacity;
+    // 缓存为空，申请内存空间
     if (slowpath(isConstantEmptyCache())) {
         // Cache is read-only. Replace it.
         if (!capacity) capacity = INIT_CACHE_SIZE;
         reallocate(oldCapacity, capacity, /* freeOld */false);
-    }
+    } // 缓存未超过3/4直接用
     else if (fastpath(newOccupied + CACHE_END_MARKER <= cache_fill_ratio(capacity))) {
         // Cache is less than 3/4 or 7/8 full. Use it as-is.
     }
@@ -862,7 +864,7 @@ void cache_t::insert(SEL sel, IMP imp, id receiver)
         // Allow 100% cache utilization for small buckets. Use it as-is.
     }
 #endif
-    else {
+    else { // 扩容两倍，并把老缓存清空
         capacity = capacity ? capacity * 2 : INIT_CACHE_SIZE;
         if (capacity > MAX_CACHE_SIZE) {
             capacity = MAX_CACHE_SIZE;
@@ -872,23 +874,23 @@ void cache_t::insert(SEL sel, IMP imp, id receiver)
 
     bucket_t *b = buckets();
     mask_t m = capacity - 1;
-    mask_t begin = cache_hash(sel, m);
+    mask_t begin = cache_hash(sel, m); // 根据sel & mask，找到索引位置
     mask_t i = begin;
 
     // Scan for the first unused slot and insert there.
     // There is guaranteed to be an empty slot.
     do {
-        if (fastpath(b[i].sel() == 0)) {
+        if (fastpath(b[i].sel() == 0)) { // 位置是0，容量+1，并填入bucket_t
             incrementOccupied();
             b[i].set<Atomic, Encoded>(b, sel, imp, cls());
             return;
         }
-        if (b[i].sel() == sel) {
+        if (b[i].sel() == sel) { //
             // The entry was added to the cache by some other thread
             // before we grabbed the cacheUpdateLock.
             return;
         }
-    } while (fastpath((i = cache_next(i, m)) != begin));
+    } while (fastpath((i = cache_next(i, m)) != begin)); //开放定地址法处理冲突
 
     bad_cache(receiver, (SEL)sel);
 #endif // !DEBUG_TASK_THREADS
