@@ -17,13 +17,13 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    
     [self _test1];
 }
 
-- (void)_test1{
-    CTDisplayView *view = [[CTDisplayView alloc] initWithFrame:CGRectMake(0, 64, 100, 200)];
-    view.backgroundColor = [UIColor greenColor];
+- (void)_test1 {
+    CTDisplayView *view = [[CTDisplayView alloc] initWithFrame:CGRectMake(0, 88, 100, 200)];
+    view.backgroundColor = [UIColor clearColor];
     [self.view addSubview:view];
 }
 
