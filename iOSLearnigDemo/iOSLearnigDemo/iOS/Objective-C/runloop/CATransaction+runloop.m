@@ -12,23 +12,23 @@
 
 @implementation CATransaction (runloop)
 
-+ (void)begin {
-    NSLog(@"%s",__func__);
-    
-    [self invokeOriginalMethod:[self class] selector:@selector(begin)];
-}
-
-+ (void)commit {
-    NSLog(@"%s",__func__);
-    
-    [self invokeOriginalMethod:[self class] selector:@selector(commit)];
-}
-
-+ (void)flush {
-    NSLog(@"%s",__func__);
-    
-    [self invokeOriginalMethod:[self class] selector:@selector(flush)];
-}
+//+ (void)begin {
+//    NSLog(@"%s",__func__);
+//    
+//    [self invokeOriginalMethod:[self class] selector:@selector(begin)];
+//}
+//
+//+ (void)commit {
+//    NSLog(@"%s",__func__);
+//    
+//    [self invokeOriginalMethod:[self class] selector:@selector(commit)];
+//}
+//
+//+ (void)flush {
+//    NSLog(@"%s",__func__);
+//    
+//    [self invokeOriginalMethod:[self class] selector:@selector(flush)];
+//}
 
 
 + (void)invokeOriginalMethod:(id)target selector:(SEL)selector {

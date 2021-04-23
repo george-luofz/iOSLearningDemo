@@ -24,26 +24,26 @@ extern void _objc_autoreleasePoolPrint(void);
     
     AutoReleaseObj *obj = [[[AutoReleaseObj alloc] init] autorelease];
     
-//    @autoreleasepool {
-//        AutoReleaseObj *obj = [[[AutoReleaseObj alloc] init] autorelease];
-//        
-//        @autoreleasepool {
-//            AutoReleaseObj *obj1 = [[[AutoReleaseObj alloc] init] autorelease];
-//            
-//            @autoreleasepool {
-//                AutoReleaseObj *obj2 = [[[AutoReleaseObj alloc] init] autorelease];
-//            }
-//            NSLog(@"pool2 pop");
-//            _objc_autoreleasePoolPrint();
-//        }
-//        NSLog(@"pool1 pop");
-//        _objc_autoreleasePoolPrint();
-//    }
-//    NSLog(@"pool0 pop");
-//    _objc_autoreleasePoolPrint();
+    @autoreleasepool {
+        AutoReleaseObj *obj = [[[AutoReleaseObj alloc] init] autorelease];
+        
+        @autoreleasepool {
+            AutoReleaseObj *obj1 = [[[AutoReleaseObj alloc] init] autorelease];
+            
+            @autoreleasepool {
+                AutoReleaseObj *obj2 = [[[AutoReleaseObj alloc] init] autorelease];
+            }
+            NSLog(@"pool2 pop");
+            _objc_autoreleasePoolPrint();
+        }
+        NSLog(@"pool1 pop");
+        _objc_autoreleasePoolPrint();
+    }
+    NSLog(@"pool0 pop");
+    _objc_autoreleasePoolPrint();
     
     
-    NSLog(@"%@",[NSRunLoop mainRunLoop]);
+//    NSLog(@"%@",[NSRunLoop mainRunLoop]);
 }
 
 - (void)viewWillAppear:(BOOL)animated {

@@ -29,7 +29,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
+    NSLog(@"富中player viewDidLoad:%lf",CACurrentMediaTime());
     self.dataSource = @[@"view",@"CoreText",@"html->pdf",@"JTCalendar测试",@"FSCalendar测试",@"collectionViewInScrollView",@"groupSelector",@"flowLayout",@"动画",@"imageView测试",@"CALayer测试",@"事件传递",@"pan手势"];
     
     UIView *view = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 10, 10)];
@@ -42,8 +42,16 @@
     view.layer.contentsScale = image.scale;
     
 }
+
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    NSLog(@"富中player viewWillAppear:%lf",CACurrentMediaTime());
+}
+
 - (void)viewDidAppear:(BOOL)animated{
     [super viewDidAppear:animated];
+    
+    NSLog(@"富中player viewDidAppear:%lf",CACurrentMediaTime());
 }
 
 #pragma mark - Table view data source
