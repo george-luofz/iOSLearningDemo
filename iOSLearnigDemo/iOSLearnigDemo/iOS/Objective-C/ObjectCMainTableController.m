@@ -18,7 +18,7 @@
         @{@"内存": @"MemoryMainTableViewController"},
         @{@"property": @"PropertyLearningController"},
         @{@"category": @"CategoryViewController"},
-        @{@"runtime": @"RuntimeTestViewController"},
+        @{@"runtime": @"RumTimeMainTableViewController"},
         @{@"runloop": @"RunloopTestViewController"},
         @{@"timer": @"TimerViewController"},
         @{@"KVO": @"KVOTestController"},

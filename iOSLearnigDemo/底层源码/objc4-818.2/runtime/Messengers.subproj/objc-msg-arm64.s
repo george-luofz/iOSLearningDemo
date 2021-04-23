@@ -696,8 +696,8 @@ LMsgLookupSuperResume:
 	// THIS IS NOT A CALLABLE C FUNCTION
 	// Out-of-band p15 is the class to search
 	
-	MethodTableLookup
-	TailCallFunctionPointer x17
+	MethodTableLookup // 这步拿到imp
+	TailCallFunctionPointer x17 // 尾调用imp
 
 	END_ENTRY __objc_msgSend_uncached
 

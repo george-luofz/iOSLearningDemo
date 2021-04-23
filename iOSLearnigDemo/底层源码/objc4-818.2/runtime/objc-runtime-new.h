@@ -337,6 +337,7 @@ extern "C" IMP cache_getImp(Class cls, SEL sel, IMP value_on_constant_cache_miss
 
 struct cache_t {
 private:
+    // 原子性
     explicit_atomic<uintptr_t> _bucketsAndMaybeMask;
     union {
         struct {
@@ -2063,7 +2064,7 @@ struct objc_class : objc_object {
 #if FAST_CACHE_META
         return cache.getBit(FAST_CACHE_META);
 #else
-        return data()->flags & RW_META;
+        return data()->flags & RW_META; // RW_META==RO_META，值是1
 #endif
     }
 
