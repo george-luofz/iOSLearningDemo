@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1BBC6FE326FF0BE500DA8DFA /* JSONViewerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BBC6FE226FF0BE500DA8DFA /* JSONViewerViewController.m */; };
+		1BBC6FE626FF0D0C00DA8DFA /* JSONNodeLayoutModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BBC6FE526FF0D0C00DA8DFA /* JSONNodeLayoutModel.m */; };
+		1BBC6FE926FF0D2E00DA8DFA /* JSONParserConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BBC6FE826FF0D2E00DA8DFA /* JSONParserConfig.m */; };
+		1BBC6FEC26FF0D3E00DA8DFA /* JSONViewerDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BBC6FEB26FF0D3E00DA8DFA /* JSONViewerDataSource.m */; };
+		1BBC6FEF26FF0D4D00DA8DFA /* JSONViewer.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BBC6FEE26FF0D4D00DA8DFA /* JSONViewer.m */; };
 		3C03E21921354C7500900A65 /* Header.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C03E21821354C7500900A65 /* Header.m */; };
 		3C03E21C21354EF800900A65 /* HeaderCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C03E21B21354EF800900A65 /* HeaderCollectionViewCell.m */; };
 		3C03E21F213558B400900A65 /* CustomFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C03E21E213558B400900A65 /* CustomFlowLayout.m */; };
@@ -159,6 +164,16 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1BBC6FE126FF0BE500DA8DFA /* JSONViewerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JSONViewerViewController.h; sourceTree = "<group>"; };
+		1BBC6FE226FF0BE500DA8DFA /* JSONViewerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JSONViewerViewController.m; sourceTree = "<group>"; };
+		1BBC6FE426FF0D0C00DA8DFA /* JSONNodeLayoutModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JSONNodeLayoutModel.h; sourceTree = "<group>"; };
+		1BBC6FE526FF0D0C00DA8DFA /* JSONNodeLayoutModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JSONNodeLayoutModel.m; sourceTree = "<group>"; };
+		1BBC6FE726FF0D2E00DA8DFA /* JSONParserConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JSONParserConfig.h; sourceTree = "<group>"; };
+		1BBC6FE826FF0D2E00DA8DFA /* JSONParserConfig.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JSONParserConfig.m; sourceTree = "<group>"; };
+		1BBC6FEA26FF0D3E00DA8DFA /* JSONViewerDataSource.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JSONViewerDataSource.h; sourceTree = "<group>"; };
+		1BBC6FEB26FF0D3E00DA8DFA /* JSONViewerDataSource.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JSONViewerDataSource.m; sourceTree = "<group>"; };
+		1BBC6FED26FF0D4D00DA8DFA /* JSONViewer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JSONViewer.h; sourceTree = "<group>"; };
+		1BBC6FEE26FF0D4D00DA8DFA /* JSONViewer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JSONViewer.m; sourceTree = "<group>"; };
 		3C03E21721354C7500900A65 /* Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Header.h; sourceTree = "<group>"; };
 		3C03E21821354C7500900A65 /* Header.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Header.m; sourceTree = "<group>"; };
 		3C03E21A21354EF800900A65 /* HeaderCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HeaderCollectionViewCell.h; sourceTree = "<group>"; };
@@ -646,6 +661,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1BBC6FE026FF0BC800DA8DFA /* JSON */ = {
+			isa = PBXGroup;
+			children = (
+				1BBC6FF026FF0D6300DA8DFA /* Module */,
+				1BBC6FE126FF0BE500DA8DFA /* JSONViewerViewController.h */,
+				1BBC6FE226FF0BE500DA8DFA /* JSONViewerViewController.m */,
+			);
+			path = JSON;
+			sourceTree = "<group>";
+		};
+		1BBC6FF026FF0D6300DA8DFA /* Module */ = {
+			isa = PBXGroup;
+			children = (
+				1BBC6FE426FF0D0C00DA8DFA /* JSONNodeLayoutModel.h */,
+				1BBC6FE526FF0D0C00DA8DFA /* JSONNodeLayoutModel.m */,
+				1BBC6FE726FF0D2E00DA8DFA /* JSONParserConfig.h */,
+				1BBC6FE826FF0D2E00DA8DFA /* JSONParserConfig.m */,
+				1BBC6FEA26FF0D3E00DA8DFA /* JSONViewerDataSource.h */,
+				1BBC6FEB26FF0D3E00DA8DFA /* JSONViewerDataSource.m */,
+				1BBC6FED26FF0D4D00DA8DFA /* JSONViewer.h */,
+				1BBC6FEE26FF0D4D00DA8DFA /* JSONViewer.m */,
+			);
+			path = Module;
+			sourceTree = "<group>";
+		};
 		226AFB23E662FA89C576F591 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -1570,6 +1610,7 @@
 		3CCB05AB205A5B5900AF6760 /* Objective-C */ = {
 			isa = PBXGroup;
 			children = (
+				1BBC6FE026FF0BC800DA8DFA /* JSON */,
 				3CD101AC260AD67C00AB4800 /* NSArray */,
 				3C0A991625F5E14E00927D06 /* NSProxy */,
 				3CAD521925F36A8300E1D188 /* KVC */,
@@ -1904,6 +1945,7 @@
 				3C03E21921354C7500900A65 /* Header.m in Sources */,
 				3C71C2302122BD2B00132B60 /* UIFont+NNAdd.m in Sources */,
 				3C9C3745206CC5D000F3ECD9 /* ARCObject.m in Sources */,
+				1BBC6FEF26FF0D4D00DA8DFA /* JSONViewer.m in Sources */,
 				3C5F242A26060421001E6062 /* RunloopTestViewController.m in Sources */,
 				3C5F242E2606FB3B001E6062 /* TestView.m in Sources */,
 				3C71C1C9211D6BEE00132B60 /* BaseTableViewController.m in Sources */,
@@ -1928,6 +1970,7 @@
 				3C03E21F213558B400900A65 /* CustomFlowLayout.m in Sources */,
 				3C2A3CC2214FA1A80071B9CE /* AVFoundationTestController.m in Sources */,
 				3C71C2322122BD2B00132B60 /* NSString+NNAdd.m in Sources */,
+				1BBC6FE326FF0BE500DA8DFA /* JSONViewerViewController.m in Sources */,
 				3C5F243226072465001E6062 /* CATransaction+runloop.m in Sources */,
 				3C92B79A262B0EB9002A8272 /* RumTimeMainTableViewController.m in Sources */,
 				3C8206C72073633B009BE5A6 /* UITestTableViewController.m in Sources */,
@@ -1944,17 +1987,20 @@
 				3CAD521725F3204600E1D188 /* MJPerson.m in Sources */,
 				3C9C372E206B2DA200F3ECD9 /* ObjectCMainTableController.m in Sources */,
 				3C0BEEC520649D950022055C /* LinkListViewController.m in Sources */,
+				1BBC6FEC26FF0D3E00DA8DFA /* JSONViewerDataSource.m in Sources */,
 				3C54F0FE21B5169400B4D696 /* CALayerTestViewController.m in Sources */,
 				3CBD777525F1EB1000475BBA /* MVVMTestViewController.m in Sources */,
 				3CCB05A62059182600AF6760 /* UIViewController+Push.m in Sources */,
 				3CC04FA1260A2B4D005D0544 /* NetCatchViewController.m in Sources */,
 				3C104F67218F049000C55078 /* YXLiveRoomSpendPanelTabSelector.m in Sources */,
 				3C71C1CC211D6C7000132B60 /* HtmlToPdfViewController.m in Sources */,
+				1BBC6FE926FF0D2E00DA8DFA /* JSONParserConfig.m in Sources */,
 				3CD101822609831600AB4800 /* SingleTest.m in Sources */,
 				3C22109C26049A08006A5F00 /* ThreadOptViewController.m in Sources */,
 				3CDDB2BA212D445B0047BFAB /* GroupSelectorTestViewController.m in Sources */,
 				3C0A992225F5E21C00927D06 /* ClassA.m in Sources */,
 				3C8206CA207363CE009BE5A6 /* ViewTestController.m in Sources */,
+				1BBC6FE626FF0D0C00DA8DFA /* JSONNodeLayoutModel.m in Sources */,
 				3C71C2352122BD2B00132B60 /* NSDictionary+NNAdd.m in Sources */,
 				3C90148925DFBCF700230341 /* WBLBaseButton.m in Sources */,
 				3C0BEED52064E2080022055C /* StringArrayViewController.m in Sources */,

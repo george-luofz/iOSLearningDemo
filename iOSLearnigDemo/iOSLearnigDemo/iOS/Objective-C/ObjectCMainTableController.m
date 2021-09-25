@@ -15,6 +15,7 @@
 
 - (NSArray *)dataSource {
     return @[
+        @{@"JSON可视化": @"JSONViewerViewController"},
         @{@"内存": @"MemoryMainTableViewController"},
         @{@"property": @"PropertyLearningController"},
         @{@"category": @"CategoryViewController"},
