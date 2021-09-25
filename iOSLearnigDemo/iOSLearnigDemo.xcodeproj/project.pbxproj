@@ -1806,7 +1806,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-iOSLearnigDemo/Pods-iOSLearnigDemo-resources.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-iOSLearnigDemo/Pods-iOSLearnigDemo-resources.sh",
 				"${PODS_ROOT}/JSPatch/JSPatch/JSPatch.js",
 			);
 			name = "[CP] Copy Pods Resources";
@@ -1815,7 +1815,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-iOSLearnigDemo/Pods-iOSLearnigDemo-resources.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-iOSLearnigDemo/Pods-iOSLearnigDemo-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -2104,7 +2104,7 @@
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = D7X74D2YD8;
+				DEVELOPMENT_TEAM = 297U4PYR9Z;
 				ENABLE_STRICT_OBJC_MSGSEND = NO;
 				GCC_PREFIX_HEADER = "supporting files/iOSLearningDemo.pch";
 				INFOPLIST_FILE = "$(SRCROOT)/supporting files/Info.plist";
@@ -2128,7 +2128,7 @@
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = D7X74D2YD8;
+				DEVELOPMENT_TEAM = 297U4PYR9Z;
 				ENABLE_STRICT_OBJC_MSGSEND = NO;
 				GCC_PREFIX_HEADER = "supporting files/iOSLearningDemo.pch";
 				INFOPLIST_FILE = "$(SRCROOT)/supporting files/Info.plist";
